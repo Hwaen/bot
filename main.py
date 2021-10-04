@@ -700,7 +700,7 @@ async def on_message(message):
 
 ######도끼#####
 
-        if msg=="손도끼":
+    if msg=="손도끼":
         embed=discord.Embed(title="손도끼", description="공격력 +25", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366076565303306/002._Hatchet_.png")
         embed.add_field(name="등급", value="일반(흰색)", inline=False)
