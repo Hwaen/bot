@@ -36,7 +36,7 @@ async def on_message(message):
         embed.add_field(name="?무기스킬 (무기종류)", value="무기스킬의 정보를 가져옵니다. EX)?무기스킬 망치", inline=False)
         embed.add_field(name="?캐릭터 (캐릭터이름)", value="캐릭터의 정보를 가져옵니다. EX)?캐릭터 수아", inline=False)
         embed.add_field(name="?패치정보", value="현재 적용된 게임 패치 정보를 알려줍니다.", inline=False)
-        embed.add_field(name="?이메일", value="버그 제보와 문의를 받기 위한 이메일입니다.\n 제목은 [봇 문의]로 통일해주시면 감사합니다.", inline=False)
+        embed.set_footer(text="문의는 화엔#9112 ")
         await message.channel.send(embed=embed)
      
     if message.content.startswith("?이메일"):
