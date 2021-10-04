@@ -441,7 +441,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if msg=="V.I.C.G":
-    embed=discord.Embed(title="V.I.C.G", description="공격력 +72\n 시야 +1.5\n 기본 공격 추가 피해 +45\n", color=0x9c4998)
+        embed=discord.Embed(title="V.I.C.G", description="공격력 +72\n 시야 +1.5\n 기본 공격 추가 피해 +45\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865219050127390/891865312750870588/009._V.I.C.G.png")
         embed.add_field(name="등급", value="영웅(보라)", inline=False)
         embed.add_field(name="휙득 경로", value="카메라 건 + 휴대폰", inline=False)
