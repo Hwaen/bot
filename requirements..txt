@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-asyncio
-discord.py
-=======
-discord.py
-asyncio
->>>>>>> 7a037cb7d96e3d54721b6d232e5458639d521bbb
