@@ -439,7 +439,7 @@ async def on_message(message):
         embed.add_field(name="등급", value="영웅(보라)", inline=False)
         embed.add_field(name="휙득 경로", value="레인지파인더 + 꽃", inline=False)
         await message.channel.send(embed=embed)
-
+    
     if msg=="V.I.C.G":
         embed=discord.Embed(title="V.I.C.G", description="공격력 +72\n 시야 +1.5\n 기본 공격 추가 피해 +45\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865219050127390/891865312750870588/009._V.I.C.G.png")
@@ -590,7 +590,7 @@ async def on_message(message):
         embed.add_field(name="획득 경로", value="FN57 + EMP 드론", inline=False)
         await message.channel.send(embed=embed)
 
-    if msg="스탬피드":
+    if msg=="스탬피드":
         embed=discord.Embed(title="스탬피드", description="장탄 수: 2발\n 공격력 +40\n 이동 속도 +0.1\n 레벨 당 스킬 증폭 +1%\n 더블 탭 - [고유 장착 효과]\n 마지막 탄환으로 가하는 기본 공격이 공격력 +스킬 증폭 *1 + 캐릭터 레벨 * 10 에 해당하는 스킬 피해를 입힙니다.\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891755103726501968/891864830254915604/013._Stempede_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
