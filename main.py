@@ -37,7 +37,11 @@ async def on_message(message):
         embed.add_field(name="?패치정보", value="현재 적용된 게임 패치 정보를 알려줍니다.", inline=False)
         embed.set_footer(text="문의는 화엔#9112 ")
         await message.channel.send(embed=embed)
-    
+        
+#####패치정보#####
+
+    if msg=="?패치정보" or msg=="?패치":
+       await message.channel.send("현재 시험중입니다.")
 
 #####아이템#####
     if message.content.startswith(item):
