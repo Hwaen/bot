@@ -789,6 +789,70 @@ async def on_message(message):
         embed.add_field(name="휙득 경로 ", value="대부+해적 깃발", inline=False)
         await message.channel.send(embed=embed)
 
+######톤파######
+    if msg=="대나무":
+        embed=discord.Embed(title="대나무", description="공격력 +12", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289517330006026/001._Bamboo_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="연못, 절, 양궁장, 묘지, 숲의 상자, 박쥐", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="톤파":
+        embed=discord.Embed(title="톤파", description="공격력 +23\n 방어력 +8\n", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289522346369034/002._Wooden_Tonfa_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="대나무 + 나뭇가지", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="경찰봉":
+        embed=discord.Embed(title="경찰봉", description="공격력 +31\n 방어력 +10\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289527987707944/003._Police_Baton_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="톤파 + 마패", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="류쿠톤파":
+        embed=discord.Embed(title="류큐톤파", description="공격력 +38\n 방어력 +18\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289533016674314/004._Ryuku_Tonfa__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="톤파 + 백색 가루", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="택티컬 톤파":
+        embed=discord.Embed(title="택티컬 톤파", description="공격력 +74\n 방어력 +16\n 생명력 흡수 +20%\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289537965973514/005._Tactical_Tonfa__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="경찰봉 + 정교한 도면", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="마이쏙":
+        embed=discord.Embed(title="마이쏙", description="공격력 +63\n 방어력 +18\n 레벨 당 방어력 +1\n 체력 재생(%) +100%\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289544559419452/006._Mai_Sok_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="류큐톤파 + 단봉", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="플라즈마톤파":
+        embed=discord.Embed(title="플라즈마 톤파", description="공격력 +60\n 방어력 +21\n 시야 +4\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289549835829258/007._Plasma_Tonfa__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="류큐톤파 + 레이저 포인터", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="윈드러너":
+        embed=discord.Embed(title="윈드러너", description="공격력 +70\n 방어력 +8\n 이동 속도 +0.1\n 신속 - 산들바람-[고유 장착 효과]\n 4초 이내에 3회의 개별 피해를 가하면, 3초간 이동 속도가 10% 증가하고, 공격 속도가 30% 증가하며 225의 보호막을 얻습니다.\n (쿨다운 6초)\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289554332135444/008._Windrunner_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="톤파 + 미스릴 실", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="흑요석 짓테":
+        embed=discord.Embed(title="흑요석 짓테", description="공격력 +75\n 방어력 +25\n 저주-[고유 장착 효과]\n 스킬 공격을 가하면 적을 4초간 저주 상태로 만듭니다. 저주 상태인 적은 이동 속도가 10%만큼 느려지고, 저주 상태에서 해제 될 때 75 +스킬 증폭 * 1.75에 해당하는 고정 피해를 입힙니다. 한번 저주 상태가 되면 8초간 (기본 공격 피격 시 1초 감소) 다시 저주 상태가 되지 않습니다.\n (쿨다운 : 2초)\n", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289558861979719/009._Obsidian_Jitte__.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="경찰봉 + 포스 코어", inline=False)
+        await message.channel.send(embed=embed)
+
 
       
 client.run(os.getenv("token"))
