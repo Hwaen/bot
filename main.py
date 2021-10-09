@@ -40,7 +40,7 @@ async def on_message(message):
         
 #####패치정보#####
 
-    if msg=="?패치정보" or msg=="?패치":
+    if message.content=="?패치정보" or message.content=="?패치":
        await message.channel.send("현재 시험중입니다.")
 
 #####아이템#####
