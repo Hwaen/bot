@@ -863,70 +863,79 @@ async def on_message(message):
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472485552332910/001._Long_Rifle_.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득경로", value="항구, 숲의 상자", inline=False)
-
+        await message.channel.send(embed=embed)
+        
     if msg=="스프링필드":
         embed=discord.Embed(title="스프링필드", description="장탄 수: 1발\n 공격력 +40\n 시야 +1.5\n", color=0x1eb300)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472489578872853/002._Springfield_.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득경로", value="화승총 + 레이저 포인터", inline=False)
-
+        await message.channel.send(embed=embed)
+        
     if msg=="하푼건":
         embed=discord.Embed(title="하푼건", description="장탄 수: 2발\n 공격력 +60\n 시야 +2\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472493865435196/003._Harpoon_Gun_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="스프링필드 + 단창", inline=False)
-
+        await message.channel.send(embed=embed)
+        
     if msg=="레일건":
         embed=discord.Embed(title="레일건", description="장탄 수: 3발\n 공격력 +65\n 공격 속도(%) +20%\n 시야 +2\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472501926899772/005._Railgun_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="스프링필드 + 전자 부품", inline=False)
-            
+        await message.channel.send(embed=embed)    
 
     if msg=="금교전":
         embed=discord.Embed(title="금교전", description="장탄 수: 1발\n 공격력 +50\n 시야 +1.5\n 스킬 증폭 +18%\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472497824874546/004._Golden_Rifle_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="스프링필드 + 황금", inline=False)
-
+        await message.channel.send(embed=embed)
+        
     if msg=="폴라리스":
         embed=discord.Embed(title="폴라리스", description="장탄 수: 4발\n 공격력 +113\n 공격 속도(%) +18%\n 레벨당 공격속도 +2%\n 시야 +2\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472519224209478/009._Polaris_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="레일건 + 백색 가루", inline=False)
-
+        await message.channel.send(embed=embed)
+        
     if msg=="인터벤션":
         embed=discord.Embed(title="인터벤션", description="장탄 수: 2발\n공격력 +100\n 시야 +4\n 기본 공격 사거리 - [고유 장착 효과]\n 기본 공격 사거리 +1\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472510999179264/007._Intervention_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="하푼건 + 망원 카메라", inline=False)
-
+        await message.channel.send(embed=embed)
+        
     if msg=="tac-50":
         embed=discord.Embed(title="Tac-50", description="장탄 수: 2발\n 공격력 +94\n 레벨 당 공격력 +2\n 시야 +2\n 생명력 흡수 +14%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472506435780638/006._Tac-50.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="하푼건 + 정교한 도면", inline=False)
-
+        await message.channel.send(embed=embed)
+        
     if msg=="NTW-20":
         embed=discord.Embed(title="NTW-20", description="장탄 수: 1발\n 공격력 +82\n 시야 +1.5\n 스킬 증폭 +18%\n", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472515193495614/008._NTW-20.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="금교전 + 철판", inline=False)
-
+        await message.channel.send(embed=embed)
+        
     if msg=="사사성광":
         embed=discord.Embed(title="사사성광", description="장탄 수: 2발\n 공격력 +100\n 시야 +2.5\n 스킬 증폭 +24%\n", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472522919407676/010._The_Deadly_Ray_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="문스톤 + 금교전", inline=False)
-
+        await message.channel.send(embed=embed)
+        
     if msg=="현자총통":
         embed=discord.Embed(title="현자총통", description="장탄 수: 1발\n 공격력 +160\n 기본 공격 사거리 -1\n 철환 - [고유 장착 효과]\n 다음에 가하는 기본 공격이 115의 추가 고유 피해를 주고 0.56초 동안 이동속도를 99% 만큼 감소시킵니다. (쿨다운 : 4초)", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472527197573170/011._Blackfire_Cannon_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="스프링필드 + 삼매진화", inline=False)
-
+        await message.channel.send(embed=embed)
+        
 ######돌격소총######
-
     if msg=="페도로프 자동소총":
         embed=discord.Embed(title="페도로프 자동소총", description="장탄 수: 30발\n 공격력 +11\n", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472409845141554/001._Fedorova__.png")
