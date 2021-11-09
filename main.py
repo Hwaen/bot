@@ -859,10 +859,10 @@ async def on_message(message):
 
 ######저격총######
     if msg=="화승총":
-    embed=discord.Embed(title="화승총", description="장탄 수: 1발\n 공격력 +30\n 체력 재생 +1.5\n 시야 +1\n 스태미너 재생(%) +150%\n 치명타 피해량 +25%\n 쿨다운 감소 +12%\n", color=0xffffff)
-    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472485552332910/001._Long_Rifle_.png")
-    embed.add_field(name="등급", value="일반", inline=False)
-    embed.add_field(name="획득경로", value="항구, 숲의 상자", inline=False)
+        embed=discord.Embed(title="화승총", description="장탄 수: 1발\n 공격력 +30\n 체력 재생 +1.5\n 시야 +1\n 스태미너 재생(%) +150%\n 치명타 피해량 +25%\n 쿨다운 감소 +12%\n", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472485552332910/001._Long_Rifle_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="항구, 숲의 상자", inline=False)
 
     if msg=="스프링필드":
         embed=discord.Embed(title="스프링필드", description="장탄 수: 1발\n 공격력 +40\n 시야 +1.5\n", color=0x1eb300)
