@@ -857,6 +857,147 @@ async def on_message(message):
         embed.add_field(name="획득 경로", value="경찰봉 + 포스 코어", inline=False)
         await message.channel.send(embed=embed)
 
+######저격총######
+    if msg=="화승총":
+    embed=discord.Embed(title="화승총", description="장탄 수: 1발\n 공격력 +30\n 체력 재생 +1.5\n 시야 +1\n 스태미너 재생(%) +150%\n 치명타 피해량 +25%\n 쿨다운 감소 +12%\n", color=0xffffff)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472485552332910/001._Long_Rifle_.png")
+    embed.add_field(name="등급", value="일반", inline=False)
+    embed.add_field(name="획득경로", value="항구, 숲의 상자", inline=False)
 
-      
+    if msg=="스프링필드":
+        embed=discord.Embed(title="스프링필드", description="장탄 수: 1발\n 공격력 +40\n 시야 +1.5\n", color=0x1eb300)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472489578872853/002._Springfield_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="화승총 + 레이저 포인터", inline=False)
+
+    if msg=="하푼건":
+        embed=discord.Embed(title="하푼건", description="장탄 수: 2발\n 공격력 +60\n 시야 +2\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472493865435196/003._Harpoon_Gun_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="스프링필드 + 단창", inline=False)
+
+    if msg=="레일건":
+        embed=discord.Embed(title="레일건", description="장탄 수: 3발\n 공격력 +65\n 공격 속도(%) +20%\n 시야 +2\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472501926899772/005._Railgun_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="스프링필드 + 전자 부품", inline=False)
+            
+
+    if msg=="금교전":
+        embed=discord.Embed(title="금교전", description="장탄 수: 1발\n 공격력 +50\n 시야 +1.5\n 스킬 증폭 +18%\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472497824874546/004._Golden_Rifle_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="스프링필드 + 황금", inline=False)
+
+    if msg=="폴라리스":
+        embed=discord.Embed(title="폴라리스", description="장탄 수: 4발\n 공격력 +113\n 공격 속도(%) +18%\n 레벨당 공격속도 +2%\n 시야 +2\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472519224209478/009._Polaris_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="레일건 + 백색 가루", inline=False)
+
+    if msg=="인터벤션":
+        embed=discord.Embed(title="인터벤션", description="장탄 수: 2발\n공격력 +100\n 시야 +4\n 기본 공격 사거리 - [고유 장착 효과]\n 기본 공격 사거리 +1\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472510999179264/007._Intervention_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="하푼건 + 망원 카메라", inline=False)
+
+    if msg=="tac-50":
+        embed=discord.Embed(title="Tac-50", description="장탄 수: 2발\n 공격력 +94\n 레벨 당 공격력 +2\n 시야 +2\n 생명력 흡수 +14%\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472506435780638/006._Tac-50.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="하푼건 + 정교한 도면", inline=False)
+
+    if msg=="NTW-20":
+        embed=discord.Embed(title="NTW-20", description="장탄 수: 1발\n 공격력 +82\n 시야 +1.5\n 스킬 증폭 +18%\n", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472515193495614/008._NTW-20.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="금교전 + 철판", inline=False)
+
+    if msg=="사사성광":
+        embed=discord.Embed(title="사사성광", description="장탄 수: 2발\n 공격력 +100\n 시야 +2.5\n 스킬 증폭 +24%\n", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472522919407676/010._The_Deadly_Ray_.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득경로", value="문스톤 + 금교전", inline=False)
+
+    if msg=="현자총통":
+        embed=discord.Embed(title="현자총통", description="장탄 수: 1발\n 공격력 +160\n 기본 공격 사거리 -1\n 철환 - [고유 장착 효과]\n 다음에 가하는 기본 공격이 115의 추가 고유 피해를 주고 0.56초 동안 이동속도를 99% 만큼 감소시킵니다. (쿨다운 : 4초)", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472527197573170/011._Blackfire_Cannon_.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득경로", value="스프링필드 + 삼매진화", inline=False)
+
+######돌격소총######
+
+    if msg=="페도로프 자동소총":
+        embed=discord.Embed(title="페도로프 자동소총", description="장탄 수: 30발\n 공격력 +11\n", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472409845141554/001._Fedorova__.png")
+        embed.add_field(name="등급 ", value="일반 ", inline=False)
+        embed.add_field(name="휙득 경로", value="공장, 호텔, 고급 주택가의 상자", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="STG-44":
+        embed=discord.Embed(title="STG-44", description="장탄 수: 30발\n 공격력 +18\n 시야 +1.5\n 기본 공격 추가 피해 +2\n", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472413016031312/002._STG-44.png")
+        embed.add_field(name="등급 ", value="고급", inline=False)
+        embed.add_field(name="휙득 경로", value="페도로프 자동소총 + 화약", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="AK-47":
+        embed=discord.Embed(title="AK-47", description="장탄 수: 30발\n 공격력 +29\n 시야 +1.5\n 기본 공격 추가 피해 +2\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472416920936499/003._AK-47.png")
+        embed.add_field(name="등급 ", value="희귀", inline=False)
+        embed.add_field(name="휙득 경로", value="STG-44 + 피아노선", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="M16A1":
+        embed=discord.Embed(title="M16A1", description="장탄 수: 30발\n 공격력 +25\n 시야 +1.5\n 기본 공격 추가 피해 +4\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472422931374080/004._M16A1.png")
+        embed.add_field(name="등급 ", value="희귀", inline=False)
+        embed.add_field(name="휙득 경로", value="STG-44 + 가죽", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="개틀링 건":
+        embed=discord.Embed(title="개틀링 건", description="장탄 수: 30발\n 	 공격력 +20\n 공격 속도(%) +10%\n 시야 +1.5\n 기본 공격 추가 피해 +11\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472430569201704/005._Gatling_Gun_.png")
+        embed.add_field(name="등급 ", value="영웅", inline=False)
+        embed.add_field(name="휙득 경로", value="STG-44 + 모터", inline=False)
+        await message.channel.send(embed=embed)
+            
+    if msg=="5식 자동 소총"
+        embed=discord.Embed(title="95식 자동 소총", description="장탄 수: 30발\n 	공격력 +84\n 시야 +2\n 기본 공격 사거리 - [고유 장착 효과]\n 기본 공격 사거리 +1\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472435556253716/006._Type_95_95_.png")
+        embed.add_field(name="등급 ", value="영웅", inline=False)
+        embed.add_field(name="휙득 경로", value="AK-47 + 강철", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="AK-12":
+        embed=discord.Embed(title="AK-12", description="장탄 수: 30발\n 	공격력 +68\n 레벨 당 공격력 +2\n 시야 +1.5\n 치명타 확률 +22%\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472439746355240/007._AK-12.png")
+        embed.add_field(name="등급 ", value="영웅", inline=False)
+        embed.add_field(name="휙득 경로", value="AK-47 + 유리판", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="XCR":
+        embed=discord.Embed(title="XCR", description="장탄 수: 30발\n 공격력 +66\n 최대 체력 +200\n 시야 +1.5\n 기본 공격 추가 피해 +10\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472444225847376/008._XCR.png")
+        embed.add_field(name="등급 ", value="영웅", inline=False)
+        embed.add_field(name="휙득 경로", value="M16A1 + 탄창", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="저지먼트":
+        embed=discord.Embed(title="저지먼트", description="장탄 수: 120발\n 공격력 +120\n 시야 +1.5\n 방어 관통 +12%\n", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472448168521848/009._Judgement_.png")
+        embed.add_field(name="등급 ", value="전설", inline=False)
+        embed.add_field(name="휙득 경로", value="포스 코어 + STG-44", inline=False)
+        await message.channel.send(embed=embed)
+
+    if msg=="아그니":
+        embed=discord.Embed(title="아그니", description="장탄 수: 30발\n 공격력 +51\n 공격 속도 +25%\n 시야 +1.5\n 기본 공격 추가 피해 +16\n", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472452379607080/010._Agni_.png")
+        embed.add_field(name="등급 ", value="전설", inline=False)
+        embed.add_field(name="휙득 경로", value="개틀링 건 + 뜨거운 오일", inline=False)
+        await message.channel.send(embed=embed)
+
+
+
+
 client.run(os.getenv("token"))
