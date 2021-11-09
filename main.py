@@ -962,7 +962,7 @@ async def on_message(message):
         embed.add_field(name="휙득 경로", value="STG-44 + 모터", inline=False)
         await message.channel.send(embed=embed)
             
-    if msg=="5식 자동 소총"
+    if msg=="5식 자동 소총":
         embed=discord.Embed(title="95식 자동 소총", description="장탄 수: 30발\n 	공격력 +84\n 시야 +2\n 기본 공격 사거리 - [고유 장착 효과]\n 기본 공격 사거리 +1\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472435556253716/006._Type_95_95_.png")
         embed.add_field(name="등급 ", value="영웅", inline=False)
