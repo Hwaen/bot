@@ -49,9 +49,6 @@ async def on_message(message):
         msg = message.content[3:]      
         Item.Weapon(msg)
         await message.channel.send(embed=Item.ham(msg))
-
-    if msg=="":
-        await message.channel.send("아이템이름을 적어주세요.")
         
     else:
         return None
