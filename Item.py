@@ -1242,7 +1242,7 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="소유의 펜타클 + 바브드 블로섬", inline=False)
         return embed
 
-    if msg=="더 문"
+    if msg=="더 문":
         embed=discord.Embed(title="더 문", description="공격력 +90\n 굴절 - [고유 장착 효과]\n 굴절의 망토를 두릅니다. 굴절의 망토는 적이 나에게 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 사라지고, 35초 후 재생성 됩니다.", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/910522550210166834/012._The_Moon__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
