@@ -46,7 +46,7 @@ async def on_message(message):
 
 #####아이템#####
     if message.content.startswith(item):
-         msg = message.content[3:]      
+        msg = message.content[3:]      
         Item.Weapon(msg)
         await message.channel.send(embed=Item.ham(msg))
 
