@@ -27,7 +27,7 @@ async def on_ready():
 #####도움말#####
 @client.event
 async def on_message(message):
-    if message.content("?도움"):
+    if message.content=="?도움" or message.content=="?도움말":
         embed=discord.Embed(title="도움말", description="사용 가능한 명령어를 보여드립니다")
         embed.add_field(name="?도움", value="사용 가능한 명령어를 가져옵니다.", inline=False)
         embed.add_field(name="?템 (템이름)", value="아이템의 정보를 가져옵니다. EX)?템 낭아봉", inline=False)
