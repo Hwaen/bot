@@ -1336,7 +1336,7 @@ def Weapon(msg):
         return embed
 
     if msg=="원더풀 투나잇":
-        embed=discord.Embed(title="원더풀 투나잇", description=" 공격력 +85\n 기본 공격 추가 피해 +2\n ```열정 - [고유 효과]\n 기본 공격이 적 실험체에게 명중하면, 적 실험체에게 현재 체력의 5%에 해당하는 고유 피해를 입히며 열정 버프를 1스택 획득합니다.\n ```열정: 버프\ n공격 속도 8% 증가\n 지속 시간 : 4초\n 최대 스택 : 5스택``` 최대 스택이 쌓인 경우 15의  공격력과 0.1의 이동 속도를 추가로 얻습니다.```", color=0x9C4998)
+        embed=discord.Embed(title="원더풀 투나잇", description=" 공격력 +85\n 기본 공격 추가 피해 +2\n ```열정 - [고유 효과]\n 기본 공격이 적 실험체에게 명중하면, 적 실험체에게 현재 체력의 5%에 해당하는 고유 피해를 입히며 열정 버프를 1스택 획득합니다.\n 열정: 버프\n 공격 속도 8% 증가\n 지속 시간 : 4초\n 최대 스택 : 5스택\n최대 스택이 쌓인 경우 15의  공격력과 0.1의 이동 속도를 추가로 얻습니다.```", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652879128920154/014._Wonderful_Tonight__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="슈퍼스트랫 + 운석", inline=False)
