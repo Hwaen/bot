@@ -55,14 +55,14 @@ def Weapon(msg):
         return embed 
 
     if msg=="개밥바라기":
-        embed=discord.Embed(title="개밥바라기", description=" 공격력 +105\n 스킬 증폭(%) +20%", color=0x9c4998)
+        embed=discord.Embed(title="개밥바라기", description=" ```공격력 +105\n 스킬 증폭(%) +20%```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891317310952988712/891317472769241169/009._Evening_Star_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로 ", value="모닝스타 + 문스톤", inline=False)
         return embed
 
     if msg=="천근추":
-        embed=discord.Embed(title="천근추", description=" 공격력 +88\n 스킬 증폭 +8%\n 쿨다운 감소 +12%\n ```차지드 스트라이크 - [고유 장착 효과]\n매 4초마다 다음 공격이 100%의 치명타 확률 보너스를 획득합니다.```", color=0x9c4998)
+        embed=discord.Embed(title="천근추", description=" ```공격력 +88\n 스킬 증폭 +8%\n 쿨다운 감소 +12%\n 차지드 스트라이크 - [고유 장착 효과]\n매 4초마다 다음 공격이 100%의 치명타 확률 보너스를 획득합니다.```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891317310952988712/891317475961085972/010._Weight_of_the_World_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로 ", value="운명의망치+진신사리", inline=False)        
