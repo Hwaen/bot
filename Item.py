@@ -1567,6 +1567,325 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="VF 혈액 샘플 + 일본도", inline=False)
         return embed
 
+#####글러브#####
+    if msg=="너클":
+        embed=discord.Embed(title="너클", description="공격력 +10", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756156210155551/001._Brass_Knuckles_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="묘지(5), 숲(5)", inline=False)
+        return embed
+
+    if msg=="목장갑":
+        embed=discord.Embed(title="목장갑", description="공격력 +7", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756156432449536/002._Cotton_Gloves_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="호텔(4), 병원(4)", inline=False)
+        return embed
+
+    if msg=="글러브":
+        embed=discord.Embed(title="글러브", description="공격력 +18", color=0x1eb300)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756214536151090/003._Leather_Gloves__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="목장갑 + 가죽", inline=False)
+        return embed
+
+    if msg=="아이언 너클":
+        embed=discord.Embed(title="아이언 너클", description="공격력 +20", color=0x1eb300)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756214771056660/004._Iron_Knuckles__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="너클 + 철광석", inline=False)
+        return embed
+
+    if msg=="건틀릿":
+        embed=discord.Embed(title="건틀릿", description="공격력 +28\n이동 속도 -0.05\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756323617439754/005._Gauntlet_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="목장갑 + 강철", inline=False)
+        return embed
+
+    if msg=="윙 너클":
+        embed=discord.Embed(title="윙 너클", description="공격력 +20\n이동 속도 +0.1\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756323814567946/006._Wing_Knuckles__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="아이언 너클 + 깃털", inline=False)
+        return embed
+
+    if msg=="귀골 장갑":
+        embed=discord.Embed(title="귀골 장갑", description="공격력 +35\n방어력 +13\n이동 속도 -0.05\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756323990716436/007._Bone_Gauntlet_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="건틀릿 + 거북이 등딱지", inline=False)
+        return embed
+
+    if msg=="벽력귀투":
+        embed=discord.Embed(title="벽력귀투", description="공격력 +32\n이동 속도 -0.05\n기본 공격 추가 피해 +15\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756324179447828/008._Shatter_Shell_Gauntlet_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="건틀릿 + 화약", inline=False)
+        return embed
+
+    if msg=="유리 너클":
+        embed=discord.Embed(title="유리 너클", description="공격력 +28\n치명타 확률 +10%\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756324338835466/009._Glass_Knuckles__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="건틀릿 + 화약", inline=False)
+        return embed
+
+    if msg=="회단 장갑":
+        embed=discord.Embed(title="회단 장갑", description="공격력 +27\n스킬 공격 추가 피해 +15\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756324506599455/010._Phoenix_Gloves__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="글러브 + 재", inline=False)
+        return embed
+
+    if msg=="단영촌천투":
+        embed=discord.Embed(title="단영촌천투", description="공격력 +50\n방어력 +18\n스테미너 재생(%) +50%\n생명력 흡수 +20%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756361626202112/011._One_Inch_Punch_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="귀골 장갑 + 인형", inline=False)
+        return embed
+
+    if msg=="디바인 피스트":
+        embed=discord.Embed(title="디바인 피스트", description="공격력 +55\n이동 속도 -0.05\n기본 공격 추가 피해 +39\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756361793982484/012._Divine_Fist__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="벽력귀투 + 십자가", inline=False)
+        return embed
+
+    if msg=="블러드윙 너클":
+        embed=discord.Embed(title="블러드윙 너클", description="공격력 +56\n최대 체력 +180\n이동 속도 +0.06\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756361957543956/013._Bloodwing_Knuckles__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="윙 너클 + 루비", inline=False)
+        return embed
+
+    if msg=="빙화현옥수":
+        embed=discord.Embed(title="빙화현옥수", description="공격력 +44\n레벨 당 스킬 공격 추가 피해 +1\n스킬 공격 추가 피해 +20\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756362163093524/014._Frost_Petal_Hand_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="회단 장갑 + 얼음", inline=False)
+        return embed
+
+    if msg=="여래수투":
+        embed=discord.Embed(title="여래수투", description="공격력 +50\n쿨다운 감소 +15%\n스킬 증폭 +19%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756362351804416/015._Buddha_s_Palm_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="회단 장갑 + 진신사리", inline=False)
+        return embed
+
+    if msg=="브레이질 건틀릿":
+        embed=discord.Embed(title="브레이질 건틀릿", description="공격력 +57\n방어력 +15\n스태미너 재생 +1.2\n체력 재생 +1.2\n공격 속도(%) +40%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756362527977472/016._Brasil_Gauntlet__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="귀골 장갑 + 기름먹인 천", inline=False)
+        return embed
+
+    if msg=="소수":
+        embed=discord.Embed(title="소수", description="공격력 +58\n치명타 확률 +33%\n치명타 피해량 +7%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756362771243038/017._White_Claw_Punch_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="유리 너클 + 백색 가루", inline=False)
+        return embed
+
+    if msg=="천잠장갑":
+        embed=discord.Embed(title="천잠장갑", description="공격력 +88\n이동 속도 +0.1\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756362976788500/018.Imperial_Skil_Gloves_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="미스릴 실 + 글러브", inline=False)
+        return embed
+
+    if msg=="주작자문":
+        embed=discord.Embed(title="주작자문", description="공격력 +40\n```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다. [타오르는 고통]은 매 초마다 대상 최대 체력의 1.15%를 고정 피해로 줍니다.```", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756388587180112/019._Mark_of_the_Phoenix_.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득경로", value="삼매진화 + 글러브", inline=False)
+        return embed
+
+    if msg=="프로스트 팽":
+        embed=discord.Embed(title="프로스트 팽", description="공격력 +48\n쿨다운 감소 +15%\n스킬 공격 추가 피해 +40\n", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756388775936060/020._Permafrost__.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득경로", value="만년빙 + 회단 장갑", inline=False)
+        return embed
+
+#####암기#####
+    if msg=="면도칼":
+        embed=discord.Embed(title="면도칼", description="공격력 +11", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472965573660712/001._Razor_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="병원(5개), 성당(5개), 학교(7개), 박쥐", inline=False)
+        return embed
+
+    if msg=="트럼프 카드":
+        embed=discord.Embed(title="트럼프 카드", description="공격력 +4\n치명타 확률 +5%\n", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472971055624202/002._Playing_Cards__.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="호텔(6개), 번화가(7개), 멧돼지", inline=False)
+        return embed
+
+    if msg=="분필":
+        embed=discord.Embed(title="분필", description="공격력 +12", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472975585447986/003._Chalk_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="공장(7개), 성당(5개), 학교(6개), 박쥐", inline=False)
+        return embed
+
+    if msg=="다트":
+        embed=discord.Embed(title="다트", description="최대 충전 수: 20발(충전: 20초)\n공격력 +16\n치명타 피해량 +15%\n이동 속도 +0.0\n", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472980476031047/004._Dart_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="바늘 + 깃털", inline=False)
+        return embed
+
+    if msg=="빈티지 카드":
+        embed=discord.Embed(title="빈티지 카드", description="최대 충전 수: 50발(충전: 2초)\n공격력 +15\n치명타 확률 +10%\n", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472985513394216/005._Vintage_Cards__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="트럼프 카드 + 만년필", inline=False)
+        return embed
+
+    if msg=="표창":
+        embed=discord.Embed(title="표창", description="최대 충전 수: 50발(충전: 2초)\n공격력 +25\n", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472994468229170/006._Throwing_Stars_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="면도칼 + 피아노선", inline=False)
+        return embed
+
+    if msg=="흑건":
+        embed=discord.Embed(title="흑건", description="최대 충전 수: 50발(충전: 2초)\n공격력 +17\n스킬 공격 추가 피해 +5\n", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472999962755142/007._Onyx_Dagger_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="면도칼 + 십자가", inline=False)
+        return embed
+
+    if msg=="부적":
+        embed=discord.Embed(title="부적", description="최대 충전 수: 10발(충전: 40초)\n공격력 +30\n스킬 공격 추가 피해 +5\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473004207407154/008._Charm_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="빈티지 카드 + 분필", inline=False)
+        return embed
+
+    if msg=="유엽비도":
+        embed=discord.Embed(title="유엽비도", description="최대 충전 수: 50발(충전: 2초)\n공격력 +17\n쿨다운 감소 +8%\n스킬 공격 추가 피해 +12\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473009899077662/009._Willow_Leaf_Spike_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="매화비표 + 나뭇가지", inline=False)
+        return embed
+
+    if msg=="챠크람":
+        embed=discord.Embed(title="챠크람", description="최대 충전 수: 50발(충전: 2초)\n공격력 +30\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473013548093501/010._Chakram_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="표창 + 마패", inline=False)
+        return embed
+
+    if msg=="매화비표":
+        embed=discord.Embed(title="매화비표", description="최대 충전 수: 50발(충전: 2초)\n공격력 +17\n쿨다운 감소 +5%\n스킬 공격 추가 피해 +8\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473019856334939/011._Apricot_Flower_Tag_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="흑건 + 꽃", inline=False)
+        return embed
+
+    if msg=="법륜":
+        embed=discord.Embed(title="법륜", description="최대 충전 수: 50발(충전: 2초)\n공격력 +38\n스킬 증폭(%) +15%\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473027066347571/013._Dharma_Chakram_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="챠크람 + 불경", inline=False)
+        return embed
+
+    if msg=="플럼바타":
+        embed=discord.Embed(title="플럼바타", description="최대 충전 수: 20발(충전: 20초)\n공격력 +48\n이동 속도 +0.04\n치명타 피해량 +15%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473031436795974/014._Plumbata_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="다트 + 강철", inline=False)
+        return embed
+
+    if msg=="미치광이왕의 카드":
+        embed=discord.Embed(title="미치광이왕의 카드", description="최대 충전 수: 52발(충전: 2초)\n공격력 +49\n공격 속도(%) +40%\n치명타 확률 +15%\n치명타 피해량 +15%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473037195608064/015._Cards_of_Tyranny__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="빈티지 카드 + 이온 전지", inline=False)
+        return embed
+
+    if msg=="옥전결":
+        embed=discord.Embed(title="옥전결", description="최대 충전 수: 20발(충전: 20초)\n공격력 +60\n스킬 공격 추가 피해 +5\n레벨 당 스킬 공격 추가 피해 +1\n스킬 증폭 +15%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473041188565072/016._Mystic_Jade_Charm_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="부적 + 황금", inline=False)
+        return embed
+
+    if msg=="풍마수리검":
+        embed=discord.Embed(title="풍마수리검", description="최대 충전 수: 50발(충전: 2초)\n공격력 +65\n쿨다운 감소 +15%\n스킬 공격 추가 피해 +15\n스태미너 재생 +1 최대 쿨다운 감소-[고유 장착 효과]\n최대 쿨다운 감소 +5%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473044900528230/017._Fuhma_Shuriken__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="유엽비도 + 알코올", inline=False)
+        return embed
+
+    if msg=="빙백은침":
+        embed=discord.Embed(title="빙백은침", description="최대 충전 수: 3발(충전: 80초)\n공격력 +70\n스킬 공격 추가 피해 +20\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473050357309510/018._Frost_Venom_Dart_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="독침 + 만년빙", inline=False)
+        return embed
+
+    if msg=="푸른색단도":
+        embed=discord.Embed(title="푸른색 단도", description="최대 충전 수: 50발(충전: 2초)\n공격력 +35\n쿨다운 감소 +5%\n스킬 공격 추가 피해 +35\n스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격에 피격된 대상의 치유 효과가 4초간 35% 감소합니다.\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473055113642004/019._Azure_Dagger__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="매화비표 + 독약", inline=False)
+        return embed
+
+    if msg=="플레솃":
+        embed=discord.Embed(title="플레솃", description="최대 충전 수: 24발(충전: 12초)\n공격력 +88\n이동 속도 +0.06\n치명타 피해량 +15%\n기본 공격 사거리-[고유 장착 효과]\n기본 공격 사거리 +0.5\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473061652574248/020._Flechette_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="플럼바타 + 백색 가루", inline=False)
+        return embed
+
+    if msg=="건곤권":
+        embed=discord.
+        Embed(title="건곤권", description="최대 충전 수: 50발(충전: 2초)\n공격력 +55\n스킬 증폭 +25%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473067990155344/021._Wind_and_Fire_Wheels_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="법륜 + 대나무", inline=False)
+        return embed
+
+    if msg=="생사부":
+        embed=discord.Embed(title="생사부", description="최대 충전 수: 20발(충전: 20초)\n공격력 +83\n```저주-[고유 장착 효과]\n스킬 공격을 가하면 적을 4초간 저주 상태로 만듭니다. 저주 상태인 적은 이동 속도가 10%만큼 느려지고, 저주 상태에서 해제 될 때 100 + 스킬 증폭 * 2 에 해당하는 고정 피해를 입힙니다. 한번 저주 상태가 되면 8초간 (기본 공격 피격 시 1초 감소) 다시 저주 상태가 되지 않습니다.```\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473071442096128/022._Death_Rune_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="부적 + 운석", inline=False)
+        return embed
+
+    if msg=="수다르사나":
+        embed=discord.Embed(title="수다르사나", description="최대 충전 수: 50발(충전: 2초)\n공격력 +100\n스킬 증폭 +25%\n시야 +2\n", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473075770597386/023._Sudarsana_.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득경로", value="포스 코어 + 표창", inline=False)
+        return embed
+
+    if msg=="만천화우":
+        embed=discord.Embed(title="만천화우", description="최대 충전 수: 4발(충전: 60초)\n공격력 +83\n기본 공격 추가 피해 +130\n스킬 공격 추가 피해 +3\n", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473080879259738/024._Petal_Torrent_.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득경로", value="빙백은침 + 다이너마이트", inline=False)
+        return embed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#####투척#####
+    
 
 
 
