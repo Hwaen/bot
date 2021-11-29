@@ -1843,8 +1843,7 @@ def Weapon(msg):
         return embed
 
     if msg=="건곤권":
-        embed=discord.
-        Embed(title="건곤권", description="최대 충전 수: 50발(충전: 2초)\n공격력 +55\n스킬 증폭 +25%\n", color=0x9C4998)
+        embed=discord.Embed(title="건곤권", description="최대 충전 수: 50발(충전: 2초)\n공격력 +55\n스킬 증폭 +25%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473067990155344/021._Wind_and_Fire_Wheels_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="법륜 + 대나무", inline=False)
