@@ -1561,7 +1561,8 @@ def Weapon(msg):
         return embed
 
     if msg=="다인슬라이프":
-        embed=discord.Embed(title="다인슬라이프", description="공격력 +100\n생명력 흡수 +25%\n```세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (300+ 레벨당 10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 80초)```", color=0xf9d537)        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735156164710470/c93c455f601b09d2.png")
+        embed=discord.Embed(title="다인슬라이프", description="공격력 +100\n생명력 흡수 +25%\n```세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (300+ 레벨당 10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 80초)```", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735156164710470/c93c455f601b09d2.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="VF 혈액 샘플 + 일본도", inline=False)
         return embed
