@@ -1434,21 +1434,21 @@ def Weapon(msg):
         return embed
 
     if msg=="방천화극":
-        embed=discord.Embed(title="방천화극", description="공격력 +84\n이동 속도 -0.07\n스킬 공격 추가 피해 +21\n레벨 당 스킬 공격 추가피해 +1\n'''스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격에 피격된 대상의 치유 효과가 4초 동안 45% 감소합니다.'''", color=0x9C4998)
+        embed=discord.Embed(title="방천화극", description="공격력 +84\n이동 속도 -0.07\n스킬 공격 추가 피해 +21\n레벨 당 스킬 공격 추가피해 +1\n```스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격에 피격된 대상의 치유 효과가 4초 동안 45% 감소합니다.```", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472757758488586/012._Fangtian_Huaji_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="도끼창 + 군선", inline=False)
         return embed
 
     if msg=="화첨창":
-        embed=discord.Embed(title="화첨창", description="공격력 +100\n'''발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n[타오르는 고통]은 매 초마다 대상 최대 체력의 1.15%를 피해로 줍니다.'''", color=0xf9d537)
+        embed=discord.Embed(title="화첨창", description="공격력 +100\n```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n[타오르는 고통]은 매 초마다 대상 최대 체력의 1.15%를 피해로 줍니다.```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472761352990760/013._Blazing_Lance_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 죽창", inline=False)
         return embed
 
     if msg=="룽기누스의창":
-        embed=discord.Embed(title="롱기누스의 창", description="공격력 +110\n생명력 흡수 +15%\n'''세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (300+ 레벨당 10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 80초)'''", color=0xf9d537)
+        embed=discord.Embed(title="롱기누스의 창", description="공격력 +110\n생명력 흡수 +15%\n```세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (300+ 레벨당 10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 80초)```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472767132758016/014._Spear_of_Longinus__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="VF 혈액 샘플 + 파이크", inline=False)
@@ -1547,22 +1547,21 @@ def Weapon(msg):
         return embed
 
     if msg=="레바테인":
-        embed=discord.Embed(title="레바테인", description="공격력 +60\n발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n [타오르는 고통]은 매 초마다 대상 최대 체력의 1%를 고정 피해로 줍니다.", color=0xf9d537)
+        embed=discord.Embed(title="레바테인", description="공격력 +60\n```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n [타오르는 고통]은 매 초마다 대상 최대 체력의 1%를 고정 피해로 줍니다.```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735142638088192/014._Laevateinn_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 샴쉬르", inline=False)
         return embed
 
     if msg=="빛의검":
-        embed=discord.Embed(title="빛의 검", description="공격력 +75\n공격속도 +38%\n시야 +2\n섬광-[고유 장착 효과]\n다음에 가하는 기본 공격이 60의 추가 고유 피해를 주고 2초 동안 이동속도를 30%만큼 감소시킵니다.\n(쿨다운 : 3초)", color=0xf9d537)
+        embed=discord.Embed(title="빛의 검", description="공격력 +75\n공격속도 +38%\n시야 +2\n```섬광-[고유 장착 효과]\n다음에 가하는 기본 공격이 60의 추가 고유 피해를 주고 2초 동안 이동속도를 30%만큼 감소시킵니다.\n(쿨다운 : 3초)```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735149592215562/015._Aurora_Longsword__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="플라즈마 소드 + 운석", inline=False)
         return embed
 
     if msg=="다인슬라이프":
-        embed=discord.Embed(title="다인슬라이프", description="공격력 +100\n생명력 흡수 +25%\n세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (300+ 레벨당 10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 80초)", color=0xf9d537)
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735156164710470/c93c455f601b09d2.png")
+        embed=discord.Embed(title="다인슬라이프", description="공격력 +100\n생명력 흡수 +25%\n```세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (300+ 레벨당 10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 80초)```", color=0xf9d537)        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735156164710470/c93c455f601b09d2.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="VF 혈액 샘플 + 일본도", inline=False)
         return embed
