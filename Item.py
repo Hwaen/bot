@@ -1355,6 +1355,103 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="야생마 + 진신사리", inline=False)
         return embed
 
+#####창#####
+    if msg=="단창":
+        embed=discord.Embed(title="단창", description="공격력 +15", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472706374074448/001._Short_Spear_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="연못(4), 절(5), 숲(5), 멧돼지", inline=False)
+        return embed
+
+    if msg=="죽창":
+        embed=discord.Embed(title="죽창", description="공격력 +32", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472710362845214/002._Bamboo_Spear_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="단창 + 대나무", inline=False)
+        return embed
+
+    if msg=="바이던트":
+        embed=discord.Embed(title="바이던트", description="공격력 +52", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472715194675281/003._Bident_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="죽창 + 식칼", inline=False)
+        return embed
+
+    if msg=="파이크":
+        embed=discord.Embed(title="파이크", description="공격력 +45", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472719342854274/004._Pike_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="단창 + 강철", inline=False)
+        return embed
+
+    if msg=="도끼창":
+        embed=discord.Embed(title="도끼창", description="공격력 +70", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472724401180682/005._Halberd_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="손도끼 + 파이크", inline=False)
+        return embed
+
+    if msg=="강창":
+        embed=discord.Embed(title="강창", description="공격력 +40\n이동 속도 +0.06", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472729044271174/006._Shapened_Spear_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="죽창 + 깃털", inline=False)
+        return embed
+
+    if msg=="예각창":
+        embed=discord.Embed(title="애각창", description="공격력 +85\n레벨 당 공격력 +2\n이동 속도 +0.08", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472735516098590/007._Gentian_Silver_Gun_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="강창 + 백색 가루", inline=False)
+        return embed
+
+    if msg=="장팔사모":
+        embed=discord.Embed(title="장팔사모", description="공격력 +110\n공격 속도(%) +40%\n이동 속도 +0.06", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472738548580372/008._Eighteen_Foor_Spear_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="강창 + 이온 전지", inline=False)
+        return embed
+
+    if msg=="코스믹바이던트":
+        embed=discord.Embed(title="코스믹 바이던트", description="공격력 +130\n레벨 당 공격속도 +1%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472744097620018/009._Cosmic_Bident__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="바이던트 + 문스톤", inline=False)
+        return embed
+
+    if msg=="트리아이나":
+        embed=discord.Embed(title="트리아이나", description="공격력 +90\n스킬 증폭 +21%\n쿨다운 감소 +5%", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472749105643520/011._Lance_of_Poseidon_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="바이던트 + 파이크", inline=False)
+        return embed
+
+    if msg=="청룡언월도":
+        embed=discord.Embed(title="청룡언월도", description="공격력 +118\n최대 체력 +120\n레벨 당 최대 체력 +5\n이동 속도 -0.05\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472752691744838/012._Dragon_Guandao_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="도끼창 + 철판", inline=False)
+        return embed
+
+    if msg=="방천화극":
+        embed=discord.Embed(title="방천화극", description="공격력 +84\n이동 속도 -0.07\n스킬 공격 추가 피해 +21\n레벨 당 스킬 공격 추가피해 +1\n'''스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격에 피격된 대상의 치유 효과가 4초 동안 45% 감소합니다.'''", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472757758488586/012._Fangtian_Huaji_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="도끼창 + 군선", inline=False)
+        return embed
+
+    if msg=="화첨창":
+        embed=discord.Embed(title="화첨창", description="공격력 +100\n'''발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n[타오르는 고통]은 매 초마다 대상 최대 체력의 1.15%를 피해로 줍니다.'''", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472761352990760/013._Blazing_Lance_.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득경로", value="삼매진화 + 죽창", inline=False)
+        return embed
+
+    if msg=="롱기누스의창":
+        embed=discord.Embed(title="롱기누스의 창", description="공격력 +110\n생명력 흡수 +15%\n'''세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (300+ 레벨당 10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 80초)'''", color=0xf9d537)        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472767132758016/014._Spear_of_Longinus__.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득경로", value="VF 혈액 샘플 + 파이크", inline=False)
+        return embed
 
 
 
