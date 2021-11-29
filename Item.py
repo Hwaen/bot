@@ -1463,105 +1463,105 @@ def Weapon(msg):
         return embed
 
     if msg=="샴쉬르":
-        embed=discord.Embed(title="샴쉬르", description="공격력 +27", color=0xffffff)
+        embed=discord.Embed(title="샴쉬르", description="공격력 +27", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914732356567437342/002._Shamshir_.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득경로", value="녹슨 검 + 라이터", inline=False)
         return embed
 
     if msg=="플라즈마소드":
-        embed=discord.Embed(title="플라즈마 소드", description="공격력 +25\n시야 +2\n", color=0xffffff)
+        embed=discord.Embed(title="플라즈마 소드", description="공격력 +25\n시야 +2\n", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735088162459668/008._Plasma_Sword__.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득경로", value="녹슨 검 + 레이저 포인터", inline=False)
         return embed
 
     if msg=="일본도":
-        embed=discord.Embed(title="일본도", description="공격력 +35", color=0xffffff)
+        embed=discord.Embed(title="일본도", description="공격력 +35", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914732364880572457/003._Katana_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="녹슨 검 + 철판", inline=False)
         return embed
 
     if msg=="마사무네":
-        embed=discord.Embed(title="마사무네", description="공격력 +40\n공격 속도(%) +15%\n", color=0xffffff)
+        embed=discord.Embed(title="마사무네", description="공격력 +40\n공격 속도(%) +15%\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914732498594963486/004._Masamune_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="일본도 + 오일", inline=False)
         return embed
 
     if msg=="무라마사":
-        embed=discord.Embed(title="무라마사", description="공격력 +50", color=0xffffff)
+        embed=discord.Embed(title="무라마사", description="공격력 +50", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735038292164638/005._Muramasa_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="일본도 + 원석", inline=False)
         return embed
 
     if msg=="바스타드소드":
-        embed=discord.Embed(title="바스타드 소드", description="공격력 +45", color=0xffffff)
+        embed=discord.Embed(title="바스타드 소드", description="공격력 +45", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735065991372840/006._Bastard_Sword__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="녹슨 검 + 강철", inline=False)
         return embed
 
     if msg=="보검":
-        embed=discord.Embed(title="보검", description="공격력 +40\n최대 체력 +100\n", color=0xffffff)
+        embed=discord.Embed(title="보검", description="공격력 +40\n최대 체력 +100\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735075340484698/006._Jewel_Sword_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="샴쉬르 + 루비", inline=False)
         return embed
 
     if msg=="뚜언띠엔":
-        embed=discord.Embed(title="뚜언 띠엔", description="공격력 +77\n방어력 +28\n쿨다운 감소 +10%\n", color=0xffffff)
+        embed=discord.Embed(title="뚜언 띠엔", description="공격력 +77\n방어력 +28\n쿨다운 감소 +10%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735095666057296/009._Thuan_Thien__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="바스타드 소드 + 거북 도복", inline=False)
         return embed
 
     if msg=="아론다이트":
-        embed=discord.Embed(title="아론다이트", description="공격력 +50\n공격 속도(%) +30%\n기본 공격 추가 피해 +30\n", color=0xffffff)
+        embed=discord.Embed(title="아론다이트", description="공격력 +50\n공격 속도(%) +30%\n기본 공격 추가 피해 +30\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735102171422780/010._Arondight_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="마사무네 + 십자가", inline=False)
         return embed
 
     if msg=="아론다이트":
-        embed=discord.Embed(title="아론다이트", description="공격력 +65\n최대 체력 +180\n체력 재생(%) +100%\n공격 속도(%) +20%\n", color=0xffffff)
+        embed=discord.Embed(title="아론다이트", description="공격력 +65\n최대 체력 +180\n체력 재생(%) +100%\n공격 속도(%) +20%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735116436246538/011._Excalibur_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="보검 + 성배", inline=False)
         return embed
 
     if msg=="모노호시자오":
-        embed=discord.Embed(title="모노호시자오", description="공격력 +50\n레벨 당 추가 공격력 +2\n 생명력 흡수 +22%\n", color=0xffffff)
+        embed=discord.Embed(title="모노호시자오", description="공격력 +50\n레벨 당 추가 공격력 +2\n 생명력 흡수 +22%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735122803200041/012._Monohoshizao_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="무라마사 + 정교한 도면", inline=False)
         return embed
 
     if msg=="호푸어드":
-        embed=discord.Embed(title="호푸어드", description="공격력 +55\n최대 체력 +150\n치명타 확률 +20%\n치명타 피해량 +10%\n", color=0xffffff)
+        embed=discord.Embed(title="호푸어드", description="공격력 +55\n최대 체력 +150\n치명타 확률 +20%\n치명타 피해량 +10%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735129178546246/013._Hovud_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="보검 + 유리 조각", inline=False)
         return embed
 
     if msg=="레바테인":
-        embed=discord.Embed(title="레바테인", description="공격력 +60\n발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n [타오르는 고통]은 매 초마다 대상 최대 체력의 1%를 고정 피해로 줍니다.", color=0xffffff)
+        embed=discord.Embed(title="레바테인", description="공격력 +60\n발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n [타오르는 고통]은 매 초마다 대상 최대 체력의 1%를 고정 피해로 줍니다.", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735142638088192/014._Laevateinn_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 샴쉬르", inline=False)
         return embed
 
     if msg=="빛의검":
-        embed=discord.Embed(title="빛의 검", description="공격력 +75\n공격속도 +38%\n시야 +2\n섬광-[고유 장착 효과]\n다음에 가하는 기본 공격이 60의 추가 고유 피해를 주고 2초 동안 이동속도를 30%만큼 감소시킵니다.\n(쿨다운 : 3초)", color=0xffffff)
+        embed=discord.Embed(title="빛의 검", description="공격력 +75\n공격속도 +38%\n시야 +2\n섬광-[고유 장착 효과]\n다음에 가하는 기본 공격이 60의 추가 고유 피해를 주고 2초 동안 이동속도를 30%만큼 감소시킵니다.\n(쿨다운 : 3초)", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735149592215562/015._Aurora_Longsword__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="플라즈마 소드 + 운석", inline=False)
         return embed
 
     if msg=="다인슬라이프":
-        embed=discord.Embed(title="다인슬라이프", description="공격력 +100\n생명력 흡수 +25%\n세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (300+ 레벨당 10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 80초)", color=0xffffff)
+        embed=discord.Embed(title="다인슬라이프", description="공격력 +100\n생명력 흡수 +25%\n세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (300+ 레벨당 10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 80초)", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735156164710470/c93c455f601b09d2.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="VF 혈액 샘플 + 일본도", inline=False)
