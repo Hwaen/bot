@@ -1870,21 +1870,147 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="빙백은침 + 다이너마이트", inline=False)
         return embed
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #####투척#####
     
+    if msg=="쇠구슬":
+        embed=discord.Embed(title="쇠구슬", description="공격력 +12", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472819167268925/001._Iron_Ball_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="양궁장(6개), 숲(7개), 공장(7개), 맷돼지", inline=False)
+        return embed
+
+    if msg=="야구공":
+        embed=discord.Embed(title="야구공", description="공격력 +12", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472824670224394/002._Baseball_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="공장(3개), 고급 주택가(3개)", inline=False)
+        return embed
+
+    if msg=="수류탄":
+        embed=discord.Embed(title="수류탄", description="최대 충전 수: 8발(충전: 45초)\n공격력 +25\n기본 공격 추가 피해 +20\n", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472828516401182/003._Grenade_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="쇠구슬 + 화약", inline=False)
+        return embed
+
+    if msg=="화염병":
+        embed=discord.Embed(title="화염병", description="최대 충전 수: 20발(충전: 25초)\n공격력 +22\n공격 속도(%) +15%\n", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472834728149032/004_Molotov_Cocktail_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="유리병 + 오일", inline=False)
+        return embed
+
+    if msg=="싸인볼":
+        embed=discord.Embed(title="싸인볼", description="최대 충전 수: 50발(충전: 3초)\n공격력 +30\n", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472842093346817/005._Autographed_Baseball_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="야구공 + 만년필", inline=False)
+        return embed
+
+    if msg=="슬링":
+        embed=discord.Embed(title="슬링", description="최대 충전 수: 50발(충전: 3초)\n공격력 +42\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472851266285598/006._Sling_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="싸인볼 + 고무", inline=False)
+        return embed
+
+    if msg=="밀가루폭탄":
+        embed=discord.Embed(title="밀가루 폭탄", description="최대 충전 수: 20발(충전: 25초)\n공격력 +50\n공격 속도(%) +15%\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472854634311750/007._Flour_Bomb__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="백색 가루 + 화염병", inline=False)
+        return embed
+
+    if msg=="볼라이트닝":
+        embed=discord.Embed(title="볼 라이트닝", description="최대 충전 수: 50발(충전: 3초)\n공격력 +24\n공격 속도(%) +20%\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472862985162774/008._Ball_Lightning__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="쇠구슬 + 방전 전지", inline=False)
+        return embed
+
+    if msg=="플러버":
+        embed=discord.Embed(title="플러버", description="최대 충전 수: 50발(충전: 3초)\n공격력 +35\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472865535299675/009._Flubber_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="고무 + 뜨거운 물", inline=False)
+        return embed
+
+    if msg=="필럼":
+        embed=discord.Embed(title="필럼", description="최대 충전 수: 24발(충전: 3초)\n공격력 +28\n(고유) 기본 공격 사거리 +0.5", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472872040689704/010._Pilum_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="사격 교본 + 단창", inline=False)
+        return embed
+
+    if msg=="가시탱탱볼":
+        embed=discord.Embed(title="가시 탱탱볼", description="최대 충전 수: 50발(충전: 3초)\n공격력 +37\n```스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격에 피격된 대상의 치유 효과가 4초 동안 35% 감소합니다.```\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472880030842920/011._Spiky_Bouncy_Ball__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="플러버 + 못", inline=False)
+        return embed
+
+    if msg=="소이탄":
+        embed=discord.Embed(title="소이탄", description="최대 충전 수: 50발(충전: 3초)\n공격력 +63\n공격 속도(%) +60%\n쿨다운 감소 +8%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472886548779018/012._Incendiary_Bomb_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="화염병 + 볼 라이트닝", inline=False)
+        return embed
+
+    if msg=="안티오크의수류탄":
+        embed=discord.Embed(title="안티오크의 수류탄", description="최대 충전 수: 18발(충전: 24초)\n공격력 +80\n기본 공격 추가 피해 +45\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472893867847800/013._Grenade_of_Antioch__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="고폭 수류탄 + 십자가", inline=False)
+        return embed
+
+    if msg=="다비드슬링":
+        embed=discord.Embed(title="다비드슬링", description="최대 충전 수: 50발(충전: 3초)\n공격력 +68\n체력 재생(%) +150%\n기본 공격 추가 피해 +36\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472897965682688/014._David_s_Sling_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="슬링 + 성자의 유산", inline=False)
+        return embed
+
+    if msg=="연막탄":
+        embed=discord.Embed(title="연막탄", description="최대 충전 수: 30발(충전: 12초)\n공격력 +85\n공격 속도(%) +40%\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472903359553556/015._Smoke_Bomb_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="밀가루 폭탄 + 콜라", inline=False)
+        return embed
+
+    if msg=="고폭수류탄":
+        embed=discord.Embed(title="고폭 수류탄", description="최대 충전 수: 8발(충전: 50초)\n공격력 +56\n기본 공격 추가 피해 +50\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472908585656320/016._High_Explosive_Grenade__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="수류탄 + RDX", inline=False)
+        return embed
+
+    if msg=="파이어볼":
+        embed=discord.Embed(title="파이어 볼", description="최대 충전 수: 50발(충전: 3초)\n공격력 +22\n레벨 당 스킬 공격 추가 피해 +2.5", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472913333600266/017._Fireball__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="싸인볼 + 화염 트랩", inline=False)
+        return embed
+
+    if msg=="아스트라페":
+        embed=discord.Embed(title="아스트라페", description="최대 충전 수: 36발(충전: 3초) 공격력 +70\n치명타 확률 +24%\n치명타 피해량 +6%\n(고유)기본 공격 사거리 +0.75", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472918035419186/018._Astrape_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="필럼 + 유리 조각", inline=False)
+        return embed
+
+    if msg=="루테늄 구슬":
+        embed=discord.Embed(title="루테늄 구슬", description="최대 충전 수: 50발(충전: 3초)\n공격력 +73\n스킬 증폭 +28%\n스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격에 피격된 대상의 치유 효과가 4초간 35% 감소합니다.\n", color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472923055992882/019._Ruthenium_Marble__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="가시 탱탱볼 + 황금", inline=False)
+        return embed
+
+    if msg=="프리즘볼":
+        embed=discord.Embed(title="프리즘 볼", description="최대 충전 수: 50발(충전: 3초)\n공격력 +110\n공격 속도 +33%\n", color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472927078350848/020._Dyadic_Prism__.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득경로", value="볼 라이트닝 + 포스 코어", inline=False)
+        return embed
 
 
 
