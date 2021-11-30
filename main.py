@@ -2,6 +2,7 @@ import os
 import discord
 import asyncio
 from dotenv import load_dotenv
+import datetime
 
 import Item
 
@@ -9,6 +10,10 @@ load_dotenv()
 token = os.getenv('token')
 
 client = discord.Client()
+
+today = datetime.date.today()
+targetday = datetime.date(2022,2,3)
+values = targetday -today
 
 #수식어
 item = "?템"
@@ -45,8 +50,9 @@ async def on_message(message):
        await message.channel.send("현재 시험중입니다.")
        
 #####시즌#####
+    
     if message.content=="?시즌":
-       await message.channel.send("현재 시험중입니다.")
+       await message.channel.send("시즌 4: %d일 남았습니다.",values.days)
 
 #####아이템#####
     if message.content.startswith(item):
