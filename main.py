@@ -52,7 +52,10 @@ async def on_message(message):
 #####시즌#####
     
     if message.content=="?시즌":
-       await message.channel.send("시즌 4: %d일 남았습니다.",values.days)
+        embed=discord.Embed()
+        embed.add_field(name="[시즌 4] ", value="%d일 남았습니다." %values.days, inline=False)
+        embed.set_footer(text="시즌 종료: 2022년 2월 3일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
+        await message.channel.send(embed=embed)
 
 #####아이템#####
     if message.content.startswith(item):
