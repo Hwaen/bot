@@ -41,8 +41,11 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         
 #####패치정보#####
-
     if message.content=="?패치정보" or message.content=="?패치":
+       await message.channel.send("현재 시험중입니다.")
+       
+#####시즌#####
+    if message.content=="?시즌"
        await message.channel.send("현재 시험중입니다.")
 
 #####아이템#####
