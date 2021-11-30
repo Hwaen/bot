@@ -1249,29 +1249,29 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="대나무 + 피아노선", inline=False)
         return embed
 
-    if msg=="골든 브릿지":
-        embed=discord.Embed(title="골든 브릿지", description=" 공격력 +8\n 스킬 증폭 +14%\n", color=0x329632)
+    if msg=="골든브릿지":
+        embed=discord.Embed(title="골든 브릿지", description=" 공격력 +8\n스킬 증폭 +14%\n", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652770337038417/002._Golden_Bridge__.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득경로", value="보급형 기타 + 황금", inline=False)
         return embed
 
-    if msg=="싱글 픽업":
-        embed=discord.Embed(title="싱글 픽업", description=" 공격력 +8\n 공격 속도 +15%\n 기본 공격 추가 피해 +2\n", color=0x329632)
+    if msg=="싱글픽업":
+        embed=discord.Embed(title="싱글 픽업", description=" 공격력 +8\n공격 속도 +15%\n기본 공격 추가 피해 +2\n", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652770337038417/002._Golden_Bridge__.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득경로", value="보급형 기타 + 방전 전지", inline=False)
         return embed
 
-    if msg=="루비 스페셜":
-        embed=discord.Embed(title="루비 스페셜", description=" 공격력 +20\n 최대 체력 +150\n 공격 속도(%) +20%\n 기본 공격 추가 피해 +2\n", color=0x1e82cd)
+    if msg=="루비스페셜":
+        embed=discord.Embed(title="루비 스페셜", description=" 공격력 +20\n최대 체력 +150\n공격 속도(%) +20%\n기본 공격 추가 피해 +2\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652770337038417/002._Golden_Bridge__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="싱글 픽업 + 루비", inline=False)
         return embed
 
-    if msg=="험버커 픽업":
-        embed=discord.Embed(title="험버커 픽업", description=" 공격력 +25\n 시야 +3\n 스킬 증폭 +15%\n", color=0x1e82cd)
+    if msg=="험버커픽업":
+        embed=discord.Embed(title="험버커 픽업", description=" 공격력 +25\n시야 +3\n스킬 증폭 +15%\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652795515441172/005._Humbucker_Pickup__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="골든 브릿지 + 저격 스코프", inline=False)
@@ -1306,49 +1306,49 @@ def Weapon(msg):
         return embed
 
     if msg=="보헤미안":
-        embed=discord.Embed(title="보헤미안", description=" 공격력 +50\n 최대 체력 +200\n 공격 속도 +40%\n 치명타 확률 +22%\n 기본 공격 추가 피해 +2\n", color=0x9C4998)
+        embed=discord.Embed(title="보헤미안", description=" 공격력 +50\n최대 체력 +200\n공격 속도 +40%\n치명타 확률 +22%\n기본 공격 추가 피해 +2\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652839173976135/010._Bohemian_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="루비 스폐셜 + 트럼프 카드", inline=False)
         return embed
 
-    if msg=="천국의 계단":
-        embed=discord.Embed(title="천국의 계단", description=" 공격력 +66\n 체력 재생 +200%\n 시야 +3\n 쿨다운 감소 +5%\n 스킬 증폭 +18%\n", color=0x9C4998)
+    if msg=="천국의계단":
+        embed=discord.Embed(title="천국의 계단", description=" 공격력 +66\n체력 재생 +200%\n시야 +3\n쿨다운 감소 +5%\n스킬 증폭 +18%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652849143840788/011._Stairway_to_Heaven__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="험버커 픽업 + 성배", inline=False)
         return embed
 
-    if msg=="퍼플 헤이즈":
-        embed=discord.Embed(title="퍼플 헤이즈", description=" 공격력 +85\n 스킬 증폭 +23%\n 스태미너 재생 +1\n", color=0x9C4998)
+    if msg=="퍼플헤이즈":
+        embed=discord.Embed(title="퍼플 헤이즈", description=" 공격력 +85\n스킬 증폭 +23%\n스태미너 재생 +1\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652860128702525/012._Purple_Haze__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="King-V + 재", inline=False)
         return embed
 
     if msg=="새티스팩션":
-        embed=discord.Embed(title="새티스팩션", description=" 공격력 +30\n 공격 속도 +40%\n 생명력 흡수 +20%\n 기본 공격 추가 피해 +18\n", color=0x9C4998)
+        embed=discord.Embed(title="새티스팩션", description=" 공격력 +30\n공격 속도 +40%\n생명력 흡수 +18%\n기본 공격 추가 피해 +15\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652870463479818/013._Satisfaction_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="노캐스터 + 분필", inline=False)
         return embed
 
-    if msg=="원더풀 투나잇":
-        embed=discord.Embed(title="원더풀 투나잇", description=" 공격력 +85\n 기본 공격 추가 피해 +2\n ```열정 - [고유 효과]\n기본 공격이 적 실험체에게 명중하면, 적 실험체에게 현재 체력의 5%에 해당하는 고유 피해를 입히며 열정 버프를 1스택 획득합니다.\n열정: 버프\n 공격 속도 8% 증가\n 지속 시간 : 4초\n 최대 스택 : 5스택\n최대 스택이 쌓인 경우 15의  공격력과 0.1의 이동 속도를 추가로 얻습니다.```", color=0x9C4998)
+    if msg=="원더풀투나잇":
+        embed=discord.Embed(title="원더풀 투나잇", description=" 공격력 +85\n기본 공격 추가 피해 +2\n ```열정 - [고유 효과]\n기본 공격이 적 실험체에게 명중하면, 적 실험체에게 현재 체력의 5%에 해당하는 고유 피해를 입히며 열정 버프를 1스택 획득합니다.\n열정: 버프\n 공격 속도 8% 증가\n 지속 시간 : 4초\n 최대 스택 : 5스택\n최대 스택이 쌓인 경우 15의  공격력과 0.1의 이동 속도를 추가로 얻습니다.```", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652879128920154/014._Wonderful_Tonight__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="슈퍼스트랫 + 운석", inline=False)
         return embed
 
-    if msg=="더 월":
-        embed=discord.Embed(title="더 월", description=" 공격력 +75\n 공격 속도 +20%\n 기본 공격 추가 피해 +2\n", color=0x9C4998)
+    if msg=="더월":
+        embed=discord.Embed(title="더 월", description=" 공격력 +75\n공격 속도 +20%\n기본 공격 추가 피해 +2\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652892101881906/015._The_Wall__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="슈퍼스트랫 + 백색 가루", inline=False)
         return embed
 
-    if msg=="틴 스피릿":
-        embed=discord.Embed(title="틴 스피릿", description=" 공격력 +18\n 공격 속도 +40%\n 기본 공격 추가 피해 +10\n 레벨당 기본 공격 추가 피해 +1\n ```기본 공격 사거리 - [고유 장착 효과]\n기본 공격 사거리 +0.75```", color=0x9C4998)
+    if msg=="틴스피릿":
+        embed=discord.Embed(title="틴 스피릿", description=" 공격력 +18\n공격 속도 +40%\n기본 공격 추가 피해 +5\n레벨당 기본 공격 추가 피해 +1\n ```기본 공격 사거리 - [고유 장착 효과]\n기본 공격 사거리 +0.75```", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652904898723860/016._Wild_Horst__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="야생마 + 진신사리", inline=False)
