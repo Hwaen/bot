@@ -45,7 +45,7 @@ async def on_message(message):
        await message.channel.send("현재 시험중입니다.")
        
 #####시즌#####
-    if message.content=="?시즌"
+    if message.content=="?시즌":
        await message.channel.send("현재 시험중입니다.")
 
 #####아이템#####
