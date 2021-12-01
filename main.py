@@ -2,18 +2,22 @@ import os
 import discord
 import asyncio
 from dotenv import load_dotenv
-import datetime
+from datetime import datetime
 
 import Item
 
+#####토큰#####
 load_dotenv()
 token = os.getenv('token')
 
+#####클라이언트#####
 client = discord.Client()
 
-today = datetime.date.today()
-targetday = datetime.date(2022,2,3)
-values = targetday -today
+#####시즌시간#####
+now = datetime.now()
+send = datetime(2022, 2, 3, 11) #시즌마다 바꿔줄 것
+day = (send-now).days
+hour = (send-now).seconds / 3600
 
 #수식어
 item = "?템"
@@ -49,11 +53,10 @@ async def on_message(message):
     if message.content=="?패치정보" or message.content=="?패치":
        await message.channel.send("현재 시험중입니다.")
        
-#####시즌#####
-    
+#####시즌#####    
     if message.content=="?시즌":
         embed=discord.Embed()
-        embed.add_field(name="[시즌 4] ", value="%d일 남았습니다." %values.days, inline=False)
+        embed.add_field(name="[시즌 4] ", value="%d일 %d시간 남았습니다." %(day,hour), inline=False)
         embed.set_footer(text="시즌 종료: 2022년 2월 3일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
         await message.channel.send(embed=embed)
 

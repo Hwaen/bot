@@ -4,6 +4,9 @@ import asyncio
 client = discord.Client()
 
 def Weapon(msg):
+    if msg=="":
+        pass
+    
 #####망치#####
     if msg=="망치":
         embed=discord.Embed(title="망치", description=" 공격력 +16", color=0xffffff)
@@ -167,8 +170,8 @@ def Weapon(msg):
         embed.add_field(name="휙득 경로 ", value="스위스 아미 나이프+가시 발판", inline=False)
         return embed
 
-    if msg=="마하자라":
-        embed=discord.Embed(title="마하자라", description=" 공격력 +42\n 방어력 +18\n ```신속 - 루드라의 단검 - [고유 장착 효과]\n 4초 이내에 4회의 개별 피해를 가하면, 2.5초간 이동 속도가 10%, 공격력이 33% 증가합니다. (쿨타임 6초)```", color=0x9c4998)
+    if msg=="마하라자":
+        embed=discord.Embed(title="마하라자", description=" 공격력 +42\n 방어력 +18\n ```신속 - 루드라의 단검 - [고유 장착 효과]\n 4초 이내에 4회의 개별 피해를 가하면, 2.5초간 이동 속도가 10%, 공격력이 33% 증가합니다. (쿨타임 6초)```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322058556981298/891342860014735390/014._Maharaja_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로 ", value="카라페이스 카타르+아이테르 깃털", inline=False)
