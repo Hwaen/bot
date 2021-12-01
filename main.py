@@ -62,9 +62,15 @@ async def on_message(message):
 
 #####아이템#####
     if message.content.startswith(item):
-        msg = message.content[3:]      
-        Item.Weapon(msg)
-        await message.channel.send(embed=Item.Weapon(msg))
+        msg = message.content[3:]
+        msg_out = ""
+
+        for i in range(0,len(msg)):
+            if msg[i]!=' ':
+                msg_out+=msg[i]
+
+        Item.Weapon(msg_out)
+        await message.channel.send(embed=Item.Weapon(msg_out))
         
     else:
         return None
