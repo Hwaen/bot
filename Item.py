@@ -697,7 +697,7 @@ def Weapon(msg):
         embed.add_field(name="휙득 경로", value="전투 도끼 + 강철", inline=False)
         return embed
 
-    if msg=="빔엑스"
+    if msg=="빔엑스":
         embed=discord.Embed(title="빔 엑스", description=" 공격력 +102\n 레벨당  공격력 +2\n 시야 +3\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366112263024650/008._Beam_Axe__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
