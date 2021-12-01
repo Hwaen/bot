@@ -40,13 +40,13 @@ async def on_message(message):
         embed=discord.Embed(title="도움말", description="사용 가능한 명령어를 보여드립니다")
         embed.add_field(name="?도움", value="사용 가능한 명령어를 가져옵니다.", inline=False)
         embed.add_field(name="?템 (템이름)", value="아이템의 정보를 가져옵니다. EX)?템 낭아봉", inline=False)
-        embed.add_field(name="?제작 (템이름)", value="아이템의 제작방법을 가져옵니다. EX)?제작 낭아봉", inline=False)
-        embed.add_field(name="?스킬 (캐릭터 이름) (스킬키)", value="캐릭터의 스킬의정보를 가져옵니다. EX)?스킬 수아 Q", inline=False)
-        embed.add_field(name="?무기스킬 (무기종류)", value="무기스킬의 정보를 가져옵니다. EX)?무기스킬 망치", inline=False)
-        embed.add_field(name="?정보 (캐릭터이름)", value="캐릭터의 정보를 가져옵니다. EX)?정보 수아", inline=False)
+        embed.add_field(name="~~?제작 (템이름)~~", value="~~아이템의 제작방법을 가져옵니다. EX)?제작 낭아봉~~", inline=False)
+        embed.add_field(name="~~?스킬 (캐릭터 이름) (스킬키)", value="캐릭터의 스킬의정보를 가져옵니다. EX)?스킬 수아 Q~~", inline=False)
+        embed.add_field(name="~~?무기스킬 (무기종류)", value="무기스킬의 정보를 가져옵니다. EX)?무기스킬 망치~~", inline=False)
+        embed.add_field(name="~~?정보 (캐릭터이름)", value="캐릭터의 정보를 가져옵니다. EX)?정보 수아~~", inline=False)
         embed.add_field(name="?패치정보", value="현재 적용된 게임 패치 정보를 알려줍니다.", inline=False)
         embed.add_field(name="?시즌", value="시즌이 몇일 남았는지 알려줍니다.", inline=False)
-        embed.set_footer(text="문의는 화엔#9112 ")
+        embed.set_footer(text="")
         await message.channel.send(embed=embed)
         
 #####패치정보#####
