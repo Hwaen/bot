@@ -2198,6 +2198,330 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="RDX + 휴대폰", inline=False)
         return embed
 
+#####재료#####
+    
+    if msg=="돌멩이":
+        embed=discord.Embed(title="돌멩이", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271728102518784/001._Stone_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="돌무더기 채집", inline=False)
+        return embed
+
+    if msg=="유리병":
+        embed=discord.Embed(title="유리병", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271728345808906/002._Glass_Bottle_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구 (8) 번화가 (9) 성당 (8)\n사냥 멧돼지 (6.6%)", inline=False)
+        return embed
+
+    if msg=="못":
+        embed=discord.Embed(title="못", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271728563879936/003._Nail_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 번화가 (11) 양궁장 (6) 공장 (9)\n사냥 박쥐 (4.4%)", inline=False)
+        return embed
+
+    if msg=="가죽":
+        embed=discord.Embed(title="가죽", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271728916226098/004._Leather_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="사냥 닭 (100%) 박쥐 (22.1%) 들개 (100%) 늑대 (100%) 곰 (100%)", inline=False)
+        return embed
+
+    if msg=="거북이등딱지":
+        embed=discord.Embed(title=" 거북이 등딱지", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271729235001395/005._Turtle_Shell__.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구 (7) 연못 (7) 모래사장 (7)\n사냥 박쥐 (4.4%)", inline=False)
+        return embed
+
+    if msg=="고무":
+        embed=discord.Embed(title="고무", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271729524392007/006._Rubber_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구 (8) 골목길 (7) 양궁장 (5)\n사냥 박쥐 (2.2%)", inline=False)
+        return embed
+
+    if msg=="고철":
+        embed=discord.Embed(title="고철", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271729809588254/007._Scrap_Metal_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구 (9) 호텔 (11) 병원 (9) 공장 (13)\n사냥 들개 (9.8%)", inline=False)
+        return embed
+
+    if msg=="라이터":
+        embed=discord.Embed(title="라이터", description="최대 수량: 2", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271730040287362/008._Lighter_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구 (9) 골목길 (11) 공장 (13) 학교 (9)\n사냥 들개 (9.8%)", inline=False)
+        return embed
+
+    if msg=="레이저포인터":
+        embed=discord.Embed(title=" 레이저 포인터", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271730258382908/009._Laser_Pointer__.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 고급 주택가 (7) 병원 (6) 학교 (7)\n사냥 들개 (4.9%)", inline=False)
+        return embed
+
+    if msg=="마패":
+        embed=discord.Embed(title="마패", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271730614911067/010._Stallion_Medal_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 모래사장 (7) 골목길 (6) 절 (8)\n사냥 멧돼지 (3.3%)", inline=False)
+        return embed
+
+    if msg=="배터리":
+        embed=discord.Embed(title="배터리", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271740458950736/011._Battery_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구 (9) 번화가 (12) 공장 (13)\n사냥 들개 (9.8%)", inline=False)
+        return embed
+
+    if msg=="알코올":
+        embed=discord.Embed(title="알코올", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271740672847893/012._Alcohol_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 병원 (6) 공장 (7) 학교 (6)\n사냥 멧돼지 (3.3%)", inline=False)
+        return embed
+
+    if msg=="오일":
+        embed=discord.Embed(title="오일", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271740861608006/013._Oil_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 고급 주택가 (9) 번화가 (8) 양궁장 (7) 공장 (9)\n사냥 박쥐 (2.2%)", inline=False)
+        return embed
+
+    if msg=="옷감":
+        embed=discord.Embed(title="옷감", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271741067120653/014._Cloth_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 호텔 (9) 번화가 (9) 절 (9)\n사냥 멧돼지 (6.6%)", inline=False)
+        return embed
+
+    if msg=="원석":
+        embed=discord.Embed(title="원석", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271741272645672/015._Gemstone_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 연못 (11) 모래사장 (11) 절 (9) 숲 (11)\n사냥 들개 (9.8%)", inline=False)
+        return embed
+
+    if msg=="접착제":
+        embed=discord.Embed(title="접착제", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271741612371978/016._Glue_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 골목길 (8) 병원 (8) 공장 (9)\n사냥 박쥐 (2.2%)", inline=False)
+        return embed
+
+    if msg=="종이":
+        embed=discord.Embed(title="종이", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271741822091334/017._Paper_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 절 (9) 양궁장 (8) 성당 (9)\n사냥 박쥐 (2.2%)", inline=False)
+        return embed
+
+    if msg=="철광석":
+        embed=discord.Embed(title="철광석", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271742019211344/018._Iron_Ore_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 호텔 (8) 묘지 (7) 숲 (8)\n사냥 멧돼지 (6.6%)", inline=False)
+        return embed
+
+    if msg=="캔":
+        embed=discord.Embed(title="캔", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271742207950928/019._Can_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 모래사장 (5) 번화가 (5) 학교 (5)\n사냥 멧돼지 (3.3%)", inline=False)
+        return embed
+
+    if msg=="화약":
+        embed=discord.Embed(title="화약", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271742447034408/020._Gunpowder_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 절 (9) 양궁장 (8) 묘지 (8)\n사냥 박쥐 (4.4%)", inline=False)
+        return embed
+
+    if msg=="피아노선":
+        embed=discord.Embed(title="피아노선", description="최대 수량: 3", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271750068076574/021._Piano_Wire_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 모래사장 (8) 고급 주택가 (9) 호텔 (8) 성당 (9)\n사냥 멧돼지 (3.3%) 알파 (6.3%)", inline=False)
+        return embed
+
+    if msg=="강철":
+        embed=discord.Embed(title="강철", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271857580671046/022._Steel_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="고철 + 철광석", inline=False)
+        return embed
+
+    if msg=="기름먹인천":
+        embed=discord.Embed(title="기름먹인 천", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271857790402610/023._Oilcloth__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="오일 + 붕대", inline=False)
+        return embed
+
+    if msg=="뜨거운오일":
+        embed=discord.Embed(title="뜨거운 오일", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271858092380160/024._Heated_Oil__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="라이터 + 오일", inline=False)
+        return embed
+
+    if msg=="방전전지":
+        embed=discord.Embed(title="방전 전지", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271858348236851/025._Dead_Battery__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="배터리 + 물", inline=False)
+        return embed
+
+    if msg=="백색가루":
+        embed=discord.Embed(title="백색 가루", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271858557943848/026._White_Powder__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="분필 + 돌멩이", inline=False)
+        return embed
+
+    if msg=="재":
+        embed=discord.Embed(title="재", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271858780266587/027._Ash_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="종이 + 라이터", inline=False)
+        return embed
+
+    if msg=="전자부품":
+        embed=discord.Embed(title="전자 부품", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271859057094676/028._Electronic_Parts__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="배터리 + 피아노선", inline=False)
+        return embed
+
+    if msg=="정교한도면":
+        embed=discord.Embed(title="정교한 도면", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271859237421107/029._Blueprint__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="만년필 + 종이", inline=False)
+        return embed
+
+    if msg=="철판":
+        embed=discord.Embed(title="철판", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271859489095700/030._Iron_Sheet_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="고철 + 망치", inline=False)
+        return embed
+
+    if msg=="황금":
+        embed=discord.Embed(title="황금", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271859937902642/031._Gold_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="원석 + 곡괭이", inline=False)
+        return embed
+
+    if msg=="달궈진돌멩이":
+        embed=discord.Embed(title="달궈진 돌멩이", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271962215997460/032._Heated_Stone__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="돌멩이 + 라이터", inline=False)
+        return embed
+
+    if msg=="철사":
+        embed=discord.Embed(title=" 철사", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271962551533618/033._Barbed_Wire_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="망치 + 피아노선", inline=False)
+        return embed
+
+    if msg=="루비":
+        embed=discord.Embed(title="루비", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271962861903892/034._Ruby_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="원석 + 망치", inline=False)
+        return embed
+
+    if msg=="하드커버":
+        embed=discord.Embed(title="하드커버", description="최대 수량: 3", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271963151323196/035._Hardcover_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="가죽 + 종이", inline=False)
+        return embed
+
+    if msg=="생명의나무":
+        embed=discord.Embed(title="생명의 나무", description="최대 수량: 3", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272012652511302/036._Tree_of_Life__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="채집 신비한 나무에서 채집\n    (1일 밤 호텔과 묘지, 2일 밤 숲과 병원)\n 사냥 위클라인 (14.3%) 재생성된 곰 (3.6%)", inline=False)
+        return embed
+
+    if msg=="운석":
+        embed=discord.Embed(title="", description="최대 수량: 3", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272012887384074/037._Meteorite_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="채집 떨어진 유성(절,학교,연못,공장,골목길 랜덤)\n사냥 위클라인 (14.3%) 재생성된 곰 (3.6%) 재생성된 늑대 (3.8%)", inline=False)
+        return embed
+
+    if msg=="문스톤":
+        embed=discord.Embed(title="문스톤", description="최대 수량: 3", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272013080305715/038._Meteorite_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="운석 + 돌멩이", inline=False)
+        return embed
+
+    if msg=="독약":
+        embed=discord.Embed(title="독약", description="최대 수량: 3", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272013306789888/039._Poison_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="재 + 물", inline=False)
+        return embed
+
+    if msg=="모터":
+        embed=discord.Embed(title="모터", description="최대 수량: 3", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272013516513360/040._Motor_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="전자 부품 + 고철", inline=False)
+        return embed
+
+    if msg=="미스릴":
+        embed=discord.Embed(title="미스릴", description="최대 수량: 3", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272013692670003/041._Mithril_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="사냥 알파 (100%) 위클라인 (14.3%) 재생성된 곰 (3.6%) 재생성된 늑대 (3.8%) ", inline=False)
+        return embed
+
+    if msg=="유리판":
+        embed=discord.Embed(title="유리판", description="최대 수량: 3", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272013889830962/042._Glass_Panel_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="유리 조각 + 접착제", inline=False)
+        return embed
+
+    if msg=="이온전지":
+        embed=discord.Embed(title="이온 전지", description="최대 수량: 3", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272014124691536/043._Ion_Battery_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="방전 전지 + 탄산수", inline=False)
+        return embed
+
+    if msg=="휴대폰":
+        embed=discord.Embed(title="휴대폰", description="최대 수량: 3", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272014334418994/044._Cell_Phone_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="정교한 도면 + 전자 부품", inline=False)
+        return embed
+
+    if msg=="VF혈액샘플" or msg=="혈액샘플":
+        embed=discord.Embed(title="VF 혈액 샘플", description="최대 수량: 3", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272027210940426/045._VF_Blood_Sample_VF_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="사냥 위클라인 (100%) 재생성된 곰 (1.8%)", inline=False)
+        return embed
+
+    if msg=="포스코어":
+        embed=discord.Embed(title="포스 코어", description="최대 수량: 3", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272027403870259/046._Force_Core__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="사냥  오메가 (100%) 재생성된 곰 (3.6%)\n생명의 나무 + 운석", inline=False)
+        return embed
+
 
 
 
