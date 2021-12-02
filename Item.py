@@ -4,9 +4,8 @@ import asyncio
 client = discord.Client()
 
 def Weapon(msg):
-    if msg=="":
-        pass
-    
+    if msg==" ":
+        pass    
 #####망치#####
     if msg=="망치":
         embed=discord.Embed(title="망치", description=" 공격력 +16", color=0xffffff)
@@ -32,8 +31,8 @@ def Weapon(msg):
     if msg=="운명의망치":
         embed=discord.Embed(title="운명의망치", description=" 공격력 +40\n 쿨다운 감소 +8%\n 치명타 확률 +8%", color=0x1e82cd)
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/891317310952988712/891317445732741190/005._Forged_Destiny__.png")
-        embed.add_field(name="등급", value="희귀", inline=True)
-        embed.add_field(name="휙득 경로 ", value="망치 + 운명의 꽃", inline=True)
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="휙득 경로 ", value="망치 + 운명의 꽃", inline=False)
         return embed
 
     if msg=="낭아봉":
@@ -46,8 +45,8 @@ def Weapon(msg):
     if msg=="다그다의망치":
         embed=discord.Embed(title="다그다의 망치", description=" 공격력 +98\n 체력 재생(%) +125%\n 기본 공격 추가 피해 +28\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891317310952988712/891317452749803540/007._Hammer_of_Dagda__.png")
-        embed.add_field(name="등급", value="영웅", inline=True)
-        embed.add_field(name="휙득 경로 ", value="사슴망치 + 성자의 유산", inline=True)
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="휙득 경로 ", value="사슴망치 + 성자의 유산", inline=False)
         return embed
 
     if msg=="토르의망치":
@@ -2013,6 +2012,194 @@ def Weapon(msg):
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="볼 라이트닝 + 포스 코어", inline=False)
         return embed
+
+
+#####설치#####
+        
+    if msg=="감시카메라":
+        embed=discord.Embed(title="감시 카메라", description="시야: ?m\n최대 수량: 5", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271133144703066/001._Surveillance_Camera__.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="박쥐(항상), 멧돼지, 들개, 항구(3), 고급 주택가(3), 번화가(5), 병원(5), 양궁장(3), 묘지(6), 학교(6)", inline=False)
+        return embed
+
+    if msg=="올가미":
+        embed=discord.Embed(title="올가미",description="트랩 피해 +10\n최대 수량: 5",color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271133396340776/002._Snare_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="항구(3), 연못(4), 모래사장(4), 양궁장(3), 숲(3), 멧돼지", inline=False)
+        return embed
+
+    if msg=="쥐덫":
+        embed=discord.Embed(title="쥐덫", description="트랩 피해 +50\n최대 수량: 5",color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271133975162910/003._Mousetrap_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득경로", value="연못(6), 모래사장(7), 묘지(6), 멧돼지", inline=False)
+        return embed
+
+    if msg=="가시발판":
+        embed=discord.Embed(title="가시발판", description="트랩 피해 +120\n트랩 발동: 대상의 이동속도가 1.5초간 20% 감소합니다.\n최대 수량: 5", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271369598582824/004._Spiked_Plank__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="쥐덫 + 못", inline=False)
+        return embed
+
+    if msg=="개량형쥐덫":
+        embed=discord.Embed(title="개량형 쥐덫", description="트랩 피해 +160\n최대 수량: 5", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271369904750652/005._Enhanced_Mousetrap__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="쥐덫 + 철광석", inline=False)
+        return embed
+
+    if msg=="다이너마이트":
+        embed=discord.Embed(title="다이너마이트", description="트랩 피해 +220\n트랩 발동: 1.5초 후 넓은 범위로 폭발합니다.\n최대 수량:5", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271370466799626/006._Dynamite_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="피아노선 + 화약", inline=False)
+        return embed
+
+    if msg=="대나무트랩":
+        embed=discord.Embed(title="대나무 트랩", description="트랩 피해 +30\n트랩 발동: 대상을 0.5초 간 속박합니다.\n최대 수량: 5", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271370743615498/007._Bamboo_Trap__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="올가미 + 대나무", inline=False)
+        return embed
+
+    if msg=="부비트랩":
+        embed=discord.Embed(title="부비 트랩", description="트랩 피해 +30\n트랩 발동: 대상을 0.5초 간 속박합니다.\n최대 수량: 5", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271371033018378/008._Booby_Trap_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="올가미 + 접착제", inline=False)
+        return embed
+
+    if msg=="소란발생기":
+        embed=discord.Embed(title="소란 발생기", description="트랩 피해 +40\n최대 수량: 5", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271371293098044/009._Clang_Clatter__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="캔 + 쇠구슬", inline=False)
+        return embed
+
+    if msg=="망원카메라":
+        embed=discord.Embed(title="망원 카메라", description="시야: ?m\n최대 수량: 6", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271371506999357/010._Telephoto_Camera__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="감시 카메라 + 쌍안경", inline=False)
+        return embed
+
+    if msg=="정찰드론":
+        embed=discord.Embed(title="정찰 드론", description="시야: ?m\n최대 수량: 6", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271371746058240/011._Recon_Drone__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="감시 카메라 + 화약", inline=False)
+        return embed
+
+    if msg=="위장카메라":
+        embed=discord.Embed(title="위장 카메라", description="시야: ?m\n최대 수량: 6 ```나타폰 제작 가능```", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271371989319750/012._Trail_Camera__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="감시 카메라 + 나뭇가지", inline=False)
+        return embed
+
+    if msg=="정글기요틴":
+        embed=discord.Embed(title="정글 기요틴", description="트랩 피해 +100\n트랩 발동: 대상을 0.5초 간 속박합니다.\n최대 수량: 5 ", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271372396179526/013._Jungle_Guillotine__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="쥐덫 + 녹슨검", inline=False)
+        return embed
+
+    if msg=="폭발트랩":
+        embed=discord.Embed(title="폭발 트랩", description="트랩 피해 +180\n트랩 발동: 1.5초 후 넓은 범위로 폭발합니다.\n최대 수량: 5 ", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271384878419998/014._Explosive_Trap__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="쥐덫 + 화약", inline=False)
+        return embed
+
+    if msg=="지뢰":
+        embed=discord.Embed(title="지뢰", description="트랩 피해 +80\n트랩 발동: 좁은 범위로 폭발하며, 피격된 대상은 1초간 기절합니다.\n최대 수량: 5", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271468156338256/015._Mine_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="부비트랩 + 화약", inline=False)
+        return embed
+
+    if msg=="펜듈럼도끼":
+        embed=discord.Embed(title="펜듈럼 도끼", description="트랩 피해 +100\n트랩 발동: 대상을 0.75초 간 속박합니다\n최대 수량: 5", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271468366069770/016._Pendulum_Axe__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="대나무 트랩 + 손도끼", inline=False)
+        return embed
+
+    if msg=="RDX":
+        embed=discord.Embed(title="RDX", description="트랩 피해 +250\n트랩 발동: 1.5초 후 넓은 범위로 폭발합니다.\n최대 수량: 5", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271468584149032/017._RDX.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="다이너마이트 + 고철", inline=False)
+        return embed
+
+    if msg=="EMP드론":
+        embed=discord.Embed(title="EMP 드론", description="7초 간 목표 지점 주변의 트랩을 무력화하고 시야를 밝힙니다.\n최대 수량 : 6", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271468865175652/018._EMP_Drone_EMP_.png_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="정찰 드론 + 배터리", inline=False)
+        return embed
+
+    if msg=="화염트랩":
+        embed=discord.Embed(title="화염 트랩", description="트랩 피해 +280\n트랩 발동: 1.5초 후 넓은 범위로 폭발합니다.\n최대 수량: 5", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271469494312970/020._Fire_Trap__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="폭발 트랩 + 기름먹인 천", inline=False)
+        return embed
+
+    if msg=="히든메이든":
+        embed=discord.Embed(title="히든 메이든", description="트랩 피해 +300\n트랩 발동: 대상의 이동속도가 2초간 30% 감소합니다.\n최대 수량: 5", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271469741793330/021._Hidden_Maiden__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="가시발판 + 정글 기요틴", inline=False)
+        return embed
+
+    if msg=="폭뢰침":
+        embed=discord.Embed(title="폭뢰침", description="트랩 피해 +330\n트랩 발동: 대상의 이동속도가 2.5초간 40% 감소합니다.\n최대 수량: 5", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271572137316352/022._Stingburst_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="RDX + 가시 발판", inline=False)
+        return embed
+
+    if msg=="C4":
+        embed=discord.Embed(title="C-4", description="트랩 피해 +320\n트랩 발동: 1.5초 후 넓은 범위로 폭발합니다.\n최대 수량: 5", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271572338659358/023._C-4.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="RDX + 백색 가루", inline=False)
+        return embed
+
+    if msg=="더블기요틴":
+        embed=discord.Embed(title="더블 기요틴", description="트랩 피해 +280\n트랩 발동: 대상을 1초 간 속박합니다.\n최대 수량: 5", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271572938432512/024._Double_Guillotine__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="정글 기요틴 + 펜듈럼 도끼", inline=False)
+        return embed
+
+    if msg=="크레모어":
+        embed=discord.Embed(title="크레모어", description="트랩 피해 +260\n트랩 발동: 좁은 범위로 폭발하며, 피격된 대상은 0.5초간 기절합니다.\n최대 수량: 5", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271573173317632/025._Claymore_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="지뢰 + 폭발 트랩", inline=False)
+        return embed
+
+    if msg=="리모트마인":
+        embed=discord.Embed(title="리모트 마인", description="트랩 피해 +450\n트랩 발동: 1.5초 후 넓은 범위로 폭발합니다.\n최대 수량: 5", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271583969464330/026._Remote_Mine__.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="포스 코어 + 개량형 쥐덫", inline=False)
+        return embed
+
+    if msg=="스마트폭탄":
+        embed=discord.Embed(title="스마트 폭탄", description="트랩 피해 +370\n트랩 발동: 0.7초 후 넓은 범위로 폭발합니다.\n최대 수량: 5", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271584158199848/027._Smart_Bomb__.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="RDX + 휴대폰", inline=False)
+        return embed
+
+
+
 
 
 
