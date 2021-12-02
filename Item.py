@@ -2522,6 +2522,379 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="사냥  오메가 (100%) 재생성된 곰 (3.6%)\n생명의 나무 + 운석", inline=False)
         return embed
 
+#####음식#####
+    
+    if msg=="감자":
+        embed=discord.Embed(title="감자", description="체력 재생 +130", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274213487673384/001._Potato_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="채집 연못 (4) 골목길 (4) 절 (8)", inline=False)
+        return embed
+
+    if msg=="대구":
+        embed=discord.Embed(title="대구", description="체력 재생 +130", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274213718364160/002._Cod_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="낚시 항구 (5) 모래사장 (4) 고급 주택가 (4)", inline=False)
+        return embed
+
+    if msg=="레몬":
+        embed=discord.Embed(title="레몬", description="체력 재생 +100", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274214045548644/003._Lemon_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="고급 주택가 (4) 호텔 (5) 병원 (5)", inline=False)
+        return embed
+
+    if msg=="마늘":
+        embed=discord.Embed(title="마늘", description="체력 재생 +200", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274214351699968/004._Garlic_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="골목길 (6) 절 (7) 묘지 (5)", inline=False)
+        return embed
+
+    if msg=="붕어":
+        embed=discord.Embed(title="붕어", description="체력 재생 +130", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274214578196510/005._Carp_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="낚시 연못 (9) 묘지 (2) 숲 (2)", inline=False)
+        return embed
+
+    if msg=="빵":
+        embed=discord.Embed(title=" 빵", description="체력 재생 +325", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274214783725648/006._Bread_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="병원 (5) 학교 (6)", inline=False)
+        return embed
+
+    if msg=="고기":
+        embed=discord.Embed(title="고기", description="체력 재생 +300", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274215043776602/007._Meat_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="사냥 닭 (66.7%) 멧돼지 (100%) 늑대 (100%) 곰 (100%)", inline=False)
+        return embed
+
+    if msg=="달걀":
+        embed=discord.Embed(title="", description="체력 재생 +200", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274215408664576/008._Egg_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="지역 양궁장 (5) 묘지 (5) 숲 (6)\n사냥 닭 (16.7%)", inline=False)
+        return embed
+
+    if msg=="생라면"or msg=="라면":
+        embed=discord.Embed(title="생라면", description="체력 재생 +275", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274215773573120/009._Ramen_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="항구 (5) 절 (5) 공장 (7)", inline=False)
+        return embed
+
+    if msg=="약초":
+        embed=discord.Embed(title=" 약초", description="체력 재생 +300", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274216176230450/010._Oriental_Herb_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="연못 (6) 절 (6) 숲 (6)", inline=False)
+        return embed
+
+    if msg=="초콜릿":
+        embed=discord.Embed(title=" 초콜릿", description="체력 재생 +275", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274223520448522/011._Chocolate_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="고급 주택가 (6) 번화가 (6) 양궁장 (5)", inline=False)
+        return embed
+
+    if msg=="꿀바른대구살":
+        embed=discord.Embed(title="꿀 바른 대구살", description="체력 재생 +625", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274419599986778/012.__Honey_Cod_Steak.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="꿀 + 대구", inline=False)
+        return embed
+
+    if msg=="대구간통조림":
+        embed=discord.Embed(title=" 대구 간 통조림", description="체력 재생 +650", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274419922935858/013._Canned_Cod_Liver__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="캔 + 대구", inline=False)
+        return embed
+
+    if msg=="마늘빵":
+        embed=discord.Embed(title=" 마늘빵", description="체력 재생 +500", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274420233338910/014._Garlic_Bread_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="빵 + 마늘", inline=False)
+        return embed
+
+    if msg=="버터":
+        embed=discord.Embed(title=" 버터", description="체력 재생 +450", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274420468207646/015._Butter_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="우유 + 나뭇가지", inline=False)
+        return embed
+
+    if msg=="붕어빵":
+        embed=discord.Embed(title=" 붕어빵", description="체력 재생 +550", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274420732440617/016._Carp_Bread_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="빵 + 붕어", inline=False)
+        return embed
+
+    if msg=="초코파이":
+        embed=discord.Embed(title=" 초코파이", description="체력 재생 +600", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274422758301706/017._Choco_Pie_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="빵 + 초콜렛", inline=False)
+        return embed
+
+    if msg=="난초":
+        embed=discord.Embed(title="난초", description="체력 재생 +480", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274578346012672/018._Orchid_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="약초 + 꽃", inline=False)
+        return embed
+
+    if msg=="마늘베이컨말이":
+        embed=discord.Embed(title="마늘 베이컨 말이", description="체력 재생 +650", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274578568302592/019._Bacon_and_Garlic_Sticks__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="마늘 + 고기", inline=False)
+        return embed
+
+    if msg=="햄버거":
+        embed=discord.Embed(title="햄버거", description="체력 재생 +650", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274579117748234/021._Hamburger_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="고기 + 빵", inline=False)
+        return embed
+
+    if msg=="달걀생선필레":
+        embed=discord.Embed(title=" 달걀 생선 필레", description="체력 재생 +700", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274579415560253/022._Fish_Fillet_With_Egg__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="붕어 + 달걀", inline=False)
+        return embed
+
+    if msg=="시트러스케이크":
+        embed=discord.Embed(title=" 시트러스 케이크", description="체력 재생 +325", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274579847557171/023._Citrus_Cake__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="레몬 + 빵", inline=False)
+        return embed
+
+    if msg=="마늘꿀절임":
+        embed=discord.Embed(title="마늘 꿀절임", description="체력 재생 +495", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274580053065778/024._Honey_Garlic__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="마늘 + 꿀", inline=False)
+        return embed
+
+    if msg=="계란빵":
+        embed=discord.Embed(title="계란빵", description="체력 재생 +550", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274580283756584/025._Egg_Bun_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="달걀 + 빵", inline=False)
+        return embed
+
+    if msg=="초코아이스크림":
+        embed=discord.Embed(title=" 초코 아이스크림", description="체력 재생 +550", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274580719980614/026._Choco_Ice_Cream__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="얼음 + 초콜렛", inline=False)
+        return embed
+
+    if msg=="매운탕":
+        embed=discord.Embed(title="매운탕", description="체력 재생 +550", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274611707498526/027._Spicy_Fish_Stew_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="대구 + 뜨거운 물", inline=False)
+        return embed
+
+    if msg=="감자튀김":
+        embed=discord.Embed(title="감자튀김", description="체력 재생 +700", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274611963359292/028._French_Fries_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="감자 + 뜨거운 오일", inline=False)
+        return embed
+
+    if msg=="구운감자":
+        embed=discord.Embed(title="구운 감자", description="체력 재생 +600", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274612324073602/029._Baked_Potato__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="감자 + 달궈진 돌멩이", inline=False)
+        return embed
+
+    if msg=="구운붕어":
+        embed=discord.Embed(title="구운 붕어", description="체력 재생 +600", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274612814782464/030._Baked_Carp__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="붕어 + 달궈진 돌멩이", inline=False)
+        return embed
+
+    if msg=="성수":
+        embed=discord.Embed(title="성수", description="체력 재생 +800\n방어력 +10", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274613095796746/031._Holy_Water_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="미스릴 + 물", inline=False)
+        return embed
+
+    if msg=="메로구이":
+        embed=discord.Embed(title="메로구이", description="체력 재생 +495", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274614106652732/032._Grilled_Chilean_Sea_Bass_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="대구 + 달궈진 돌멩이", inline=False)
+        return embed
+
+    if msg=="뜨거운라면":
+        embed=discord.Embed(title="뜨거운 라면", description="체력 재생 +550", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274652455145542/033._Hot_Ramen__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="생라면 + 뜨거운 물", inline=False)
+        return embed
+
+    if msg=="모카빵":
+        embed=discord.Embed(title=" 모카빵", description="체력 재생 +700", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274652706832404/034._Mocha_Bread_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="빵 + 커피 리큐르", inline=False)
+        return embed
+
+    if msg=="스크램블에그":
+        embed=discord.Embed(title="스크램블 에그", description="체력 재생 +600", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274652908146728/035._Scrambled_Egg__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="달걀 + 뜨거운 오일", inline=False)
+        return embed
+
+    if msg=="초코칩쿠키":
+        embed=discord.Embed(title="초코칩 쿠키", description="체력 재생 +733", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274653285638225/036._Chocolate_Chip_Cookies__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="초콜렛 + 버터", inline=False)
+        return embed
+
+    if msg=="초코파이상자":
+        embed=discord.Embed(title="초코파이 상자", description="체력 재생 +733", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274653579223060/037._Choco_Pie_Box__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="초코파이 + 상자", inline=False)
+        return embed
+
+    if msg=="탕약":
+        embed=discord.Embed(title="탕약", description="체력 재생 +600", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274653818302505/038._Oriental_Concoction_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="약초 + 뜨거운 물", inline=False)
+        return embed
+
+    if msg=="허니버터":
+        embed=discord.Embed(title="허니버터", description="체력 재생 +650", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274654040612924/039._Honey_Butter_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="버터 + 꿀", inline=False)
+        return embed
+
+    if msg=="후라이드치킨":
+        embed=discord.Embed(title="", description="체력 재생 +700", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274654233530408/040._Fried_Chicken__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="고기 + 뜨거운 오일", inline=False)
+        return embed
+
+    if msg=="힐링포션":
+        embed=discord.Embed(title="힐링 포션", description="체력 재생 +700", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274671954489395/041._Healing_Potion__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="난초 + 유리병", inline=False)
+        return embed
+
+    if msg=="삶은달걀":
+        embed=discord.Embed(title="삶은 달걀", description="체력 재생 +600", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274672386494464/042._Hard_Boiled_Egg__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="달걀 + 뜨거운 물", inline=False)
+        return embed
+
+    if msg=="술빵":
+        embed=discord.Embed(title=" 술빵", description="체력 재생 +600", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274672654934066/043._Soggy_Bread_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="소주 + 빵", inline=False)
+        return embed
+
+    if msg=="스테이크":
+        embed=discord.Embed(title="스테이크", description="체력 재생 +420", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274672931749888/044._Steak_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="고기 + 달궈진 돌멩이", inline=False)
+        return embed
+
+    if msg=="구급상자":
+        embed=discord.Embed(title="구급상자", description="체력 재생 +1200", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274673242120322/045._First_Aid_Kit_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="사냥 위클라인 (100%)", inline=False)
+        return embed
+
+    if msg=="버터감자구이":
+        embed=discord.Embed(title="버터 감자구이", description="체력 재생 +766", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274673489604678/046._Butter-Fried_Potatoes__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="감자 + 버터", inline=False)
+        return embed
+
+    if msg=="생선까스":
+        embed=discord.Embed(title=" 생선까스", description="체력 재생 +700", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274673753849917/047._Fish_Cutlet_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="대구 + 뜨거운 오일", inline=False)
+        return embed
+
+    if msg=="볶음라면":
+        embed=discord.Embed(title="볶음라면", description="체력 재생 +600", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274674043248650/048._Stir_Fried_Ramen_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="생라면 + 뜨거운 오일", inline=False)
+        return embed
+
+    if msg=="냉면":
+        embed=discord.Embed(title="냉면", description="체력 재생 +650", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274687792168970/049._Cold_Noodles_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="생라면 + 얼음물", inline=False)
+        return embed
+
+    if msg=="생일케이크":
+        embed=discord.Embed(title="생일 케이크", description="체력 재생 +650", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274689876746251/050._Birthday_Cake__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="달걀 + 시트러스 케이크", inline=False)
+        return embed
+
+    if msg=="마늘라면":
+        embed=discord.Embed(title="마늘라면", description="체력 재생 +700", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274690094837780/051._Garlic_Ramen__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="뜨거운 라면 + 마늘", inline=False)
+        return embed
+
+    if msg=="대환단":
+        embed=discord.Embed(title="대환단", description="체력 재생 +960", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274703617290310/052._Zen_Vitality_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="생명의 나무 + 불경", inline=False)
+        return embed
+
+    if msg=="피쉬앤칩스":
+        embed=discord.Embed(title="피쉬 앤 칩스", description="체력 재생 +920", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274703843770368/053._Fish_And_Chips__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="생선까스 + 감자튀김", inline=False)
+        return embed
+
+    if msg=="일레븐세트":
+        embed=discord.Embed(title="일레븐 세트", description="체력 재생 +980\n```일레븐 제작가능```", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274704279969822/054._11_Combo_Meal__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="햄버거 + 감자튀김", inline=True)
+        return embed
+
 
 
 
