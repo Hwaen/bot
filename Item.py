@@ -2892,10 +2892,256 @@ def Weapon(msg):
         embed=discord.Embed(title="일레븐 세트", description="체력 재생 +980\n```일레븐 제작가능```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274704279969822/054._11_Combo_Meal__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
-        embed.add_field(name="획득 경로", value="햄버거 + 감자튀김", inline=True)
+        embed.add_field(name="획득 경로", value="햄버거 + 감자튀김", inline=False)
         return embed
 
 
+#####음료#####
+        
+    if msg=="꿀":
+        embed=discord.Embed(title="꿀", description="스태미너 재생 +250", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624089654013952/001._Honey_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="골목길 (8) 번화가 (6) 숲 (6)", inline=False)
+        return embed
+
+    if msg=="물":
+        embed=discord.Embed(title=" 물", description="스태미너 재생 +225", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624093202407434/002._Water_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="채집 연못 (10) 호텔 (4) 묘지 (4) 숲 (3) 성당 (1)", inline=False)
+        return embed
+
+    if msg=="얼음":
+        embed=discord.Embed(title="얼음", description="스태미너 재생 +200", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624097069551616/003._Ice_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="호텔 (9) 병원 (7) 묘지 (8)", inline=False)
+        return embed
+
+    if msg=="위스키":
+        embed=discord.Embed(title="위스키", description="스태미너 재생 +450", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624101393887262/004._Whiskey_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="고급 주택가 (5) 호텔 (5) 성당 (3)", inline=False)
+        return embed
+
+    if msg=="커피콩":
+        embed=discord.Embed(title="커피콩", description="스태미너 재생 +380", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624107219750982/005._Coffee_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="항구 (5) 고급 주택가 (5) 묘지 (6)", inline=False)
+        return embed
+
+    if msg=="탄산수":
+        embed=discord.Embed(title="탄산수", description="스태미너 재생 +380", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624110449377330/006._Carbonated_Water_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="모래사장 (8) 고급 주택가 (8) 호텔 (8)", inline=False)
+        return embed
+
+    if msg=="우유":
+        embed=discord.Embed(title="우유", description="스태미너 재생 +200", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624115142807552/007._Milk_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="획득 경로", value="번화가 (6) 병원 (5) 성당 (4)", inline=False)
+        return embed
+
+    if msg=="뜨거운 물":
+        embed=discord.Embed(title="뜨거운 물", description="스태미너 재생 +350", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624120121446400/008._Boiling_Water__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="물 + 라이터", inline=False)
+        return embed
+
+    if msg=="레몬에이드":
+        embed=discord.Embed(title="레몬에이드", description="스태미너 재생 +450", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624123699195924/009._Lemonade_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="탄산수 + 진짜 레몬", inline=False)
+        return embed
+
+    if msg=="물병":
+        embed=discord.Embed(title="물병", description="스태미너 재생 +380", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624127746670652/010._Water_Bottle_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="물 + 유리병", inline=False)
+        return embed
+
+    if msg=="백주":
+        embed=discord.Embed(title="백주", description="스태미너 재생 +1000", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624265739305020/011._Baijiu_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="알코올 + 유리병", inline=False)
+        return embed
+
+    if msg=="소주":
+        embed=discord.Embed(title="소주", description="스태미너 재생 +400", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624272085282866/012._Soju_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="알코올 + 물", inline=False)
+        return embed
+
+    if msg=="아이스커피":
+        embed=discord.Embed(title="아이스 커피", description="스태미너 재생 +550", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624279630823444/013._Iced_Coffee__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="얼음 + 커피콩", inline=False)
+        return embed
+
+    if msg=="칵테일":
+        embed=discord.Embed(title="칵테일", description="스태미너 재생 +350", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624286027128842/014._Cocktail_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="위스키 + 레몬", inline=False)
+        return embed
+
+    if msg=="커피리큐르":
+        embed=discord.Embed(title="커피 리큐르", description="스태미너 재생 +530", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624293492981760/015._Coffee_Liqueur__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="커피콩 + 알코올", inline=False)
+        return embed
+
+    if msg=="콜라":
+        embed=discord.Embed(title="콜라", description="스태미너 재생 +400", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624298710724628/016._Cola_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="탄산수 + 꿀", inline=False)
+        return embed
+
+    if msg=="카페라테":
+        embed=discord.Embed(title="카페라테", description="스태미너 재생 +530", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624304364646410/017._Latte_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="우유 + 커피콩", inline=False)
+        return embed
+
+    if msg=="꿀탄우유":
+        embed=discord.Embed(title="꿀탄 우유", description="스태미너 재생 +530", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624307359363112/018._Honey_Milk__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="우유 + 꿀", inline=False)
+        return embed
+
+    if msg=="하이볼":
+        embed=discord.Embed(title="하이볼", description="스태미너 재생 +530", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624313235570708/019._Highball_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="위스키 + 탄산수", inline=False)
+        return embed
+
+    if msg=="초코우유":
+        embed=discord.Embed(title="초코 우유", description="스태미너 재생 +450", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624318436507658/020._Choco_Milk__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="초콜렛 + 우유", inline=False)
+        return embed
+
+    if msg=="꿀물":
+        embed=discord.Embed(title="꿀물", description="스태미너 재생 +400", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624323830394880/021._Honey_Water_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="꿀 + 물", inline=False)
+        return embed
+
+    if msg=="얼음물":
+        embed=discord.Embed(title="얼음물", description="스태미너 재생 +350", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624329018757120/022._Ice_Water_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="얼음 + 물", inline=False)
+        return embed
+
+    if msg=="온더락":
+        embed=discord.Embed(title="온더락", description="스태미너 재생 +530", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624336270688256/023._On_The_Rock.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="얼음 + 위스키", inline=False)
+        return embed
+
+    if msg=="카우보이":
+        embed=discord.Embed(title="카우보이", description="스태미너 재생 +530", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624343401017414/024._Cowboy_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="우유 + 위스키", inline=False)
+        return embed
+
+    if msg=="고량주":
+        embed=discord.Embed(title=" 고량주", description="스태미너 재생 +800", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624348153180231/025._Kaoliang_Liquor_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="백주 + 라이터", inline=False)
+        return embed
+
+    if msg=="백일취":
+        embed=discord.Embed(title="백일취", description="스태미너 재생 +750", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624358555029545/027._Flower_Liquor_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="백주 + 꽃", inline=False)
+        return embed
+
+    if msg=="뜨거운꿀물":
+        embed=discord.Embed(title=" 뜨거운 꿀물", description="스태미너 재생 +1080", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624352393621514/026._Hot_Honey_Water_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="뜨거운 물 + 꿀", inline=False)
+        return embed
+
+    if msg== "아메리카노":
+        embed=discord.Embed(title=" 아메리카노", description="스태미너 재생 +1080", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624362032115712/028._Americano_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="뜨거운 물 + 커피콩", inline=False)
+        return embed
+
+    if msg=="약주":
+        embed=discord.Embed(title="약주", description="스태미너 재생 +1080", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624369892257812/029._Herbal_Liquor_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="백주 + 약초", inline=False)
+        return embed
+
+    if msg=="정화수":
+        embed=discord.Embed(title="정화수", description="스태미너 재생 +1080", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624377622351903/031._Purified_Water_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="뜨거운 물 + 얼음", inline=False)
+        return embed
+
+    if msg=="위스키콕":
+        embed=discord.Embed(title="위스키 콕", description="스태미너 재생 +600", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624374245928990/030._Whiskey_Cocktail__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="콜라 + 위스키", inline=False)
+        return embed
+
+    if msg=="캔콜라":
+        embed=discord.Embed(title="캔 콜라", description="스태미너 재생 +1400", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624382659710976/032._Can_of_Cola__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="콜라 + 캔", inline=False)
+        return embed
+
+    if msg=="핫초코":
+        embed=discord.Embed(title="핫초코", description="스태미너 재생 +500", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624386828840990/033._Hot_Choco_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="뜨거운 물 + 초콜렛", inline=False)
+        return embed
+
+    if msg=="깔루아밀크":
+        embed=discord.Embed(title="깔루아 밀크", description="스태미너 재생 +750", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624392499535882/034._White_Russian__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="커피 리큐르 + 우유", inline=False)
+        return embed
+
+    if msg=="셀레네의눈물":
+        embed=discord.Embed(title="셀레네의 눈물", description="스태미너 재생 +1080\n공격력 +10", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624395683024956/035._Tear_of_Selene__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="문스톤 + 물", inline=False)
+        return embed
 
 
 
