@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 
 import Item
+import Aug
 
 #####토큰#####
 load_dotenv()
@@ -21,6 +22,7 @@ hour = (send-now).seconds / 3600
 
 #수식어
 item = "?템"
+aug = "?특성"
 
 ####로딩####
 @client.event
@@ -71,7 +73,15 @@ async def on_message(message):
 
         Item.Weapon(msg_out)
         await message.channel.send(embed=Item.Weapon(msg_out))
-        
+
+#####특성#####
+    if message.content.startswith(aug):
+        msg = message.content[4:]
+        Aug.aug(msg)
+        await message.channel.send(embed=Aug.aug(msg))
+
+
+##############
     else:
         return None
 
