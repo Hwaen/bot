@@ -330,6 +330,14 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="활빈검 + 나뭇가지", inline=False)
         return embed
 
+    if msg=="":
+        embed=discord.Embed(title=" 에스프리", description="공격력 +66\n스태미너 재생 +1\n치명타 피해량 +12%\n(고유) 기본 공격 사거리 +0.75\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251045377687663/916294353306132500/011._Esprit_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="에스톡 + 사격 교본", inline=False)
+        return embed
+        
+
 #####카메라#####
     if msg=="렌즈":
         embed=discord.Embed(title="렌즈", description="공격력 +12\n시야 +0.5", color=0xffffff)
