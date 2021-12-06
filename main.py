@@ -21,12 +21,12 @@ send = datetime(2022, 2, 3, 11) #시즌마다 바꿔줄 것
 day = (send-now).days
 hour = (send-now).seconds / 3600
 
-#수식어
+#####수식어#####
 item = "?템"
 aug = "?특성"
 tier = "?전적"
 
-####로딩####
+#####로딩#####
 @client.event
 async def on_ready(): 
     print('------')
@@ -82,7 +82,6 @@ async def on_message(message):
         msg = message.content[4:]
         Aug.aug(msg)
         await message.channel.send(embed=Aug.aug(msg))
-
 
 #####랭크#####
     if message.content.startswith(tier):

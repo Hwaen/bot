@@ -11,7 +11,7 @@ def tier(msg):
         if response.status_code == 200:
                 html = response.text
                 soup = BeautifulSoup(html, 'html.parser')
-
+                update = soup.find(class_="player-header__last-updated")        
 
         #####솔로#####
                 rank1 = soup.select_one("#wrapper > div.container.px-0.player > div.row.row-normal > div:nth-child(1) > div > div.player-tier__summary > div > div > span:nth-child(1)")
@@ -54,6 +54,7 @@ def tier(msg):
                 embed.add_field(name = "솔로",  value = tier1, inline=False)
                 embed.add_field(name = "듀오",  value = tier2, inline=False)
                 embed.add_field(name = "스쿼드",value = tier3, inline=False)
+                embed.set_footer(text=update.get_text())
                 return embed
         else:
             pass
