@@ -2,4 +2,4 @@ discord.py
 asyncio
 python-dotenv
 requests
-BeautifulSoup
+bs4
