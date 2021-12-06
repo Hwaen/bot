@@ -3,8 +3,6 @@ from bs4 import BeautifulSoup
 import discord
 import asyncio
 
-
-
 def tier(msg):
         name = msg
         url = 'https://dak.gg/bser/players/'+name+'?season=SEASON_4'
