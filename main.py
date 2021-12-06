@@ -6,6 +6,7 @@ from datetime import datetime
 
 import Item
 import Aug
+import rank
 
 #####토큰#####
 load_dotenv()
@@ -23,6 +24,7 @@ hour = (send-now).seconds / 3600
 #수식어
 item = "?템"
 aug = "?특성"
+tier = "?전적"
 
 ####로딩####
 @client.event
@@ -80,6 +82,14 @@ async def on_message(message):
         msg = message.content[4:]
         Aug.aug(msg)
         await message.channel.send(embed=Aug.aug(msg))
+
+
+#####랭크#####
+    if message.content.startswith(tier):
+        msg = message.content[4:]
+        rank.tier(msg)
+        await message.channel.send(embed=rank.tier(msg))
+    
 
 
 ##############
