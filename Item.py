@@ -2171,7 +2171,7 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="RDX + 가시 발판", inline=False)
         return embed
 
-    if msg=="C4":
+    if msg=="C4" or msg=="C-4":
         embed=discord.Embed(title="C-4", description="트랩 피해 +320\n트랩 발동: 1.5초 후 넓은 범위로 폭발합니다.\n최대 수량: 5", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271572338659358/023._C-4.png")
         embed.add_field(name="등급", value="영웅", inline=False)
@@ -2208,7 +2208,7 @@ def Weapon(msg):
 
 #####재료#####
     
-    if msg=="돌멩이":
+    if msg=="돌멩이" or msg=="돌":
         embed=discord.Embed(title="돌멩이", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271728102518784/001._Stone_.png")
         embed.add_field(name="등급", value="일반", inline=False)

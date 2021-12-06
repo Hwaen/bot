@@ -11,6 +11,7 @@ def tier(msg):
         if response.status_code == 200:
                 html = response.text
                 soup = BeautifulSoup(html, 'html.parser')
+                user = soup.select_one("#wrapper > div.container.px-0.player > section > h3")
                 update = soup.find(class_="player-header__last-updated")        
 
         #####솔로#####
@@ -49,12 +50,12 @@ def tier(msg):
                         img3 = "https://dak.gg/bser/images/assets/tier/round/0.png?1"
                         tier_img3 = img3
 
-                embed=discord.Embed(title = name)
+                embed=discord.Embed(title = user.get_text())
                 embed.set_thumbnail(url = tier_img1)
                 embed.add_field(name = "솔로",  value = tier1, inline=False)
                 embed.add_field(name = "듀오",  value = tier2, inline=False)
                 embed.add_field(name = "스쿼드",value = tier3, inline=False)
-                embed.set_footer(text=update.get_text())
+                embed.set_footer(text=update.get_text()+"\n\ndak.gg/bser/players/"+user.get_text())
                 return embed
         else:
             pass
