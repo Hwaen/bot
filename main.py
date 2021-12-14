@@ -18,7 +18,7 @@ token = os.getenv('token')
 client = discord.Client()
 
 #####시즌시간#####
-now = datetime.now(timezone('Asia/Seoul')).replace(tzinfo=None)
+now = datetime.now()
 send = datetime(2022, 2, 3, 11) #시즌마다 바꿔줄 것
 day = (send-now).days
 hour = (send-now).seconds / 3600
