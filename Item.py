@@ -3976,14 +3976,14 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="미스릴 + 체인 레깅스", inline=False)
         return embed
 
-    if msg=="부케팔로스"
+    if msg=="부케팔로스":
         embed=discord.Embed(title="부케팔로스", description="공격력 +5\n방어력 +10\n스태미너 재생 +1\n이동 속도 +0.27\n치명타 확률 +20%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/892443406125629470/019._Bucephalus_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="킬힐 + 체인 레깅스", inline=False)
         return embed
 
-    if msg=="클링온부츠"
+    if msg=="클링온부츠":
         embed=discord.Embed(title="클링온 부츠", description="체력 재생 +0.7\n공격 속도 +15%\n이동 속도 +0.27\n```기본 공격 치유 방해-[고유 장착 효과]\n기본 공격에 피격된 대상의 치유 효과가 4초 동안 감소합니다.\n(근거리) 치유 효과가 45% 감소합니다.\n(원거리) 치유 효과가 35% 감소합니다.```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/892443413734105118/020._White_Rhinos__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
