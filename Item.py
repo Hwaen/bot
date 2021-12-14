@@ -2292,7 +2292,7 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="지역 병원 (6) 공장 (7) 학교 (6)\n사냥 멧돼지 (3.3%)", inline=False)
         return embed
 
-    if msg=="오일":
+    if msg=="오일" or msg=="기름":
         embed=discord.Embed(title="오일", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271740861608006/013._Oil_.png")
         embed.add_field(name="등급", value="일반", inline=False)
@@ -2453,7 +2453,7 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="가죽 + 종이", inline=False)
         return embed
 
-    if msg=="생명의나무":
+    if msg=="생명의나무" or msg =="생나" :
         embed=discord.Embed(title="생명의 나무", description="최대 수량: 3", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272012652511302/036._Tree_of_Life__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
@@ -2464,7 +2464,7 @@ def Weapon(msg):
         embed=discord.Embed(title="", description="최대 수량: 3", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272012887384074/037._Meteorite_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
-        embed.add_field(name="획득 경로", value="채집 떨어진 유성(절,학교,연못,공장,골목길 랜덤)\n사냥 위클라인 (14.3%) 재생성된 곰 (3.6%) 재생성된 늑대 (3.8%)", inline=False)
+        embed.add_field(name="획득 경로", value="채집 떨어진 유성\t(절,학교,연못,공장,골목길 랜덤)\n사냥 위클라인 (14.3%) 재생성된 곰 (3.6%) 재생성된 늑대 (3.8%)", inline=False)
         return embed
 
     if msg=="문스톤":
@@ -2955,7 +2955,7 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="번화가 (6) 병원 (5) 성당 (4)", inline=False)
         return embed
 
-    if msg=="뜨거운 물":
+    if msg=="뜨거운물":
         embed=discord.Embed(title="뜨거운 물", description="스태미너 재생 +350", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624120121446400/008._Boiling_Water__.png")
         embed.add_field(name="등급", value="고급", inline=False)
