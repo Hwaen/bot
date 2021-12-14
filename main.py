@@ -9,6 +9,8 @@ from pytz import timezone
 import Item
 import Aug
 import Rank
+import Skill_C
+
 
 #####토큰#####
 load_dotenv()
@@ -27,6 +29,7 @@ hour = (send-now).seconds / 3600
 item = "?템"
 aug = "?특성"
 tier = "?랭크"
+skill = "?스킬"
 
 
 #####로딩#####
@@ -43,11 +46,12 @@ async def on_ready():
 #####도움말#####
 @client.event
 async def on_message(message):
+    global msg
     if message.content=="?도움" or message.content=="?도움말":
         embed=discord.Embed(title="도움말", description="사용 가능한 명령어를 보여드립니다")
         embed.add_field(name="?도움", value="사용 가능한 명령어를 가져옵니다.", inline=False)
         embed.add_field(name="?템 <템이름>", value="아이템의 정보를 가져옵니다. `EX)?템 낭아봉`", inline=False)
-        embed.add_field(name="~~?스킬 <캐릭터> <스킬키>~~", value="~~캐릭터의 스킬의정보를 가져옵니다. `EX)?스킬 수아 Q`~~", inline=False)
+        embed.add_field(name="?스킬 <캐릭터> <스킬키>", value="캐릭터의 스킬의정보를 가져옵니다. `EX)?스킬 수아 Q`", inline=False)
         embed.add_field(name="~~?무기스킬 <무기종류>~~", value="~~무기스킬의 정보를 가져옵니다. `EX)?무기스킬 망치`~~", inline=False)
         embed.add_field(name="?특성", value="특성의 종류와 설명을 가져옵니다. EX)특성 저항", inline=False)
         embed.add_field(name="~~?캐 <캐릭터이름>~~", value="~~캐릭터의 정보를 가져옵니다. `EX)?캐 수아`~~", inline=False)
@@ -91,7 +95,49 @@ async def on_message(message):
         msg = message.content[4:]
         Rank.tier(msg)
         await message.channel.send(embed=Rank.tier(msg))
+
+#####스킬#####
     
+    global emo
+    if message.content.startswith(skill):
+        msg = message.content[4:].split()        
+        Skill_C.skill(msg[0],msg[1])
+        emo = await message.channel.send(embed=Skill_C.skill(msg[0],msg[1]))
+        await emo.add_reaction("1️⃣")
+        await emo.add_reaction("2️⃣")
+        await emo.add_reaction("3️⃣")
+        await emo.add_reaction("4️⃣")
+        await emo.add_reaction("5️⃣")
+
+@client.event
+async def on_reaction_add(reaction, user):
+    if user.bot == 1: 
+            return None
+        
+    if str(reaction.emoji) == "1️⃣":
+        Skill_C.skill_1(msg[1])
+        await emo.edit(embed=Skill_C.skill_1(msg[1]))
+        await emo.remove_reaction("1️⃣",user)
+                 
+    if str(reaction.emoji) == "2️⃣":
+        Skill_C.skill_2(msg[1])
+        await emo.edit(embed=Skill_C.skill_2(msg[1]))
+        await emo.remove_reaction("2️⃣",user)
+                        
+    if str(reaction.emoji) == "3️⃣":
+        Skill_C.skill_3(msg[1])
+        await emo.edit(embed=Skill_C.skill_3(msg[1]))
+        await emo.remove_reaction("3️⃣",user)
+                        
+    if str(reaction.emoji) == "4️⃣":
+        Skill_C.skill_4(msg[1])
+        await emo.edit(embed=Skill_C.skill_4(msg[1]))
+        await emo.remove_reaction("4️⃣",user)
+                        
+    if str(reaction.emoji) == "5️⃣":
+        Skill_C.skill_5(msg[1])
+        await emo.edit(embed=Skill_C.skill_5(msg[1]))
+        await emo.remove_reaction("5️⃣",user)
 
 
 ##############
