@@ -2019,7 +2019,87 @@ def Weapon(msg):
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472927078350848/020._Dyadic_Prism__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="볼 라이트닝 + 포스 코어", inline=False)
+        
+    
+    if msg=="점착폭탄":
+        embed=discord.Embed(title="", description="최대 충전 수 20발(충전: 12초)\n공격력 +80\n공격 속도 +20%\n```충전-섬광-[고유 장착 효과]\n다음에 가하는 기본 공격이 캐릭터 레벨 * 8(+스킬 증폭 * 1)의 추가 고유 피해를 주고 1초 동안 이동속도를 20% 만큼 감소시킵니다.\n(쿨다운 : 5초)```", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/920632984481169428/Sticky_Bomb__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="수류탄 + 볼 라이트닝", inline=False)
         return embed
+
+#####채찍#####
+    if msg=="채찍":
+        embed=discord.Embed(title="채찍", description="공격력 +12", color=0xffffff)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865135772225536/001._Whip_.png")
+        embed.add_field(name="등급", value="일반", inline=False)
+        embed.add_field(name="휙득 경로", value="학교와 공장의 상자", inline=False)
+        return embed
+
+    if msg=="철편":
+        embed=discord.Embed(title="철편", description="공격력 +30", color=0x329532)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865144886444032/003._Bullwhip_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="휙득 경로", value="채찍 + 면도칼", inline=False)
+        return embed
+        
+    if msg=="오랏줄":
+        embed=discord.Embed(title="오랏줄", description="공격력 +24\n 스킬 공격 추가 피해 +6\n", color=0x329532)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865140151058483/002._Rope_Cuffs_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="휙득 경로", value="채찍 + 마패", inline=False)
+        return embed    
+
+    if msg=="바람채찍":
+        embed=discord.Embed(title="바람 채찍", description="공격력 +36\n 이동 속도 +0.1\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865149395312660/004._Wind_Whip__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="휙득 경로", value="오랏줄 + 깃털", inline=False)
+        return embed
+
+    if msg=="벽력편":
+        embed=discord.Embed(title="벽력편", description="공격력 +42\n 공격 속도 +20%\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865149395312660/004._Wind_Whip__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="휙득 경로", value="철편 + 방전 전지", inline=False)
+        return embed
+
+    if msg=="글레이프니르":
+        embed=discord.Embed(title="글레이프니르", description="공격력 +55\n 이동 속도 +0.1\n 스킬 공격 추가 피해 +30\n 스킬 공격 치유 방해 - [고유 장착 효과]\n 스킬 공격에 피격된 대상의 치유 효과가 4초 동안 45% 감소합니다.\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865163169407077/007._Gleipnir_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="휙득 경로", value="바람 채찍 + 가시발판", inline=False)
+        return embed
+
+    if msg=="플라즈마웜":
+        embed=discord.Embed(title="플라즈마 웜", description="공격력 +64\n 공격 속도 +40%\n 기본 공격 추가 피해 +18\n 시야 +2.3\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865167414042624/008._Plasma_Whip__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="휙득 경로 ", value="벽력편 + 레이저 포인터", inline=False)
+        return embed
+
+    if msg=="뇌룡편":
+        embed=discord.Embed(title="뇌룡편", description="공격력 +60\n 공격 속도 +10%\n 스킬 증폭 + 10%\n 레벨 당 스킬 증폭 +1%\n", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865158740213800/006._Thunder_Whip_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="휙득 경로 ", value="벽력편 + 황금", inline=False)
+        return embed
+
+    if msg=="혈화구절편":
+        embed=discord.Embed(title="혈화구절편", description="공격력 +70\n 모든 피해 흡혈 +15%\n 레벨 당 스킬 공격 추가 피해 +3\n", color=0xf8d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865172640170004/009._Bloody_Nine_Tails_.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="휙득 경로 ", value="VF 혈액 샘플 + 오랏줄", inline=False)
+        return embed
+
+    if msg=="캐소드라쉬":
+        embed=discord.Embed(title="캐소드 라쉬", description="공격력 +75\n쿨다운 감소 +10%\n```신속-플라즈마-[고유 장착 효과\n4초 이내에 3회의 개별 피해를 가하면, 초간 이동 속도가 캐릭터 레벨 * 1% 증가하고, 105의 보호막을 얻습니다.\n(쿨다운 6초)```", color=0x9c4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/920632964382097418/Cathod_Lash__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득경로", value="철편 + 아이테르 깃털", inline=False)
+        return embed
+
+
 
 
 #####설치#####
