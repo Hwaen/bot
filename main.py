@@ -124,6 +124,7 @@ async def on_reaction_add(reaction, user):
         if msg[0] == "알렉스":
             alex.skill_1(msg[1])
             await emo.edit(embed=alex.skill_1(msg[1]))
+            await emo.remove_reaction("1️⃣",user)
             
         Skill_C.skill_1(msg[1])
         await emo.edit(embed=Skill_C.skill_1(msg[1]))        
@@ -133,6 +134,7 @@ async def on_reaction_add(reaction, user):
         if msg[0] == "알렉스":
             alex.skill_1(msg[1])
             await emo.edit(embed=alex.skill_2(msg[1]))
+            await emo.remove_reaction("2️⃣",user)
             
         Skill_C.skill_2(msg[1])
         await emo.edit(embed=Skill_C.skill_2(msg[1]))
@@ -142,6 +144,7 @@ async def on_reaction_add(reaction, user):
         if msg[0] == "알렉스":
             alex.skill_1(msg[1])
             await emo.edit(embed=alex.skill_3(msg[1]))
+            await emo.remove_reaction("3️⃣",user)
             
         Skill_C.skill_3(msg[1])        
         await emo.edit(embed=Skill_C.skill_3(msg[1]))       
@@ -151,6 +154,7 @@ async def on_reaction_add(reaction, user):
         if msg[0] == "알렉스":
             alex.skill_1(msg[1])
             await emo.edit(embed=alex.skill_4(msg[1]))
+            await emo.remove_reaction("4️⃣",user)
             
         Skill_C.skill_4(msg[1])
         await emo.edit(embed=Skill_C.skill_4(msg[1]))
@@ -160,6 +164,7 @@ async def on_reaction_add(reaction, user):
         if msg[0] == "알렉스":
             alex.skill_1(msg[1])
             await emo.edit(embed=alex.skill_5(msg[1]))
+            await emo.remove_reaction("5️⃣",user)
             
         Skill_C.skill_5(msg[1])
         await emo.edit(embed=Skill_C.skill_5(msg[1]))
