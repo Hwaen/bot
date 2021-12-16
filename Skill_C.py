@@ -11,14 +11,12 @@ name = {'재키' : 'Jackie',        '아야' : 'Aya',       '현우' : 'Hyunwoo'
         '아드리아나' : 'Adriana', '실비아' : 'Silvia',   '쇼이치' : 'Shoichi',
         '엠마' : 'Emma',          '레녹스' : 'Lenox',   '로지' : 'Rozzi',
         '루크' : 'Luke',          '캐시' : 'Cathy',     '아델라' : 'Adela',
-        '버니스' : 'Bernice',     '바바라' : 'Barbara', '알렉스' : 'Alex',
-        '수아' : 'Sua',           '레온' : 'Leon',      '일레븐' : 'Eleven',
+        '버니스' : 'Bernice',     '바바라' : 'Barbara', '수아' : 'Sua',
+        '레온' : 'Leon',      '일레븐' : 'Eleven',      '셀린' : 'Celine',
         '리오' : 'Rio',           '윌리엄' : 'William', '니키' : 'nicky',
         '나타폰' : 'Nathapon',    '얀' : 'Jan',         '이바' : 'Eva',
         '다니엘' : 'Daniel',      '제니' : 'Jenny',     '카밀로' : 'Camilo',
-        '클로에' : 'Chloe',       '요한' : 'Johann',    '비앙카' : 'Bianca',
-        '셀린' : 'Celine'
-        }
+        '클로에' : 'Chloe',       '요한' : 'Johann',    '비앙카' : 'Bianca'}
 
 def skill(msg,skill):
         global url

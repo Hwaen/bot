@@ -9,7 +9,9 @@ from pytz import timezone
 import Item
 import Aug
 import Rank
+import alex
 import Skill_C
+
 
 
 #####토큰#####
@@ -100,9 +102,13 @@ async def on_message(message):
     
     global emo
     if message.content.startswith(skill):
-        msg = message.content[4:].split()        
-        Skill_C.skill(msg[0],msg[1])
-        emo = await message.channel.send(embed=Skill_C.skill(msg[0],msg[1]))
+        msg = message.content[4:].split()
+        if msg[0] == "알렉스":
+            alex.alex(msg[0],msg[1])
+            emo = await message.channel.send(embed=alex.alex(msg[0],msg[1]))
+        else:            
+            Skill_C.skill(msg[0],msg[1])
+            emo = await message.channel.send(embed=Skill_C.skill(msg[0],msg[1]))
         await emo.add_reaction("1️⃣")
         await emo.add_reaction("2️⃣")
         await emo.add_reaction("3️⃣")
@@ -115,26 +121,46 @@ async def on_reaction_add(reaction, user):
             return None
         
     if str(reaction.emoji) == "1️⃣":
+        if msg[0] == "알렉스":
+            alex.skill_1(msg[1])
+            await emo.edit(embed=alex.skill_1(msg[1]))
+            
         Skill_C.skill_1(msg[1])
-        await emo.edit(embed=Skill_C.skill_1(msg[1]))
+        await emo.edit(embed=Skill_C.skill_1(msg[1]))        
         await emo.remove_reaction("1️⃣",user)
                  
     if str(reaction.emoji) == "2️⃣":
+        if msg[0] == "알렉스":
+            alex.skill_1(msg[1])
+            await emo.edit(embed=alex.skill_2(msg[1]))
+            
         Skill_C.skill_2(msg[1])
         await emo.edit(embed=Skill_C.skill_2(msg[1]))
         await emo.remove_reaction("2️⃣",user)
                         
     if str(reaction.emoji) == "3️⃣":
-        Skill_C.skill_3(msg[1])
-        await emo.edit(embed=Skill_C.skill_3(msg[1]))
+        if msg[0] == "알렉스":
+            alex.skill_1(msg[1])
+            await emo.edit(embed=alex.skill_3(msg[1]))
+            
+        Skill_C.skill_3(msg[1])        
+        await emo.edit(embed=Skill_C.skill_3(msg[1]))       
         await emo.remove_reaction("3️⃣",user)
                         
     if str(reaction.emoji) == "4️⃣":
+        if msg[0] == "알렉스":
+            alex.skill_1(msg[1])
+            await emo.edit(embed=alex.skill_4(msg[1]))
+            
         Skill_C.skill_4(msg[1])
         await emo.edit(embed=Skill_C.skill_4(msg[1]))
         await emo.remove_reaction("4️⃣",user)
                         
     if str(reaction.emoji) == "5️⃣":
+        if msg[0] == "알렉스":
+            alex.skill_1(msg[1])
+            await emo.edit(embed=alex.skill_5(msg[1]))
+            
         Skill_C.skill_5(msg[1])
         await emo.edit(embed=Skill_C.skill_5(msg[1]))
         await emo.remove_reaction("5️⃣",user)
