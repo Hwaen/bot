@@ -9,8 +9,8 @@ from pytz import timezone
 import Item
 import Aug
 import Rank
-import alex
-import Skill_C
+import Skill_C1
+import Skill_C2
 
 
 
@@ -103,12 +103,12 @@ async def on_message(message):
     global emo
     if message.content.startswith(skill):
         msg = message.content[4:].split()
-        if msg[0] == "알렉스":
-            alex.alex(msg[0],msg[1])
-            emo = await message.channel.send(embed=alex.alex(msg[0],msg[1]))
+        if msg[0] == "알렉스" or msg[0] =="실비아":
+            Skill_C2.skill(msg[0],msg[1])
+            emo = await message.channel.send(embed=Skill_C2.skill(msg[0],msg[1]))
         else:            
-            Skill_C.skill(msg[0],msg[1])
-            emo = await message.channel.send(embed=Skill_C.skill(msg[0],msg[1]))
+            Skill_C1.skill(msg[0],msg[1])
+            emo = await message.channel.send(embed=Skill_C1.skill(msg[0],msg[1]))
         await emo.add_reaction("1️⃣")
         await emo.add_reaction("2️⃣")
         await emo.add_reaction("3️⃣")
