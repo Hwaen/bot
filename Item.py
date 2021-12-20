@@ -820,10 +820,10 @@ def Weapon(msg):
 
 ######저격총######
     if msg=="화승총":
-        embed=discord.Embed(title="화승총", description="장탄 수: 1발\n공격력 +30\n체력 재생 +1.5\n시야 +1\n스태미너 재생(%) +150%\n치명타 피해량 +25%\n쿨다운 감소 +12%\n", color=0xffffff)
+        embed=discord.Embed(title="화승총", description="장탄 수: 1발\n공격력 +30", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472485552332910/001._Long_Rifle_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득경로", value="항구(3), 숲(3)", inline=False)
+        embed.add_field(name="획득경로", value="항구(3) 숲(3)", inline=False)
         return embed
         
     if msg=="스프링필드":
@@ -834,7 +834,7 @@ def Weapon(msg):
         return embed
         
     if msg=="하푼건":
-        embed=discord.Embed(title="하푼건", description="장탄 수: 2발\n 공격력 +60\n 시야 +2\n", color=0x1e82cd)
+        embed=discord.Embed(title="하푼건", description="장탄 수: 2발\n 공격력 +60\n시야 +2\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472493865435196/003._Harpoon_Gun_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="스프링필드 + 단창", inline=False)
@@ -855,21 +855,21 @@ def Weapon(msg):
         return embed
         
     if msg=="폴라리스":
-        embed=discord.Embed(title="폴라리스", description="장탄 수: 4발\n 공격력 +113\n 공격 속도(%) +18%\n 레벨당 공격속도 +2%\n 시야 +2\n", color=0x9c4998)
+        embed=discord.Embed(title="폴라리스", description="장탄 수: 4발\n 공격력 +107\n 공격 속도(%) +18%\n 레벨당 공격속도 +2%\n 시야 +2\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472519224209478/009._Polaris_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="레일건 + 백색 가루", inline=False)
         return embed
         
     if msg=="인터벤션":
-        embed=discord.Embed(title="인터벤션", description="장탄 수: 2발\n 공격력 +100\n 시야 +4\n 기본 공격 사거리 +1```", color=0x9c4998)
+        embed=discord.Embed(title="인터벤션", description="장탄 수: 2발\n 공격력 +100\n 시야 +4\n (고유)기본 공격 사거리 +1", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472510999179264/007._Intervention_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="하푼건 + 망원 카메라", inline=False)
         return embed
         
     if msg=="tac-50":
-        embed=discord.Embed(title="Tac-50", description="장탄 수: 2발\n 공격력 +94\n 레벨 당  공격력 +2\n 시야 +2\n 생명력 흡수 +14%\n", color=0x9c4998)
+        embed=discord.Embed(title="Tac-50", description="장탄 수: 2발\n 공격력 +94\n 레벨 당 공격력 +2\n 시야 +2\n 생명력 흡수 +14%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472506435780638/006._Tac-50.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="하푼건 + 정교한 도면", inline=False)
@@ -901,7 +901,7 @@ def Weapon(msg):
         embed=discord.Embed(title="페도로프 자동소총", description="장탄 수: 30발\n공격력 +11\n", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472409845141554/001._Fedorova__.png")
         embed.add_field(name="등급 ", value="일반 ", inline=False)
-        embed.add_field(name="휙득 경로", value="호텔(5), 고급 주택가(5), 공장(5)", inline=False)
+        embed.add_field(name="휙득 경로", value="호텔(5) 고급 주택가(5) 공장(5)", inline=False)
         return embed
 
     if msg=="STG-44":
@@ -932,8 +932,8 @@ def Weapon(msg):
         embed.add_field(name="휙득 경로", value="STG-44 + 모터", inline=False)
         return embed
             
-    if msg=="5식자동소총":
-        embed=discord.Embed(title="95식 자동 소총", description="장탄 수: 30발\n 공격력 +84\n 시야 +2\n 기본 공격 사거리 +1```", color=0x9c4998)
+    if msg=="95식자동소총":
+        embed=discord.Embed(title="95식 자동 소총", description="장탄 수: 30발\n 공격력 +84\n 시야 +2\n (고유)기본 공격 사거리 +1", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472435556253716/006._Type_95_95_.png")
         embed.add_field(name="등급 ", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="AK-47 + 강철", inline=False)
@@ -947,7 +947,7 @@ def Weapon(msg):
         return embed
 
     if msg=="XCR":
-        embed=discord.Embed(title="XCR", description="장탄 수: 30발\n 공격력 +66\n 최대 체력 +200\n 시야 +1.5\n 기본 공격 추가 피해 +10\n", color=0x9c4998)
+        embed=discord.Embed(title="XCR", description="장탄 수: 30발\n 공격력 +61\n 최대 체력 +200\n 시야 +1.5\n 기본 공격 추가 피해 +10\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472444225847376/008._XCR.png")
         embed.add_field(name="등급 ", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="M16A1 + 탄창", inline=False)
@@ -970,10 +970,10 @@ def Weapon(msg):
 ######활######
     
     if msg=="양궁":
-        embed=discord.Embed(title="양궁", description=" 공격력 +11", color=0xffffff)
+        embed=discord.Embed(title="양궁", description="공격력 +11", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472668952481883/896473123468238928/001._Bow_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="양궁장(5), 성당(4)", inline=False)
+        embed.add_field(name="획득 경로", value="양궁장(5) 성당(4)", inline=False)
         return embed
 
     if msg=="목궁":
@@ -1054,14 +1054,14 @@ def Weapon(msg):
         return embed
 
     if msg=="제베의활":
-        embed=discord.Embed(title="제베의 활", description=" 공격력 +84\n공격 속도 +33%\n이동 속도 +0.1\n", color=0x9c4998)
+        embed=discord.Embed(title="제베의 활", description=" 공격력 +82\n공격 속도 +33%\n이동 속도 +0.06\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472668952481883/896473177469898752/013._Jebe_s_Altered_Bow__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="벽력궁 + 궁기병의 화살통", inline=False)
         return embed
 
     if msg=="아르테미스":
-        embed=discord.Embed(title="아르테미스", description=" 공격력 +95\n최대 체력 +150\n최대 스태미너 +200\n시야 +2\n스킬 증폭 +25%\n", color=0x9c4998)
+        embed=discord.Embed(title="아르테미스", description=" 공격력 +90\n최대 체력 +150\n시야 +2\n스킬 증폭 +25%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472668952481883/896473181156683796/014._Artemis_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="강궁 + 문스톤", inline=False)
@@ -1090,10 +1090,10 @@ def Weapon(msg):
 
 #####석궁#####
     if msg =="석궁":
-        embed=discord.Embed(title="석궁", description=" 공격력 +30", color=0xffffff)
+        embed=discord.Embed(title="석궁", description=" 공격력 +12", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251184217534524/894251213300854884/001._Short_Crossbow_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="숲(5), 성당(5)", inline=False)
+        embed.add_field(name="획득 경로", value="숲(5) 성당(5)", inline=False)
         return embed
 
     if msg =="쇠뇌":
@@ -1118,7 +1118,7 @@ def Weapon(msg):
         return embed
 
     if msg =="저격궁":
-        embed=discord.Embed(title="저격궁", description=" 공격력 +30\n시야 +2.5\n", color=0x1e82cd)
+        embed=discord.Embed(title="저격궁", description=" 공격력 +30\n시야 +1\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251184217534524/894251233978773564/005._Laser_Crossbow_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="크로스보우 + 레이저 포인터", inline=False)
@@ -1153,21 +1153,21 @@ def Weapon(msg):
         return embed
 
     if msg =="저격크로스보우":
-        embed=discord.Embed(title="저격 크로스보우", description=" 공격력 +85\n시야 +3\n ```기본 공격 사거리-[고유 장착 효과]\n기본 공격 사거리 +1.25```", color=0x9c4998)
+        embed=discord.Embed(title="저격 크로스보우", description=" 공격력 +85\n시야 +2\n (고유)기본 공격 사거리 +0.85", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251184217534524/894251268367863860/010._Sniper_Crossbow__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="저격궁 + 저격 스코프", inline=False)
         return embed
 
     if msg =="영광금귀신기노":
-        embed=discord.Embed(title="영광금귀신기노", description=" 공격력 +66\n기본 공격 추가 피해 +22\n레벨 당 기본 공격 추가 피해 +2\n", color=0x9c4998)
+        embed=discord.Embed(title="영광금귀신기노", description=" 공격력 +71\n기본 공격 추가 피해 +22\n레벨 당 기본 공격 추가 피해 +2\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251184217534524/894251275854704680/011._The_Golden_Ghost_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="노 + RDX", inline=False)
         return embed
 
     if msg =="샤릉가":
-        embed=discord.Embed(title="샤릉가", description=" 공격력 +128\n시야 +1.5\n ```가벼운 발놀림-[고유 장착 효과]\n0.24m 이동할 때마다 [가벼운 발놀림]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동속도가 최대 0.12까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 120의 고유 피해를 입힙니다.```", color=0xf9d537)
+        embed=discord.Embed(title="샤릉가", description=" 공격력 +128\n시야 +2.5\n ```가벼운 발놀림-[고유 장착 효과]\n0.24m 이동할 때마다 [가벼운 발놀림]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동속도가 최대 0.12까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 120의 고유 피해를 입힙니다.```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251184217534524/894251282200662097/012._Sharanga_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="포스 코어 + 크로스보우", inline=False)
@@ -1224,35 +1224,35 @@ def Weapon(msg):
         return embed
 
     if msg=="은둔자":
-        embed=discord.Embed(title="은둔자", description=" 공격력 +60\n ```저주-[고유 장착 효과]\n스킬 공격을 가하면 적을 4초간 저주 상태로 만듭니다.\n저주 상태인 적은 이동 속도가 8% 느려지고, 저주 상태에서 해제될 때 50 + 스킬 증폭의 2.25배에 해당하는 고정 피해를 입습니다.\n한번 저주 상태가 되면 8초 동안 다시 저주 상태에 걸리지 않으며, 저주의 사용자가 대상에게 기본 공격을 적중시킬 때 마다 저주 대기 시간이 1초 씩 감소합니다.```", color=0x9c4998)
+        embed=discord.Embed(title="은둔자", description=" 공격력 +63\n ```저주-[고유 장착 효과]\n스킬 공격을 가하면 적을 4초간 저주 상태로 만듭니다.\n저주 상태인 적은 이동 속도가 8% 느려지고, 저주 상태에서 해제될 때 50 + 스킬 증폭의 2.25배에 해당하는 고정 피해를 입습니다.\n한번 저주 상태가 되면 8초 동안 다시 저주 상태에 걸리지 않으며, 저주의 사용자가 대상에게 기본 공격을 적중시킬 때 마다 저주 대기 시간이 1초 씩 감소합니다.\n(쿨다운: 2초)```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/910522534036926524/008._The_Hermit_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="의지의 지팡이 + 성자의 유산", inline=False)
         return embed
 
     if msg=="운명의수레바퀴":
-        embed=discord.Embed(title="운명의 수레바퀴", description=" 공격력 +33\n최대 체력 +225\n이동 속도 +0.1\n ```리플렉션-[고유 장착 효과]\n기본 공격 피해의 3%를 고정 피해로 반사 피격 시 치유 감소 40(근거리)/30(원거리)% 4초안에 450의 피해를 받으면, 일정 범위 내의 적에게 215의 고유 피해를 줍니다.```", color=0x9c4998)
+        embed=discord.Embed(title="운명의 수레바퀴", description=" 공격력 +36\n최대 체력 +225\n이동 속도 +0.1\n ```리플렉션-[고유 장착 효과]\n기본 공격 피해의 3%를 고정 피해로 반사 피격 시 치유 감소 40(근거리)/30(원거리)% 4초안에 450의 피해를 받으면, 일정 범위 내의 적에게 215의 고유 피해를 줍니다.\n(쿨다운: 1초)```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/910522537904054302/009._The_Hierophant__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="이성의 칼 + 운명의 꽃", inline=False)
         return embed
 
     if msg=="절제":
-        embed=discord.Embed(title="절제", description=" 공격력 +66\n 방어력 -25\n시야 +2.5\n체력 재생 +100%\n스태미너 재생 +125%\n주는 회복 증가 +25%\n", color=0x9c4998)
+        embed=discord.Embed(title="절제", description=" 공격력 +66\n 방어력 -25\n체력 재생 +100%\n스태미너 재생 +125%\n주는 회복 증가 +25%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/910522542098350121/010._Temperance_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="감정의 컵 + 정화수", inline=False)
         return embed
 
     if msg=="더스타":
-        embed=discord.Embed(title="더 스타", description=" 공격력 +64\n쿨다운 감소 +10%\n시야 +2.5\n스킬 증폭 +12%\n", color=0x9c4998)
+        embed=discord.Embed(title="더 스타", description=" 공격력 +67\n쿨다운 감소 +10%\n시야 +2.5\n스킬 증폭 +15%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/910522545965514752/011._The_Star__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="소유의 펜타클 + 바브드 블로섬", inline=False)
         return embed
 
     if msg=="더문":
-        embed=discord.Embed(title="더 문", description=" 공격력 +90\n ```굴절 - [고유 장착 효과]\n 굴절의 망토를 두릅니다.\n굴절의 망토는 적이 나에게 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 사라지고, 35초 후 재생성 됩니다.```", color=0x9c4998)
+        embed=discord.Embed(title="더 문", description=" 공격력 +90\n ```굴절-[고유 장착 효과]\n 굴절의 망토를 두릅니다.\n굴절의 망토는 적이 나에게 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 사라지고, 35초 후 재생성 됩니다.```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/910522550210166834/012._The_Moon__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="거울구슬 + 문스톤", inline=False)
@@ -1351,7 +1351,7 @@ def Weapon(msg):
         return embed
 
     if msg=="원더풀투나잇":
-        embed=discord.Embed(title="원더풀 투나잇", description=" 공격력 +85\n기본 공격 추가 피해 +2\n ```열정 - [고유 효과]\n기본 공격이 적 실험체에게 명중하면, 적 실험체에게 현재 체력의 5%에 해당하는 고유 피해를 입히며 열정 버프를 1스택 획득합니다.\n열정: 버프\n 공격 속도 8% 증가\n 지속 시간 : 4초\n 최대 스택 : 5스택\n최대 스택이 쌓인 경우 15의  공격력과 0.1의 이동 속도를 추가로 얻습니다.```", color=0x9C4998)
+        embed=discord.Embed(title="원더풀 투나잇", description=" 공격력 +85\n공격 속도 +8%\n기본 공격 추가 피해 +2\n ```열정-[고유 효과]\n기본 공격이 적 실험체에게 명중하면, 적 실험체에게 현재 체력의 5%에 해당하는 고유 피해를 입히며 열정 버프를 1스택 획득합니다.\n 열정: 버프\n 공격 속도 8% 증가\n 지속 시간: 4초\n 최대 스택: 5스택\n최대 스택이 쌓인 경우 15의 공격력과 0.1의 이동 속도를 추가로 얻습니다.```", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652879128920154/014._Wonderful_Tonight__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="슈퍼스트랫 + 운석", inline=False)
@@ -1365,7 +1365,7 @@ def Weapon(msg):
         return embed
 
     if msg=="틴스피릿":
-        embed=discord.Embed(title="틴 스피릿", description=" 공격력 +18\n공격 속도 +40%\n기본 공격 추가 피해 +5\n레벨당 기본 공격 추가 피해 +1\n ```기본 공격 사거리 - [고유 장착 효과]\n기본 공격 사거리 +0.75```", color=0x9C4998)
+        embed=discord.Embed(title="틴 스피릿", description=" 공격력 +18\n공격 속도 +40%\n기본 공격 추가 피해 +5\n레벨당 기본 공격 추가 피해 +1\n (고유)기본 공격 사거리 +0.75", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652904898723860/016._Wild_Horst__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="야생마 + 진신사리", inline=False)
@@ -1401,7 +1401,7 @@ def Weapon(msg):
         return embed
 
     if msg=="도끼창":
-        embed=discord.Embed(title="도끼창", description="공격력 +70", color=0x1e82cd)
+        embed=discord.Embed(title="도끼창", description="공격력 +60", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472724401180682/005._Halberd_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="손도끼 + 파이크", inline=False)
@@ -1414,7 +1414,7 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="죽창 + 깃털", inline=False)
         return embed
 
-    if msg=="예각창":
+    if msg=="애각창":
         embed=discord.Embed(title="애각창", description="공격력 +85\n레벨 당 공격력 +2\n이동 속도 +0.08", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472735516098590/007._Gentian_Silver_Gun_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
@@ -1429,7 +1429,7 @@ def Weapon(msg):
         return embed
 
     if msg=="코스믹바이던트":
-        embed=discord.Embed(title="코스믹 바이던트", description="공격력 +130\n레벨 당 공격속도 +1%\n", color=0x9C4998)
+        embed=discord.Embed(title="코스믹 바이던트", description="공격력 +135\n레벨 당 공격속도 +1%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472744097620018/009._Cosmic_Bident__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="바이던트 + 문스톤", inline=False)
@@ -1528,7 +1528,7 @@ def Weapon(msg):
         return embed
 
     if msg=="뚜언띠엔":
-        embed=discord.Embed(title="뚜언 띠엔", description="공격력 +77\n방어력 +28\n쿨다운 감소 +10%\n", color=0x9C4998)
+        embed=discord.Embed(title="뚜언 띠엔", description="공격력 +77\n방어력 +28\n쿨다운 감소 +8%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735095666057296/009._Thuan_Thien__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="바스타드 소드 + 거북 도복", inline=False)
@@ -1541,22 +1541,22 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="마사무네 + 십자가", inline=False)
         return embed
 
-    if msg=="아론다이트":
-        embed=discord.Embed(title="아론다이트", description="공격력 +65\n최대 체력 +180\n체력 재생(%) +100%\n공격 속도(%) +20%\n", color=0x9C4998)
+    if msg=="엑스칼리버":
+        embed=discord.Embed(title="엑스칼리버", description="공격력 +65\n최대 체력 +180\n체력 재생(%) +100%\n공격 속도(%) +20%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735116436246538/011._Excalibur_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="보검 + 성배", inline=False)
         return embed
 
     if msg=="모노호시자오":
-        embed=discord.Embed(title="모노호시자오", description="공격력 +50\n레벨 당 추가 공격력 +2\n 생명력 흡수 +22%\n", color=0x9C4998)
+        embed=discord.Embed(title="모노호시자오", description="공격력 +53\n레벨 당 추가 공격력 +2\n 생명력 흡수 +22%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735122803200041/012._Monohoshizao_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="무라마사 + 정교한 도면", inline=False)
         return embed
 
     if msg=="호푸어드":
-        embed=discord.Embed(title="호푸어드", description="공격력 +55\n최대 체력 +150\n치명타 확률 +20%\n치명타 피해량 +10%\n", color=0x9C4998)
+        embed=discord.Embed(title="호푸어드", description="공격력 +52\n최대 체력 +150\n치명타 확률 +20%\n치명타 피해량 +10%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735129178546246/013._Hovud_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="보검 + 유리 조각", inline=False)
@@ -1588,14 +1588,14 @@ def Weapon(msg):
         embed=discord.Embed(title="너클", description="공격력 +10", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756156210155551/001._Brass_Knuckles_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득경로", value="묘지(5), 숲(5)", inline=False)
+        embed.add_field(name="획득경로", value="묘지(5) 숲(5)", inline=False)
         return embed
 
     if msg=="목장갑":
         embed=discord.Embed(title="목장갑", description="공격력 +7", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756156432449536/002._Cotton_Gloves_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득경로", value="호텔(4), 병원(4)", inline=False)
+        embed.add_field(name="획득경로", value="호텔(4) 병원(4)", inline=False)
         return embed
 
     if msg=="글러브":
@@ -1620,7 +1620,7 @@ def Weapon(msg):
         return embed
 
     if msg=="윙너클":
-        embed=discord.Embed(title="윙 너클", description="공격력 +20\n이동 속도 +0.1\n", color=0x1e82cd)
+        embed=discord.Embed(title="윙 너클", description="공격력 +20\n이동 속도 +0.05\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756323814567946/006._Wing_Knuckles__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="아이언 너클 + 깃털", inline=False)
@@ -1655,7 +1655,7 @@ def Weapon(msg):
         return embed
 
     if msg=="단영촌천투":
-        embed=discord.Embed(title="단영촌천투", description="공격력 +50\n방어력 +18\n스테미너 재생(%) +50%\n생명력 흡수 +20%\n", color=0x9C4998)
+        embed=discord.Embed(title="단영촌천투", description="공격력 +50\n방어력 +18\n스테미너 재생(%) +50%\n모든 피해 흡수 +15%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756361626202112/011._One_Inch_Punch_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="귀골 장갑 + 인형", inline=False)
@@ -1683,14 +1683,14 @@ def Weapon(msg):
         return embed
 
     if msg=="여래수투":
-        embed=discord.Embed(title="여래수투", description="공격력 +50\n쿨다운 감소 +15%\n스킬 증폭 +19%\n", color=0x9C4998)
+        embed=discord.Embed(title="여래수투", description="공격력 +50\n쿨다운 감소 +15%\n스킬 증폭 +15%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756362351804416/015._Buddha_s_Palm_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="회단 장갑 + 진신사리", inline=False)
         return embed
 
     if msg=="브레이질건틀릿":
-        embed=discord.Embed(title="브레이질 건틀릿", description="공격력 +57\n방어력 +15\n스태미너 재생 +1.2\n체력 재생 +1.2\n공격 속도(%) +40%\n", color=0x9C4998)
+        embed=discord.Embed(title="브레이질 건틀릿", description="공격력 +57\n방어력 +15\n스태미너 재생 +1.2\n체력 재생 +1.2\n```열정-[고유 장착 효과]\n기본 공격이 적 실험체에게 적중 시, 적 실험체의 현재 체력의 2%의 피해를 주고, 5초간 열정 스택을 획득하며, 중첩된 열정 스택 당 10%의 공격 속도를 얻습니다.\n최대 4 중첩이 되면 10 의 공격력을 추가로 얻습니다.```", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756362527977472/016._Brasil_Gauntlet__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="귀골 장갑 + 기름먹인 천", inline=False)
@@ -1718,7 +1718,7 @@ def Weapon(msg):
         return embed
 
     if msg=="프로스트팽":
-        embed=discord.Embed(title="프로스트 팽", description="공격력 +48\n쿨다운 감소 +15%\n스킬 공격 추가 피해 +40\n", color=0xf9d537)
+        embed=discord.Embed(title="프로스트 팽", description="공격력 +48\n쿨다운 감소 +10%\n스킬 공격 추가 피해 +40\n```한파-[고유 장착 효과]\n스킬로 적에게 피해를 입히면 2초간 이동 속도를 20%, 공격 속도를 10% 만큼 느리게 만듭니다.\n(쿨다운: 4초)```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756388775936060/020._Permafrost__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="만년빙 + 회단 장갑", inline=False)
@@ -1726,28 +1726,28 @@ def Weapon(msg):
 
 #####암기#####
     if msg=="면도칼":
-        embed=discord.Embed(title="면도칼", description="공격력 +11", color=0xffffff)
+        embed=discord.Embed(title="면도칼", description="최대 충전 수: 50발(충전: 2초)\n공격력 +11", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472965573660712/001._Razor_.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득경로", value="병원(5개), 성당(5개), 학교(7개), 박쥐", inline=False)
         return embed
 
     if msg=="트럼프카드":
-        embed=discord.Embed(title="트럼프 카드", description="공격력 +4\n치명타 확률 +5%\n", color=0xffffff)
+        embed=discord.Embed(title="트럼프 카드", description="최대 충전 수: 52발(충전: 2초)\n공격력 +4\n치명타 확률 +5%\n", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472971055624202/002._Playing_Cards__.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득경로", value="호텔(6개), 번화가(7개), 멧돼지", inline=False)
         return embed
 
     if msg=="분필":
-        embed=discord.Embed(title="분필", description="공격력 +12", color=0xffffff)
+        embed=discord.Embed(title="분필", description="최대 충전 수: 50발(충전: 2초)\n공격력 +12", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472975585447986/003._Chalk_.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득경로", value="공장(7개), 성당(5개), 학교(6개), 박쥐", inline=False)
         return embed
 
     if msg=="다트":
-        embed=discord.Embed(title="다트", description="최대 충전 수: 20발(충전: 20초)\n공격력 +16\n치명타 피해량 +15%\n이동 속도 +0.0\n", color=0x329632)
+        embed=discord.Embed(title="다트", description="최대 충전 수: 24발(충전: 20초)\n공격력 +16\n치명타 피해량 +15%\n이동 속도 +0.04\n", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472980476031047/004._Dart_.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득경로", value="바늘 + 깃털", inline=False)
@@ -1775,7 +1775,7 @@ def Weapon(msg):
         return embed
 
     if msg=="부적":
-        embed=discord.Embed(title="부적", description="최대 충전 수: 10발(충전: 40초)\n공격력 +30\n스킬 공격 추가 피해 +5\n", color=0x1e82cd)
+        embed=discord.Embed(title="부적", description="최대 충전 수: 10발(충전: 30초)\n공격력 +30\n스킬 공격 추가 피해 +5\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473004207407154/008._Charm_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="빈티지 카드 + 분필", inline=False)
@@ -1802,6 +1802,13 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="흑건 + 꽃", inline=False)
         return embed
 
+    if msg=="독침":
+        embed=discord.Embed(title="독침", description="최대 충전 수: 3발(충전: 80초)\n공격력 +55\n스킬 공격 추가 피해 +15\n", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473019856334939/011._Apricot_Flower_Tag_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득경로", value="흑건 + 꽃", inline=False)
+        return embed
+    
     if msg=="법륜":
         embed=discord.Embed(title="법륜", description="최대 충전 수: 50발(충전: 2초)\n공격력 +38\n스킬 증폭(%) +15%\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473027066347571/013._Dharma_Chakram_.png")
@@ -1810,7 +1817,7 @@ def Weapon(msg):
         return embed
 
     if msg=="플럼바타":
-        embed=discord.Embed(title="플럼바타", description="최대 충전 수: 20발(충전: 20초)\n공격력 +48\n이동 속도 +0.04\n치명타 피해량 +15%\n", color=0x9C4998)
+        embed=discord.Embed(title="플럼바타", description="최대 충전 수: 24발(충전: 20초)\n공격력 +48\n이동 속도 +0.04\n치명타 피해량 +15%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473031436795974/014._Plumbata_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="다트 + 강철", inline=False)
@@ -1831,7 +1838,7 @@ def Weapon(msg):
         return embed
 
     if msg=="풍마수리검":
-        embed=discord.Embed(title="풍마수리검", description="최대 충전 수: 50발(충전: 2초)\n공격력 +65\n쿨다운 감소 +15%\n스킬 공격 추가 피해 +15\n스태미너 재생 +1 최대 쿨다운 감소-[고유 장착 효과]\n최대 쿨다운 감소 +5%\n", color=0x9C4998)
+        embed=discord.Embed(title="풍마 수리검", description="최대 충전 수: 50발(충전: 2초)\n공격력 +65\n쿨다운 감소 +15%\n스킬 공격 추가 피해 +15\n스태미너 재생 +1\n(고유)최대 쿨다운 감소 +5%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473044900528230/017._Fuhma_Shuriken__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="유엽비도 + 알코올", inline=False)
@@ -1851,8 +1858,8 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="매화비표 + 독약", inline=False)
         return embed
 
-    if msg=="플레솃":
-        embed=discord.Embed(title="플레솃", description="최대 충전 수: 24발(충전: 12초)\n공격력 +88\n이동 속도 +0.06\n치명타 피해량 +15%\n기본 공격 사거리-[고유 장착 효과]\n기본 공격 사거리 +0.5\n", color=0x9C4998)
+    if msg=="플레솃" or msg=="플레셋":
+        embed=discord.Embed(title="플레솃", description="최대 충전 수: 24발(충전: 12초)\n공격력 +88\n이동 속도 +0.06\n치명타 피해량 +15%\n(고유)기본 공격 사거리 +0.5\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473061652574248/020._Flechette_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="플럼바타 + 백색 가루", inline=False)
@@ -1866,7 +1873,7 @@ def Weapon(msg):
         return embed
 
     if msg=="생사부":
-        embed=discord.Embed(title="생사부", description="최대 충전 수: 20발(충전: 20초)\n공격력 +83\n```저주-[고유 장착 효과]\n스킬 공격을 가하면 적을 4초간 저주 상태로 만듭니다. 저주 상태인 적은 이동 속도가 10%만큼 느려지고, 저주 상태에서 해제 될 때 100 + 스킬 증폭 * 2 에 해당하는 고정 피해를 입힙니다. 한번 저주 상태가 되면 8초간 (기본 공격 피격 시 1초 감소) 다시 저주 상태가 되지 않습니다.```\n", color=0x9C4998)
+        embed=discord.Embed(title="생사부", description="최대 충전 수: 20발(충전: 20초)\n공격력 +83\n시야 +1\n```저주-[고유 장착 효과]\n스킬 공격을 가하면 적을 4초간 저주 상태로 만듭니다.\n저주 상태인 적은 이동 속도가 10%만큼 느려지고, 저주 상태에서 해제 될 때 100 + 스킬 증폭 * 2 에 해당하는 고정 피해를 입힙니다. 한번 저주 상태가 되면 8초간 (기본 공격 피격 시 1초 감소) 다시 저주 상태가 되지 않습니다.\n(쿨다운: 2초)```\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473071442096128/022._Death_Rune_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="부적 + 운석", inline=False)
@@ -1880,7 +1887,7 @@ def Weapon(msg):
         return embed
 
     if msg=="만천화우":
-        embed=discord.Embed(title="만천화우", description="최대 충전 수: 4발(충전: 60초)\n공격력 +83\n기본 공격 추가 피해 +130\n스킬 공격 추가 피해 +3\n", color=0xf9d537)
+        embed=discord.Embed(title="만천화우", description="최대 충전 수: 4발(충전: 60초)\n공격력 +83\n기본 공격 추가 피해 +110\n스킬 공격 추가 피해 +31\n", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473080879259738/024._Petal_Torrent_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="빙백은침 + 다이너마이트", inline=False)
@@ -1889,17 +1896,17 @@ def Weapon(msg):
 #####투척#####
     
     if msg=="쇠구슬":
-        embed=discord.Embed(title="쇠구슬", description="공격력 +12", color=0xffffff)
+        embed=discord.Embed(title="쇠구슬", description="최대 충전 수: 50발(충전: 3초)\n공격력 +12", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472819167268925/001._Iron_Ball_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득경로", value="양궁장(6개), 숲(7개), 공장(7개), 맷돼지", inline=False)
+        embed.add_field(name="획득경로", value="양궁장(6개) 숲(7개) 공장(7개)\n사냥 맷돼지", inline=False)
         return embed
 
     if msg=="야구공":
-        embed=discord.Embed(title="야구공", description="공격력 +12", color=0xffffff)
+        embed=discord.Embed(title="야구공", description="최대 충전 수: 50발(충전: 3초)\n공격력 +12", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472824670224394/002._Baseball_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득경로", value="공장(3개), 고급 주택가(3개)", inline=False)
+        embed.add_field(name="획득경로", value="공장(3개) 고급 주택가(3개)", inline=False)
         return embed
 
     if msg=="수류탄":
@@ -1938,7 +1945,7 @@ def Weapon(msg):
         return embed
 
     if msg=="볼라이트닝":
-        embed=discord.Embed(title="볼 라이트닝", description="최대 충전 수: 50발(충전: 3초)\n공격력 +24\n공격 속도(%) +20%\n", color=0x1e82cd)
+        embed=discord.Embed(title="볼 라이트닝", description="최대 충전 수: 50발(충전: 3초)\n공격력 +24\n공격 속도(%) +15%\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472862985162774/008._Ball_Lightning__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="쇠구슬 + 방전 전지", inline=False)
@@ -1952,7 +1959,7 @@ def Weapon(msg):
         return embed
 
     if msg=="필럼":
-        embed=discord.Embed(title="필럼", description="최대 충전 수: 24발(충전: 3초)\n공격력 +28\n(고유) 기본 공격 사거리 +0.5", color=0x1e82cd)
+        embed=discord.Embed(title="필럼", description="최대 충전 수: 24발(충전: 3초)\n공격력 +28\n(고유)기본 공격 사거리 +0.5", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472872040689704/010._Pilum_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="사격 교본 + 단창", inline=False)
@@ -1966,7 +1973,7 @@ def Weapon(msg):
         return embed
 
     if msg=="소이탄":
-        embed=discord.Embed(title="소이탄", description="최대 충전 수: 50발(충전: 3초)\n공격력 +63\n공격 속도(%) +60%\n쿨다운 감소 +8%\n", color=0x9C4998)
+        embed=discord.Embed(title="소이탄", description="최대 충전 수: 50발(충전: 3초)\n공격력 +67\n공격 속도(%) +200%\n쿨다운 감소 +12%\n스킬 증폭 +17%", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472886548779018/012._Incendiary_Bomb_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="화염병 + 볼 라이트닝", inline=False)
@@ -2015,7 +2022,7 @@ def Weapon(msg):
         return embed
 
     if msg=="루테늄구슬":
-        embed=discord.Embed(title="루테늄 구슬", description="최대 충전 수: 50발(충전: 3초)\n공격력 +73\n스킬 증폭 +28%\n스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격에 피격된 대상의 치유 효과가 4초간 35% 감소합니다.\n", color=0x9C4998)
+        embed=discord.Embed(title="루테늄 구슬", description="최대 충전 수: 50발(충전: 3초)\n공격력 +73\n스킬 증폭 +22%\n```스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격에 피격된 대상의 치유 효과가 4초간 35% 감소합니다.```\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472923055992882/019._Ruthenium_Marble__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="가시 탱탱볼 + 황금", inline=False)
@@ -2029,7 +2036,7 @@ def Weapon(msg):
         
     
     if msg=="점착폭탄":
-        embed=discord.Embed(title="", description="최대 충전 수 20발(충전: 12초)\n공격력 +80\n공격 속도 +20%\n```충전-섬광-[고유 장착 효과]\n다음에 가하는 기본 공격이 캐릭터 레벨 * 8(+스킬 증폭 * 1)의 추가 고유 피해를 주고 1초 동안 이동속도를 20% 만큼 감소시킵니다.\n(쿨다운 : 5초)```", color=0x9c4998)
+        embed=discord.Embed(title="점착폭탄", description="최대 충전 수 20발(충전: 12초)\n공격력 +80\n공격 속도 +20%\n```충전-섬광-[고유 장착 효과]\n다음에 가하는 기본 공격이 캐릭터 레벨 * 8(+스킬 증폭 * 1)의 추가 고유 피해를 주고 1초 동안 이동속도를 20% 만큼 감소시킵니다.\n(쿨다운 : 5초)```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/920632984481169428/Sticky_Bomb__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="수류탄 + 볼 라이트닝", inline=False)
@@ -2058,21 +2065,21 @@ def Weapon(msg):
         return embed    
 
     if msg=="바람채찍":
-        embed=discord.Embed(title="바람 채찍", description="공격력 +36\n 이동 속도 +0.1\n", color=0x1e82cd)
+        embed=discord.Embed(title="바람 채찍", description="공격력 +36\n 이동 속도 +0.06\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865149395312660/004._Wind_Whip__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="휙득 경로", value="오랏줄 + 깃털", inline=False)
         return embed
 
     if msg=="벽력편":
-        embed=discord.Embed(title="벽력편", description="공격력 +42\n 공격 속도 +20%\n", color=0x1e82cd)
+        embed=discord.Embed(title="벽력편", description="공격력 +42\n 공격 속도 +10%\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865149395312660/004._Wind_Whip__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="휙득 경로", value="철편 + 방전 전지", inline=False)
         return embed
 
     if msg=="글레이프니르":
-        embed=discord.Embed(title="글레이프니르", description="공격력 +55\n 이동 속도 +0.1\n 스킬 공격 추가 피해 +30\n 스킬 공격 치유 방해 - [고유 장착 효과]\n 스킬 공격에 피격된 대상의 치유 효과가 4초 동안 45% 감소합니다.\n", color=0x9c4998)
+        embed=discord.Embed(title="글레이프니르", description="공격력 +55\n 이동 속도 +0.06\n 스킬 공격 추가 피해 +30\n 스킬 공격 치유 방해 - [고유 장착 효과]\n 스킬 공격에 피격된 대상의 치유 효과가 4초 동안 45% 감소합니다.\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865163169407077/007._Gleipnir_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="바람 채찍 + 가시발판", inline=False)
@@ -2093,7 +2100,7 @@ def Weapon(msg):
         return embed
 
     if msg=="혈화구절편":
-        embed=discord.Embed(title="혈화구절편", description="공격력 +70\n 모든 피해 흡혈 +15%\n 레벨 당 스킬 공격 추가 피해 +3\n", color=0xf8d537)
+        embed=discord.Embed(title="혈화구절편", description="공격력 +70\n쿨다운 감소 +10%\n 모든 피해 흡혈 +15%\n 레벨 당 스킬 공격 추가 피해 +3\n", color=0xf8d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865172640170004/009._Bloody_Nine_Tails_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="휙득 경로 ", value="VF 혈액 샘플 + 오랏줄", inline=False)
@@ -2112,10 +2119,10 @@ def Weapon(msg):
 #####설치#####
         
     if msg=="감시카메라":
-        embed=discord.Embed(title="감시 카메라", description="시야: ?m\n최대 수량: 5", color=0xffffff)
+        embed=discord.Embed(title="감시 카메라", description="시야: 7m\n최대 수량: 5", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271133144703066/001._Surveillance_Camera__.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득경로", value="박쥐(항상), 멧돼지, 들개, 항구(3), 고급 주택가(3), 번화가(5), 병원(5), 양궁장(3), 묘지(6), 학교(6)", inline=False)
+        embed.add_field(name="획득경로", value="항구(3) 고급 주택가(3) 번화가(5) 병원(5) 양궁장(3) 묘지(6) 학교(6)\n박쥐(100%) 멧돼지 들개", inline=False)
         return embed
 
     if msg=="올가미":
@@ -2175,21 +2182,21 @@ def Weapon(msg):
         return embed
 
     if msg=="망원카메라":
-        embed=discord.Embed(title="망원 카메라", description="시야: ?m\n최대 수량: 6", color=0x329632)
+        embed=discord.Embed(title="망원 카메라", description="시야: 13m\n최대 수량: 6", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271371506999357/010._Telephoto_Camera__.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득 경로", value="감시 카메라 + 쌍안경", inline=False)
         return embed
 
     if msg=="정찰드론":
-        embed=discord.Embed(title="정찰 드론", description="시야: ?m\n최대 수량: 6", color=0x329632)
+        embed=discord.Embed(title="정찰 드론", description="7초간 시야를 밝힙니다.\n최대 수량: 6", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271371746058240/011._Recon_Drone__.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득 경로", value="감시 카메라 + 화약", inline=False)
         return embed
 
     if msg=="위장카메라":
-        embed=discord.Embed(title="위장 카메라", description="시야: ?m\n최대 수량: 6 ```나타폰 제작 가능```", color=0x329632)
+        embed=discord.Embed(title="위장 카메라", description="시야: 13m\n최대 수량: 6 `나타폰 제작 가능`", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271371989319750/012._Trail_Camera__.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득 경로", value="감시 카메라 + 나뭇가지", inline=False)
@@ -2306,140 +2313,140 @@ def Weapon(msg):
         embed=discord.Embed(title="유리병", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271728345808906/002._Glass_Bottle_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 항구 (8) 번화가 (9) 성당 (8)\n사냥 멧돼지 ", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구(8) 번화가(9) 성당(8)\n사냥 멧돼지 ", inline=False)
         return embed
 
     if msg=="못":
         embed=discord.Embed(title="못", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271728563879936/003._Nail_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 번화가 (11) 양궁장 (6) 공장 (9)\n사냥 박쥐 (4.4%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 번화가(11) 양궁장(6) 공장(9)\n사냥 박쥐(4.4%)", inline=False)
         return embed
 
     if msg=="가죽":
         embed=discord.Embed(title="가죽", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271728916226098/004._Leather_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="사냥 닭 (100%) 박쥐 (22.1%) 들개 (100%) 늑대 (100%) 곰 (100%)", inline=False)
+        embed.add_field(name="획득 경로", value="사냥 닭(100%) 박쥐(22.1%) 들개(100%) 늑대(100%) 곰(100%)", inline=False)
         return embed
 
     if msg=="거북이등딱지":
-        embed=discord.Embed(title=" 거북이 등딱지", description="최대 수량: 3", color=0xffffff)
+        embed=discord.Embed(title="거북이 등딱지", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271729235001395/005._Turtle_Shell__.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 항구 (7) 연못 (7) 모래사장 (7)\n사냥 박쥐 (4.4%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구(7) 연못(7) 모래사장(7)\n사냥 박쥐(4.4%)", inline=False)
         return embed
 
     if msg=="고무":
         embed=discord.Embed(title="고무", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271729524392007/006._Rubber_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 항구 (8) 골목길 (7) 양궁장 (5)\n사냥 박쥐 ", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구(8) 골목길(7) 양궁장(5)\n사냥 박쥐 ", inline=False)
         return embed
 
     if msg=="고철":
         embed=discord.Embed(title="고철", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271729809588254/007._Scrap_Metal_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 항구 (9) 호텔 (11) 병원 (9) 공장 (13)\n사냥 들개 (9.8%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구(9) 호텔(11) 병원(9) 공장(13)\n사냥 들개(9.8%)", inline=False)
         return embed
 
     if msg=="라이터":
         embed=discord.Embed(title="라이터", description="최대 수량: 2", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271730040287362/008._Lighter_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 항구 (9) 골목길 (11) 공장 (13) 학교 (9)\n사냥 들개 (9.8%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구(9) 골목길(11) 공장(13) 학교(9)\n사냥 들개(9.8%)", inline=False)
         return embed
 
     if msg=="레이저포인터":
-        embed=discord.Embed(title=" 레이저 포인터", description="최대 수량: 3", color=0xffffff)
+        embed=discord.Embed(title="레이저 포인터", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271730258382908/009._Laser_Pointer__.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 고급 주택가 (7) 병원 (6) 학교 (7)\n사냥 들개 ", inline=False)
+        embed.add_field(name="획득 경로", value="지역 고급 주택가(7) 병원(6) 학교(7)\n사냥 들개 ", inline=False)
         return embed
 
     if msg=="마패":
         embed=discord.Embed(title="마패", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271730614911067/010._Stallion_Medal_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 모래사장 (7) 골목길 (6) 절 (8)\n사냥 멧돼지 (3.3%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 모래사장(7) 골목길(6) 절(8)\n사냥 멧돼지(3.3%)", inline=False)
         return embed
 
     if msg=="배터리":
         embed=discord.Embed(title="배터리", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271740458950736/011._Battery_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 항구 (9) 번화가 (12) 공장 (13)\n사냥 들개 (9.8%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구(9) 번화가(12) 공장(13)\n사냥 들개(9.8%)", inline=False)
         return embed
 
     if msg=="알코올":
         embed=discord.Embed(title="알코올", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271740672847893/012._Alcohol_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 병원 (6) 공장 (7) 학교 (6)\n사냥 멧돼지 (3.3%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 병원(6) 공장(7) 학교(6)\n사냥 멧돼지(3.3%)", inline=False)
         return embed
 
     if msg=="오일" or msg=="기름":
         embed=discord.Embed(title="오일", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271740861608006/013._Oil_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 고급 주택가 (9) 번화가 (8) 양궁장 (7) 공장 (9)\n사냥 박쥐 ", inline=False)
+        embed.add_field(name="획득 경로", value="지역 고급 주택가(9) 번화가(8) 양궁장(7) 공장(9)\n사냥 박쥐 ", inline=False)
         return embed
 
     if msg=="옷감":
         embed=discord.Embed(title="옷감", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271741067120653/014._Cloth_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 호텔 (9) 번화가 (9) 절 (9)\n사냥 멧돼지 ", inline=False)
+        embed.add_field(name="획득 경로", value="지역 호텔(9) 번화가(9) 절(9)\n사냥 멧돼지 ", inline=False)
         return embed
 
     if msg=="원석":
         embed=discord.Embed(title="원석", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271741272645672/015._Gemstone_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 연못 (11) 모래사장 (11) 절 (9) 숲 (11)\n사냥 들개 (9.8%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 연못(11) 모래사장(11) 절(9) 숲(11)\n사냥 들개(9.8%)", inline=False)
         return embed
 
     if msg=="접착제":
         embed=discord.Embed(title="접착제", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271741612371978/016._Glue_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 골목길 (8) 병원 (8) 공장 (9)\n사냥 박쥐 ", inline=False)
+        embed.add_field(name="획득 경로", value="지역 골목길(8) 병원(8) 공장(9)\n사냥 박쥐 ", inline=False)
         return embed
 
     if msg=="종이":
         embed=discord.Embed(title="종이", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271741822091334/017._Paper_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 절 (9) 양궁장 (8) 성당 (9)\n사냥 박쥐 ", inline=False)
+        embed.add_field(name="획득 경로", value="지역 절(9) 양궁장(8) 성당(9)\n사냥 박쥐 ", inline=False)
         return embed
 
     if msg=="철광석":
         embed=discord.Embed(title="철광석", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271742019211344/018._Iron_Ore_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 호텔 (8) 묘지 (7) 숲 (8)\n사냥 멧돼지 ", inline=False)
+        embed.add_field(name="획득 경로", value="지역 호텔(8) 묘지(7) 숲(8)\n사냥 멧돼지 ", inline=False)
         return embed
 
     if msg=="캔":
         embed=discord.Embed(title="캔", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271742207950928/019._Can_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 모래사장 (5) 번화가 (5) 학교 (5)\n사냥 멧돼지 (3.3%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 모래사장(5) 번화가(5) 학교(5)\n사냥 멧돼지(3.3%)", inline=False)
         return embed
 
     if msg=="화약":
         embed=discord.Embed(title="화약", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271742447034408/020._Gunpowder_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 절 (9) 양궁장 (8) 묘지 (8)\n사냥 박쥐 (4.4%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 절(9) 양궁장(8) 묘지(8)\n사냥 박쥐(4.4%)", inline=False)
         return embed
 
     if msg=="피아노선":
         embed=discord.Embed(title="피아노선", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271750068076574/021._Piano_Wire_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 모래사장 (8) 고급 주택가 (9) 호텔 (8) 성당 (9)\n사냥 멧돼지 (3.3%) 알파 (6.3%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 모래사장(8) 고급 주택가(9) 호텔(8) 성당(9)\n사냥 멧돼지(3.3%) 알파(6.3%)", inline=False)
         return embed
 
     if msg=="강철":
@@ -2544,14 +2551,14 @@ def Weapon(msg):
         embed=discord.Embed(title="생명의 나무", description="최대 수량: 3", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272012652511302/036._Tree_of_Life__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
-        embed.add_field(name="획득 경로", value="채집 신비한 나무에서 채집\n    (1일 밤 호텔과 묘지, 2일 밤 숲과 병원)\n 사냥 위클라인 (14.3%) 재생성된 곰 (3.6%)", inline=False)
+        embed.add_field(name="획득 경로", value="채집 신비한 나무에서 채집\n`\t(1일 밤 호텔과 묘지, 2일 밤 숲과 병원)`\n 사냥 위클라인(14.3%) 재생성된 곰(3.6%)", inline=False)
         return embed
 
     if msg=="운석":
-        embed=discord.Embed(title="", description="최대 수량: 3", color=0x1e82cd)
+        embed=discord.Embed(title="운석", description="최대 수량: 3", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272012887384074/037._Meteorite_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
-        embed.add_field(name="획득 경로", value="채집 떨어진 유성\t(절,학교,연못,공장,골목길 랜덤)\n사냥 위클라인 (14.3%) 재생성된 곰 (3.6%) 재생성된 늑대 (3.8%)", inline=False)
+        embed.add_field(name="획득 경로", value="채집 떨어진 유성\t`(절,학교,연못,공장,골목길 랜덤)`\n사냥 위클라인(14.3%) 재생성된 곰(3.6%) 재생성된 늑대(3.8%)", inline=False)
         return embed
 
     if msg=="문스톤":
@@ -2579,7 +2586,7 @@ def Weapon(msg):
         embed=discord.Embed(title="미스릴", description="최대 수량: 3", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272013692670003/041._Mithril_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
-        embed.add_field(name="획득 경로", value="사냥 알파 (100%) 위클라인 (14.3%) 재생성된 곰 (3.6%) 재생성된 늑대 (3.8%) ", inline=False)
+        embed.add_field(name="획득 경로", value="사냥 알파(100%) 위클라인(14.3%) 재생성된 곰(3.6%) 재생성된 늑대(3.8%) ", inline=False)
         return embed
 
     if msg=="유리판":
@@ -2607,14 +2614,14 @@ def Weapon(msg):
         embed=discord.Embed(title="VF 혈액 샘플", description="최대 수량: 3", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272027210940426/045._VF_Blood_Sample_VF_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
-        embed.add_field(name="획득 경로", value="사냥 위클라인 (100%) 재생성된 곰 (1.8%)", inline=False)
+        embed.add_field(name="획득 경로", value="사냥 위클라인(100%) 재생성된 곰(1.8%)", inline=False)
         return embed
 
     if msg=="포스코어":
         embed=discord.Embed(title="포스 코어", description="최대 수량: 3", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915272027403870259/046._Force_Core__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
-        embed.add_field(name="획득 경로", value="사냥  오메가 (100%) 재생성된 곰 (3.6%)\n생명의 나무 + 운석", inline=False)
+        embed.add_field(name="획득 경로", value="생명의 나무 + 운석\n사냥 오메가(100%) 재생성된 곰s(3.6%)\n", inline=False)
         return embed
 
 #####음식#####
@@ -2623,77 +2630,77 @@ def Weapon(msg):
         embed=discord.Embed(title="감자", description="체력 재생 +130", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274213487673384/001._Potato_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="채집 연못 (4) 골목길 (4) 절 (8)", inline=False)
+        embed.add_field(name="획득 경로", value="채집 연못(4) 골목길(4) 절(8)", inline=False)
         return embed
 
     if msg=="대구":
         embed=discord.Embed(title="대구", description="체력 재생 +130", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274213718364160/002._Cod_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="낚시 항구 (5) 모래사장 (4) 고급 주택가 (4)", inline=False)
+        embed.add_field(name="획득 경로", value="낚시 항구(5) 모래사장(4) 고급 주택가(4)", inline=False)
         return embed
 
     if msg=="레몬":
         embed=discord.Embed(title="레몬", description="체력 재생 +100", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274214045548644/003._Lemon_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="고급 주택가 (4) 호텔 (5) 병원 (5)", inline=False)
+        embed.add_field(name="획득 경로", value="고급 주택가(4) 호텔(5) 병원(5)", inline=False)
         return embed
 
     if msg=="마늘":
         embed=discord.Embed(title="마늘", description="체력 재생 +200", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274214351699968/004._Garlic_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="골목길 (6) 절 (7) 묘지 (5)", inline=False)
+        embed.add_field(name="획득 경로", value="골목길(6) 절(7) 묘지(5)", inline=False)
         return embed
 
     if msg=="붕어":
         embed=discord.Embed(title="붕어", description="체력 재생 +130", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274214578196510/005._Carp_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="낚시 연못 (9) 묘지 (2) 숲 (2)", inline=False)
+        embed.add_field(name="획득 경로", value="낚시 연못(9) 묘지(2) 숲(2)", inline=False)
         return embed
 
     if msg=="빵":
         embed=discord.Embed(title=" 빵", description="체력 재생 +325", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274214783725648/006._Bread_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="병원 (5) 학교 (6)", inline=False)
+        embed.add_field(name="획득 경로", value="병원(5) 학교(6)", inline=False)
         return embed
 
     if msg=="고기":
         embed=discord.Embed(title="고기", description="체력 재생 +300", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274215043776602/007._Meat_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="사냥 닭 (66.7%) 멧돼지 (100%) 늑대 (100%) 곰 (100%)", inline=False)
+        embed.add_field(name="획득 경로", value="사냥 닭(66.7%) 멧돼지(100%) 늑대(100%) 곰(100%)", inline=False)
         return embed
 
     if msg=="달걀":
         embed=discord.Embed(title="", description="체력 재생 +200", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274215408664576/008._Egg_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 양궁장 (5) 묘지 (5) 숲 (6)\n사냥 닭 (16.7%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 양궁장(5) 묘지(5) 숲(6)\n사냥 닭(16.7%)", inline=False)
         return embed
 
     if msg=="생라면"or msg=="라면":
         embed=discord.Embed(title="생라면", description="체력 재생 +275", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274215773573120/009._Ramen_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="항구 (5) 절 (5) 공장 (7)", inline=False)
+        embed.add_field(name="획득 경로", value="항구(5) 절(5) 공장(7)", inline=False)
         return embed
 
     if msg=="약초":
         embed=discord.Embed(title=" 약초", description="체력 재생 +300", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274216176230450/010._Oriental_Herb_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="연못 (6) 절 (6) 숲 (6)", inline=False)
+        embed.add_field(name="획득 경로", value="연못(6) 절(6) 숲(6)", inline=False)
         return embed
 
     if msg=="초콜릿":
         embed=discord.Embed(title=" 초콜릿", description="체력 재생 +275", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274223520448522/011._Chocolate_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="고급 주택가 (6) 번화가 (6) 양궁장 (5)", inline=False)
+        embed.add_field(name="획득 경로", value="고급 주택가(6) 번화가(6) 양궁장(5)", inline=False)
         return embed
 
     if msg=="꿀바른대구살":
@@ -2924,7 +2931,7 @@ def Weapon(msg):
         embed=discord.Embed(title="구급상자", description="체력 재생 +1200", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274673242120322/045._First_Aid_Kit_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
-        embed.add_field(name="획득 경로", value="사냥 위클라인 (100%)", inline=False)
+        embed.add_field(name="획득 경로", value="사냥 위클라인(100%)", inline=False)
         return embed
 
     if msg=="버터감자구이":
@@ -2984,7 +2991,7 @@ def Weapon(msg):
         return embed
 
     if msg=="일레븐세트":
-        embed=discord.Embed(title="일레븐 세트", description="체력 재생 +980\n```일레븐 제작가능```", color=0x9c4998)
+        embed=discord.Embed(title="일레븐 세트", description="체력 재생 +980\n`일레븐 제작가능`", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274704279969822/054._11_Combo_Meal__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="햄버거 + 감자튀김", inline=False)
@@ -2997,49 +3004,49 @@ def Weapon(msg):
         embed=discord.Embed(title="꿀", description="스태미너 재생 +250", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624089654013952/001._Honey_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="골목길 (8) 번화가 (6) 숲 (6)", inline=False)
+        embed.add_field(name="획득 경로", value="골목길(8) 번화가(6) 숲(6)", inline=False)
         return embed
 
     if msg=="물":
         embed=discord.Embed(title=" 물", description="스태미너 재생 +225", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624093202407434/002._Water_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="채집 연못 (10) 호텔 (4) 묘지 (4) 숲 (3) 성당 (1)", inline=False)
+        embed.add_field(name="획득 경로", value="채집 연못(10) 호텔(4) 묘지(4) 숲(3) 성당(1)", inline=False)
         return embed
 
     if msg=="얼음":
         embed=discord.Embed(title="얼음", description="스태미너 재생 +200", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624097069551616/003._Ice_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="호텔 (9) 병원 (7) 묘지 (8)", inline=False)
+        embed.add_field(name="획득 경로", value="호텔(9) 병원(7) 묘지(8)", inline=False)
         return embed
 
     if msg=="위스키":
         embed=discord.Embed(title="위스키", description="스태미너 재생 +450", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624101393887262/004._Whiskey_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="고급 주택가 (5) 호텔 (5) 성당 (3)", inline=False)
+        embed.add_field(name="획득 경로", value="고급 주택가(5) 호텔(5) 성당(3)", inline=False)
         return embed
 
     if msg=="커피콩":
         embed=discord.Embed(title="커피콩", description="스태미너 재생 +380", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624107219750982/005._Coffee_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="항구 (5) 고급 주택가 (5) 묘지 (6)", inline=False)
+        embed.add_field(name="획득 경로", value="항구(5) 고급 주택가(5) 묘지(6)", inline=False)
         return embed
 
     if msg=="탄산수":
         embed=discord.Embed(title="탄산수", description="스태미너 재생 +380", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624110449377330/006._Carbonated_Water_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="모래사장 (8) 고급 주택가 (8) 호텔 (8)", inline=False)
+        embed.add_field(name="획득 경로", value="모래사장(8) 고급 주택가(8) 호텔(8)", inline=False)
         return embed
 
     if msg=="우유":
         embed=discord.Embed(title="우유", description="스태미너 재생 +200", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624115142807552/007._Milk_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="번화가 (6) 병원 (5) 성당 (4)", inline=False)
+        embed.add_field(name="획득 경로", value="번화가(6) 병원(5) 성당(4)", inline=False)
         return embed
 
     if msg=="뜨거운물":
@@ -3258,7 +3265,7 @@ def Weapon(msg):
         embed=discord.Embed(title="자전거 헬멧", description="최대 체력 +30", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/892443086720991292/003._Bike_Helmet__.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="모래사장(8) 성당(8) 학교(8)\n사냥 멧돼지 (3.3%)", inline=False)
+        embed.add_field(name="획득 경로", value="모래사장(8) 성당(8) 학교(8)\n사냥 멧돼지(3.3%)", inline=False)
         return embed
 
     if msg=="가면":
