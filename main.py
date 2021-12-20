@@ -59,13 +59,13 @@ async def on_message(message):
         embed.add_field(name="~~?캐 <캐릭터이름>~~", value="~~캐릭터의 정보를 가져옵니다. `EX)?캐 수아`~~", inline=False)
         embed.add_field(name="?패치정보", value="현재 적용된 게임 패치 정보를 알려줍니다.", inline=False)
         embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)
-        embed.add_field(name="?랭크", value="현재 시즌의 랭크를 알려줍니다. EX)?전적 <닉네임>", inline=False)
+        embed.add_field(name="?랭크", value="현재 시즌의 랭크를 알려줍니다. `EX)?랭크 <닉네임>`", inline=False)
         embed.set_footer(text="")
         await message.channel.send(embed=embed)
         
 #####패치정보#####
     if message.content=="?패치정보" or message.content=="?패치":
-       await message.channel.send("현재 시험중입니다.")
+       await message.channel.send("패치노트_0.47.0ver")
        
 #####시즌#####    
     if message.content=="?시즌":
