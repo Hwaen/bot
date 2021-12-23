@@ -184,7 +184,7 @@ def Weapon(msg):
         return embed
 
     if msg=="프라가라흐":
-        embed=discord.Embed(title="프라가라흐", description=" 공격력 +90\n이동 속도 +0.12\n ```차지드 스트라이크-[고유 장착 효과]\n 매 4초마다 다음 공격이 100%의 치명타 확률 보너스를 획득합니다.```", color=0xf9d537)
+        embed=discord.Embed(title="프라가라흐", description=" 공격력 +92\n이동 속도 +0.12\n ```차지드 스트라이크-[고유 장착 효과]\n 매 4초마다 다음 공격이 100%의 치명타 확률 보너스를 획득합니다.```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322058556981298/891342864741707846/015._Fragarach_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="휙득 경로 ", value="군용 나이프 + 포스 코어", inline=False)
@@ -261,7 +261,7 @@ def Weapon(msg):
 #####레이피어#####
 
     if msg=="바늘":
-        embed=discord.Embed(title="바늘", description=" 공격력 +3\n치명타 피해량 +15%\n", color=0xffffff)
+        embed=discord.Embed(title="바늘", description=" 공격력 +5\n치명타 피해량 +5%\n", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251045377687663/894251084057571338/001._Needle_.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득 경로", value="골목길(6) 호텔(7) 병원(6)\n사냥 박쥐", inline=False)
@@ -296,7 +296,7 @@ def Weapon(msg):
         return embed
 
     if msg=="듀랜달Mk2":
-        embed=discord.Embed(title="듀랜달 Mk2", description=" 공격력 +55\n시야 +1.5\n치명타 확률 +12%\n치명타 피해량 +20%\n쿨다운 감소 +6%\n생명력 흡수 +9%\n", color=0x9c4998)
+        embed=discord.Embed(title="듀랜달 Mk2", description=" 공격력 +55\n시야 +1\n치명타 확률 +12%\n치명타 피해량 +20%\n쿨다운 감소 +6%\n생명력 흡수 +9%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251045377687663/894251113694498856/006._Durendal_Mk2__Mk2.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="매화검 + 레이저 포인터", inline=False)
@@ -539,14 +539,14 @@ def Weapon(msg):
         return embed
 
     if msg=="매그넘보아":
-        embed=discord.Embed(title="매그넘-보아", description="장탄 수: 6발\n 공격력 +84\n 공격 속도(%) +25%\n 이동 속도 +0.1\n 시야 +1.5\n 생명력 흡수 +22%\n", color=0x9c4998)
+        embed=discord.Embed(title="매그넘-보아", description="장탄 수: 6발\n 공격력 +84\n 공격 속도(%) +25%\n 이동 속도 +0.1\n 생명력 흡수 +22%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891755103726501968/891864819676897290/011._Magnum-Boa_-.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="매그넘-아나콘다 + 강철", inline=False)
         return embed
 
     if msg=="글록48":
-        embed=discord.Embed(title="글록 48", description="장탄 수: 8발\n 공격력 +75\n 공격 속도(%) +20%\n 이동 속도 +0.1\n 시야 +3.5\n (고유)기본 공격 사거리 +0.75\n", color=0x9c4998)
+        embed=discord.Embed(title="글록 48", description="장탄 수: 8발\n 공격력 +77\n 공격 속도(%) +20%\n 이동 속도 +0.1\n 시야 +2.5\n (고유)기본 공격 사거리 +0.75\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891755103726501968/891864824970088568/012._Glock_48__48.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="FN57 + EMP 드론", inline=False)
@@ -666,7 +666,7 @@ def Weapon(msg):
         embed=discord.Embed(title="손도끼", description=" 공격력 +25", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366076565303306/002._Hatchet_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="휙득 경로", value="연못(5) 모래사장(6) 공장(5)\n사냥 들개", inline=False)
+        embed.add_field(name="휙득 경로", value="연못(5) 모래사장(5) 공장(5)\n사냥 들개", inline=False)
         return embed
 
     if msg=="곡괭이":
@@ -726,7 +726,7 @@ def Weapon(msg):
         return embed
 
     if msg=="스퀴테":
-        embed=discord.Embed(title="스퀴테", description=" 공격력 +112\n 레벨 당 스킬 증폭 +2%\n (고유)기본 공격 사거리 +1", color=0x9c4998)
+        embed=discord.Embed(title="스퀴테", description=" 공격력 +115\n 레벨 당 스킬 증폭 +2%\n (고유)기본 공격 사거리 +1", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366122300006421/010._Scythe_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="사신의 낫 + 황금", inline=False)
@@ -798,7 +798,7 @@ def Weapon(msg):
         return embed
 
     if msg=="플라즈마톤파":
-        embed=discord.Embed(title="플라즈마 톤파", description=" 공격력 +60\n 방어력 +21\n 시야 +4\n", color=0x9c4998)
+        embed=discord.Embed(title="플라즈마 톤파", description=" 공격력 +60\n 방어력 +21\n 시야 +2\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289549835829258/007._Plasma_Tonfa__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="류큐톤파 + 레이저 포인터", inline=False)
@@ -1224,7 +1224,7 @@ def Weapon(msg):
         return embed
 
     if msg=="은둔자":
-        embed=discord.Embed(title="은둔자", description=" 공격력 +63\n ```저주-[고유 장착 효과]\n스킬 공격을 가하면 적을 4초간 저주 상태로 만듭니다.\n저주 상태인 적은 이동 속도가 8% 느려지고, 저주 상태에서 해제될 때 50 + 스킬 증폭의 2.25배에 해당하는 고정 피해를 입습니다.\n한번 저주 상태가 되면 8초 동안 다시 저주 상태에 걸리지 않으며, 저주의 사용자가 대상에게 기본 공격을 적중시킬 때 마다 저주 대기 시간이 1초 씩 감소합니다.\n(쿨다운: 2초)```", color=0x9c4998)
+        embed=discord.Embed(title="은둔자", description=" 공격력 +66\n ```저주-[고유 장착 효과]\n스킬 공격을 가하면 적을 4초간 저주 상태로 만듭니다.\n저주 상태인 적은 이동 속도가 8% 느려지고, 저주 상태에서 해제될 때 50 + 스킬 증폭의 2.25배에 해당하는 고정 피해를 입습니다.\n한번 저주 상태가 되면 8초 동안 다시 저주 상태에 걸리지 않으며, 저주의 사용자가 대상에게 기본 공격을 적중시킬 때 마다 저주 대기 시간이 1초 씩 감소합니다.\n(쿨다운: 2초)```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/910522534036926524/008._The_Hermit_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="의지의 지팡이 + 성자의 유산", inline=False)
@@ -1245,14 +1245,14 @@ def Weapon(msg):
         return embed
 
     if msg=="더스타":
-        embed=discord.Embed(title="더 스타", description=" 공격력 +67\n쿨다운 감소 +10%\n시야 +2.5\n스킬 증폭 +15%\n", color=0x9c4998)
+        embed=discord.Embed(title="더 스타", description=" 공격력 +69\n쿨다운 감소 +10%\n시야 +2\n스킬 증폭 +15%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/910522545965514752/011._The_Star__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="소유의 펜타클 + 바브드 블로섬", inline=False)
         return embed
 
     if msg=="더문":
-        embed=discord.Embed(title="더 문", description=" 공격력 +90\n시야 +1\n ```굴절-[고유 장착 효과]\n 굴절의 망토를 두릅니다.\n굴절의 망토는 적이 나에게 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 사라지고, 35초 후 재생성 됩니다.```", color=0x9c4998)
+        embed=discord.Embed(title="더 문", description=" 공격력 +90\n스킬 증폭 +10%\n시야 +3\n ```굴절-[고유 장착 효과]\n 굴절의 망토를 두릅니다.\n굴절의 망토는 적이 나에게 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 사라지고, 35초 후 재생성 됩니다.```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/910522550210166834/012._The_Moon__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="거울구슬 + 문스톤", inline=False)
@@ -1457,7 +1457,7 @@ def Weapon(msg):
         return embed
 
     if msg=="화첨창":
-        embed=discord.Embed(title="화첨창", description="공격력 +100\n```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n[타오르는 고통]은 매 초마다 대상 최대 체력의 1.15%를 피해로 줍니다.```", color=0xf9d537)
+        embed=discord.Embed(title="화첨창", description="공격력 +60\n공격 속도 +40%```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n[타오르는 고통]은 매 초마다 대상 최대 체력의 1.5%를 피해로 줍니다.```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472761352990760/013._Blazing_Lance_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 죽창", inline=False)
@@ -1475,7 +1475,7 @@ def Weapon(msg):
         embed=discord.Embed(title="녹슨 검", description="공격력 +11", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914732342571065374/001._Rusty_Sword__.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득경로", value="항구(7개), 양궁장(7개), 성당(6개)", inline=False)
+        embed.add_field(name="획득경로", value="항구(6) 양궁장(7) 성당(6)", inline=False)
         return embed
 
     if msg=="샴쉬르":
@@ -1711,7 +1711,7 @@ def Weapon(msg):
         return embed
 
     if msg=="주작자문":
-        embed=discord.Embed(title="주작자문", description="공격력 +36\n```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다. [타오르는 고통]은 매 초마다 대상 최대 체력의 1.15%를 고정 피해로 줍니다.```", color=0xf9d537)
+        embed=discord.Embed(title="주작자문", description="공격력 +40\n```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다. [타오르는 고통]은 매 초마다 대상 최대 체력의 1.15%를 고정 피해로 줍니다.```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756388587180112/019._Mark_of_the_Phoenix_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 글러브", inline=False)
@@ -1747,7 +1747,7 @@ def Weapon(msg):
         return embed
 
     if msg=="다트":
-        embed=discord.Embed(title="다트", description="최대 충전 수: 24발(충전: 20초)\n공격력 +16\n치명타 피해량 +15%\n이동 속도 +0.04\n", color=0x329632)
+        embed=discord.Embed(title="다트", description="최대 충전 수: 24발(충전: 20초)\n공격력 +16\n치명타 피해량 +8%\n이동 속도 +0.04\n", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896472980476031047/004._Dart_.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득경로", value="바늘 + 깃털", inline=False)
@@ -1817,7 +1817,7 @@ def Weapon(msg):
         return embed
 
     if msg=="플럼바타":
-        embed=discord.Embed(title="플럼바타", description="최대 충전 수: 24발(충전: 20초)\n공격력 +48\n이동 속도 +0.04\n치명타 피해량 +15%\n", color=0x9C4998)
+        embed=discord.Embed(title="플럼바타", description="최대 충전 수: 24발(충전: 20초)\n공격력 +48\n이동 속도 +0.04\n치명타 피해량 +10%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473031436795974/014._Plumbata_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="다트 + 강철", inline=False)
@@ -1859,7 +1859,7 @@ def Weapon(msg):
         return embed
 
     if msg=="플레솃" or msg=="플레셋":
-        embed=discord.Embed(title="플레솃", description="최대 충전 수: 24발(충전: 12초)\n공격력 +88\n이동 속도 +0.06\n치명타 피해량 +15%\n(고유)기본 공격 사거리 +0.5\n", color=0x9C4998)
+        embed=discord.Embed(title="플레솃", description="최대 충전 수: 24발(충전: 12초)\n공격력 +86\n이동 속도 +0.06\n치명타 피해량 +12%\n(고유)기본 공격 사거리 +0.5\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472624543174746/896473061652574248/020._Flechette_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="플럼바타 + 백색 가루", inline=False)
@@ -1899,7 +1899,7 @@ def Weapon(msg):
         embed=discord.Embed(title="쇠구슬", description="최대 충전 수: 50발(충전: 3초)\n공격력 +12", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472819167268925/001._Iron_Ball_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득경로", value="양궁장(6개) 숲(7개) 공장(7개)\n사냥 맷돼지", inline=False)
+        embed.add_field(name="획득경로", value="양궁장(8) 숲(7) 공장(7)\n사냥 맷돼지", inline=False)
         return embed
 
     if msg=="야구공":
@@ -2033,7 +2033,7 @@ def Weapon(msg):
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472927078350848/020._Dyadic_Prism__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="볼 라이트닝 + 포스 코어", inline=False)
-        
+        return embed
     
     if msg=="점착폭탄":
         embed=discord.Embed(title="점착폭탄", description="최대 충전 수 20발(충전: 12초)\n공격력 +80\n공격 속도 +20%\n```충전-섬광-[고유 장착 효과]\n다음에 가하는 기본 공격이 캐릭터 레벨 * 8(+스킬 증폭 * 1)의 추가 고유 피해를 주고 1초 동안 이동속도를 20% 만큼 감소시킵니다.\n(쿨다운 : 5초)```", color=0x9c4998)
@@ -2047,7 +2047,7 @@ def Weapon(msg):
         embed=discord.Embed(title="채찍", description="공격력 +12", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865135772225536/001._Whip_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="휙득 경로", value="공장(4) 학교(3)", inline=False)
+        embed.add_field(name="휙득 경로", value="공장(3) 학교(3)", inline=False)
         return embed
 
     if msg=="철편":
@@ -2086,7 +2086,7 @@ def Weapon(msg):
         return embed
 
     if msg=="플라즈마웜":
-        embed=discord.Embed(title="플라즈마 웜", description="공격력 +64\n 공격 속도 +40%\n 기본 공격 추가 피해 +18\n 시야 +2.3\n", color=0x9c4998)
+        embed=discord.Embed(title="플라즈마 웜", description="공격력 +66\n 공격 속도 +40%\n 기본 공격 추가 피해 +18\n 시야 +1.5\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865167414042624/008._Plasma_Whip__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로 ", value="벽력편 + 레이저 포인터", inline=False)
@@ -2113,6 +2113,119 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="철편 + 아이테르 깃털", inline=False)
         return embed
 
+#####VF의수#####
+
+    if msg=="바이퍼":
+        embed=discord.Embed(title="바이퍼", description="공격력 +25", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450484017233930/003._Viper_.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득경로", value="기본 지급", inline=False)
+        return embed
+
+    if msg=="데스애더":
+        embed=discord.Embed(title="데스애더", description="공격력 +43\n레벨 당 기본 공격 추가 피해 +1\n```의념 [고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 8 에 해당하는 피해를 입힙니다.",color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450505915695144/004._Deathadder_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="패시브 lv2에서 선택 진화", inline=False)
+        return embed
+
+    if msg=="데스애더퀸":
+        embed=discord.Embed(title="데스애더퀸", description="공격력 +63\n레벨 당 기본 공격 추가 피해 +2\n공격 속도 +15%```의념-[고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 8 에 해당하는 피해를 입힙니다.",color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450527331782656/007._Deathadder_Queen__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="패시브 lv3에서 선택 진화", inline=False)
+        return embed
+
+    if msg=="데스애더퀸MT":
+        embed=discord.Embed(title="데스애더퀸 - MT",description="공격력 +71\n공격 속도 +20%\n레벨 당 기본 공격 추가 피해 +2\n공격 속도 +15%```의념-[고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 10rm 에 해당하는 피해를 입힙니다.``` ```독사의 맹독-[고유 장착 효과]\n독사의 진노(R)에 적중한 적 대상의 방어력을 5초 동안 6% 감소시킵니다.\n이 효과는 최대 2중첩까지 중첩됩니다.```",color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450557966999552/010._Deathadder_Queen_MT_-MT.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="데스애더퀸 + 운석", inline=False)
+        return embed
+
+    if msg=="데스애더퀸FC":
+        embed=discord.Embed(title="데스애더퀸 - FC", description="공격력 +77\n공격 속도 +25%\n레벨 당 기본 공격 추가 피해 +2\n (고유) 방해 효과 저항 15%\n ```의념-[고유 장착 효과]\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n캐릭터 레벨 * 10에 해당하는 피해를 입힙니다.```",color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450558168313856/011._Deathadder_Queen_FC_-FC.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="데스애더퀸 + 포스코어", inline=False)
+        return embed
+
+    if msg=="데스애더퀸VBS":
+        embed=discord.Embed(title="데스애더퀸 - VBS", description="공격력 +81\n공격 속도 +25%\n 레벨 당 기본 공격 추가 피해 +2\n(고유) 받는 회복 증가 +20%\n ```의념-[고유 장착 효과]\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n캐릭터 레벨 * 10에 해당하는 피해를 입힙니다.```",color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450558516437012/012._Deathadder_Queen_VBS_-VBS.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="데스애더퀸 +VF 혈액 샘플", inline=False)
+        return embed
+
+    if msg=="블랙맘바":
+        embed=discord.Embed(title="블랙맘바", description="공격력 +45\n 모든 피해 흡혈 +8%",color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450506184097812/005._Black_Mamba_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="패시브 lv2에서 선택 ", inline=False)
+        return embed
+
+    if msg=="블랙맘바킹":
+        embed=discord.Embed(title="블랙맘바킹", description="공격력 +65\n레벨 당 최대 체력 6\n모든 피해 흡혈 +10%",color=0x9C4998)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450527642165278/008._Black_Mamba_King_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="패시브 lv3에서 선택 ", inline=False)
+        return embed
+
+    if msg=="블랙맘바킹TL":
+        embed=discord.Embed(title="블랙맘바킹 - TL", description="공격력 +73\n레벨 당 최대 체력 +8\n 모든 피해 흡혈 +10%\n  ```불꽃 결계[고유 장착 효과]\n  VF폭주 상태일 때 전투에 돌입하면 매 1초마다 주변 2.5m의 적에게 고유 피해를 입힙니다.\n적에게 최대 체력의 5%의 고유 피해를 입힙니다.```",color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450574458982420/013._Black_Mamba_King_TL_-TL.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="블랙맘바킹 + 생명의 나무", inline=False)
+        return embed
+
+    if msg=="블랙맘바킹FC":
+        embed=discord.Embed(title="블랙맘바킹 - FC", description="공격력 +79\n레벨 당 최대 체력 +8\n모든 피해 흡혈 +10% \n(고유) 방해 효과 저항 +15%",color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450574647722046/014._Black_Mamba_King_FC_-FC.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="블랙맘바킹 + 포스 코어", inline=False)
+        return embed
+
+    if msg=="블랙맘바킹VBS":
+        embed=discord.Embed(title="블랙맘바킹 - VBS", description="공격력 +83\n레벨 당 최대 체력 +8\n 모든 피해 흡혈 +15%\n(고유) 받는 회복 증가 +20%",color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450574903586816/015._Black_Mamba_King_VBS_-VBS.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="블랙맘바킹 +VF 혈액 샘플", inline=False)
+        return embed
+
+    if msg=="사이드와인더":
+        embed=discord.Embed(title="사이드와인더", description="공격력 +41\n이동 속도 +0.06\n```가벼운 발걸음-[고유 장착 효과]-사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.1m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n 기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 70의 고유 피해를 입힙니다. 최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 30% 감소시킵니다.```",color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450506398023690/006._Sidewinder_.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="패시브 lv2에서 선택 진화", inline=False)
+        return embed
+
+    if msg=="슈퍼사이드와인더":
+        embed=discord.Embed(title="슈퍼사이드와인더", description="공격력 +61\n이동 속도+0.08\n쿨다운 감소 +6%\n```가벼운 발걸음-[고유 장착 효과]사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.1m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 70의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 30% 감소시킵니다.```",color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450527944171560/009._Alpha_Sidewinder_.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="패시브 lv3에서 선택 진화", inline=False)
+        return embed
+
+    if msg=="슈퍼사이드와인더ML":
+        embed=discord.Embed(title="슈퍼사이드와인더 - ML", description="공격력 +69\n이동 속도 +0.1\n쿨다운 감소 +10%\n(고유) 최대 쿨다운 감소 +5%\n```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.\n``` ```VF제어 강화 - [고유 장착 효과]\n에키온의 과부하 상태의 지속 시간이 VF폭주(R) 레벨에 따라 영구적으로 30/35/40/45% 감소합니다.```",color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450589193580554/016._Alpha_Siderwinder_ML_-ML.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="슈퍼사이드와인더 + 미스릴", inline=False)
+        return embed
+
+    if msg=="슈퍼사이드와인더FC":
+        embed=discord.Embed(title="슈퍼사이드와인더 - FC", description="공격력 +75\n이동 속도 +0.1\n쿨다운 감소 +15%\n(고유) 방해 효과 저항 +15%\n```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.\n``` ",color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450589445234688/017._Alpha_Sidewinder_FC_-FC.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="슈퍼사이드와인더 + 포스 코어", inline=False)
+        return embed
+
+    if msg=="슈퍼사이드와인더VBS":
+        embed=discord.Embed(title="슈퍼사이드와인더 - VBS", description="공격력 +79\n이동 속도 +0.1\n쿨다운 감소 +15%\n(고유) 받는 회복 증가 +20%\n ```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.```",color=0xF9D537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450589688528916/018._Alpha_Sidewinder_VBS_-VBS.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="획득 경로", value="슈퍼사이드와인더 + 포스 코어", inline=False)
+        return embed
 
 
 
@@ -2129,7 +2242,7 @@ def Weapon(msg):
         embed=discord.Embed(title="올가미",description="트랩 피해 +10\n최대 수량: 5",color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271133396340776/002._Snare_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득경로", value="항구(3), 연못(4), 모래사장(4), 양궁장(3), 숲(3), 멧돼지", inline=False)
+        embed.add_field(name="획득경로", value="항구(3), 연못(4), 모래사장(4), 양궁장(4), 숲(3), 멧돼지", inline=False)
         return embed
 
     if msg=="쥐덫":
@@ -2182,7 +2295,7 @@ def Weapon(msg):
         return embed
 
     if msg=="망원카메라":
-        embed=discord.Embed(title="망원 카메라", description="시야: 13m\n최대 수량: 6", color=0x329632)
+        embed=discord.Embed(title="망원 카메라", description="시야: 11m\n최대 수량: 6", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271371506999357/010._Telephoto_Camera__.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득 경로", value="감시 카메라 + 쌍안경", inline=False)
@@ -2334,14 +2447,14 @@ def Weapon(msg):
         embed=discord.Embed(title="거북이 등딱지", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271729235001395/005._Turtle_Shell__.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 항구(7) 연못(7) 모래사장(7)\n사냥 박쥐(4.4%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구(8) 연못(7) 모래사장(8)\n사냥 박쥐(4.4%)", inline=False)
         return embed
 
     if msg=="고무":
         embed=discord.Embed(title="고무", description="최대 수량: 3", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322810771836988/915271729524392007/006._Rubber_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 항구(8) 골목길(7) 양궁장(5)\n사냥 박쥐 ", inline=False)
+        embed.add_field(name="획득 경로", value="지역 항구(8) 골목길(7) 양궁장(6)\n사냥 박쥐 ", inline=False)
         return embed
 
     if msg=="고철":
@@ -2679,7 +2792,7 @@ def Weapon(msg):
         embed=discord.Embed(title="", description="체력 재생 +200", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274215408664576/008._Egg_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 양궁장(5) 묘지(5) 숲(6)\n사냥 닭(16.7%)", inline=False)
+        embed.add_field(name="획득 경로", value="지역 묘지(5) 숲(6)\n사냥 닭(16.7%)", inline=False)
         return embed
 
     if msg=="생라면"or msg=="라면":
@@ -2830,9 +2943,9 @@ def Weapon(msg):
         return embed
 
     if msg=="성수":
-        embed=discord.Embed(title="성수", description="체력 재생 +800\n방어력 +10", color=0x1e82cd)
+        embed=discord.Embed(title="성수", description="체력 재생 +800\n방어력 +10", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274613095796746/031._Holy_Water_.png")
-        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="미스릴 + 물", inline=False)
         return embed
 
@@ -3239,9 +3352,9 @@ def Weapon(msg):
         return embed
 
     if msg=="셀레네의눈물":
-        embed=discord.Embed(title="셀레네의 눈물", description="스태미너 재생 +1080\n공격력 +10", color=0x1e82cd)
+        embed=discord.Embed(title="셀레네의 눈물", description="스태미너 재생 +1080\n공격력 +10", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891623996704051241/891624395683024956/035._Tear_of_Selene__.png")
-        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="문스톤 + 물", inline=False)
         return embed
 
@@ -3388,7 +3501,7 @@ def Weapon(msg):
         return embed
 
     if msg=="모호크헬멧":
-        embed=discord.Embed(title="모호크 헬멧", description="최대 체력 +200\n스태미너 재생 +50%\n리플렉션-[고유 장착 효과]\n기본 공격으로 받은 피해의 4.5%를 공격자에게 고정 피해로 되돌려 줍니다. (근거리) 4초 동안 45%의 치유 감소 효과를 줍니다. (원거리) 4초 동안 35%의 치유 감소 효과를 줍니다. 또한 4초간 누적해서 700의 피해를 받으면, 주변에 225의 피해를 줍니다.\n(쿨다운 2초)", color=0x9c4998)
+        embed=discord.Embed(title="모호크 헬멧", description="최대 체력 +200\n스태미너 재생 +50%\n리플렉션-[고유 장착 효과]\n기본 공격으로 받은 피해의 4.5%를 공격자에게 고정 피해로 되돌려 줍니다. (근거리) 4초 동안 45%의 치유 감소 효과를 줍니다. (원거리) 4초 동안 35%의 치유 감소 효과를 줍니다. 또한 4초간 누적해서 600의 피해를 받으면, 주변에 150의 피해를 줍니다.\n(쿨다운: 3초)", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/892443181784924181/021._Mohawk_Headgear__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="소방 헬멧 + 가시 발판", inline=False)
@@ -3416,7 +3529,7 @@ def Weapon(msg):
         return embed
 
     if msg=="변검":
-        embed=discord.Embed(title="변검", description="방어력 +20\n최대 스태미너 +200\n이동 속도 +0.08\n생명력 흡수 +20%\n```의념-[고유 장착 효과]\n스킬을 사용하면 의념을 충전합니다. 충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 2.5초)\n(근거리) 캐릭터 레벨 * 12에 해당하는 피해를 입힙니다.\n(원거리) 캐릭터 레벨 * 9.5에 해당하는 피해를 입힙니다.```", color=0xf9d537)
+        embed=discord.Embed(title="변검", description="공격력 +10\n방어력 +20\n최대 스태미너 +200\n이동 속도 +0.1\n모든 피해 흡수 +20%\n", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/892443199711379506/024._Chinese_Opera_Mask_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="가면 + VF 혈액 샘플", inline=False)
@@ -3448,7 +3561,7 @@ def Weapon(msg):
         embed=discord.Embed(title="승복", description="방어력 +5\n쿨다운 감소 +5%", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184358139199488/002._Monk_s_Robe_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="지역 절(9) 양궁장(6)\n사냥 멧돼지", inline=False)
+        embed.add_field(name="획득 경로", value="지역 절(9) 양궁장(7)\n사냥 멧돼지", inline=False)
         return embed
 
     if msg=="전신수영복":
@@ -3592,7 +3705,7 @@ def Weapon(msg):
         return embed
 
     if msg=="석양의갑옷":
-        embed=discord.Embed(title="석양의 갑옷", description="방어력 +33\n최대 체력 +220\n시야 +1.5\n", color=0x9c4998)
+        embed=discord.Embed(title="석양의 갑옷", description="방어력 +33\n최대 체력 +220\n시야 +1\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184522157482004/022._Sunset_Armor__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="사슬 갑옷 + 루비", inline=False)
@@ -3655,7 +3768,7 @@ def Weapon(msg):
         return embed
 
     if msg=="배틀슈트":
-        embed=discord.Embed(title="배틀 슈트", description="방어력 +25\n최대 체력 +120\n치명타 피해 감소 +8%\n기본 공격 피해 감소 +10\n스킬 피해 감소 +8%\n", color=0x9c4998)
+        embed=discord.Embed(title="배틀 슈트", description="방어력 +25\n최대 체력 +120\n치명타 피해 감소 +8%\n기본 공격 피해 감소 +8\n스킬 피해 감소 +8%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184646673793074/032._Battle_Suit__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="방탄조끼 + 잠수복", inline=False)
@@ -3711,7 +3824,7 @@ def Weapon(msg):
         return embed
 
     if msg=="성법의":
-        embed=discord.Embed(title="성법의", description="최대 체력 +155\n치명타 피해 감소 +5%\n스킬 공격 추가 피해 +15\n```굴절-[고유 장착 효과]\n굴절의 망토를 두릅니다. 굴절의 망토는 적이 나에게 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 사라지고, 35초 후 재생성 됩니다.```", color=0xf9d537)
+        embed=discord.Embed(title="성법의", description="최대 체력 +225\n치명타 피해 감소 +5%\n스킬 공격 추가 피해 +15\n```굴절-[고유 장착 효과]\n굴절의 망토를 두릅니다. 굴절의 망토는 적이 나에게 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 사라지고, 20초 후 재생성 됩니다.```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184689522798604/040._Holy_Orders_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="포스 코어 + 사제복", inline=False)
@@ -3817,7 +3930,7 @@ def Weapon(msg):
         return embed
 
     if msg=="소드스토퍼":
-        embed=discord.Embed(title="소드 스토퍼", description="방어력 +36\n기본 공격 피해 감소 +2\n```리플렉션-[고유 장착 효과]\n기본 공격으로 받은 피해의 4.5%를 공격자에게 고정 피해로 되돌려 줍니다. (근거리) 4초 동안 45%의 치유 감소 효과를 줍니다. (원거리) 4초 동안 35%의 치유 감소 효과를 줍니다. 또한 4초 안에 600 이상의 피해를 입으면 6m(반지름) 범위 안에 225의 고유 피해를 입힙니다. \n쿨다운 : 2초```", color=0x9c4998)
+        embed=discord.Embed(title="소드 스토퍼", description="방어력 +36\n기본 공격 피해 감소 +2\n```리플렉션-[고유 장착 효과]\n기본 공격으로 받은 피해의 4.5%를 공격자에게 고정 피해로 되돌려 줍니다. (근거리) 4초 동안 45%의 치유 감소 효과를 줍니다. (원거리) 4초 동안 35%의 치유 감소 효과를 줍니다. 또한 4초 안에 600 이상의 피해를 입으면 6m(반지름) 범위 안에 150의 고유 피해를 입힙니다. \n쿨다운 : 3초```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322279160602634/892443884381143090/014._Sword_Stopper__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="바주반드 + 못", inline=False)
@@ -3880,7 +3993,7 @@ def Weapon(msg):
         return embed
 
     if msg=="나이팅게일":
-        embed=discord.Embed(title="나이팅게일", description="공격력 +15\n최대 체력 +160\n(고유) 받는 회복 증가 +15%\n", color=0x9c4998)
+        embed=discord.Embed(title="나이팅게일", description="공격력 +20\n최대 체력 +160\n(고유) 받는 회복 증가 +15%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322279160602634/892443931730653204/023._Nightingale_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="분대장 완장 + 힐링 포션", inline=False)
@@ -3901,7 +4014,7 @@ def Weapon(msg):
         return embed
 
     if msg=="스카디의팔찌" or msg == "스카디":
-        embed=discord.Embed(title="스카디의 팔찌", description="최대 체력 +125\n최대 스태미너 +250\n체력 재생 +1.2\n스태미너 재생 +1.2\n스킬 공격 추가 피해 +27\n", color=0xf9d537)
+        embed=discord.Embed(title="스카디의 팔찌", description="최대 체력 +100\n최대 스태미너 +250\n스태미너 재생 +1.2\n스킬 공격 추가 피해 +24\n```한파-[고유 장착 효과]\n스킬로 적에게 피해를 입히면 1초간 이동 속도를 20%만큼 느리게 만듭니다.\n(쿨다운: 3초)```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322279160602634/892444049032773732/027._Bracelet_of_Skadi__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="만년빙 + 진홍 팔찌", inline=False)
@@ -4064,7 +4177,7 @@ def Weapon(msg):
         return embed
 
     if msg=="미스릴부츠":
-        embed=discord.Embed(title="미스릴 부츠", description="스태미너 재생 +0.5\n스태미너 재생 +50%\n이동 속도 +0.27\n스킬 공격 추가 피해 +10\n", color=0x9c4998)
+        embed=discord.Embed(title="미스릴 부츠", description="방어력 +18\n공격 속도+22%\n이동 속도 +0.42", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/892443401113436270/018._Mithril_Boots__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="미스릴 + 체인 레깅스", inline=False)
@@ -4317,7 +4430,7 @@ def Weapon(msg):
         return embed
 
     if msg=="호크아이":
-        embed=discord.Embed(title="호크 아이", description="공격력 +15\n시야 +2.5\n(고유) 기본 공격 사거리 +0.75\n", color=0x1e82cd)
+        embed=discord.Embed(title="호크 아이", description="공격력 +13\n시야 +2\n(고유) 기본 공격 사거리 +0.75\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443653665075230/028._Hawkeye__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="사격 교본 + 저격 스코프", inline=False)

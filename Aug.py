@@ -32,7 +32,7 @@ def aug(msg):
         return embed
 
     if msg == "불괴":
-        embed=discord.Embed(title="불괴", description="무기 스킬 사용 시 3[근거리]/2.5[원거리]초 동안 불괴 상태가 되며 입는 피해가 20[근거리]/15[원거리]% 감소하고 방해 효과 저항이 (20+방어력×0.15)[근거리]/(15+방어력×0.15)[원거리]% 증가합니다. (쿨다운 30초))")
+        embed=discord.Embed(title="불괴", description="무기 스킬 사용 시 3[근거리]/2.5[원거리]초 동안 불괴 상태가 되며 입는 피해가 20[근거리]/15[원거리]% 감소하고 방해 효과 저항이 (20+방어력×0.15)[근거리]/(15+방어력×0.15)[원거리]% 증가합니다. (쿨다운 20초))")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/915656436212695080/916339950667051098/Ironclad_.png")
         return embed
 
@@ -93,12 +93,12 @@ def aug(msg):
         return embed
         
     if msg == "수확":
-        embed=discord.Embed(title="수확", description="자신 또는 자신의 소환물이 입히는 모든 피해의 10%만큼 스태미너가 회복됩니다.")
+        embed=discord.Embed(title="수확", description="자신 또는 자신의 소환물이 입히는 모든 피해의 15%만큼 스태미너가 회복됩니다.")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/916263008337010798/Spirit_Culling_.png")
         return embed
         
     if msg == "복수자":
-        embed=discord.Embed(title="복수자", description="안전지대 활성화 단계 이후로 자신이 안전지대 안에 있을 때 적에게 입히는 피해가 10% 증가합니다. 임시 안전지대와 최종 안전지대 모두 해당됩니다.")
+        embed=discord.Embed(title="복수자", description="안전지대 활성화 단계 이후로 자신이 안전지대 안에 있을 때 적에게 입히는 피해가 12% 증가합니다. 임시 안전지대와 최종 안전지대 모두 해당됩니다.")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/916263009171697674/Vengeance_.png")
         return embed
         
@@ -114,12 +114,12 @@ def aug(msg):
         return embed
 
     if msg == "치유드론":
-        embed=discord.Embed(title="치유드론", description="궁극기 사용 시 5초 동안 자신을 따라다니는 치유 드론이 나타납니다. 치유 드론은 주변 3m 내 자신을 포함한 아군의 체력을 매 초 잃은 체력의 (5+레벨×0.5)%만큼 회복시킵니다. (쿨다운 60초)")
+        embed=discord.Embed(title="치유드론", description="궁극기 사용 시 5초 동안 자신을 따라다니는 치유 드론이 나타납니다. 치유 드론은 주변 3m 내 자신을 포함한 아군의 체력을 매 초 잃은 체력의 (5+레벨×0.5)%만큼 회복시킵니다. (쿨다운 45초)")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261234951741450/916340061778374738/Healing_Drone_.png")
         return embed
 
     if msg == "증폭드론":
-        embed=discord.Embed(title="증폭드론", description="궁극기 사용 시 3.5초 동안 자신을 따라다니는 증폭 드론이 나타납니다. 증폭 드론은 주변 4m 내 자신을 포함한 아군의 이동 속도를 (5+0.3×레벨)%, 스킬 증폭을 (10+1.5×레벨)% 증가시킵니다. (쿨다운 60초)")
+        embed=discord.Embed(title="증폭드론", description="궁극기 사용 시 3.5초 동안 자신을 따라다니는 증폭 드론이 나타납니다. 증폭 드론은 주변 4m 내 자신을 포함한 아군의 이동 속도를 (5+0.3×레벨)%, 스킬 증폭을 (10+1.5×레벨)% 증가시킵니다. (쿨다운 45초)")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261234951741450/916340061119852574/Amplification_Drone_.png")
         return embed
 
@@ -129,7 +129,7 @@ def aug(msg):
         return embed
 
     if msg == "집결":
-        embed=discord.Embed(title="집결", description="궁극기 사용 시 자신의 주변 4m 내 자신을 포함한 아군은 3초 동안 (레벨×10)만큼의 보호막을 얻습니다. (쿨다운 60초)")
+        embed=discord.Embed(title="집결", description="궁극기 사용 시 자신의 주변 4m 내 자신을 포함한 아군은 3초 동안 (레벨×10)만큼의 보호막을 얻습니다. (쿨다운 45초)")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261234951741450/916340061333770260/Assembly_.png")
         return embed
 
@@ -139,7 +139,7 @@ def aug(msg):
         return embed
 
     if msg == "테이아":
-        embed=discord.Embed(title="테이아", description="밤 시야가 1.5m 증가합니다.")
+        embed=discord.Embed(title="테이아", description="밤 시야가 1.25m 증가합니다.")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261234951741450/916340062961147974/Theia_.png")
         return embed
 
