@@ -65,7 +65,7 @@ async def on_message(message):
         
 #####패치정보#####
     if message.content=="?패치정보" or message.content=="?패치":
-       await message.channel.send("패치노트_0.47.0ver")
+       await message.channel.send("패치노트_0.48.0ver")
        
 #####시즌#####    
     if message.content=="?시즌":
