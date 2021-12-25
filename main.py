@@ -11,6 +11,7 @@ import Aug
 import Rank
 import Skill_C1
 import Skill_C2
+import Skill_W
 
 
 
@@ -32,6 +33,7 @@ item = "?템"
 aug = "?특성"
 tier = "?랭크"
 skill = "?스킬"
+skill_w = "?무스"
 
 
 #####로딩#####
@@ -54,23 +56,22 @@ async def on_message(message):
         embed.add_field(name="?도움", value="사용 가능한 명령어를 가져옵니다.", inline=False)
         embed.add_field(name="?템 <템이름>", value="아이템의 정보를 가져옵니다. `EX)?템 낭아봉`", inline=False)
         embed.add_field(name="?스킬 <캐릭터> <스킬키>", value="캐릭터의 스킬의정보를 가져옵니다. `EX)?스킬 수아 Q`", inline=False)
-        embed.add_field(name="~~?무기스킬 <무기종류>~~", value="~~무기스킬의 정보를 가져옵니다. `EX)?무기스킬 망치`~~", inline=False)
+        embed.add_field(name="~~?무스 <무기종류>~~", value="~~무기스킬의 정보를 가져옵니다. `EX)?무스 망치`~~", inline=False)
         embed.add_field(name="?특성", value="특성의 종류와 설명을 가져옵니다. EX)특성 저항", inline=False)
-        embed.add_field(name="~~?캐 <캐릭터이름>~~", value="~~캐릭터의 정보를 가져옵니다. `EX)?캐 수아`~~", inline=False)
         embed.add_field(name="?패치정보", value="현재 적용된 게임 패치 정보를 알려줍니다.", inline=False)
-        embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)
         embed.add_field(name="?랭크", value="현재 시즌의 랭크를 알려줍니다. `EX)?랭크 <닉네임>`", inline=False)
-        embed.set_footer(text="")
+        embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)        
+        embed.set_footer(text="문의: 화엔 #9112")
         await message.channel.send(embed=embed)
         
 #####패치정보#####
-    if message.content=="?패치정보" or message.content=="?패치":
-       await message.channel.send("패치노트_0.48.0ver")
+    if message.content=="?패치정보" or message.content=="?패치" or message.content=="?패치노트":
+        embed=discord.Embed(description="[패치노트 0.48.0ver](https://www.inven.co.kr/board/er/5772/134)")
+        await message.channel.send(embed=embed)
        
 #####시즌#####    
     if message.content=="?시즌":
-        embed=discord.Embed()
-        embed.add_field(name="[시즌 4] ", value="%d일 %d시간 남았습니다." %(day,hour), inline=False)
+        embed=discord.Embed(title="[시즌 4]", description="%d일 %d시간 남았습니다." %(day,hour))        
         embed.set_footer(text="시즌 종료: 2022년 2월 3일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
         await message.channel.send(embed=embed)
 
@@ -98,6 +99,12 @@ async def on_message(message):
         Rank.tier(msg)
         await message.channel.send(embed=Rank.tier(msg))
 
+#####무기스킬#####
+    if message.content.startswith(skill_w):
+        msg = message.content[4:]
+        await message.channel.send(embed=Skill_W.skill_w(msg))
+
+        
 #####스킬#####
     
     global emo
@@ -114,6 +121,8 @@ async def on_message(message):
         await emo.add_reaction("3️⃣")
         await emo.add_reaction("4️⃣")
         await emo.add_reaction("5️⃣")
+
+
 
 @client.event
 async def on_reaction_add(reaction, user):

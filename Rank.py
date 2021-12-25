@@ -50,8 +50,6 @@ def tier(msg):
                         tier_img3 = img3
 
                 num = img(tier_img1[-5],tier_img2[-5],tier_img3[-5])
-                print(num)
-                        
 
                 embed=discord.Embed(title = user.get_text())
                 embed.set_thumbnail(url = "https://static-cdn.dak.gg/er/images/rank/round/"+num+".png")
