@@ -14,7 +14,7 @@ def aug(msg):
     if msg == "파괴":
         embed=discord.Embed(title="저항")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/916340033722675250/Havoc_2.png")
-        embed.add_field(name="주특성", value="취약 광분 흡혈마", inline=False)
+        embed.add_field(name="주특성", value="취약 광분 흡혈마 벽력", inline=False)
         embed.add_field(name="부특성", value="철갑탄 열세극복 복수자 수확 갈증", inline=False)
         return embed
 
@@ -32,7 +32,7 @@ def aug(msg):
         return embed
 
     if msg == "불괴":
-        embed=discord.Embed(title="불괴", description="무기 스킬 사용 시 3[근거리]/2.5[원거리]초 동안 불괴 상태가 되며 입는 피해가 20[근거리]/15[원거리]% 감소하고 방해 효과 저항이 (20+방어력×0.15)[근거리]/(15+방어력×0.15)[원거리]% 증가합니다. (쿨다운 20초))")
+        embed=discord.Embed(title="불괴", description="무기 스킬 사용 시 3[근거리]/2.5[원거리]초 동안 불괴 상태가 되며 입는 피해가 10 + 레벨×1[근거리]/5 + 레벨×1[원거리]% 감소하고 방해 효과 저항이 (20+방어력×0.15)[근거리]/(15+방어력×0.15)[원거리]% 증가합니다. (쿨다운 20초))")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/915656436212695080/916339950667051098/Ironclad_.png")
         return embed
 
@@ -62,13 +62,13 @@ def aug(msg):
         return embed
 
     if msg == "견고":
-        embed=discord.Embed(title="견고", description="이동 불가 상태일 때 입는 피해가 12% 감소합니다.")
+        embed=discord.Embed(title="견고", description="이동 불가 상태일 때 입는 피해가 (6 + 레벨 당 0.2)% 감소합니다.\n피해 감소 효과가 이동 불가 종료 이후 0.5초 더 지속됩니다.")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/915656436212695080/916339992421363793/Steadfast_.png")
         return embed
     
 #####파괴#####
     if msg == "취약":
-        embed=discord.Embed(title="취약", description="동일 실험체에게 3초 안에 기본 공격 또는 개별의 피해를 입히는 스킬(무기, 아이템 스킬 제외)을 3회 적중 시 (레벨×10)의 고정 피해를 추가로 입히며 4초 동안 대상의 방어력을 (레벨×0.5)% 감소시킵니다. (쿨다운 30초) 기본 공격이 연타로 적용되는 무기, 스킬 및 도트 딜링 스킬은 입히는 연속 피해를 한 번의 피해로 취급합니다. 스킬 사용 후 재사용하는 스킬의 경우는 스킬의 성향에 따라 개별 스킬 취급 여부가 다르며 무기 스킬은 취약 스택을 쌓을 수 없습니다.")
+        embed=discord.Embed(title="취약", description="동일 실험체에게 3초 안에 기본 공격 또는 개별의 피해를 입히는 스킬(무기, 아이템 스킬 제외)을 3회 적중 시 (레벨×4)의 고정 피해를 추가로 입히며 5초 동안 대상의 방어력을 (레벨×0.8)% 감소시킵니다. (쿨다운 30초) 기본 공격이 연타로 적용되는 무기, 스킬 및 도트 딜링 스킬은 입히는 연속 피해를 한 번의 피해로 취급합니다. 스킬 사용 후 재사용하는 스킬의 경우는 스킬의 성향에 따라 개별 스킬 취급 여부가 다르며 무기 스킬은 취약 스택을 쌓을 수 없습니다.")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/916262946173235200/Frailty_Infliction_.png")
         return embed
         
@@ -103,9 +103,15 @@ def aug(msg):
         return embed
         
     if msg == "철갑탄":
-        embed=discord.Embed(title="철갑탄", description="방어 관통이 4%만큼 증가합니다.")
+        embed=discord.Embed(title="철갑탄", description="방어 관통이 (레벨 당 0.3)%만큼 증가합니다.")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/916263008626425886/Stopping_Power_.png")
         return embed
+
+    if msg == "벽력":
+        embed=discord.Embed(title="벽력", description="적 실험체에게 스킬로 피해를 입혔을 때 10 + 레벨*7의 스킬 피해를 입힙니다. (쿨다운 20초)\n스킬을 적중한 적 실험체의 4m 범위 내 적 실험체가 있으면 전류의 줄기가 전이되어 50%의 피해를 입힙니다.\n전이될 적 실험체가 없는 경우 20%의 추가 고유 피해를 입힙니다.\n적 실험체에게 개별 스킬로 피해를 입힐 때마다 쿨다운이 1초 감소합니다.")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/928688092544634890/Red_Sprite_.png")
+        return embed
+    
         
 #####지원#####
     if msg == "초재생":
