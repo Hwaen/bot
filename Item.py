@@ -2316,7 +2316,7 @@ def Weapon(msg):
         return embed
 
     if msg=="위장카메라":
-        embed=discord.Embed(title="위장 카메라", description="시야: 13m\n최대 수량: 6\n `나타폰 제작 가능`", color=0x329632)
+        embed=discord.Embed(title="위장 카메라", description="시야: 13m\n최대 수량: 6\n\n`나타폰 제작 가능`", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271371989319750/012._Trail_Camera__.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득 경로", value="감시 카메라 + 나뭇가지", inline=False)
@@ -3111,7 +3111,7 @@ def Weapon(msg):
         return embed
 
     if msg=="일레븐세트":
-        embed=discord.Embed(title="일레븐 세트", description="체력 재생 +980\n`일레븐 제작가능`", color=0x9c4998)
+        embed=discord.Embed(title="일레븐 세트", description="체력 재생 +980\n\n`일레븐 제작가능`", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274704279969822/054._11_Combo_Meal__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="햄버거 + 감자튀김", inline=False)
@@ -3845,14 +3845,14 @@ def Weapon(msg):
         return embed
 
     if msg=="미스릴크롭":
-        embed=discord.Embed(title="미스릴 크롭", description="방어력 +65\n공격 속도 +12%\n이동 속도 +0.2\n`마이 제작 가능`", color=0x9c4998)
+        embed=discord.Embed(title="미스릴 크롭", description="방어력 +65\n공격 속도 +12%\n이동 속도 +0.2\n\n`마이 제작가능`", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/928692926333206608/Mithril_Crop__.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득 경로", value="비키니 + 미스릴", inline=False)
         return embed
 
     if msg=="아오자이":
-        embed=discord.Embed(title="미스릴 크롭", description="공격력 +45\n방어력 +60\n스태미너 재생 +100%\n`마이 제작 가능`", color=0xf9d537)
+        embed=discord.Embed(title="아오자이", description="공격력 +45\n방어력 +60\n스태미너 재생 +100%\n\n`마이 제작 가능`", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/928692926106718299/Ao_Dai_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="드레스 + 포스 코어", inline=False)
