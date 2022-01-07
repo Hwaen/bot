@@ -58,17 +58,11 @@ async def on_message(message):
         embed.add_field(name="?스킬 <캐릭터> <스킬키>", value="캐릭터의 스킬의정보를 가져옵니다. `EX)?스킬 수아 Q`", inline=False)
         embed.add_field(name="?무스 <무기종류>~~", value="~~무기스킬의 정보를 가져옵니다. `EX)?무스 망치`", inline=False)
         embed.add_field(name="?특성", value="특성의 종류와 설명을 가져옵니다. EX)특성 저항", inline=False)
-        embed.add_field(name="?패치정보", value="현재 적용된 게임 패치 정보를 알려줍니다.", inline=False)
         embed.add_field(name="?랭크", value="현재 시즌의 랭크를 알려줍니다. `EX)?랭크 <닉네임>`", inline=False)
         embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)        
-        embed.set_footer(text="문의: 화엔 #9112")
         await message.channel.send(embed=embed)
         
-#####패치정보#####
-    if message.content=="?패치정보" or message.content=="?패치" or message.content=="?패치노트":
-        embed=discord.Embed(description="[패치노트 0.48.0ver](https://www.inven.co.kr/board/er/5772/134)")
-        await message.channel.send(embed=embed)
-       
+     
 #####시즌#####    
     if message.content=="?시즌":
         embed=discord.Embed(title="[시즌 4]", description="%d일 %d시간 남았습니다." %(day,hour))        
