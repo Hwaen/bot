@@ -47,6 +47,12 @@ async def on_ready():
     print('------')
     await client.change_presence(status=discord.Status.online, activity=discord.Game("'?도움말' 을 쳐보세요"))
 
+    guild_list = client.guilds
+    for i in guild_list:
+            print("서버 ID: {} / 서버 이름: {}".format(i.id, i.name))
+
+    print(len(guild_list))
+
 #####도움말#####
 @client.event
 async def on_message(message):
