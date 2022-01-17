@@ -100,7 +100,6 @@ async def on_message(message):
 
         
 #####스킬#####
-    
     global emo
     if message.content.startswith(skill):
         msg = message.content[4:].split()
@@ -110,6 +109,7 @@ async def on_message(message):
         else:            
             Skill_C1.skill(msg[0],msg[1])
             emo = await message.channel.send(embed=Skill_C1.skill(msg[0],msg[1]))
+            
         await emo.add_reaction("1️⃣")
         await emo.add_reaction("2️⃣")
         await emo.add_reaction("3️⃣")
@@ -117,13 +117,12 @@ async def on_message(message):
         await emo.add_reaction("5️⃣")
 
 
-
 @client.event
 async def on_reaction_add(reaction, user):
     if user.bot == 1: 
             return None
         
-    if str(reaction.emoji) == "1️⃣":
+    if reaction.message.id == emo.id and str(reaction.emoji) == "1️⃣":
         if msg[0] == "알렉스"or msg[0] =="실비아":
             Skill_C2.skill_1(msg[1])
             await emo.edit(embed=Skill_C2.skill_1(msg[1]))
@@ -133,7 +132,7 @@ async def on_reaction_add(reaction, user):
         await emo.edit(embed=Skill_C1.skill_1(msg[1]))        
         await emo.remove_reaction("1️⃣",user)
                  
-    if str(reaction.emoji) == "2️⃣":
+    if reaction.message.id == emo.id and str(reaction.emoji) == "2️⃣":
         if msg[0] == "알렉스"or msg[0] =="실비아":
             Skill_C2.skill_1(msg[1])
             await emo.edit(embed=Skill_C2.skill_2(msg[1]))
@@ -143,7 +142,7 @@ async def on_reaction_add(reaction, user):
         await emo.edit(embed=Skill_C1.skill_2(msg[1]))
         await emo.remove_reaction("2️⃣",user)
                         
-    if str(reaction.emoji) == "3️⃣":
+    if reaction.message.id == emo.id and str(reaction.emoji) == "3️⃣":
         if msg[0] == "알렉스"or msg[0] =="실비아":
             Skill_C2.skill_1(msg[1])
             await emo.edit(embed=Skill_C2.skill_3(msg[1]))
@@ -153,7 +152,7 @@ async def on_reaction_add(reaction, user):
         await emo.edit(embed=Skill_C1.skill_3(msg[1]))       
         await emo.remove_reaction("3️⃣",user)
                         
-    if str(reaction.emoji) == "4️⃣":
+    if reaction.message.id == emo.id and str(reaction.emoji) == "4️⃣":
         if msg[0] == "알렉스" or msg[0] =="실비아":
             Skill_C2.skill_1(msg[1])
             await emo.edit(embed=Skill_C2.skill_4(msg[1]))
@@ -163,7 +162,7 @@ async def on_reaction_add(reaction, user):
         await emo.edit(embed=Skill_C1.skill_4(msg[1]))
         await emo.remove_reaction("4️⃣",user)
                         
-    if str(reaction.emoji) == "5️⃣":
+    if reaction.message.id == emo.id and str(reaction.emoji) == "5️⃣":
         if msg[0] == "알렉스" or msg[0] =="실비아":
             Skill_C2.skill_1(msg[1])
             await emo.edit(embed=Skill_C2.skill_5(msg[1]))
