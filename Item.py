@@ -747,7 +747,7 @@ def Weapon(msg):
         return embed
 
     if msg=="저거너트":
-        embed=discord.Embed(title="저거너트", description=" 공격력 +92\n기본 공격 사거리 -0.2\n 이동 속도 +0.04\n```열정-[고유 장착 효과]\n기본 공격이 적 실험체에게 적중 시, 적 실험체의 현재 체력의 7%의 피해를 주고, 5초간 열정 스택을 획득하며, 중첩된 열정 스택 당 12%의 공격 속도를 얻습니다.\n최대 3 중첩이 되면 20 의 공격력과 0.2의 이동 속도를 추가로 얻습니다.```", color=0x9c4998)
+        embed=discord.Embed(title="저거너트", description=" 공격력 +92\n기본 공격 사거리 -0.2\n이동 속도 +0.04\n공격 속도 20%\n```열정-[고유 장착 효과]\n기본 공격이 적 실험체에게 적중 시, 적 실험체의 현재 체력의 7%의 피해를 주고, 5초간 열정 스택을 획득하며, 중첩된 열정 스택 당 8%의 공격 속도를 얻습니다.\n최대 3 중첩이 되면 20 의 공격력과 0.2의 이동 속도를 추가로 얻습니다.```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366132706054154/012._The_Juggernaut_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="경랑화 도끼 + 모터", inline=False)
@@ -760,6 +760,14 @@ def Weapon(msg):
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="휙득 경로 ", value="대부+해적 깃발", inline=False)
         return embed
+
+    if msg=="반고부":
+        embed=discord.Embed(title="하르페 ", description="공격력 +145\n(고유) 방해 효과 저항 30%", color=0xf9d537)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366137101684766/013._Harpe_.png")
+        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="휙득 경로 ", value="전투 도끼 + 포스 코어", inline=False)
+        return embed
+        
 
 ######톤파######
     if msg=="대나무":
@@ -869,7 +877,7 @@ def Weapon(msg):
         return embed
         
     if msg=="인터벤션":
-        embed=discord.Embed(title="인터벤션", description="장탄 수: 2발\n 공격력 +100\n 시야 +4\n (고유)기본 공격 사거리 +1", color=0x9c4998)
+        embed=discord.Embed(title="인터벤션", description="장탄 수: 2발\n 공격력 +100\n 시야 +3\n (고유)기본 공격 사거리 +1", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472510999179264/007._Intervention_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="하푼건 + 망원 카메라", inline=False)
@@ -1160,7 +1168,7 @@ def Weapon(msg):
         return embed
 
     if msg =="저격크로스보우":
-        embed=discord.Embed(title="저격 크로스보우", description=" 공격력 +85\n시야 +2\n (고유)기본 공격 사거리 +0.85", color=0x9c4998)
+        embed=discord.Embed(title="저격 크로스보우", description=" 공격력 +83\n시야 +2\n (고유)기본 공격 사거리 +0.75", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251184217534524/894251268367863860/010._Sniper_Crossbow__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="저격궁 + 저격 스코프", inline=False)
@@ -1464,7 +1472,7 @@ def Weapon(msg):
         return embed
 
     if msg=="화첨창":
-        embed=discord.Embed(title="화첨창", description="공격력 +60\n공격 속도 +30%```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n[타오르는 고통]은 매 초마다 대상 최대 체력의 1.3%를 피해로 줍니다.```", color=0xf9d537)
+        embed=discord.Embed(title="화첨창", description="공격력 +60\n공격 속도 +30%```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n[타오르는 고통]은 매 초마다 대상 최대 체력의 1.2%를 피해로 줍니다.```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472761352990760/013._Blazing_Lance_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 죽창", inline=False)
@@ -1718,7 +1726,7 @@ def Weapon(msg):
         return embed
 
     if msg=="주작자문":
-        embed=discord.Embed(title="주작자문", description="공격력 +40\n```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다. [타오르는 고통]은 매 초마다 대상 최대 체력의 1.15%를 고정 피해로 줍니다.```", color=0xf9d537)
+        embed=discord.Embed(title="주작자문", description="공격력 +40\n```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다. [타오르는 고통]은 매 초마다 대상 최대 체력의 0.85%를 고정 피해로 줍니다.```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756388587180112/019._Mark_of_the_Phoenix_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 글러브", inline=False)
@@ -2036,7 +2044,7 @@ def Weapon(msg):
         return embed
 
     if msg=="프리즘볼":
-        embed=discord.Embed(title="프리즘 볼", description="최대 충전 수: 50발(충전: 3초)\n공격력 +110\n공격 속도 +33%\n", color=0xF9D537)
+        embed=discord.Embed(title="프리즘 볼", description="최대 충전 수: 50발(충전: 3초)\n공격력 +115\n공격 속도 +33%\n", color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472610097987597/896472927078350848/020._Dyadic_Prism__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="볼 라이트닝 + 포스 코어", inline=False)
@@ -2130,35 +2138,35 @@ def Weapon(msg):
         return embed
 
     if msg=="데스애더":
-        embed=discord.Embed(title="데스애더", description="공격력 +43\n레벨 당 기본 공격 추가 피해 +1\n```의념 [고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 8 에 해당하는 피해를 입힙니다.",color=0x1e82cd)
+        embed=discord.Embed(title="데스애더", description="공격력 +43\n레벨 당 기본 공격 추가 피해 +1\n```의념 [고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 5 에 해당하는 피해를 입힙니다.",color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450505915695144/004._Deathadder_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="패시브 lv2에서 선택 진화", inline=False)
         return embed
 
     if msg=="데스애더퀸":
-        embed=discord.Embed(title="데스애더퀸", description="공격력 +63\n레벨 당 기본 공격 추가 피해 +2\n공격 속도 +15%```의념-[고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 8 에 해당하는 피해를 입힙니다.",color=0x9C4998)
+        embed=discord.Embed(title="데스애더퀸", description="공격력 +63\n레벨 당 기본 공격 추가 피해 +2\n공격 속도 +15%```의념-[고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 5 에 해당하는 피해를 입힙니다.",color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450527331782656/007._Deathadder_Queen__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="패시브 lv3에서 선택 진화", inline=False)
         return embed
 
     if msg=="데스애더퀸MT":
-        embed=discord.Embed(title="데스애더퀸 - MT",description="공격력 +71\n공격 속도 +20%\n레벨 당 기본 공격 추가 피해 +2\n공격 속도 +15%```의념-[고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 10rm 에 해당하는 피해를 입힙니다.``` ```독사의 맹독-[고유 장착 효과]\n독사의 진노(R)에 적중한 적 대상의 방어력을 5초 동안 6% 감소시킵니다.\n이 효과는 최대 2중첩까지 중첩됩니다.```",color=0xF9D537)
+        embed=discord.Embed(title="데스애더퀸 - MT",description="공격력 +71\n공격 속도 +20%\n레벨 당 기본 공격 추가 피해 +2\n공격 속도 +15%```의념-[고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 7 에 해당하는 피해를 입힙니다.``` ```독사의 맹독-[고유 장착 효과]\n독사의 진노(R)에 적중한 적 대상의 방어력을 5초 동안 6% 감소시킵니다.\n이 효과는 최대 2중첩까지 중첩됩니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450557966999552/010._Deathadder_Queen_MT_-MT.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="데스애더퀸 + 운석", inline=False)
         return embed
 
     if msg=="데스애더퀸FC":
-        embed=discord.Embed(title="데스애더퀸 - FC", description="공격력 +77\n공격 속도 +25%\n레벨 당 기본 공격 추가 피해 +2\n (고유) 방해 효과 저항 15%\n ```의념-[고유 장착 효과]\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n캐릭터 레벨 * 10에 해당하는 피해를 입힙니다.```",color=0xF9D537)
+        embed=discord.Embed(title="데스애더퀸 - FC", description="공격력 +77\n공격 속도 +25%\n레벨 당 기본 공격 추가 피해 +2\n (고유) 방해 효과 저항 15%\n ```의념-[고유 장착 효과]\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n캐릭터 레벨 * 7에 해당하는 피해를 입힙니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450558168313856/011._Deathadder_Queen_FC_-FC.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="데스애더퀸 + 포스코어", inline=False)
         return embed
 
     if msg=="데스애더퀸VBS":
-        embed=discord.Embed(title="데스애더퀸 - VBS", description="공격력 +81\n공격 속도 +25%\n 레벨 당 기본 공격 추가 피해 +2\n(고유) 받는 회복 증가 +20%\n ```의념-[고유 장착 효과]\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n캐릭터 레벨 * 10에 해당하는 피해를 입힙니다.```",color=0xF9D537)
+        embed=discord.Embed(title="데스애더퀸 - VBS", description="공격력 +81\n공격 속도 +25%\n 레벨 당 기본 공격 추가 피해 +2\n(고유) 받는 회복 증가 +20%\n ```의념-[고유 장착 효과]\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n캐릭터 레벨 * 7에 해당하는 피해를 입힙니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450558516437012/012._Deathadder_Queen_VBS_-VBS.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="데스애더퀸 +VF 혈액 샘플", inline=False)
@@ -3845,14 +3853,14 @@ def Weapon(msg):
         return embed
 
     if msg=="미스릴크롭":
-        embed=discord.Embed(title="미스릴 크롭", description="방어력 +65\n공격 속도 +12%\n이동 속도 +0.2\n\n`마이 제작가능`", color=0x9c4998)
+        embed=discord.Embed(title="미스릴 크롭", description="방어력 +65\n공격 속도 +18%\n이동 속도 +0.2\n\n`마이 제작가능`", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/928692926333206608/Mithril_Crop__.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득 경로", value="비키니 + 미스릴", inline=False)
         return embed
 
     if msg=="아오자이":
-        embed=discord.Embed(title="아오자이", description="공격력 +45\n방어력 +60\n스태미너 재생 +100%\n\n`마이 제작 가능`", color=0xf9d537)
+        embed=discord.Embed(title="아오자이", description="공격력 +45\n방어력 +65\n스태미너 재생 +100%\n\n`마이 제작 가능`", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/928692926106718299/Ao_Dai_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="드레스 + 포스 코어", inline=False)

@@ -27,7 +27,7 @@ def aug(msg):
     
 #####저항#####
     if msg == "금강":
-        embed=discord.Embed(title="금강", description="상대 실험체를 이동 불가 상태로 만들면 4초 동안 방어가 (20+레벨×5) 증가합니다. 방어 상승 효과가 종료되는 즉시 주변 2m에 (레벨×12)의 스킬 피해를 입힙니다. 피해를 입은 대상은 1.5초 동안 이동속도가 50% 감소합니다. (쿨다운 45초)")
+        embed=discord.Embed(title="금강", description="상대 실험체를 이동 불가 상태로 만들면 4초 동안 방어가 (20+레벨×5.5) 증가합니다. 방어 상승 효과가 종료되는 즉시 주변 2m에 (레벨×12)의 스킬 피해를 입힙니다. 피해를 입은 대상은 1.5초 동안 이동속도가 50% 감소합니다. (쿨다운 25초)")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/915656436212695080/916339950461550622/Diamond_Shard_.png")
         return embed
 
@@ -68,12 +68,12 @@ def aug(msg):
     
 #####파괴#####
     if msg == "취약":
-        embed=discord.Embed(title="취약", description="동일 실험체에게 3초 안에 기본 공격 또는 개별의 피해를 입히는 스킬(무기, 아이템 스킬 제외)을 3회 적중 시 (레벨×4)의 고정 피해를 추가로 입히며 5초 동안 대상의 방어력을 (레벨×0.8)% 감소시킵니다. (쿨다운 30초) 기본 공격이 연타로 적용되는 무기, 스킬 및 도트 딜링 스킬은 입히는 연속 피해를 한 번의 피해로 취급합니다. 스킬 사용 후 재사용하는 스킬의 경우는 스킬의 성향에 따라 개별 스킬 취급 여부가 다르며 무기 스킬은 취약 스택을 쌓을 수 없습니다.")
+        embed=discord.Embed(title="취약", description="동일 실험체에게 3초 안에 기본 공격 또는 개별의 피해를 입히는 스킬(무기, 아이템 스킬 제외)을 3회 적중 시 (레벨×4)의 고정 피해를 추가로 입히며 5초 동안 대상의 방어력을 (레벨×1)% 감소시킵니다. (쿨다운 30초) 기본 공격이 연타로 적용되는 무기, 스킬 및 도트 딜링 스킬은 입히는 연속 피해를 한 번의 피해로 취급합니다. 스킬 사용 후 재사용하는 스킬의 경우는 스킬의 성향에 따라 개별 스킬 취급 여부가 다르며 무기 스킬은 취약 스택을 쌓을 수 없습니다.")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/916262946173235200/Frailty_Infliction_.png")
         return embed
         
     if msg == "광분":
-        embed=discord.Embed(title="광분", description="무기 스킬 사용 시 7[근거리]/5[원거리]초 동안 공격력이 (10+레벨×1)[근거리]/(5+레벨×0.5)[원거리], 공격 속도가 (30+레벨×1)[근거리]/(20+레벨×1)[원거리]% 증가하지만 입는 피해도 7% 증가합니다. (쿨다운 30초)")
+        embed=discord.Embed(title="광분", description="무기 스킬 사용 시 7[근거리]/5[원거리]초 동안 공격력이 (10+레벨×1)[근거리]/(5+레벨×0.5)[원거리], 공격 속도가 (30+레벨×1)[근거리]/(20+레벨×1)[원거리]% 증가하지만 입는 피해도 5% 증가합니다. (쿨다운 30초)")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/916262946437496853/Frenzy_.png")
         return embed
         
@@ -88,7 +88,7 @@ def aug(msg):
         return embed
         
     if msg == "갈증":
-        embed=discord.Embed(title="갈증", description="실험체가 아닌 대상에게 입히는 피해가 12%증가하며, 입힌 피해의 10%만큼 체력이 회복됩니다.")
+        embed=discord.Embed(title="갈증", description="야생 동물에게 입히는 피해가 20%증가하며, 입힌 피해의 15%만큼 체력이 회복됩니다.\n보스 오브젝트(알파, 오메가, 위클라인)에게 입히는 피해 6%증가하며 입힌 피해의 4.5%만큼 체력이 회복됩니다.\n소환물(바바라 포탑, 니나 등)에는 효과가 적용되지 않습니다. ")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/916263008064376862/Quench_.png")
         return embed
         
@@ -108,24 +108,24 @@ def aug(msg):
         return embed
 
     if msg == "벽력":
-        embed=discord.Embed(title="벽력", description="적 실험체에게 스킬로 피해를 입혔을 때 10 + 레벨×5.5의 고유 피해를 입힙니다. (쿨다운 18초)\n스킬을 적중한 적 실험체의 4m 범위 내 적 실험체가 있으면 전류의 줄기가 전이되어 50%의 피해를 입힙니다.\n전이될 적 실험체가 없는 경우 20%의 추가 고유 피해를 입힙니다.\n적 실험체에게 개별 스킬로 피해를 입힐 때마다 쿨다운이 0.5초 감소합니다.")
+        embed=discord.Embed(title="벽력", description="적 실험체에게 스킬로 피해를 입혔을 때 7 + 레벨 × 2 의 고유 피해를 입힙니다. (쿨다운 10초)\n스킬을 적중한 적 실험체의 4m 범위 내 적 실험체가 있으면 전류의 줄기가 전이되어 50%의 피해를 입힙니다.\n전이될 적 실험체가 없는 경우 20%의 추가 고유 피해를 입힙니다.\n적 실험체에게 개별 스킬로 피해를 입힐 때마다 쿨다운이 0.5초 감소합니다.")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/928688092544634890/Red_Sprite_.png")
         return embed
     
         
 #####지원#####
     if msg == "초재생":
-        embed=discord.Embed(title="초재생", description="자신의 스킬에 의해 발생하는 모든 보호막 및 회복량이 상시 (20+스킬 증폭×0.2)% 증가합니다. 자신에 의해 보호막 또는 회복 효과를 받은 대상은 4초 동안 공격력이 (레벨×2)만큼 증가합니다. (쿨다운 25초) 휴식, 재생, 흡혈, 음식, 음료를 통한 회복은 적용되지 않습니다.")
+        embed=discord.Embed(title="초재생", description="자신의 스킬에 의해 발생하는 모든 보호막 및 회복량이 상시 (20+스킬 증폭×0.2)% 증가합니다. 자신에 의해 보호막 또는 회복 효과를 받은 대상은 4초 동안 공격력이 (레벨×2)만큼 증가합니다. (쿨다운 10초) 휴식, 재생, 흡혈, 음식, 음료를 통한 회복은 적용되지 않습니다.")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261234951741450/916340062134870036/Healing_Factor_.png")
         return embed
 
     if msg == "치유드론":
-        embed=discord.Embed(title="치유드론", description="궁극기 사용 시 5초 동안 자신을 따라다니는 치유 드론이 나타납니다. 치유 드론은 주변 3m 내 자신을 포함한 아군의 체력을 매 초 잃은 체력의 (5+레벨×0.5)%만큼 회복시킵니다. (쿨다운 45초)")
+        embed=discord.Embed(title="치유드론", description="궁극기 사용 시 5초 동안 자신을 따라다니는 치유 드론이 나타납니다. 치유 드론은 주변 3m 내 자신을 포함한 아군의 체력을 매 초 잃은 체력의 (3+레벨×0.2)%만큼 회복시킵니다. (쿨다운 45초)")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261234951741450/916340061778374738/Healing_Drone_.png")
         return embed
 
     if msg == "증폭드론":
-        embed=discord.Embed(title="증폭드론", description="궁극기 사용 시 3.5초 동안 자신을 따라다니는 증폭 드론이 나타납니다. 증폭 드론은 주변 4m 내 자신을 포함한 아군의 이동 속도를 (5+0.3×레벨)%, 스킬 증폭을 (10+1.5×레벨)% 증가시킵니다. (쿨다운 45초)")
+        embed=discord.Embed(title="증폭드론", description="궁극기 사용 시 4.5초 동안 자신을 따라다니는 증폭 드론이 나타납니다. 증폭 드론은 주변 4m 내 자신을 포함한 아군의 이동 속도를 (5+0.3×레벨)%, 스킬 증폭을 (10+1.5×레벨)% 증가시킵니다. (쿨다운 45초)")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261234951741450/916340061119852574/Amplification_Drone_.png")
         return embed
 
@@ -135,7 +135,7 @@ def aug(msg):
         return embed
 
     if msg == "집결":
-        embed=discord.Embed(title="집결", description="궁극기 사용 시 자신의 주변 4m 내 자신을 포함한 아군은 3초 동안 (레벨×10)만큼의 보호막을 얻습니다. (쿨다운 45초)")
+        embed=discord.Embed(title="집결", description="궁극기 사용 시 자신의 주변 4m 내 자신을 포함한 아군은 3초 동안 (레벨×11)만큼의 보호막을 얻습니다. 효과를 받은 후 7초 이내 같은 효과 재적용 시 보호막 양이 50%로 감소합니다. (쿨다운 45초)")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261234951741450/916340061333770260/Assembly_.png")
         return embed
 
