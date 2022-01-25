@@ -762,8 +762,8 @@ def Weapon(msg):
         return embed
 
     if msg=="반고부":
-        embed=discord.Embed(title="하르페 ", description="공격력 +145\n(고유) 방해 효과 저항 30%", color=0xf9d537)
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366137101684766/013._Harpe_.png")
+        embed=discord.Embed(title="반고부 ", description="공격력 +145\n(고유) 방해 효과 저항 30%", color=0xf9d537)
+        embed.set_thumbnail(url="")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="휙득 경로 ", value="전투 도끼 + 포스 코어", inline=False)
         return embed
