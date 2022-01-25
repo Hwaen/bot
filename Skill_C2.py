@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 name = {'알렉스' : 'Alex',
         '실비아' : 'Silvia'}
 
+
+
 def skill(msg,skill):
         global url
         url = 'https://er.inven.co.kr/db/character/'+name[msg]
@@ -28,13 +30,15 @@ def skill(msg,skill):
                         level = skill[0].get_text()
                         sp = skill[1].get_text()
                         time = skill[2].get_text()
-                        text = skill[3]
+                        dis = skill[3].get_text()
+                        text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
+                        embed.add_field(name="사거리:", value=dis , inline=True)
                         embed.set_footer(text= "출처:"+ url)
                         return embed                        
                                        
@@ -52,7 +56,8 @@ def skill(msg,skill):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                         
                 #### Q2 ####
@@ -68,7 +73,8 @@ def skill(msg,skill):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                 #### W1 ####
@@ -85,7 +91,8 @@ def skill(msg,skill):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### W2 ####
@@ -101,7 +108,8 @@ def skill(msg,skill):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### E1 ####
@@ -118,7 +126,8 @@ def skill(msg,skill):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
         
@@ -134,11 +143,11 @@ def skill(msg,skill):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
+                        
                 #### R  ####
-
-
                 if skill == "R" or skill == "r":
 
                         title= soup.select_one("#erDb > div:nth-child(4) > div:nth-child(9) > div.skillTitle > span.skillName").get_text()
@@ -152,13 +161,16 @@ def skill(msg,skill):
                         level = skill[0].get_text()
                         sp = skill[1].get_text()
                         time = skill[2].get_text()
-                        text = skill[3]
+                        dis = skill[3].get_text()
+                        text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
+                        
 
                         embed=discord.Embed(description=("```"+des+"```"))
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
+                        embed.add_field(name="사거리:", value=dis , inline=True)  
                         embed.set_footer(text= "출처:"+ url)
                         return embed     
 
@@ -167,6 +179,7 @@ def skill(msg,skill):
                 embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
+                embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2 , inline=True)
                 embed.set_footer(text= "출처:"+ url)
                 return embed
         
@@ -188,13 +201,15 @@ def skill_1(key):
                         level = skill[0].get_text()
                         sp = skill[1].get_text()
                         time = skill[2].get_text()
-                        text = skill[3]
+                        dis = skill[3].get_text()
+                        text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
+                        
                         embed.set_footer(text= "출처:"+ url)
                         return embed                        
                                        
@@ -212,7 +227,8 @@ def skill_1(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                         
                 #### Q2 ####
@@ -228,7 +244,8 @@ def skill_1(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                 #### W1 ####
@@ -245,7 +262,8 @@ def skill_1(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### W2 ####
@@ -261,7 +279,8 @@ def skill_1(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### E1 ####
@@ -278,7 +297,8 @@ def skill_1(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
         
@@ -294,7 +314,8 @@ def skill_1(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                 #### R  ####
@@ -311,13 +332,15 @@ def skill_1(key):
                         level = skill[0].get_text()
                         sp = skill[1].get_text()
                         time = skill[2].get_text()
-                        text = skill[3]
+                        dis = skill[3].get_text()
+                        text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
+                        embed.add_field(name="사거리:", value=dis , inline=True)  
                         embed.set_footer(text= "출처:"+ url)
                         return embed 
                         
@@ -349,13 +372,15 @@ def skill_2(key):
                         level = skill[0].get_text()
                         sp = skill[1].get_text()
                         time = skill[2].get_text()
-                        text = skill[3]
+                        dis = skill[3].get_text()
+                        text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
+                        embed.add_field(name="사거리:", value=dis , inline=True)  
                         embed.set_footer(text= "출처:"+ url)
                         return embed                        
                                        
@@ -373,7 +398,8 @@ def skill_2(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                         
                 #### Q2 ####
@@ -389,7 +415,8 @@ def skill_2(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                 #### W1 ####
@@ -406,7 +433,8 @@ def skill_2(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### W2 ####
@@ -422,7 +450,8 @@ def skill_2(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### E1 ####
@@ -439,7 +468,8 @@ def skill_2(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
         
@@ -455,7 +485,8 @@ def skill_2(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                 #### R  ####
@@ -472,13 +503,15 @@ def skill_2(key):
                         level = skill[0].get_text()
                         sp = skill[1].get_text()
                         time = skill[2].get_text()
-                        text = skill[3]
+                        dis = skill[3].get_text()
+                        text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
+                        embed.add_field(name="사거리:", value=dis , inline=True)  
                         embed.set_footer(text= "출처:"+ url)
                         return embed
                 
@@ -486,11 +519,13 @@ def skill_2(key):
                 embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
+                embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
                 embed.set_footer(text= "출처:"+ url)
                 return embed                
                                 
 def skill_3(key):
         response = requests.get(url)
+        
         if response.status_code == 200:
                 html = response.text
                 soup = BeautifulSoup(html, 'html.parser')
@@ -508,13 +543,15 @@ def skill_3(key):
                         level = skill[0].get_text()
                         sp = skill[1].get_text()
                         time = skill[2].get_text()
-                        text = skill[3]
+                        dis = skill[3].get_text()
+                        text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
+                        embed.add_field(name="사거리:", value=dis , inline=True)  
                         embed.set_footer(text= "출처:"+ url)
                         return embed                        
                                        
@@ -532,7 +569,8 @@ def skill_3(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                         
                 #### Q2 ####
@@ -548,7 +586,8 @@ def skill_3(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                 #### W1 ####
@@ -565,7 +604,8 @@ def skill_3(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### W2 ####
@@ -581,7 +621,8 @@ def skill_3(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### E1 ####
@@ -598,7 +639,8 @@ def skill_3(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
         
@@ -614,7 +656,8 @@ def skill_3(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                         
                 #### R  ####
@@ -631,13 +674,15 @@ def skill_3(key):
                         level = skill[0].get_text()
                         sp = skill[1].get_text()
                         time = skill[2].get_text()
-                        text = skill[3]
+                        dis = skill[3].get_text()
+                        text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
+                        embed.add_field(name="사거리:", value=dis , inline=True)  
                         embed.set_footer(text= "출처:"+ url)
                         return embed
                         
@@ -645,6 +690,7 @@ def skill_3(key):
                 embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
+                embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
                 embed.set_footer(text= "출처:"+ url)
                 return embed                
         
@@ -675,6 +721,7 @@ def skill_4(key):
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
+                        embed.add_field(name="사거리:", value=dis , inline=True)  
                         embed.set_footer(text= "출처:"+ url)
                         return embed                        
                                        
@@ -692,7 +739,8 @@ def skill_4(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                         
                 #### Q2 ####
@@ -708,7 +756,8 @@ def skill_4(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                 #### W1 ####
@@ -725,7 +774,8 @@ def skill_4(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### W2 ####
@@ -741,7 +791,8 @@ def skill_4(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### E1 ####
@@ -758,7 +809,8 @@ def skill_4(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
         
@@ -774,7 +826,8 @@ def skill_4(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         
@@ -782,6 +835,7 @@ def skill_4(key):
                 embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
+                embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
                 embed.set_footer(text= "출처:"+ url)
                 return embed                
 
@@ -811,6 +865,7 @@ def skill_5(key):
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
+                        embed.add_field(name="사거리:", value=dis , inline=True)  
                         embed.set_footer(text= "출처:"+ url)
                         return embed                        
                                        
@@ -828,7 +883,8 @@ def skill_5(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                         
                 #### Q2 ####
@@ -844,7 +900,8 @@ def skill_5(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                 #### W1 ####
@@ -861,7 +918,8 @@ def skill_5(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### W2 ####
@@ -877,7 +935,8 @@ def skill_5(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### E1 ####
@@ -894,7 +953,8 @@ def skill_5(key):
                         level_1 = skill_1[0].get_text()
                         sp_1 = skill_1[1].get_text()
                         time_1 = skill_1[2].get_text()
-                        text_1 = skill_1[3]
+                        dis_1 = skill_1[3].get_text()
+                        text_1 = skill_1[4]
                         des_1 = str(text_1).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
         
@@ -910,7 +970,8 @@ def skill_5(key):
                         level_2 = skill_2[0].get_text()
                         sp_2 = skill_2[1].get_text()
                         time_2 = skill_2[2].get_text()
-                        text_2 = skill_2[3]
+                        dis_2 = skill_2[3].get_text()
+                        text_2 = skill_2[4]
                         des_2 = str(text_2).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
 
@@ -919,6 +980,7 @@ def skill_5(key):
                 embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
+                embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
                 embed.set_footer(text= "출처:"+ url)
                 return embed                
 
