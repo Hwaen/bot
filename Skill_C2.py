@@ -209,7 +209,7 @@ def skill_1(key):
                         embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
-                        
+                        embed.add_field(name="사거리:", value=dis , inline=True) 
                         embed.set_footer(text= "출처:"+ url)
                         return embed                        
                                        
@@ -348,6 +348,7 @@ def skill_1(key):
                 embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
+                embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
                 embed.set_footer(text= "출처:"+ url)
                 return embed
 
@@ -519,7 +520,7 @@ def skill_2(key):
                 embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
-                embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
+                
                 embed.set_footer(text= "출처:"+ url)
                 return embed                
                                 
