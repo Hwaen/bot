@@ -4582,7 +4582,7 @@ def Weapon(msg):
         return embed
 
     if msg=="진리는나의빛":
-        embed=discord.Embed(title="진리는 나의 빛", description="쿨다운 감소 +8%\n기본 공격 추가 피해 +12\n 스킬 증폭 +10%\n```블레싱 : 명상\n사용 시 명상 버프를 얻고, 최대 체력의 6.5%를 즉시 회복하며, 이후 초당 잃은 체력과 스태미너의 5.5%를 3초간 회복합니다. (즉시 최대체력의 6.5% 회복, 이후 1초가 지날 때마다 잃은 체력과 스태미너의 5.5%씩 3회 더 회복)\n피해를 입을 시 해제됩니다.\n(쿨다운: 30초)", color=0x1e82cd)
+        embed=discord.Embed(title="진리는 나의 빛", description="쿨다운 감소 +8%\n기본 공격 추가 피해 +12\n 스킬 증폭 +10%\n```블레싱 : 명상\n사용 시 명상 버프를 얻고, 최대 체력의 6.5%를 즉시 회복하며, 이후 초당 잃은 체력과 스태미너의 5.5%를 3초간 회복합니다. (즉시 최대체력의 6.5% 회복, 이후 1초가 지날 때마다 잃은 체력과 스태미너의 5.5%씩 3회 더 회복)\n피해를 입을 시 해제됩니다.\n(쿨다운: 30초)```", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443690646261860/035._Veritas_Lux_Mea__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="진신사리 + 성자의 유산", inline=False)
