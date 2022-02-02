@@ -23,8 +23,9 @@ token = os.getenv('token')
 client = discord.Client()
 
 #####시즌시간#####
+
 now = datetime.now()
-send = datetime(2022, 2, 3, 11) #시즌마다 바꿔줄 것
+send = datetime(2022, 2, 3) #시즌마다 바꿔줄 것
 day = (send-now).days
 hour = (send-now).seconds / 3600
 
@@ -51,6 +52,7 @@ async def on_ready():
     for i in guild_list:
             print("서버 ID: {} / 서버 이름: {}".format(i.id, i.name))
 
+    print("현재 들어가있는 서버 수")
     print(len(guild_list))
 
 #####도움말#####
@@ -71,8 +73,8 @@ async def on_message(message):
      
 #####시즌#####    
     if message.content=="?시즌":
-        embed=discord.Embed(title="[시즌 4]", description="%d일 %d시간 남았습니다." %(day,hour))        
-        embed.set_footer(text="시즌 종료: 2022년 2월 3일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
+        embed=discord.Embed(title="[시즌 5]", description="시작까지 %d일 %d시간 남았습니다." %(day,hour))        
+        embed.set_footer(text="시즌 시작: 2022년 2월 17일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
         await message.channel.send(embed=embed)
 
 #####아이템#####
