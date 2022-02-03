@@ -574,7 +574,7 @@ def Weapon(msg):
 
     if msg=="플라즈마건":
         embed=discord.Embed(title="플라즈마 건", description="장탄 수: 30발\n 공격력 +48\n공격 속도 +25%\n이동 속도 +0.1\n기본 공격 사거리 -0.5\n```열정 (고유 장착 효과)\n기본 공격 시 현재 체력의 4%의 추가 피해 + 스택 1 획득\n스택 당 공격 속도 8% (스택 유지 시간 5초)\n최대 4스택\n최대 스택 달성 시 공격력 15, 이동 속도 0.1 증가```", color=0x9c4998)
-        embed.set_thumbnail(url="")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891755103726501968/938770499075473408/Plasma_Gun__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="포스코어 + 베레타 M92F", inline=False)
         return embed
@@ -675,7 +675,7 @@ def Weapon(msg):
 
     if msg=="팔괘장":
         embed=discord.Embed(title="팔괘장", description="공격력 +40\n레벨 당 스킬 증폭 +1%\n쿨다운 감소 +8%\n```저주 (고유 장착 효과)\n스킬 공격을 가하면 상대를 4초간 저주 상태에 빠트립니다.\n저주 상태인 적은 이동 속도가 6%만큼 느려지고, 저주 상태가 해제될 때 50 + 스킬 증폭의 1.5배의 피해를 입습니다.\n저주 상태가 되면 8초간 다시 저주 상태가 되지 않습니다.\n기본 공격 피격 시 해당 시간이 1초씩 감소합니다.\n쿨다운 2초```", color=0x9c4998)
-        embed.set_thumbnail(url="")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891755056142106624/938770539537899530/Pakua_Chang_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="몽둥이 + 거북 도복", inline=False)
         return embed
@@ -1613,7 +1613,7 @@ def Weapon(msg):
 
     if msg=="알마스":
         embed=discord.Embed(title="알마스", description="공격력 +51\n스킬 공격 추가 피해 +28\n```한파\n스킬 공격 시 0.56초간 99% 이동 속도 감소\n쿨다운 4초```", color=0xf9d537)
-        embed.set_thumbnail(url="")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/938820023961665616/Almace_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="바스타드 소드 + 만년빙", inline=False)
         return embed
@@ -2150,7 +2150,7 @@ def Weapon(msg):
 
     if msg=="우라누스":
         embed=discord.Embed(title="우라누스", description="공격력 +65\n공격 속도 +12%\n```의념\n스킬 사용 후 3초 안에 이뤄지는 기본 공격이 적 최대 체력의 10%에 해당하는 추가 고유 피해를 입힙니다.\n쿨다운 2초```", color=0xf8d537)
-        embed.set_thumbnail(url="")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/938770062104465438/Uranus_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="휙득 경로 ", value="기름먹인 천 + 문스톤", inline=False)
         return embed
@@ -2831,7 +2831,7 @@ def Weapon(msg):
         return embed
 
     if msg=="달걀":
-        embed=discord.Embed(title="", description="체력 재생 +300", color=0xffffff)
+        embed=discord.Embed(title="달걀", description="체력 재생 +300", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274215408664576/008._Egg_.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득 경로", value="지역 묘지(4) 숲(8)\n사냥 닭(16.7%)", inline=False)
@@ -3054,8 +3054,8 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="버터 + 꿀", inline=False)
         return embed
 
-    if msg=="후라이드치킨":
-        embed=discord.Embed(title="", description="체력 재생 +550", color=0x1e82cd)
+    if msg=="":
+        embed=discord.Embed(title="후라이드 치킨", description="체력 재생 +550", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274654233530408/040._Fried_Chicken__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="고기 + 뜨거운 오일", inline=False)
@@ -3600,14 +3600,14 @@ def Weapon(msg):
 
     if msg=="로빈":
         embed=discord.Embed(title="로빈", description="공격력 +10\n쿨다운 감소 +12%\n(고유) 이동 속도 +0.06\n(고유) 기본 공격 사거리 +0.2\n", color=0x1e82cd)
-        embed.set_thumbnail(url="")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/938770304547827752/Robin_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="가죽 + 아이테르 깃털", inline=False)
         return embed
 
     if msg=="성기사의투구":
         embed=discord.Embed(title="성기사의 투구", description="방어력 +20\n기본 공격 추가 피해 +5\n```세컨드 윈드 - 성전 (고유 장착 효과)\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 1.5초간 135+캐릭터 레벨*8의 보호막을 얻고 6초 간 스킬 증폭이 12% 증가합니다. (쿨다운 30초)```", color=0x1e82cd)
-        embed.set_thumbnail(url="")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/938770304774311956/Crusader_Helm__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="왕관 + 십자가", inline=False)
         return embed
@@ -4140,7 +4140,7 @@ def Weapon(msg):
 
     if msg=="포이즌드":
         embed=discord.Embed(title="포이즌드", description="방어력 +15\n스킬 공격 추가 피해 +12\n```스킬 공격 시 치유 감소-[고유 장착 효과]\n스킬 공격에 피격된 대상의 치유 효과가 4초 동안 감소합니다.\n(근거리) 치유 효과가 40% 감소합니다.\n(원거리) 치유 효과가 30% 감소합니다.```", color=0x1e82cd)
-        embed.set_thumbnail(url="")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322279160602634/938770245462671420/Poisoned_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="목장갑 + 독약", inline=False)
         return embed
@@ -4154,7 +4154,7 @@ def Weapon(msg):
         return embed
 
     if msg=="운동화":
-        embed=discord.Embed(title="", description="이동 속도 +0.06", color=0xffffff)
+        embed=discord.Embed(title="운동화", description="이동 속도 +0.06", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/892443318762496052/002._Running_Shoes_.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득경로", value="지역 고급 주택가(12) 골목길(11) 양궁장(12)\n사냥 들개", inline=False)
@@ -4646,21 +4646,21 @@ def Weapon(msg):
 
     if msg=="살라딘의화살통":
         embed=discord.Embed(title="살라딘의 화살통", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```가속\n사용 시 2.5초간 이동 속도 0.2(근거리)/0.1(원거리)가 증가하고 다른 대상과 충돌하지 않습니다.\n이동 외 다른 행동을 취할 시 종료됩니다.\n(쿨다운 : 30초)\n", color=0xf9d537)
-        embed.set_thumbnail(url="")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770149543149628/Saladines_Quiver__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="궁기병의 화살통 + 문스톤", inline=False)
         return embed
 
     if msg=="호루스의눈":
         embed=discord.Embed(title="호루스의 눈", description="레벨 당 스킬 증폭 +0.5%\n시야 +1.5\n```의념 (고유 장착 효과)\n스킬 증폭의 2.5배(근거리)/1.5배(원거리)의 고유 피해를 입힙니다.\n(쿨다운: 2초)```", color=0x9c4998)
-        embed.set_thumbnail(url="")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770162981679104/Eye_of_Horus__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="마패 + 생명의 나무", inline=False)
         return embed
 
     if msg=="아티팩트":
         embed=discord.Embed(title="아티팩트", description="공격력 +25```정지\n사용 시 1초간 경직 상태에 빠집니다.\n(쿨다운: 55초)```", color=0xf9d537)
-        embed.set_thumbnail(url="")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770169386389545/Artifact_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="철광석 + 포스 코어", inline=False)
         return embed
