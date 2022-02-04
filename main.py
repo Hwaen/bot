@@ -2,8 +2,9 @@ import os
 import discord
 import asyncio
 from dotenv import load_dotenv
+import time
 from datetime import datetime
-from pytz import timezone
+import pytz
 
 
 import Item
@@ -23,11 +24,13 @@ token = os.getenv('token')
 client = discord.Client()
 
 #####시즌시간#####
+tz = pytz.timezone('Asia/Seoul')
+now = datetime.now(tz)
+send = datetime(2022, 2, 17, 11, 0, 0, 0, tz) #시즌마다 바꿔줄 것
 
-now = datetime.now()
-send = datetime(2022, 2, 3) #시즌마다 바꿔줄 것
-day = (send-now).days
-hour = (send-now).seconds / 3600
+time = send - now
+day = time.days
+hour = time.seconds/3600
 
 #####수식어#####
 item = "?템"
@@ -73,7 +76,7 @@ async def on_message(message):
      
 #####시즌#####    
     if message.content=="?시즌":
-        embed=discord.Embed(title="[시즌 5]", description="시작까지 %d일 %d시간 남았습니다." %(day,hour))        
+        embed=discord.Embed(title="[시즌 5]", description="시작까지 %d일 %d시간 남았습니다." %(day,hour))
         embed.set_footer(text="시즌 시작: 2022년 2월 17일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
         await message.channel.send(embed=embed)
 

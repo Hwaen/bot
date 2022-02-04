@@ -4645,7 +4645,7 @@ def Weapon(msg):
         return embed
 
     if msg=="살라딘의화살통":
-        embed=discord.Embed(title="살라딘의 화살통", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```가속\n사용 시 2.5초간 이동 속도 0.2(근거리)/0.1(원거리)가 증가하고 다른 대상과 충돌하지 않습니다.\n이동 외 다른 행동을 취할 시 종료됩니다.\n(쿨다운 : 30초)\n", color=0xf9d537)
+        embed=discord.Embed(title="살라딘의 화살통", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```가속\n사용 시 2.5초간 이동 속도 0.2(근거리)/0.1(원거리)가 증가하고 다른 대상과 충돌하지 않습니다.\n이동 외 다른 행동을 취할 시 종료됩니다.\n(쿨다운 : 30초)\n```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770149543149628/Saladines_Quiver__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="궁기병의 화살통 + 문스톤", inline=False)
