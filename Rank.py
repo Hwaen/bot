@@ -5,7 +5,7 @@ import asyncio
 
 def tier(msg):
         name = msg
-        url = 'https://dak.gg/bser/players/'+name+'?season=SEASON_4'
+        url = 'https://dak.gg/bser/players/'+name+'?season=PRE_SEASON_5'
         response = requests.get(url)
 
         if response.status_code == 200:
