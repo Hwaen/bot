@@ -56,7 +56,7 @@ def tier(msg):
                 embed.add_field(name = "솔로",  value = tier1, inline=False)
                 embed.add_field(name = "듀오",  value = tier2, inline=False)
                 embed.add_field(name = "스쿼드",value = tier3, inline=False)
-                embed.set_footer(text=update.get_text()+"\n\ndak.gg/bser/players/"+user.get_text())
+                embed.set_footer(text="```"+update.get_text()+"```\n\ndak.gg/bser/players/"+user.get_text())
                 return embed
         else:
             pass
