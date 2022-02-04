@@ -4300,7 +4300,7 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="모터 + 무릎 보호대", inline=False)
         return embed
 
-    if msg=="아이언메이든" or "아메":
+    if msg=="아이언메이든" or msg=="아메":
         embed=discord.Embed(title="아이언 메이든", description="방어 관통 +10%\n이동 속도 +0.33", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/920196370160300072/023._Iron_Maiden__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
