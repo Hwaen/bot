@@ -73,9 +73,9 @@ def aug(msg):
         img = soup.select_one('#erTraitLayer > div > div > div.db_block.info_top.clearfix > div.icon_wrap > img').get('src')
         text = soup.select_one('#erTraitLayer > div > div > div.db_block.content_area.clearfix').get_text()
         main = soup.select_one('#erTraitLayer > div > div > div.db_block.info_top.clearfix > div.txt > span').get_text()
-        des = str(text).replece('*','×')
+        des = text.replace('*','×').replace("\n","").replace("  ","")
 
-    embed=discord.Embed(title = name+"\t"+"`"+main+"`", description = text)
+    embed=discord.Embed(title = name+"\t"+"`"+main+"`", description = "```"+des+"```")
     embed.set_thumbnail(url = img)
     return embed
 

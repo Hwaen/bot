@@ -34,7 +34,7 @@ hour = time.seconds/3600
 
 #####수식어#####
 item = "?템"
-aug = "?특성"
+aug = "?특"
 tier = "?랭크"
 skill = "?스킬"
 skill_w = "?무스"
@@ -68,7 +68,7 @@ async def on_message(message):
         embed.add_field(name="?템 <템이름>", value="아이템의 정보를 가져옵니다. `EX)?템 낭아봉`", inline=False)
         embed.add_field(name="?스킬 <캐릭터> <스킬키>", value="캐릭터의 스킬의정보를 가져옵니다. `EX)?스킬 수아 Q`", inline=False)
         embed.add_field(name="?무스 <무기종류>", value="무기스킬의 정보를 가져옵니다. `EX)?무스 망치`", inline=False)
-        embed.add_field(name="?특성", value="특성의 종류와 설명을 가져옵니다. `EX)특성 저항`", inline=False)
+        embed.add_field(name="?특", value="특성의 종류와 설명을 가져옵니다. `EX)특 저항`", inline=False)
         embed.add_field(name="?랭크", value="현재 시즌의 랭크를 알려줍니다. `EX)?랭크 <닉네임>`", inline=False)
         embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)        
         await message.channel.send(embed=embed)
@@ -94,9 +94,15 @@ async def on_message(message):
 
 #####특성#####
     if message.content.startswith(aug):
-        msg = message.content[4:]
-        Aug.aug(msg)
-        await message.channel.send(embed=Aug.aug(msg))
+        msg = message.content[3:]
+        msg_out = ""
+
+        for i in range(0,len(msg)):
+            if msg[i]!=' ':
+                msg_out+=msg[i]
+                
+        Aug.aug(msg_out)
+        await message.channel.send(embed=Aug.aug(msg_out))
 
 #####랭크#####
     if message.content.startswith(tier):
