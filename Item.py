@@ -3145,7 +3145,7 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="생명의 나무 + 불경", inline=False)
         return embed
 
-    if msg=="피쉬앤칩스":
+    if msg=="피쉬앤칩스" or msg=="피칩":
         embed=discord.Embed(title="피쉬 앤 칩스", description="체력 재생 +700", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274703843770368/053._Fish_And_Chips__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
@@ -3804,7 +3804,7 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="판금 갑옷 + 성자의 유산", inline=False)
         return embed
 
-    if msg=="아마조네스아머":
+    if msg=="아마조네스아머" or msg=="아마조네스": 
         embed=discord.Embed(title="아마조네스 아머", description="방어력 +28\n최대 체력 +155\n스킬 피해 감소 +17%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184645650366504/028._Amazoness_Armor__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
@@ -4033,7 +4033,7 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="금팔찌 + 브레이서", inline=False)
         return embed
 
-    if msg=="미스릴방패":
+    if msg=="미스릴방패" or msg=="미방":
         embed=discord.Embed(title="미스릴 방패", description="공격력 +30\n방어력 +30\n공격 속도 +20%\n이동 속도 +0.1\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322279160602634/892443895420563456/016._Mithril_Shield__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
@@ -4272,7 +4272,7 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="덧댄 슬리퍼 + 재", inline=False)
         return embed
 
-    if msg=="미스릴부츠":
+    if msg=="미스릴부츠" or msg == "미신":
         embed=discord.Embed(title="미스릴 부츠", description="방어력 +18\n공격 속도+22%\n이동 속도 +0.42", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/892443401113436270/018._Mithril_Boots__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
@@ -4300,7 +4300,7 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="모터 + 무릎 보호대", inline=False)
         return embed
 
-    if msg=="아이언메이든":
+    if msg=="아이언메이든" or "아메":
         embed=discord.Embed(title="아이언 메이든", description="방어 관통 +10%\n이동 속도 +0.33", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/920196370160300072/023._Iron_Maiden__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
@@ -4588,7 +4588,7 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="진신사리 + 성자의 유산", inline=False)
         return embed
 
-    if msg=="달빛펜던트":
+    if msg=="달빛펜던트" or msg=="달펜":
         embed=discord.Embed(title="달빛 펜던트", description="시야 +1\n모든 피해 흡혈 +15%\n```블레싱 : 코스믹파워\n사용 시 4초 간 블레싱 : 코스믹파워 버프를 획득합니다.\n버프 지속 시간 동안 아래 효과가 적용됩니다.\n공격력 상승 16%\n방어력 상승 16%\n(쿨다운: 16초)```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443696455368775/036._Moonlight_Pendant__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
@@ -4644,7 +4644,7 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="미스릴 + 문스톤", inline=False)
         return embed
 
-    if msg=="살라딘의화살통":
+    if msg=="살라딘의화살통" or msg=="살라딘":
         embed=discord.Embed(title="살라딘의 화살통", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```가속\n사용 시 2.5초간 이동 속도 0.2(근거리)/0.1(원거리)가 증가하고 다른 대상과 충돌하지 않습니다.\n이동 외 다른 행동을 취할 시 종료됩니다.\n(쿨다운 : 30초)\n```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770149543149628/Saladines_Quiver__.png")
         embed.add_field(name="등급", value="전설", inline=False)
