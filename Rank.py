@@ -5,7 +5,7 @@ import asyncio
 
 def tier(msg):
         name = msg
-        url = 'https://dak.gg/bser/players/'+name+'?season=PRE_SEASON_5'
+        url = 'https://dak.gg/bser/players/'+name+'?season=SEASON_4&hl=ko-KR'
         response = requests.get(url)
 
         if response.status_code == 200:
@@ -22,7 +22,7 @@ def tier(msg):
                         tier_img1 = img1.get("src")                                    
 
                 if (rank1==None)==True:
-                        tier1 = "Unrank"
+                        tier1 = "언랭크"
                         img1= "https://static-cdn.dak.gg/er/images/rank/round/0.png"
                         tier_img1 = img1
         #####듀오#####
@@ -33,7 +33,7 @@ def tier(msg):
                         tier_img2 = img2.get("src") 
 
                 if (rank2==None)==True:
-                        tier2 = "Unrank"
+                        tier2 = "언랭크"
                         img2 = "https://static-cdn.dak.gg/er/images/rank/round/0.png"
                         tier_img2 = img2
 
@@ -45,7 +45,7 @@ def tier(msg):
                         tier_img3 = img3.get("src")
                                 
                 if (rank3==None)==True:
-                        tier3="Unrank"
+                        tier3="언랭크"
                         img3 = "https://static-cdn.dak.gg/er/images/rank/round/0.png"
                         tier_img3 = img3
 
@@ -74,3 +74,4 @@ def img(solo, duo, trio):
                         return duo
                 else:
                         return trio
+
