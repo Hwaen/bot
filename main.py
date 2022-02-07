@@ -12,6 +12,8 @@ import Aug
 import Rank
 import Skill_C1
 import Skill_C2
+import Skill_C3
+import Skill_C4
 import Skill_W
 
 
