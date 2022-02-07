@@ -70,7 +70,8 @@ async def on_message(message):
         embed.add_field(name="?무스 <무기종류>", value="무기스킬의 정보를 가져옵니다. `EX)?무스 망치`", inline=False)
         embed.add_field(name="?특", value="특성의 종류와 설명을 가져옵니다. `EX)?특 저항`", inline=False)
         embed.add_field(name="?랭크", value="현재 시즌의 랭크를 알려줍니다. `EX)?랭크 <닉네임>`", inline=False)
-        embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)        
+        embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)
+        embed.set_footer(text="문의: 화엔#9112")
         await message.channel.send(embed=embed)
         
      
@@ -133,62 +134,119 @@ async def on_message(message):
         await emo.add_reaction("4️⃣")
         await emo.add_reaction("5️⃣")
 
-
 @client.event
 async def on_reaction_add(reaction, user):
     if user.bot == 1: 
             return None
-        
+### 1레벨                                                                
     if reaction.message.id == emo.id and str(reaction.emoji) == "1️⃣":
         if msg[0] == "알렉스"or msg[0] =="실비아":
             Skill_C2.skill_1(msg[1])
             await emo.edit(embed=Skill_C2.skill_1(msg[1]))
             await emo.remove_reaction("1️⃣",user)
+
+        if msg[0] == "에이든":
+            Skill_C3.skill_1(msg[1])
+            await emo.edit(embed=Skill_C3.skill_1(msg[1]))
+            await emo.remove_reaction("1️⃣",user)
+
+        if msg[0] == "에키온":
+            Skill_C4.skill_1(msg[1])
+            await emo.edit(embed=Skill_C4.skill_1(msg[1]))
+            await emo.remove_reaction("1️⃣",user)
+            
         else:    
             Skill_C1.skill_1(msg[1])
             await emo.edit(embed=Skill_C1.skill_1(msg[1]))        
             await emo.remove_reaction("1️⃣",user)
-                 
+            
+### 2레벨                                                                                 
     if reaction.message.id == emo.id and str(reaction.emoji) == "2️⃣":
         if msg[0] == "알렉스"or msg[0] =="실비아":
             Skill_C2.skill_1(msg[1])
             await emo.edit(embed=Skill_C2.skill_2(msg[1]))
             await emo.remove_reaction("2️⃣",user)
+
+        if msg[0] == "에이든":
+            Skill_C3.skill_2(msg[1])
+            await emo.edit(embed=Skill_C3.skill_2(msg[1]))
+            await emo.remove_reaction("2️⃣",user)
+
+        if msg[0] == "에키온":
+            Skill_C4.skill_2(msg[1])
+            await emo.edit(embed=Skill_C4.skill_2(msg[1]))
+            await emo.remove_reaction("2️⃣",user)
             
-        Skill_C1.skill_2(msg[1])
-        await emo.edit(embed=Skill_C1.skill_2(msg[1]))
-        await emo.remove_reaction("2️⃣",user)
-                        
+        else:
+            Skill_C1.skill_2(msg[1])
+            await emo.edit(embed=Skill_C1.skill_2(msg[1]))
+            await emo.remove_reaction("2️⃣",user)
+            
+### 3레벨                                                                                        
     if reaction.message.id == emo.id and str(reaction.emoji) == "3️⃣":
         if msg[0] == "알렉스"or msg[0] =="실비아":
             Skill_C2.skill_1(msg[1])
             await emo.edit(embed=Skill_C2.skill_3(msg[1]))
             await emo.remove_reaction("3️⃣",user)
-            
-        Skill_C1.skill_3(msg[1])        
-        await emo.edit(embed=Skill_C1.skill_3(msg[1]))       
-        await emo.remove_reaction("3️⃣",user)
-                        
+
+        if msg[0] == "에이든":
+            Skill_C3.skill_3(msg[1])
+            await emo.edit(embed=Skill_C3.skill_3(msg[1]))
+            await emo.remove_reaction("2️⃣",user)
+
+        if msg[0] == "에키온":
+            Skill_C4.skill_3(msg[1])
+            await emo.edit(embed=Skill_C4.skill_3(msg[1]))
+            await emo.remove_reaction("3️⃣",user)            
+
+        else:
+            Skill_C1.skill_3(msg[1])
+            await emo.edit(embed=Skill_C1.skill_3(msg[1]))
+            await emo.remove_reaction("3️⃣",user)
+
+### 4레벨                                                                
     if reaction.message.id == emo.id and str(reaction.emoji) == "4️⃣":
         if msg[0] == "알렉스" or msg[0] =="실비아":
             Skill_C2.skill_1(msg[1])
             await emo.edit(embed=Skill_C2.skill_4(msg[1]))
             await emo.remove_reaction("4️⃣",user)
-            
-        Skill_C1.skill_4(msg[1])
-        await emo.edit(embed=Skill_C1.skill_4(msg[1]))
-        await emo.remove_reaction("4️⃣",user)
-                        
+
+        if msg[0] == "에이든":
+            Skill_C3.skill_4(msg[1])
+            await emo.edit(embed=Skill_C3.skill_4(msg[1]))
+            await emo.remove_reaction("4️⃣",user)
+
+        if msg[0] == "에키온":
+            Skill_C4.skill_4(msg[1])
+            await emo.edit(embed=Skill_C4.skill_4(msg[1]))
+            await emo.remove_reaction("4️⃣",user)
+
+        else:    
+            Skill_C3.skill_4(msg[1])
+            await emo.edit(embed=Skill_C3.skill_4(msg[1]))
+            await emo.remove_reaction("4️⃣",user)
+    
+### 5레벨                                                                                        
     if reaction.message.id == emo.id and str(reaction.emoji) == "5️⃣":
         if msg[0] == "알렉스" or msg[0] =="실비아":
             Skill_C2.skill_1(msg[1])
             await emo.edit(embed=Skill_C2.skill_5(msg[1]))
             await emo.remove_reaction("5️⃣",user)
-            
-        Skill_C1.skill_5(msg[1])
-        await emo.edit(embed=Skill_C1.skill_5(msg[1]))
-        await emo.remove_reaction("5️⃣",user)
 
+        if msg[0] == "에이든":
+            Skill_C3.skill_5(msg[1])
+            await emo.edit(embed=Skill_C3.skill_5(msg[1]))
+            await emo.remove_reaction("5️⃣",user)
+
+        if msg[0] == "에키온":
+            Skill_C4.skill_5(msg[1])
+            await emo.edit(embed=Skill_C4.skill_4(msg[1]))
+            await emo.remove_reaction("5️⃣",user)
+
+        else:    
+            Skill_C1.skill_5(msg[1])
+            await emo.edit(embed=Skill_C1.skill_5(msg[1]))
+            await emo.remove_reaction("5️⃣",user)
 
 ##############
     else:

@@ -39,7 +39,7 @@ def skill(msg,skill):
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)
-                        embed.set_footer(text= "출처:"+ url)
+                        embed.set_footer(text= "출처:\t"+ url)
                         return embed                        
                                        
                 #### Q1 ####
@@ -171,7 +171,7 @@ def skill(msg,skill):
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
-                        embed.set_footer(text= "출처:"+ url)
+                        embed.set_footer(text= "출처:\t"+ url)
                         return embed     
 
                         
@@ -180,7 +180,7 @@ def skill(msg,skill):
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2 , inline=True)
-                embed.set_footer(text= "출처:"+ url)
+                embed.set_footer(text= "출처:\t"+ url)
                 return embed
         
 def skill_1(key):
@@ -210,7 +210,7 @@ def skill_1(key):
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True) 
-                        embed.set_footer(text= "출처:"+ url)
+                        embed.set_footer(text= "출처:\t"+ url)
                         return embed                        
                                        
                 #### Q1 ####
@@ -341,7 +341,7 @@ def skill_1(key):
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
-                        embed.set_footer(text= "출처:"+ url)
+                        embed.set_footer(text= "출처:\t"+ url)
                         return embed 
                         
                 embed=discord.Embed(description=("```"+des_1+"```\n```"+des_2+"```"))
@@ -349,7 +349,7 @@ def skill_1(key):
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
-                embed.set_footer(text= "출처:"+ url)
+                embed.set_footer(text= "출처:\t"+ url)
                 return embed
 
                 
@@ -382,7 +382,7 @@ def skill_2(key):
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
-                        embed.set_footer(text= "출처:"+ url)
+                        embed.set_footer(text= "출처:\t"+ url)
                         return embed                        
                                        
                 #### Q1 ####
@@ -513,7 +513,7 @@ def skill_2(key):
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
-                        embed.set_footer(text= "출처:"+ url)
+                        embed.set_footer(text= "출처:\t"+ url)
                         return embed
                 
                 embed=discord.Embed(description=("```"+des_1+"```\n```"+des_2+"```"))
@@ -521,7 +521,7 @@ def skill_2(key):
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2 , inline=True)  
-                embed.set_footer(text= "출처:"+ url)
+                embed.set_footer(text= "출처:\t"+ url)
                 return embed                
                                 
 def skill_3(key):
@@ -553,7 +553,7 @@ def skill_3(key):
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
-                        embed.set_footer(text= "출처:"+ url)
+                        embed.set_footer(text= "출처:\t"+ url)
                         return embed                        
                                        
                 #### Q1 ####
@@ -684,7 +684,7 @@ def skill_3(key):
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
-                        embed.set_footer(text= "출처:"+ url)
+                        embed.set_footer(text= "출처:\t"+ url)
                         return embed
                         
                 embed=discord.Embed(description=("```"+des_1+"```\n```"+des_2+"```"))
@@ -692,7 +692,7 @@ def skill_3(key):
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
-                embed.set_footer(text= "출처:"+ url)
+                embed.set_footer(text= "출처:\t"+ url)
                 return embed                
         
 
@@ -723,7 +723,7 @@ def skill_4(key):
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
-                        embed.set_footer(text= "출처:"+ url)
+                        embed.set_footer(text= "출처:\t"+ url)
                         return embed                        
                                        
                 #### Q1 ####
@@ -837,7 +837,7 @@ def skill_4(key):
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
-                embed.set_footer(text= "출처:"+ url)
+                embed.set_footer(text= "출처:\t"+ url)
                 return embed                
 
 def skill_5(key):
@@ -867,7 +867,7 @@ def skill_5(key):
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
-                        embed.set_footer(text= "출처:"+ url)
+                        embed.set_footer(text= "출처:\t"+ url)
                         return embed                        
                                        
                 #### Q1 ####
@@ -982,7 +982,7 @@ def skill_5(key):
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
-                embed.set_footer(text= "출처:"+ url)
+                embed.set_footer(text= "출처:\t"+ url)
                 return embed                
 
         

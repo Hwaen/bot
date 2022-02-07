@@ -77,6 +77,7 @@ def aug(msg):
 
     embed=discord.Embed(title="`"+main+"`", description= des)
     embed.set_author(name= name, icon_url= img)
+    embed.set_footer(text="출처:\t https://er.inven.co.kr/db/trait"+key[msg])
     return embed
 
                 
