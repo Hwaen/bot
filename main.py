@@ -126,6 +126,15 @@ async def on_message(message):
         if msg[0] == "알렉스" or msg[0] =="실비아":
             Skill_C2.skill(msg[0],msg[1])
             emo = await message.channel.send(embed=Skill_C2.skill(msg[0],msg[1]))
+
+        if msg[0] == "에이든":
+            Skill_C3.skill(msg[0],msg[1])
+            emo = await message.channel.send(embed=Skill_C3.skill(msg[0],msg[1]))
+
+        if msg[0] == "에키온":
+            Skill_C4.skill(msg[0],msg[1])
+            emo = await message.channel.send(embed=Skill_C4.skill(msg[0],msg[1]))
+            
         else:            
             Skill_C1.skill(msg[0],msg[1])
             emo = await message.channel.send(embed=Skill_C1.skill(msg[0],msg[1]))
