@@ -73,6 +73,7 @@ async def on_message(message):
         embed.add_field(name="?특", value="특성의 종류와 설명을 가져옵니다. `EX)?특 저항`", inline=False)
         embed.add_field(name="?랭크", value="현재 시즌의 랭크를 알려줍니다. `EX)?랭크 <닉네임>`", inline=False)
         embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)
+        embed.add_field(name="?곰", value="곰씨... 혈액샘플 좀 줘봐...", inline=False)
         embed.set_footer(text="문의: 화엔#9112")
         await message.channel.send(embed=embed)
         
