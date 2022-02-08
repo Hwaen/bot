@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import time
 from datetime import datetime
 import pytz
-
+import random
 
 import Item
 import Aug
@@ -82,6 +82,13 @@ async def on_message(message):
         embed=discord.Embed(title="[시즌 5]", description="시작까지 %d일 %d시간 남았습니다." %(day,hour))
         embed.set_footer(text="시즌 시작: 2022년 2월 17일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
         await message.channel.send(embed=embed)
+        
+#####곰 가챠##### 
+    if message.content == "?곰":
+        bear = ["강철","기름먹인 천","뜨거운 오일","방전 전지","백색 가루","재","전자 부품","정교한 도면","철판","황금","달궈진 돌멩이","철사","루비","하드커버","생명의나무","운석","독약","모터","미스릴","유리판","이온전지","휴대폰","VF혈액샘플","포스코어"]
+        gacha = random.choice(bear)
+        await message.reply("[%s] 나왔습니다!" %gacha)
+        return 
 
 #####아이템#####
     if message.content.startswith(item):
