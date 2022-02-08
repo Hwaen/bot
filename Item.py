@@ -267,14 +267,14 @@ def Weapon(msg):
 #####레이피어#####
 
     if msg=="바늘":
-        embed=discord.Embed(title="바늘", description=" 공격력 +8\n", color=0xffffff)
+        embed=discord.Embed(title="바늘", description=" 공격력 +5\n", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251045377687663/894251084057571338/001._Needle_.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득 경로", value="골목길(9) 호텔(9) 병원(9)\n사냥 박쥐", inline=False)
         return embed
 
     if msg=="레이피어":
-        embed=discord.Embed(title="레이피어", description=" 공격력 +20", color=0x329632)
+        embed=discord.Embed(title="레이피어", description=" 공격력 +12", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251045377687663/894251088604176394/002._Rapier_.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득 경로", value="바늘 + 철광석", inline=False)
@@ -667,7 +667,7 @@ def Weapon(msg):
         return embed
 
     if msg=="여의봉":
-        embed=discord.Embed(title="여의봉", description=" 공격력 +135\n 공격 속도 +10%\n (고유)기본 공격 사거리 +1", color=0xf9d537)
+        embed=discord.Embed(title="여의봉", description=" 공격력 +125\n 공격 속도 +10%\n (고유)기본 공격 사거리 +1", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891755056142106624/891864681067724900/013._Monkey_King_Bar_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="포스 코어 + 장봉", inline=False)
@@ -712,7 +712,7 @@ def Weapon(msg):
         return embed
 
     if msg=="사신의낫":
-        embed=discord.Embed(title="사신의낫", description=" 공격력 +80\n (고유)기본 공격 사거리 +0.5", color=0x1e82cd)
+        embed=discord.Embed(title="사신의낫", description=" 공격력 +70\n (고유)기본 공격 사거리 +0.5", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366100279918652/006._Reaper_s_Scythe.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="휙득 경로", value="사슬 낫+단봉", inline=False)
@@ -726,7 +726,7 @@ def Weapon(msg):
         return embed
 
     if msg=="대부":
-        embed=discord.Embed(title="대부", description=" 공격력 +110\n 이동 속도 -0.1", color=0x1e82cd)
+        embed=discord.Embed(title="대부", description=" 공격력 +100\n 이동 속도 -0.1", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366106546176010/007._Gigantic_Axe_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="휙득 경로", value="전투 도끼 + 강철", inline=False)
@@ -1167,7 +1167,7 @@ def Weapon(msg):
         return embed
 
     if msg =="대황":
-        embed=discord.Embed(title="대황", description=" 공격력 +63\n체력 재생 +2\n공격 속도(%) +50%\n", color=0x9c4998)
+        embed=discord.Embed(title="대황", description=" 공격력 +63\n체력 재생 +90%\n공격 속도(%) +50%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251184217534524/894251255805927496/008._The_Legend_of_The_General_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="철궁 + 기름먹인 천", inline=False)
@@ -2149,9 +2149,9 @@ def Weapon(msg):
         return embed
 
     if msg=="우라누스":
-        embed=discord.Embed(title="우라누스", description="공격력 +65\n공격 속도 +12%\n```의념\n스킬 사용 후 3초 안에 이뤄지는 기본 공격이 적 최대 체력의 10%에 해당하는 추가 고유 피해를 입힙니다.\n쿨다운 2초```", color=0xf8d537)
+        embed=discord.Embed(title="우라누스", description="공격력 +65\n공격 속도 +12%\n```의념\n스킬 사용 후 3초 안에 이뤄지는 기본 공격이 적 최대 체력의 10%에 해당하는 추가 고유 피해를 입힙니다.\n쿨다운 2초```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/938770062104465438/Uranus_.png")
-        embed.add_field(name="등급", value="전설", inline=False)
+        embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로 ", value="기름먹인 천 + 문스톤", inline=False)
         return embed
 
@@ -2165,105 +2165,105 @@ def Weapon(msg):
         return embed
 
     if msg=="데스애더":
-        embed=discord.Embed(title="데스애더", description="공격력 +43\n레벨 당 기본 공격 추가 피해 +1\n```의념 [고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 5 에 해당하는 피해를 입힙니다.",color=0x1e82cd)
+        embed=discord.Embed(title="데스애더", description="공격력 +33\n레벨 당 기본 공격 추가 피해 +1\n```의념 [고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 5 에 해당하는 피해를 입힙니다.",color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450505915695144/004._Deathadder_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="패시브 lv2에서 선택 진화", inline=False)
         return embed
 
     if msg=="데스애더퀸":
-        embed=discord.Embed(title="데스애더퀸", description="공격력 +63\n레벨 당 기본 공격 추가 피해 +2\n공격 속도 +15%```의념-[고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 5 에 해당하는 피해를 입힙니다.",color=0x9C4998)
+        embed=discord.Embed(title="데스애더퀸", description="공격력 +53\n레벨 당 기본 공격 추가 피해 +2\n공격 속도 +15%```의념-[고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 5 에 해당하는 피해를 입힙니다.",color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450527331782656/007._Deathadder_Queen__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="패시브 lv3에서 선택 진화", inline=False)
         return embed
 
     if msg=="데스애더퀸MT":
-        embed=discord.Embed(title="데스애더퀸 - MT",description="공격력 +71\n공격 속도 +20%\n레벨 당 기본 공격 추가 피해 +2\n공격 속도 +15%```의념-[고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 7 에 해당하는 피해를 입힙니다.``` ```독사의 맹독-[고유 장착 효과]\n독사의 진노(R)에 적중한 적 대상의 방어력을 5초 동안 6% 감소시킵니다.\n이 효과는 최대 2중첩까지 중첩됩니다.```",color=0xF9D537)
+        embed=discord.Embed(title="데스애더퀸 - MT",description="공격력 +61\n공격 속도 +20%\n레벨 당 기본 공격 추가 피해 +2\n공격 속도 +15%```의념-[고유 장착 효과]-데스애더&데스애더퀸\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n 캐릭터 레벨 * 7 에 해당하는 피해를 입힙니다.``` ```독사의 맹독-[고유 장착 효과]\n독사의 진노(R)에 적중한 적 대상의 방어력을 5초 동안 6% 감소시킵니다.\n이 효과는 최대 2중첩까지 중첩됩니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450557966999552/010._Deathadder_Queen_MT_-MT.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="데스애더퀸 + 운석", inline=False)
         return embed
 
     if msg=="데스애더퀸FC":
-        embed=discord.Embed(title="데스애더퀸 - FC", description="공격력 +77\n공격 속도 +25%\n레벨 당 기본 공격 추가 피해 +2\n (고유) 방해 효과 저항 15%\n ```의념-[고유 장착 효과]\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n캐릭터 레벨 * 7에 해당하는 피해를 입힙니다.```",color=0xF9D537)
+        embed=discord.Embed(title="데스애더퀸 - FC", description="공격력 +67\n공격 속도 +25%\n레벨 당 기본 공격 추가 피해 +2\n (고유) 방해 효과 저항 15%\n ```의념-[고유 장착 효과]\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n캐릭터 레벨 * 7에 해당하는 피해를 입힙니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450558168313856/011._Deathadder_Queen_FC_-FC.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="데스애더퀸 + 포스코어", inline=False)
         return embed
 
     if msg=="데스애더퀸VBS":
-        embed=discord.Embed(title="데스애더퀸 - VBS", description="공격력 +81\n공격 속도 +25%\n 레벨 당 기본 공격 추가 피해 +2\n(고유) 받는 회복 증가 +20%\n ```의념-[고유 장착 효과]\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n캐릭터 레벨 * 7에 해당하는 피해를 입힙니다.```",color=0xF9D537)
+        embed=discord.Embed(title="데스애더퀸 - VBS", description="공격력 +71\n공격 속도 +25%\n 레벨 당 기본 공격 추가 피해 +2\n(고유) 받는 회복 증가 +20%\n ```의념-[고유 장착 효과]\nVF폭주 상태일 때 스킬을 사용하면 의념을 충전합니다.\n충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유 피해를 입힙니다.\n(쿨다운 : 0.2초)\n캐릭터 레벨 * 7에 해당하는 피해를 입힙니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450558516437012/012._Deathadder_Queen_VBS_-VBS.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="데스애더퀸 +VF 혈액 샘플", inline=False)
         return embed
 
     if msg=="블랙맘바":
-        embed=discord.Embed(title="블랙맘바", description="공격력 +45\n 모든 피해 흡혈 +10%",color=0x1e82cd)
+        embed=discord.Embed(title="블랙맘바", description="공격력 +35\n 모든 피해 흡혈 +10%",color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450506184097812/005._Black_Mamba_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="패시브 lv2에서 선택 ", inline=False)
         return embed
 
     if msg=="블랙맘바킹":
-        embed=discord.Embed(title="블랙맘바킹", description="공격력 +65\n레벨 당 최대 체력 +9\n모든 피해 흡혈 +12%",color=0x9C4998)
+        embed=discord.Embed(title="블랙맘바킹", description="공격력 +55\n레벨 당 최대 체력 +9\n모든 피해 흡혈 +12%",color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450527642165278/008._Black_Mamba_King_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="패시브 lv3에서 선택 ", inline=False)
         return embed
 
     if msg=="블랙맘바킹TL":
-        embed=discord.Embed(title="블랙맘바킹 - TL", description="공격력 +73\n레벨 당 최대 체력 +11\n 모든 피해 흡혈 +12%\n  ```불꽃 결계[고유 장착 효과]\n  VF폭주 상태일 때 전투에 돌입하면 매 1초마다 주변 2.5m의 적에게 고유 피해를 입힙니다.\n적에게 최대 체력의 5%의 고유 피해를 입힙니다.```",color=0xF9D537)
+        embed=discord.Embed(title="블랙맘바킹 - TL", description="공격력 +63\n레벨 당 최대 체력 +11\n 모든 피해 흡혈 +12%\n  ```불꽃 결계[고유 장착 효과]\n  VF폭주 상태일 때 전투에 돌입하면 매 1초마다 주변 2.5m의 적에게 고유 피해를 입힙니다.\n적에게 최대 체력의 5%의 고유 피해를 입힙니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450574458982420/013._Black_Mamba_King_TL_-TL.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="블랙맘바킹 + 생명의 나무", inline=False)
         return embed
 
     if msg=="블랙맘바킹FC":
-        embed=discord.Embed(title="블랙맘바킹 - FC", description="공격력 +79\n레벨 당 최대 체력 +11\n모든 피해 흡혈 +17% \n(고유) 방해 효과 저항 +15%",color=0xF9D537)
+        embed=discord.Embed(title="블랙맘바킹 - FC", description="공격력 +69\n레벨 당 최대 체력 +11\n모든 피해 흡혈 +17% \n(고유) 방해 효과 저항 +15%",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450574647722046/014._Black_Mamba_King_FC_-FC.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="블랙맘바킹 + 포스 코어", inline=False)
         return embed
 
     if msg=="블랙맘바킹VBS":
-        embed=discord.Embed(title="블랙맘바킹 - VBS", description="공격력 +83\n레벨 당 최대 체력 +11\n 모든 피해 흡혈 +17%\n(고유) 받는 회복 증가 +20%",color=0xF9D537)
+        embed=discord.Embed(title="블랙맘바킹 - VBS", description="공격력 +73\n레벨 당 최대 체력 +11\n 모든 피해 흡혈 +17%\n(고유) 받는 회복 증가 +20%",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450574903586816/015._Black_Mamba_King_VBS_-VBS.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="블랙맘바킹 +VF 혈액 샘플", inline=False)
         return embed
 
     if msg=="사이드와인더":
-        embed=discord.Embed(title="사이드와인더", description="공격력 +41\n이동 속도 +0.06\n```가벼운 발걸음-[고유 장착 효과]-사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.1m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n 기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 70의 고유 피해를 입힙니다. 최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 30% 감소시킵니다.```",color=0x1e82cd)
+        embed=discord.Embed(title="사이드와인더", description="공격력 +31\n이동 속도 +0.06\n```가벼운 발걸음-[고유 장착 효과]-사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.1m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n 기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 70의 고유 피해를 입힙니다. 최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 30% 감소시킵니다.```",color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450506398023690/006._Sidewinder_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="패시브 lv2에서 선택 진화", inline=False)
         return embed
 
     if msg=="슈퍼사이드와인더":
-        embed=discord.Embed(title="슈퍼사이드와인더", description="공격력 +61\n이동 속도+0.08\n쿨다운 감소 +6%\n```가벼운 발걸음-[고유 장착 효과]사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.1m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 70의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 30% 감소시킵니다.```",color=0xF9D537)
+        embed=discord.Embed(title="슈퍼사이드와인더", description="공격력 +51\n이동 속도+0.08\n쿨다운 감소 +6%\n```가벼운 발걸음-[고유 장착 효과]사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.1m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 70의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 30% 감소시킵니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450527944171560/009._Alpha_Sidewinder_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="패시브 lv3에서 선택 진화", inline=False)
         return embed
 
     if msg=="슈퍼사이드와인더ML":
-        embed=discord.Embed(title="슈퍼사이드와인더 - ML", description="공격력 +69\n이동 속도 +0.1\n쿨다운 감소 +10%\n(고유) 최대 쿨다운 감소 +5%\n```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.\n``` ```VF제어 강화 - [고유 장착 효과]\n에키온의 과부하 상태의 지속 시간이 VF폭주(R) 레벨에 따라 영구적으로 30/35/40/45% 감소합니다.```",color=0xF9D537)
+        embed=discord.Embed(title="슈퍼사이드와인더 - ML", description="공격력 +59\n이동 속도 +0.1\n쿨다운 감소 +10%\n(고유) 최대 쿨다운 감소 +5%\n```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.\n``` ```VF제어 강화 - [고유 장착 효과]\n에키온의 과부하 상태의 지속 시간이 VF폭주(R) 레벨에 따라 영구적으로 30/35/40/45% 감소합니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450589193580554/016._Alpha_Siderwinder_ML_-ML.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="슈퍼사이드와인더 + 미스릴", inline=False)
         return embed
 
     if msg=="슈퍼사이드와인더FC":
-        embed=discord.Embed(title="슈퍼사이드와인더 - FC", description="공격력 +75\n이동 속도 +0.1\n쿨다운 감소 +15%\n(고유) 방해 효과 저항 +15%\n```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.\n``` ",color=0xF9D537)
+        embed=discord.Embed(title="슈퍼사이드와인더 - FC", description="공격력 +65\n이동 속도 +0.1\n쿨다운 감소 +15%\n(고유) 방해 효과 저항 +15%\n```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.\n``` ",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450589445234688/017._Alpha_Sidewinder_FC_-FC.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="슈퍼사이드와인더 + 포스 코어", inline=False)
         return embed
 
     if msg=="슈퍼사이드와인더VBS":
-        embed=discord.Embed(title="슈퍼사이드와인더 - VBS", description="공격력 +79\n이동 속도 +0.1\n쿨다운 감소 +15%\n(고유) 받는 회복 증가 +20%\n ```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.```",color=0xF9D537)
+        embed=discord.Embed(title="슈퍼사이드와인더 - VBS", description="공격력 +69\n이동 속도 +0.1\n쿨다운 감소 +15%\n(고유) 받는 회복 증가 +20%\n ```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450589688528916/018._Alpha_Sidewinder_VBS_-VBS.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="슈퍼사이드와인더 + 포스 코어", inline=False)
@@ -2964,7 +2964,7 @@ def Weapon(msg):
         return embed
 
     if msg=="매운탕":
-        embed=discord.Embed(title="매운탕", description="체력 재생 +500", color=0x1e82cd)
+        embed=discord.Embed(title="매운탕", description="체력 재생 +525", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274611707498526/027._Spicy_Fish_Stew_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="대구 + 뜨거운 물", inline=False)
@@ -3054,8 +3054,8 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="버터 + 꿀", inline=False)
         return embed
 
-    if msg=="":
-        embed=discord.Embed(title="후라이드 치킨", description="체력 재생 +550", color=0x1e82cd)
+    if msg=="후라이드치킨":
+        embed=discord.Embed(title="", description="체력 재생 +550", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274654233530408/040._Fried_Chicken__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="고기 + 뜨거운 오일", inline=False)
@@ -3090,7 +3090,7 @@ def Weapon(msg):
         return embed
 
     if msg=="구급상자":
-        embed=discord.Embed(title="구급상자", description="체력 재생 +1200", color=0x1e82cd)
+        embed=discord.Embed(title="구급상자", description="체력 재생 +1000", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274673242120322/045._First_Aid_Kit_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="사냥 위클라인(100%)", inline=False)
@@ -3111,7 +3111,7 @@ def Weapon(msg):
         return embed
 
     if msg=="볶음라면":
-        embed=discord.Embed(title="볶음라면", description="체력 재생 +550", color=0x1e82cd)
+        embed=discord.Embed(title="볶음라면", description="체력 재생 +575", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274674043248650/048._Stir_Fried_Ramen_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="생라면 + 뜨거운 오일", inline=False)
@@ -3139,7 +3139,7 @@ def Weapon(msg):
         return embed
 
     if msg=="대환단":
-        embed=discord.Embed(title="대환단", description="체력 재생 +800", color=0x9c4998)
+        embed=discord.Embed(title="대환단", description="체력 재생 +850", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/913318922772709377/915274703617290310/052._Zen_Vitality_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="생명의 나무 + 불경", inline=False)
@@ -3602,7 +3602,7 @@ def Weapon(msg):
         embed=discord.Embed(title="로빈", description="공격력 +10\n쿨다운 감소 +12%\n(고유) 이동 속도 +0.06\n(고유) 기본 공격 사거리 +0.2\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/938770304547827752/Robin_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
-        embed.add_field(name="획득 경로", value="가죽 + 아이테르 깃털", inline=False)
+        embed.add_field(name="획득 경로", value="옷감 + 아이테르 깃털", inline=False)
         return embed
 
     if msg=="성기사의투구":
@@ -3770,7 +3770,7 @@ def Weapon(msg):
         return embed
 
     if msg=="석양의갑옷":
-        embed=discord.Embed(title="석양의 갑옷", description="방어력 +33\n최대 체력 +220\n시야 +1\n", color=0x9c4998)
+        embed=discord.Embed(title="석양의 갑옷", description="방어력 +23\n최대 체력 +220\n시야 +1\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184522157482004/022._Sunset_Armor__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="사슬 갑옷 + 루비", inline=False)
@@ -3805,7 +3805,7 @@ def Weapon(msg):
         return embed
 
     if msg=="아마조네스아머" or msg=="아마조네스": 
-        embed=discord.Embed(title="아마조네스 아머", description="방어력 +28\n최대 체력 +155\n스킬 피해 감소 +17%\n", color=0x9c4998)
+        embed=discord.Embed(title="아마조네스 아머", description="방어력 +28\n최대 체력 +105\n스킬 피해 감소 +17%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184645650366504/028._Amazoness_Armor__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="판금 갑옷 + 비키니", inline=False)
@@ -3833,14 +3833,14 @@ def Weapon(msg):
         return embed
 
     if msg=="배틀슈트":
-        embed=discord.Embed(title="배틀 슈트", description="방어력 +25\n최대 체력 +120\n치명타 피해 감소 +8%\n기본 공격 피해 감소 +8\n스킬 피해 감소 +8%\n", color=0x9c4998)
+        embed=discord.Embed(title="배틀 슈트", description="방어력 +25\n최대 체력 +70\n치명타 피해 감소 +8%\n기본 공격 피해 감소 +8\n스킬 피해 감소 +8%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184646673793074/032._Battle_Suit__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="방탄조끼 + 잠수복", inline=False)
         return embed
 
     if msg=="EOD슈트":
-        embed=discord.Embed(title="EOD 슈트", description="방어력 +25\n최대 체력 +165\n체력 재생 +60%\n쿨다운 감소 +10%\n기본 공격 피해 감소 +8\n", color=0x9c4998)
+        embed=discord.Embed(title="EOD 슈트", description="방어력 +25\n최대 체력 +115\n체력 재생 +60%\n쿨다운 감소 +10%\n기본 공격 피해 감소 +8\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184644455002182/033._EOD_Suit_EOD_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="방탄조끼 + 덧댄 로브", inline=False)
