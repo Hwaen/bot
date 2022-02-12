@@ -73,14 +73,14 @@ async def on_message(message):
         embed.add_field(name="?특", value="특성의 종류와 설명을 가져옵니다. `EX)?특 저항`", inline=False)
         embed.add_field(name="?랭크", value="현재 시즌의 랭크를 알려줍니다. `EX)?랭크 <닉네임>`", inline=False)
         embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)
-        embed.add_field(name="?곰", value="곰씨... 혈액샘플 좀 줘봐...", inline=False)
+        embed.add_field(name="?곰", value="곰이 당신에게 선물을 줍니다.", inline=False)
         embed.set_footer(text="문의: 화엔#9112")
         await message.channel.send(embed=embed)
         
      
 #####시즌#####    
     if message.content=="?시즌":
-        embed=discord.Embed(title="[시즌 5]", description="시작까지 %d일 %d시간 남았습니다." %(day,hour))
+        embed=discord.Embed(title="[시즌 5]", description="%d일 %d시간 남았습니다." %(day,hour))
         embed.set_footer(text="시즌 시작: 2022년 2월 17일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
         await message.channel.send(embed=embed)
         
@@ -241,8 +241,8 @@ async def on_reaction_add(reaction, user):
             await emo.remove_reaction("4️⃣",user)
 
         else:    
-            Skill_C3.skill_4(msg[1])
-            await emo.edit(embed=Skill_C3.skill_4(msg[1]))
+            Skill_C1.skill_4(msg[1])
+            await emo.edit(embed=Skill_C1.skill_4(msg[1]))
             await emo.remove_reaction("4️⃣",user)
     
 ### 5레벨                                                                                        
