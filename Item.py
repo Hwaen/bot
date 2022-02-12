@@ -4582,14 +4582,14 @@ def Weapon(msg):
         return embed
 
     if msg=="진리는나의빛":
-        embed=discord.Embed(title="진리는 나의 빛", description="쿨다운 감소 +8%\n기본 공격 추가 피해 +12\n 스킬 증폭 +10%\n```블레싱 : 명상\n사용 시 명상 버프를 얻고, 최대 체력의 6.5%를 즉시 회복하며, 이후 초당 잃은 체력과 스태미너의 5.5%를 3초간 회복합니다. (즉시 최대체력의 6.5% 회복, 이후 1초가 지날 때마다 잃은 체력과 스태미너의 5.5%씩 3회 더 회복)\n피해를 입을 시 해제됩니다.\n(쿨다운: 30초)```", color=0x1e82cd)
+        embed=discord.Embed(title="진리는 나의 빛", description="쿨다운 감소 +8%\n기본 공격 추가 피해 +12\n 스킬 증폭 +10%\n```블레싱 : 명상 - [고유 장착 스킬]\n사용 시 명상 버프를 얻고, 최대 체력의 6.5%를 즉시 회복하며, 이후 초당 잃은 체력과 스태미너의 5.5%를 3초간 회복합니다. (즉시 최대체력의 6.5% 회복, 이후 1초가 지날 때마다 잃은 체력과 스태미너의 5.5%씩 3회 더 회복)\n피해를 입을 시 해제됩니다.\n(쿨다운: 30초)```", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443690646261860/035._Veritas_Lux_Mea__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="진신사리 + 성자의 유산", inline=False)
         return embed
 
     if msg=="달빛펜던트" or msg=="달펜":
-        embed=discord.Embed(title="달빛 펜던트", description="시야 +1\n모든 피해 흡혈 +15%\n```블레싱 : 코스믹파워\n사용 시 4초 간 블레싱 : 코스믹파워 버프를 획득합니다.\n버프 지속 시간 동안 아래 효과가 적용됩니다.\n공격력 상승 16%\n방어력 상승 16%\n(쿨다운: 16초)```", color=0x9c4998)
+        embed=discord.Embed(title="달빛 펜던트", description="시야 +1\n모든 피해 흡혈 +15%\n```블레싱 : 코스믹파워 - [고유 장착 스킬]\n사용 시 4초 간 공격력 상승 16%, 방어력 상승 16% 이 상승합니다.\n(쿨다운: 16초)```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443696455368775/036._Moonlight_Pendant__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="리본 + 문스톤", inline=False)
@@ -4610,7 +4610,7 @@ def Weapon(msg):
         return embed
 
     if msg=="요명월":
-        embed=discord.Embed(title="요명월", description="방어력 +20\n스태미너 재생 +100%\n시야 +2\n```무효화\n사용 시 모든 군중 제어 효과를 해제합니다.\n쿨다운 45초```", color=0x9c4998)
+        embed=discord.Embed(title="요명월", description="방어력 +20\n스태미너 재생 +100%\n시야 +2\n```무효화 - [고유 장착 스킬]\n사용 시 모든 군중 제어 효과를 해제합니다.\n쿨다운 45초```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443711743598612/039._Lunar_Embrace_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="정화수 + 문스톤", inline=False)
@@ -4624,7 +4624,7 @@ def Weapon(msg):
         return embed
 
     if msg=="에메랄드타블렛" or msg=="에타":
-        embed=discord.Embed(title="에메랄드 타블렛", description="공격력 +20\n치명타 피해량 +12%\n쿨다운 감소 +15%\n```무효화\n사용 시 모든 군중 제어 효과를 해제합니다.\n쿨다운 45초```", color=0xf9d537)
+        embed=discord.Embed(title="에메랄드 타블렛", description="공격력 +20\n치명타 피해량 +12%\n쿨다운 감소 +15%\n```무효화 - [고유 장착 스킬]\n사용 시 모든 군중 제어 효과를 해제합니다.\n쿨다운 45초```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443721692491816/041._Emerald_Tablet__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="포스 코어 + 운명의 꽃", inline=False)
@@ -4638,14 +4638,14 @@ def Weapon(msg):
         return embed
 
     if msg=="쿤달라":
-        embed=discord.Embed(title="쿤달라", description="최대 체력 +120\n이동 속도 +0.1\n시야 +1.5\n스킬 증폭 +17%\n```정지\n사용 시 1초간 경직 상태에 빠집니다.\n(쿨다운: 55초)```", color=0xf9d537)
+        embed=discord.Embed(title="쿤달라", description="최대 체력 +120\n이동 속도 +0.1\n시야 +1.5\n스킬 증폭 +17%\n```정지 - [고유 장착 스킬]\n사용 시 1초간 경직 상태에 빠집니다.\n(쿨다운: 55초)```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443729984622643/043._Kundala_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="미스릴 + 문스톤", inline=False)
         return embed
 
     if msg=="살라딘의화살통" or msg=="살라딘":
-        embed=discord.Embed(title="살라딘의 화살통", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```가속\n사용 시 2.5초간 이동 속도 0.2(근거리)/0.1(원거리)가 증가하고 다른 대상과 충돌하지 않습니다.\n이동 외 다른 행동을 취할 시 종료됩니다.\n(쿨다운 : 30초)\n```", color=0xf9d537)
+        embed=discord.Embed(title="살라딘의 화살통", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```가속 - [고유 장착 스킬]\n사용 시 2.5초간 이동 속도 0.2(근거리)/0.1(원거리)가 증가하고 다른 대상과 충돌하지 않습니다.\n이동 외 다른 행동을 취할 시 종료됩니다.\n(쿨다운 : 30초)\n```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770149543149628/Saladines_Quiver__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="궁기병의 화살통 + 문스톤", inline=False)
@@ -4659,7 +4659,7 @@ def Weapon(msg):
         return embed
 
     if msg=="아티팩트":
-        embed=discord.Embed(title="아티팩트", description="공격력 +25```정지\n사용 시 1초간 경직 상태에 빠집니다.\n(쿨다운: 55초)```", color=0xf9d537)
+        embed=discord.Embed(title="아티팩트", description="공격력 +25```정지 - [고유 장착 스킬]\n사용 시 1초간 경직 상태에 빠집니다.\n(쿨다운: 55초)```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770169386389545/Artifact_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="철광석 + 포스 코어", inline=False)
