@@ -2214,7 +2214,7 @@ def Weapon(msg):
         return embed
 
     if msg=="블랙맘바킹TL":
-        embed=discord.Embed(title="블랙맘바킹 - TL", description="공격력 +63\n레벨 당 최대 체력 +11\n 모든 피해 흡혈 +12%\n  ```불꽃 결계[고유 장착 효과]\n  VF폭주 상태일 때 전투에 돌입하면 매 1초마다 주변 2.5m의 적에게 고유 피해를 입힙니다.\n적에게 최대 체력의 5%의 고유 피해를 입힙니다.```",color=0xF9D537)
+        embed=discord.Embed(title="블랙맘바킹 - TL", description="공격력 +63\n레벨 당 최대 체력 +11\n 모든 피해 흡혈 +12%\n  ```불꽃 결계[고유 장착 효과]\n  VF폭주 상태일 때 전투에 돌입하면 매 1초마다 주변 2.5m의 적에게 고유 피해를 입힙니다.\n적에게 최대 체력의 4%의 고유 피해를 입힙니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450574458982420/013._Black_Mamba_King_TL_-TL.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="블랙맘바킹 + 생명의 나무", inline=False)
