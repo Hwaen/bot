@@ -417,7 +417,7 @@ def Weapon(msg):
 
     if msg=="울트라비전":
         embed=discord.Embed(title="울트라비전", description="공격력 +50\n스킬 공격 추가 피해 +15\n시야 +1.5\n```의념 (고유 장착 효과)\n스킬을 사용하면 의념을 충전합니다. 충전된 상태에서 다음 3초 안에 이루어지는 기본 공격이 추가 고유스킬 증폭 × 1.5 + 스킬 공격 추가 피해 × 1의 고유 피해를 입힙니다.\n쿨다운 4초```", color=0xf9d537)
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865219050127390/891865312750870588/009._V.I.C.G.png")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865219050127390/943725438579142746/010._Ultraviolet_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="카메라 건 + 휴대폰", inline=False)
         return embed
@@ -1296,7 +1296,7 @@ def Weapon(msg):
 
     if msg=="여제":
         embed=discord.Embed(title="여제", description="공격력 +55\n스킬 공격 추가 피해 +20\n쿨다운 감소 +10%\n```한파-(고유 장착 효과)\n스킬로 적에게 피해를 입히면 2초간 이동 속도를 20%, 공격 속도를 10% 만큼 느리게 만듭니다.\n(쿨다운 4초)```", color=0xf9d537)
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/910522550210166834/012._The_Moon__.png")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910522113385975848/943725407709065266/013._The_Empress_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="얼음구슬 + 만년빙", inline=False)
         return embed
