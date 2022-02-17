@@ -5,7 +5,7 @@ import asyncio
 
 def tier(msg):
         name = msg
-        url = 'https://dak.gg/bser/players/'+name+'?season=SEASON_4&hl=ko-KR'
+        url = 'https://dak.gg/bser/players/'+name+'?season=SEASON_5&hl=ko-KR'
         response = requests.get(url)
 
         if response.status_code == 200:
@@ -52,6 +52,7 @@ def tier(msg):
                 num = img(tier_img1[-5],tier_img2[-5],tier_img3[-5])
 
                 embed=discord.Embed(title = user.get_text())
+                embed.set_author(name="[시즌 5]")
                 embed.set_thumbnail(url = "https://static-cdn.dak.gg/er/images/rank/round/"+num+".png")
                 embed.add_field(name = "솔로",  value = tier1, inline=False)
                 embed.add_field(name = "듀오",  value = tier2, inline=False)
