@@ -51,7 +51,7 @@ async def on_ready():
     print("디스코드봇 ID:" + str(client.user.id))
     print("디스코드봇 버전:" + str(discord.__version__))
     print('------')
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("'?도움말' 을 쳐보세요"))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("'?도움' 을 쳐보세요"))
 
     guild_list = client.guilds
     for i in guild_list:
@@ -64,7 +64,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     global msg
-    if message.content=="?도움" or message.content=="?도움말":
+    if message.content=="?도움":
         embed=discord.Embed(title="도움말", description="사용 가능한 명령어를 보여드립니다")
         embed.add_field(name="?도움", value="사용 가능한 명령어를 가져옵니다.", inline=False)
         embed.add_field(name="?템 <템이름>", value="아이템의 정보를 가져옵니다. `EX)?템 낭아봉`", inline=False)
@@ -131,22 +131,29 @@ async def on_message(message):
     global emo
     if message.content.startswith(skill):
         msg = message.content[4:].split()
-        if msg[0] == "알렉스" or msg[0] =="실비아":
-            Skill_C2.skill(msg[0],msg[1])
-            emo = await message.channel.send(embed=Skill_C2.skill(msg[0],msg[1]))
 
-        if msg[0] == "에이든":
-            Skill_C3.skill(msg[0],msg[1])
-            emo = await message.channel.send(embed=Skill_C3.skill(msg[0],msg[1]))
+        try:            
+            if msg[0] == "알렉스" or msg[0] =="실비아":
+                Skill_C2.skill(msg[0],msg[1])
+                emo = await message.channel.send(embed=Skill_C2.skill(msg[0],msg[1]))
 
-        if msg[0] == "에키온":
-            Skill_C4.skill(msg[0],msg[1])
-            emo = await message.channel.send(embed=Skill_C4.skill(msg[0],msg[1]))
-            
-        else:            
-            Skill_C1.skill(msg[0],msg[1])
-            emo = await message.channel.send(embed=Skill_C1.skill(msg[0],msg[1]))
-            
+            if msg[0] == "에이든":
+                Skill_C3.skill(msg[0],msg[1])
+                emo = await message.channel.send(embed=Skill_C3.skill(msg[0],msg[1]))
+
+            if msg[0] == "에키온":
+                Skill_C4.skill(msg[0],msg[1])
+                emo = await message.channel.send(embed=Skill_C4.skill(msg[0],msg[1]))
+                
+            else:            
+                Skill_C1.skill(msg[0],msg[1])
+                emo = await message.channel.send(embed=Skill_C1.skill(msg[0],msg[1]))
+
+        except:
+            embed=discord.Embed(title="오류!", color=0xffbb00)
+            embed.add_field(name="<캐릭터> <스킬키> 를 제대로 입력해주세요!", value="EX) ?스킬 수아 T", inline=True)
+            await message.reply(embed=embed)
+                
         await emo.add_reaction("1️⃣")
         await emo.add_reaction("2️⃣")
         await emo.add_reaction("3️⃣")
