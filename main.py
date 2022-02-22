@@ -1,5 +1,5 @@
 import os
-import discord
+import nextcord
 import asyncio
 from dotenv import load_dotenv
 import time
