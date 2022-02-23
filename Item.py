@@ -2129,7 +2129,7 @@ def Weapon(msg):
         return embed
 
     if msg=="글레이프니르":
-        embed=discord.Embed(title="글레이프니르", description="공격력 +50\n 이동 속도 +0.06\n 스킬 공격 추가 피해 +27\n 스킬 공격 치유 방해 - [고유 장착 효과]\n 스킬 공격에 피격된 대상의 치유 효과가 4초 동안 45% 감소합니다.\n", color=0x9c4998)
+        embed=discord.Embed(title="글레이프니르", description="공격력 +50\n 이동 속도 +0.06\n 스킬 공격 추가 피해 +23\n 스킬 공격 치유 방해 - [고유 장착 효과]\n 스킬 공격에 피격된 대상의 치유 효과가 4초 동안 45% 감소합니다.\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865163169407077/007._Gleipnir_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="바람 채찍 + 가시발판", inline=False)
@@ -2143,14 +2143,14 @@ def Weapon(msg):
         return embed
 
     if msg=="뇌룡편":
-        embed=discord.Embed(title="뇌룡편", description="공격력 +48\n 공격 속도 +10%\n 스킬 증폭 + 10%\n 레벨 당 스킬 증폭 +1%\n", color=0x9c4998)
+        embed=discord.Embed(title="뇌룡편", description="공격력 +48\n 공격 속도 +12%\n 스킬 증폭 + 12%\n 레벨 당 스킬 증폭 +1%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865158740213800/006._Thunder_Whip_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로 ", value="벽력편 + 황금", inline=False)
         return embed
 
     if msg=="혈화구절편":
-        embed=discord.Embed(title="혈화구절편", description="공격력 +75\n쿨다운 감소 +15%\n 모든 피해 흡혈 +15%\n스킬 공격 추가 피해 +40\n", color=0xf8d537)
+        embed=discord.Embed(title="혈화구절편", description="공격력 +70\n쿨다운 감소 +13%\n 모든 피해 흡혈 +15%\n스킬 공격 추가 피해 +40\n", color=0xf8d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891865097411100683/891865172640170004/009._Bloody_Nine_Tails_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="휙득 경로 ", value="VF 혈액 샘플 + 오랏줄", inline=False)
