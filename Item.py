@@ -3800,7 +3800,7 @@ def Weapon(msg):
 
     if msg=="락커의자켓":
         embed=discord.Embed(title="락커의 자켓", description="공격력 +25\n방어력 +10\n비 전투중 이동 속도 +0.1\n기본 공격 피해 감소 +5\n```스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격 시 피격된 대상의 치유 효과가 감소합니다.\n(근거리) 치유 효과가 45% 감소합니다.\n(원거리) 치유 효과가 35% 감소합니다.```", color=0x9c4998)
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184644773773332/024._Optical_Camouflage_Suit__.png")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184645000245288/025._Rocker_s_Jacket__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="라이더 자켓 + 소란 발생기", inline=False)
         return embed
