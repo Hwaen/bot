@@ -1,7 +1,8 @@
-discord.py
+nextcord
 asyncio 
 python-dotenv 
 requests
 beautifulsoup4 
 pytz
 pandas
+lxml

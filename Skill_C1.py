@@ -1,7 +1,8 @@
-import discord
+import nextcord
 import asyncio
 import requests
 from bs4 import BeautifulSoup
+import lxml
 
 name = {'재키' : 'Jackie',
         '아야' : 'Aya',
@@ -55,7 +56,7 @@ def skill(msg,skill):
         response = requests.get(url)
         if response.status_code == 200:
                 html = response.text
-                soup = BeautifulSoup(html, 'html.parser')
+                soup = BeautifulSoup(html, 'lxml')
 
                 #### T ####
                 if skill == "T" or skill == "t":
@@ -145,7 +146,7 @@ def skill(msg,skill):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=discord.Embed(description=("```"+des+"```"))
+                embed=nextcord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
@@ -247,7 +248,7 @@ def skill_1(key):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=discord.Embed(description=("```"+des+"```"))
+                embed=nextcord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
@@ -350,7 +351,7 @@ def skill_2(key):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=discord.Embed(description=("```"+des+"```"))
+                embed=nextcord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
@@ -453,7 +454,7 @@ def skill_3(key):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=discord.Embed(description=("```"+des+"```"))
+                embed=nextcord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
@@ -557,7 +558,7 @@ def skill_4(key):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=discord.Embed(description=("```"+des+"```"))
+                embed=nextcord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
@@ -660,7 +661,7 @@ def skill_5(key):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=discord.Embed(description=("```"+des+"```"))
+                embed=nextcord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
