@@ -1,7 +1,6 @@
 import discord
 import asyncio
 
-client = nextcord.Client()
 
 def Weapon(msg):
     if msg==" ":
