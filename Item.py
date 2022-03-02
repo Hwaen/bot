@@ -1,4 +1,4 @@
-import nextcord
+import discord
 import asyncio
 
 client = nextcord.Client()
