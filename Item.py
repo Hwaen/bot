@@ -4667,7 +4667,7 @@ def Weapon(msg):
         return embed
 
     if msg=="쿤달라mk2":
-        embed=discord.Embed(title="쿤달라", description="최대 체력 +120\n이동 속도 +0.1\n시야 +1.5\n스킬 증폭 +17%\n```무효화 - [고유 장착 스킬]\n사용 시 자신에게 걸린 해로운 상태 이상이 해제 됩니다.\n(에어본, 넉백, 붙잡힘은 해제되지 않습니다.)\n쿨다운 45초```", color=0xf9d537)
+        embed=discord.Embed(title="쿤달라 Mk2", description="최대 체력 +120\n이동 속도 +0.1\n시야 +1.5\n스킬 증폭 +17%\n```무효화 - [고유 장착 스킬]\n사용 시 자신에게 걸린 해로운 상태 이상이 해제 됩니다.\n(에어본, 넉백, 붙잡힘은 해제되지 않습니다.)\n쿨다운 45초```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443729984622643/043._Kundala_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="미스릴 + 문스톤", inline=False)
@@ -4681,7 +4681,7 @@ def Weapon(msg):
         return embed
 
     if msg=="살라딘의화살통mk2" or msg=="살라딘mk2":
-        embed=discord.Embed(title="살라딘의 화살통", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```무효화 - [고유 장착 스킬]\n사용 시 자신에게 걸린 해로운 상태 이상이 해제 됩니다.\n(에어본, 넉백, 붙잡힘은 해제되지 않습니다.)\n쿨다운 45초```", color=0xf9d537)
+        embed=discord.Embed(title="살라딘의 화살통 Mk2", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```무효화 - [고유 장착 스킬]\n사용 시 자신에게 걸린 해로운 상태 이상이 해제 됩니다.\n(에어본, 넉백, 붙잡힘은 해제되지 않습니다.)\n쿨다운 45초```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770149543149628/Saladines_Quiver__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="궁기병의 화살통 + 문스톤", inline=False)
