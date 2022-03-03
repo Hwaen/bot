@@ -1499,7 +1499,7 @@ def Weapon(msg):
         return embed
 
     if msg=="화첨창":
-        embed=discord.Embed(title="화첨창", description="공격력 +40\n공격 속도 +30%```발화-[고유 장착 효과]\n기본 공격의 대상에게 최대 4회 중첩되는 [타오르는 고통] 효과를 4초 동안 부여 합니다.\n[타오르는 고통]은 매 초마다 대상 최대 체력의 1.2%를 피해로 줍니다.```", color=0xf9d537)
+        embed=discord.Embed(title="화첨창", description="공격력 +95\n레벨 당 기본 공격 증폭 +2%", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472761352990760/013._Blazing_Lance_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 죽창", inline=False)
@@ -1605,7 +1605,7 @@ def Weapon(msg):
         return embed
 
     if msg=="레바테인":
-        embed=discord.Embed(title="레바테인", description="공격력 +50\n레벨 당 기본 공격 증폭 +2%", color=0xf9d537)
+        embed=discord.Embed(title="레바테인", description="공격력 +64\n레벨 당 기본 공격 증폭 +2%", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735142638088192/014._Laevateinn_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 샴쉬르", inline=False)
