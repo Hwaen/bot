@@ -1760,7 +1760,7 @@ def Weapon(msg):
         return embed
 
     if msg=="주작자문":
-        embed=discord.Embed(title="주작자문", description="공격력 +55\n레벨 당 기본 공격 증폭 +2%", color=0xf9d537)
+        embed=discord.Embed(title="주작자문", description="공격력 +55\n레벨 당 기본 공격 증폭 +1.6%", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756388587180112/019._Mark_of_the_Phoenix_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 글러브", inline=False)
@@ -4322,7 +4322,7 @@ def Weapon(msg):
         return embed
 
     if msg=="SCV":
-        embed=discord.Embed(title="SCV", description="방어력 +10\n생명력 흡수 +8%\n이동 속도 +0.32", color=0x9c4998)
+        embed=discord.Embed(title="SCV", description="방어력 +10\n모든 피해 흡혈 8%\n이동 속도 +0.33", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/948843431004880936/i14507321696.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="정교한 도면 + 모터", inline=False)
