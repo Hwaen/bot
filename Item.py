@@ -597,7 +597,7 @@ def Weapon(msg):
         return embed
 
     if msg=="나뭇가지":
-        embed=discord.Embed(title="나뭇가지", description=" 공격력 +5", color=0xffffff)
+        embed=discord.Embed(title="나뭇가지", description="최대 수량: 2", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891755056142106624/891864605830287380/001._Branch_.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득 경로", value="나뭇가지더미 채집", inline=False)
@@ -1605,7 +1605,7 @@ def Weapon(msg):
         return embed
 
     if msg=="레바테인":
-        embed=discord.Embed(title="레바테인", description="공격력 +64\n레벨 당 기본 공격 증폭 +2%", color=0xf9d537)
+        embed=discord.Embed(title="레바테인", description="공격력 +62\n레벨 당 기본 공격 증폭 +1.8%", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735142638088192/014._Laevateinn_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="삼매진화 + 샴쉬르", inline=False)
@@ -3868,7 +3868,7 @@ def Weapon(msg):
         return embed
 
     if msg=="제사장의예복":
-        embed=discord.Embed(title="제사장의 예복", description="방어력 +30\n체력 재생 +50%\n스태미너 재생 +85%\n쿨다운 감소 +15%\n(고유) 최대 쿨다운 감소 +5%", color=0x9c4998)
+        embed=discord.Embed(title="제사장의 예복", description="방어력 +20\n체력 재생 +50%\n스태미너 재생 +85%\n쿨다운 감소 +15%\n(고유) 최대 쿨다운 감소 +5%", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184671260786698/035._High_Priest_Robes__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="한복 + 정화수", inline=False)
