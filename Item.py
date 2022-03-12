@@ -322,7 +322,7 @@ def Weapon(msg):
         return embed
 
     if msg=="유성검":
-        embed=discord.Embed(title="유성검", description="공격력 +51\n치명타 피해량 +12%\n쿨다운 감소 +12%\n```차지드 스트라이크-[고유 장착 효과]\n매 3초마다 다음 공격이 100%의 치명타 확률 보너스를 획득합니다.```", color=0x9c4998)
+        embed=discord.Embed(title="유성검", description="공격력 +49\n치명타 피해량 +12%\n쿨다운 감소 +12%\n```차지드 스트라이크-[고유 장착 효과]\n매 3초마다 다음 공격이 100%의 치명타 확률 보너스를 획득합니다.```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251045377687663/894251124587122688/008._Meteor_Claymore_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="매화검 + 운석", inline=False)
@@ -3931,7 +3931,7 @@ def Weapon(msg):
         return embed
 
     if msg=="팬텀자켓":
-        embed=discord.Embed(title="팬텀자켓", description="공격력 +20\n방어력 +25\n기본 공격 피해 감소 +7\n```불꽃 결계-[고유 장착 효과]\n전투에 돌입하면 매 초마다 주변 2.5m의 적에게 고유 피해를 입힙니다.\n\(근거리) 적에게 최대 체력의 5.5%의 고유 피해를 입힙니다.\n(원거리) 적에게 최대 체력의 4%의 고유 피해를 입힙니다.````마이 제작 가능`", color=0xf9d537)
+        embed=discord.Embed(title="팬텀 자켓", description="공격력 +20\n방어력 +25\n기본 공격 피해 감소 +7\n```불꽃 결계-[고유 장착 효과]\n전투에 돌입하면 매 초마다 주변 2.5m의 적에게 고유 피해를 입힙니다.\n\(근거리) 적에게 최대 체력의 5.5%의 고유 피해를 입힙니다.\n(원거리) 적에게 최대 체력의 4%의 고유 피해를 입힙니다.````마이 제작 가능`", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/928692926576488448/Phantom_Jacket_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="라이더 자켓 + 삼매진화", inline=False)
@@ -4034,7 +4034,7 @@ def Weapon(msg):
         return embed
 
     if msg=="소드스토퍼":
-        embed=discord.Embed(title="소드 스토퍼", description="방어력 +28\n기본 공격 피해 감소 +4\n```리플렉션-[고유 장착 효과]\n기본 공격으로 받은 피해의 4.5%를 공격자에게 고정 피해로 되돌려 줍니다. (근거리) 4초 동안 45%의 치유 감소 효과를 줍니다. (원거리) 4초 동안 35%의 치유 감소 효과를 줍니다. 또한 4초 안에 600 이상의 피해를 입으면 6m(반지름) 범위 안에 150의 고유 피해를 입힙니다. \n쿨다운 : 3초```", color=0x9c4998)
+        embed=discord.Embed(title="소드 스토퍼", description="방어력 +23\n기본 공격 피해 감소 +4\n```리플렉션-[고유 장착 효과]\n기본 공격으로 받은 피해의 4.5%를 공격자에게 고정 피해로 되돌려 줍니다. (근거리) 4초 동안 45%의 치유 감소 효과를 줍니다. (원거리) 4초 동안 35%의 치유 감소 효과를 줍니다. 또한 4초 안에 600 이상의 피해를 입으면 6m(반지름) 범위 안에 150의 고유 피해를 입힙니다. \n쿨다운 : 3초```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322279160602634/892443884381143090/014._Sword_Stopper__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="바주반드 + 못", inline=False)
@@ -4069,7 +4069,7 @@ def Weapon(msg):
         return embed
 
     if msg=="샤자한의검집":
-        embed=discord.Embed(title="샤자한의 검집", description="공격력 +33\n최대 체력 +110\n기본 공격 피해 감소 +10", color=0x9c4998)
+        embed=discord.Embed(title="샤자한의 검집", description="공격력 +35\n최대 체력 +110\n기본 공격 피해 감소 +10", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322279160602634/892443909597302834/019._Sheath_of_Shah_Jahan__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="검집 + 루비", inline=False)
@@ -4337,7 +4337,7 @@ def Weapon(msg):
         return embed
 
     if msg=="EOD부츠":
-        embed=discord.Embed(title="EOD 부츠", description="방어력 +24\n체력 재생 +40%\n스태미너 재생 +0.5\n이동 속도 +0.3\n트랩 피해 감소 +10%\n", color=0xf9d537)
+        embed=discord.Embed(title="EOD 부츠", description="방어력 +22\n체력 재생 +40%\n스태미너 재생 +0.5\n이동 속도 +0.3\n트랩 피해 감소 +10%\n", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/892443426593837087/023._EOD_Boots_EOD_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="부츠 + 강철 무릎 보호대", inline=False)
@@ -4513,14 +4513,14 @@ def Weapon(msg):
         return embed
 
     if msg=="백우선":
-        embed=discord.Embed(title="백우선", description="스킬 공격 추가 피해 +15\n(고유) 이동 속도 +0.06\n```스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격 시 피격된 대상의 치유 효과가 감소합니다.\n(근거리) 치유 효과가 45% 감소합니다.\n(원거리) 치유 효과가 35% 감소합니다.```", color=0x1e82cd)
+        embed=discord.Embed(title="백우선", description="스킬 공격 추가 피해 +14\n(고유) 이동 속도 +0.06\n```스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격 시 피격된 대상의 치유 효과가 감소합니다.\n(근거리) 치유 효과가 45% 감소합니다.\n(원거리) 치유 효과가 35% 감소합니다.```", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443621998084106/022._White_Crane_Fan_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="군선 + 깃털", inline=False)
         return embed
 
     if msg=="우치와":
-        embed=discord.Embed(title="우치와", description="스태미너 재생 +70%\n생명력 흡수 +14%\n스킬 공격 추가 피해 +19\n", color=0x1e82cd)
+        embed=discord.Embed(title="우치와", description="스태미너 재생 +70%\n생명력 흡수 +14%\n스킬 공격 추가 피해 +17\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443630793551952/023._Uchiwa_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="인형 + 부채", inline=False)
@@ -4576,7 +4576,7 @@ def Weapon(msg):
         return embed
 
     if msg=="능동위장":
-        embed=discord.Embed(title="능동 위장", description="최대 체력 +220\n기본 공격 피해 감소 +12", color=0x1e82cd)
+        embed=discord.Embed(title="능동 위장", description="최대 체력 +200\n기본 공격 피해 감소 +12", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443669947371580/031._Active_Camouflage__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="탄창 + 군복", inline=False)
@@ -4597,7 +4597,7 @@ def Weapon(msg):
         return embed
 
     if msg=="슈뢰딩거의상자":
-        embed=discord.Embed(title="슈뢰딩거의 상자", description="최대 체력 +200\n스킬 공격 추가 피해 +4\n```스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격 시 피격된 대상의 치유 효과가 감소합니다.\n(근거리) 치유 효과가 45% 감소합니다.\n(원거리) 치유 효과가 35% 감소합니다.```", color=0x1e82cd)
+        embed=discord.Embed(title="슈뢰딩거의 상자", description="최대 체력 +180\n스킬 공격 추가 피해 +4\n```스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격 시 피격된 대상의 치유 효과가 감소합니다.\n(근거리) 치유 효과가 45% 감소합니다.\n(원거리) 치유 효과가 35% 감소합니다.```", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443686061887520/034._Schrodinger_s_Box__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득경로", value="깃털 + 운명의 꽃", inline=False)
