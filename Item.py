@@ -3931,7 +3931,7 @@ def Weapon(msg):
         return embed
 
     if msg=="팬텀자켓":
-        embed=discord.Embed(title="팬텀 자켓", description="공격력 +20\n방어력 +25\n기본 공격 피해 감소 +7\n```불꽃 결계-[고유 장착 효과]\n전투에 돌입하면 매 초마다 주변 2.5m의 적에게 고유 피해를 입힙니다.\n\(근거리) 적에게 최대 체력의 5.5%의 고유 피해를 입힙니다.\n(원거리) 적에게 최대 체력의 4%의 고유 피해를 입힙니다.````마이 제작 가능`", color=0xf9d537)
+        embed=discord.Embed(title="팬텀 자켓", description="공격력 +20\n방어력 +25\n기본 공격 피해 감소 +7\n```불꽃 결계-[고유 장착 효과]\n전투에 돌입하면 매 초마다 주변 2.5m의 적에게 고유 피해를 입힙니다.\n\(근거리) 적에게 최대 체력의 5.5%의 고유 피해를 입힙니다.\n(원거리) 적에게 최대 체력의 4%의 고유 피해를 입힙니다.```\n\n`마이 제작 가능`", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/928692926576488448/Phantom_Jacket_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="라이더 자켓 + 삼매진화", inline=False)
