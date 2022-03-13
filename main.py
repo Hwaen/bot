@@ -77,7 +77,7 @@ async def 시즌(ctx):
     hour = time.seconds/3600
     
     embed=nextcord.Embed(title="[시즌 5]", description="%d일 %d시간 남았습니다." %(day,hour))
-    embed.set_footer(text="시즌 시작: 2022년 5월 12일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
+    embed.set_footer(text="시즌 종료: 2022년 5월 12일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
     await ctx.send(embed=embed)
     
 
