@@ -2795,14 +2795,14 @@ def Weapon(msg):
 
     if msg=="만년빙":
         embed=discord.Embed(title="만년빙", description="최대 수량: 3", color=0x9c4998)
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443700771307520/037._Glacial_Ice_.png%22)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443700771307520/037._Glacial_Ice_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="생명의 나무 + 얼음", inline=False)
         return embed
 
     if msg=="삼매진화":
         embed=discord.Embed(title="삼매진화", description="최대 수량: 3", color=0x9c4998)
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443706404245544/038._True_Samadhi_Fire_.png%22)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443706404245544/038._True_Samadhi_Fire_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="생명의 나무 + 라이터", inline=False)
         return embed
