@@ -4301,7 +4301,7 @@ def Weapon(msg):
         return embed
 
     if msg=="미스릴부츠" or msg == "미신":
-        embed=discord.Embed(title="미스릴 부츠", description="방어력 +18\n공격 속도+22%\n이동 속도 +0.42", color=0x9c4998)
+        embed=discord.Embed(title="미스릴 부츠", description="방어력 +15\n공격 속도+32%\n이동 속도 +0.42", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/892443401113436270/018._Mithril_Boots__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="미스릴 + 체인 레깅스", inline=False)
@@ -4358,7 +4358,7 @@ def Weapon(msg):
         return embed
 
     if msg=="글레이셜슈즈" or msg=="글슈":
-        embed=discord.Embed(title="글레이셜 슈즈", description="스태미너 재생 +1.2\n스태미너 재생 +100%\n이동 속도 +0.35\n레벨 당 스킬 증폭 +1.5%\n", color=0xf9d537)
+        embed=discord.Embed(title="글레이셜 슈즈", description="스태미너 재생 +1.2\n스태미너 재생 +100%\n이동 속도 +0.35\n레벨 당 스킬 증폭 +1%\n", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/892443433896132608/024._Glacial_Shoes__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="덧댄 슬리퍼 + 만년빙", inline=False)
