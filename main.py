@@ -101,6 +101,8 @@ async def 템(ctx,*, msg):
     for i in range(0,len(msg)):
         if msg[i]!=' ':
             msg_out+=msg[i]
+    msg_out = msg_out.upper()
+    print(msg_out)
     Item.Weapon(msg_out)
     await ctx.send(embed=Item.Weapon(msg_out))
 

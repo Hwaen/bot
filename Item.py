@@ -300,7 +300,7 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="레이피어 + 어사의", inline=False)
         return embed
 
-    if msg=="듀랜달Mk2":
+    if msg=="듀랜달MK2":
         embed=discord.Embed(title="듀랜달 Mk2", description=" 공격력 +45\n시야 +1\n치명타 확률 +20%\n치명타 피해량 +6%\n쿨다운 감소 +8%\n생명력 흡수 +9%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251045377687663/894251113694498856/006._Durendal_Mk2__Mk2.png")
         embed.add_field(name="등급", value="영웅", inline=False)
@@ -896,14 +896,14 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="하푼건 + 망원 카메라", inline=False)
         return embed
         
-    if msg=="tac50" or msg=="tac-50" or msg=="TAC-50" or msg=="TAC50":
+    if  msg=="TAC-50" or msg=="TAC50":
         embed=discord.Embed(title="Tac-50", description="장탄 수: 2발\n 공격력 +74\n 레벨 당 공격력 +2\n 시야 +2\n 생명력 흡수 +14%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472506435780638/006._Tac-50.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="하푼건 + 정교한 도면", inline=False)
         return embed
         
-    if msg=="NTW-20":
+    if  msg=="NTW-20" or msg=="NTW20":
         embed=discord.Embed(title="NTW-20", description="장탄 수: 1발\n 공격력 +62\n 시야 +1.5\n 스킬 증폭 +18%\n", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472515193495614/008._NTW-20.png")
         embed.add_field(name="등급", value="영웅", inline=False)
@@ -1329,7 +1329,7 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="골든 브릿지 + 저격 스코프", inline=False)
         return embed
 
-    if msg=="King-V":
+    if msg=="KING-V":
         embed=discord.Embed(title="King-V", description=" 공격력 +13\n 스킬 증폭 +16%\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894652734987448330/894652795515441172/005._Humbucker_Pickup__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
@@ -4669,7 +4669,7 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="미스릴 + 문스톤", inline=False)
         return embed
 
-    if msg=="쿤달라mk2":
+    if msg=="쿤달라MK2":
         embed=discord.Embed(title="쿤달라 Mk2", description="최대 체력 +120\n이동 속도 +0.1\n시야 +1.5\n스킬 증폭 +17%\n```무효화 - [고유 장착 스킬]\n사용 시 자신에게 걸린 해로운 상태 이상이 해제 됩니다.\n(에어본, 넉백, 붙잡힘은 해제되지 않습니다.)\n쿨다운 45초```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443729984622643/043._Kundala_.png")
         embed.add_field(name="등급", value="전설", inline=False)
@@ -4683,7 +4683,7 @@ def Weapon(msg):
         embed.add_field(name="획득경로", value="궁기병의 화살통 + 문스톤", inline=False)
         return embed
 
-    if msg=="살라딘의화살통mk2" or msg=="살라딘mk2":
+    if msg=="살라딘의화살통MK2" or msg=="살라딘mk2":
         embed=discord.Embed(title="살라딘의 화살통 Mk2", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```무효화 - [고유 장착 스킬]\n사용 시 자신에게 걸린 해로운 상태 이상이 해제 됩니다.\n(에어본, 넉백, 붙잡힘은 해제되지 않습니다.)\n쿨다운 45초```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770149543149628/Saladines_Quiver__.png")
         embed.add_field(name="등급", value="전설", inline=False)
