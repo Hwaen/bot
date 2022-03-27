@@ -49,6 +49,10 @@ async def on_ready():
     print("현재 들어가있는 서버 수")
     print(len(guild_list))
 
+@bot.event
+async def on_command_error(ctx, error):
+    pass
+
 #####도움말#####
 @bot.command()
 async def 도움(ctx):
