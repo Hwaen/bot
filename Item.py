@@ -176,7 +176,7 @@ def Weapon(msg):
         return embed
 
     if msg=="마하라자":
-        embed=discord.Embed(title="마하라자", description=" 공격력 +39\n방어력 +15\n ```신속-루드라의 단검-[고유 장착 효과]\n4초 이내에 3회의 개별 피해를 가하면, 3초간 이동 속도가 15%, 공격력이 33% 증가합니다.\n(쿨타임 6초)```", color=0x9c4998)
+        embed=discord.Embed(title="마하라자", description=" 공격력 +39\n방어력 +15\n ```신속-루드라의 단검-[고유 장착 효과]\n4초 이내에 3회의 개별 피해를 가하면, 3초간 이동 속도가 24%, 공격력이 21% 증가합니다.\n(쿨타임 6초)```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322058556981298/891342860014735390/014._Maharaja_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로 ", value="카라페이스 카타르 + 아이테르 깃털", inline=False)
@@ -221,7 +221,7 @@ def Weapon(msg):
         return embed
 
     if msg=="이천일류":
-        embed=discord.Embed(title="이천일류", description="공격력 +38\n공격 속도(%) +20%\n생명력 흡수+12%\n```기본 공격 치유 방해-[고유 장착 효과]\n기본 공격에 피격된 대상의 치유 효과가 4초 동안 40% 감소합니다.```", color=0x9c4998)
+        embed=discord.Embed(title="이천일류", description="공격력 +36\n공격 속도(%) +20%\n생명력 흡수+12%\n```기본 공격 치유 방해-[고유 장착 효과]\n기본 공격에 피격된 대상의 치유 효과가 4초 동안 40% 감소합니다.```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891316976876650549/891321979968294912/004._Divine_Dual_Swords_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="피렌체식 쌍검 + 가시 발판", inline=False)
@@ -466,7 +466,7 @@ def Weapon(msg):
         return embed
 
     if msg=="케로베로스":
-        embed=discord.Embed(title="케르베로스", description=" 공격력 +36\n 레벨 당  공격력 +2\n(고유)기본 공격 사거리 +0.5```기본 공격 치유 방해 - [고유 장착 효과]\n 기본 공격에 피격된 대상의 치유 효과가 4초 동안 45% 감소합니다.``` ", color=0x9c4998)
+        embed=discord.Embed(title="케르베로스", description=" 공격력 +33\n 레벨 당  공격력 +2\n(고유)기본 공격 사거리 +0.5```기본 공격 치유 방해 - [고유 장착 효과]\n 기본 공격에 피격된 대상의 치유 효과가 4초 동안 45% 감소합니다.``` ", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891864999721582612/891865056374050836/007._Cerberus_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="샤퍼 + 눈차크", inline=False)
@@ -485,7 +485,7 @@ def Weapon(msg):
         embed=discord.Embed(title="발터 PPK", description="장탄 수: 6발\n 공격력 +14\n", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891755103726501968/891864754992328734/001._Walther_PPK__PPK.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="모래사장(4), 호텔(5), 공장(8)", inline=False)
+        embed.add_field(name="획득 경로", value="모래사장(4) 호텔(5) 공장(8)", inline=False)
         return embed
 
     if msg=="매그넘파이썬":
@@ -580,7 +580,7 @@ def Weapon(msg):
         return embed
 
     if msg=="플라즈마건":
-        embed=discord.Embed(title="플라즈마 건", description="장탄 수: 30발\n 공격력 +52\n공격 속도 +35%\n이동 속도 +0.1\n기본 공격 사거리 -0.5\n```열정 (고유 장착 효과)\n기본 공격 시 현재 체력의 5%의 추가 피해 + 스택 1 획득\n스택 당 공격 속도 8% (스택 유지 시간 5초)\n최대 4스택\n최대 스택 달성 시 공격력 15, 이동 속도 0.1 증가```", color=0x9c4998)
+        embed=discord.Embed(title="플라즈마 건", description="장탄 수: 30발\n 공격력 +52\n공격 속도 +35%\n이동 속도 +0.1\n기본 공격 사거리 -0.35\n```열정 (고유 장착 효과)\n기본 공격 시 현재 체력의 5%의 추가 피해 + 스택 1 획득\n스택 당 공격 속도 8% (스택 유지 시간 5초)\n최대 4스택\n최대 스택 달성 시 공격력 15, 이동 속도 0.1 증가```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891755103726501968/938770499075473408/Plasma_Gun__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="데린저 + 전자 부품", inline=False)
@@ -593,7 +593,7 @@ def Weapon(msg):
         embed=discord.Embed(title="단봉", description=" 공격력 +15", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891755056142106624/891864611832352819/002._Short_Rod_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득 경로", value="항구(9) 연못(9) \n사냥 들개", inline=False)
+        embed.add_field(name="획득 경로", value="항구(9) 연못(9) 성당(9) \n사냥 들개", inline=False)
         return embed
 
     if msg=="장봉":
@@ -1584,7 +1584,7 @@ def Weapon(msg):
         return embed
 
     if msg=="모노호시자오":
-        embed=discord.Embed(title="모노호시자오", description="공격력 +43\n레벨 당 추가 공격력 +2\n 생명력 흡수 +22%\n", color=0x9C4998)
+        embed=discord.Embed(title="모노호시자오", description="공격력 +43\n레벨 당 추가 공격력 +2\n 생명력 흡수 +17%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914732131471724564/914735122803200041/012._Monohoshizao_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="무라마사 + 정교한 도면", inline=False)
@@ -2242,35 +2242,35 @@ def Weapon(msg):
         return embed
 
     if msg=="사이드와인더":
-        embed=discord.Embed(title="사이드와인더", description="공격력 +35\n이동 속도 +0.06\n```가벼운 발걸음-[고유 장착 효과]-사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.1m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n 기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 70의 고유 피해를 입힙니다. 최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 30% 감소시킵니다.```",color=0x1e82cd)
+        embed=discord.Embed(title="사이드와인더", description="공격력 +35\n이동 속도 +0.06\n```가벼운 발걸음-[고유 장착 효과]-사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.05m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n 기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 35의 고유 피해를 입힙니다. 최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 1초 동안 30% 감소시킵니다.```",color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450506398023690/006._Sidewinder_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="패시브 lv2에서 선택 진화", inline=False)
         return embed
 
     if msg=="슈퍼사이드와인더":
-        embed=discord.Embed(title="슈퍼사이드와인더", description="공격력 +55\n이동 속도+0.08\n쿨다운 감소 +6%\n```가벼운 발걸음-[고유 장착 효과]사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.1m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 70의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 30% 감소시킵니다.```",color=0xF9D537)
+        embed=discord.Embed(title="슈퍼사이드와인더", description="공격력 +55\n이동 속도+0.08\n쿨다운 감소 +6%\n```가벼운 발걸음-[고유 장착 효과]사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.05m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 35의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 1초 동안 30% 감소시킵니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450527944171560/009._Alpha_Sidewinder_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="패시브 lv3에서 선택 진화", inline=False)
         return embed
 
     if msg=="슈퍼사이드와인더ML":
-        embed=discord.Embed(title="슈퍼사이드와인더 - ML", description="공격력 +63\n이동 속도 +0.1\n쿨다운 감소 +10%\n(고유) 최대 쿨다운 감소 +5%\n```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.\n``` ```VF제어 강화 - [고유 장착 효과]\n에키온의 과부하 상태의 지속 시간이 VF폭주(R) 레벨에 따라 영구적으로 30/35/40/45% 감소합니다.```",color=0xF9D537)
+        embed=discord.Embed(title="슈퍼사이드와인더 - ML", description="공격력 +63\n이동 속도 +0.1\n쿨다운 감소 +10%\n(고유) 최대 쿨다운 감소 +5%\n```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.04m이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 80의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 1초 동안 40% 감소시킵니다.\n``` ```VF제어 강화 - [고유 장착 효과]\n에키온의 과부하 상태의 지속 시간이 VF폭주(R) 레벨에 따라 영구적으로 30/35/40/45% 감소합니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450589193580554/016._Alpha_Siderwinder_ML_-ML.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="슈퍼사이드와인더 + 미스릴", inline=False)
         return embed
 
     if msg=="슈퍼사이드와인더FC":
-        embed=discord.Embed(title="슈퍼사이드와인더 - FC", description="공격력 +69\n이동 속도 +0.1\n쿨다운 감소 +15%\n(고유) 방해 효과 저항 +15%\n```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.\n``` ",color=0xF9D537)
+        embed=discord.Embed(title="슈퍼사이드와인더 - FC", description="공격력 +69\n이동 속도 +0.1\n쿨다운 감소 +15%\n(고유) 방해 효과 저항 +15%\n```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.04m이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 80의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 1초 동안 40% 감소시킵니다.\n``` ",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450589445234688/017._Alpha_Sidewinder_FC_-FC.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="슈퍼사이드와인더 + 포스 코어", inline=False)
         return embed
 
     if msg=="슈퍼사이드와인더VBS":
-        embed=discord.Embed(title="슈퍼사이드와인더 - VBS", description="공격력 +73\n이동 속도 +0.1\n쿨다운 감소 +15%\n(고유) 받는 회복 증가 +20%\n ```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.08m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 160의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 2초 동안 40% 감소시킵니다.```",color=0xF9D537)
+        embed=discord.Embed(title="슈퍼사이드와인더 - VBS", description="공격력 +73\n이동 속도 +0.1\n쿨다운 감소 +15%\n(고유) 받는 회복 증가 +20%\n ```가벼운 발걸음-[고유 장착 효과] 사이드와인더&슈퍼사이드와인더\nVF폭주 상태일 때 0.04m 이동할 때마다 [가벼운 발걸음]을 최대 100회까지 중첩해서 획득합니다.\n중첩에 따라 이동 속도가 최대 0.1까지 증가합니다.\n기본 공격 피해를 입힐 경우 중첩을 모두 소모하여 최대 80의 고유 피해를 입힙니다.\n최대 중첩 상태에서 기본 공격에 피격된 대상의 이동 속도를 1초 동안 40% 감소시킵니다.```",color=0xF9D537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450589688528916/018._Alpha_Sidewinder_VBS_-VBS.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="슈퍼사이드와인더 + 포스 코어", inline=False)
@@ -2414,7 +2414,7 @@ def Weapon(msg):
         return embed
 
     if msg=="히든메이든":
-        embed=discord.Embed(title="히든 메이든", description="트랩 피해 +280\n트랩 발동: 대상의 이동속도가 2초간 30% 감소합니다.\n최대 수량: 5", color=0x1e82cd)
+        embed=discord.Embed(title="히든 메이든", description="트랩 피해 +190\n트랩 발동: 대상의 이동속도가 2초간 30% 감소합니다.\n최대 수량: 5", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/910213917391872050/915271469741793330/021._Hidden_Maiden__.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="가시발판 + 정글 기요틴", inline=False)
@@ -3522,7 +3522,7 @@ def Weapon(msg):
         return embed
 
     if msg=="투구":
-        embed=discord.Embed(title="투구", description="방어력 +20\n최대 스태미너 +200\n쿨다운 감소 +7%\n(고유) 이동 속도 +0.06\n", color=0x1e82cd)
+        embed=discord.Embed(title="투구", description="방어력 +15\n최대 스태미너 +200\n쿨다운 감소 +7%\n(고유) 이동 속도 +0.06\n", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/892443138944270356/013._Close_Helm_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="사슬 코이프 + 가면", inline=False)
@@ -3571,7 +3571,7 @@ def Weapon(msg):
         return embed
 
     if msg=="황실부르고넷":
-        embed=discord.Embed(title="황실 부르고넷", description="방어력 +10\n최대 스태미너 +400\n쿨다운 감소 +10%\n스킬 증폭 +18%\n(고유) 이동 속도 +0.06\n", color=0x9c4998)
+        embed=discord.Embed(title="황실 부르고넷", description="방어력 +15\n최대 스태미너 +400\n쿨다운 감소 +10%\n스킬 증폭 +14%\n(고유) 이동 속도 +0.06\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/892443176722386964/020._Imperial_Burgonet__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="투구 + 황금", inline=False)
@@ -3791,7 +3791,7 @@ def Weapon(msg):
         return embed
 
     if msg=="어사의":
-        embed=discord.Embed(title="어사의", description="방어력 +20\n체력 재생 +45%\n시야 +1\n쿨다운 감소 +15%\n", color=0x1e82cd)
+        embed=discord.Embed(title="어사의", description="방어력 +12\n체력 재생 +45%\n시야 +1\n쿨다운 감소 +12%\n토납 -[고유 장착 효과]\n휴식을 2초 이상 지속하면, 45 + 레벨의 6배(근거리)/4.5배(원거리)에 해당하는 보호막을 획득합니다.```", color=0x1e82cd)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184522463657994/023._Covert_Agent_Uniform_.png")
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="한복 + 마패", inline=False)
@@ -3812,14 +3812,14 @@ def Weapon(msg):
         return embed
 
     if msg=="락커의자켓":
-        embed=discord.Embed(title="락커의 자켓", description="공격력 +25\n방어력 +10\n비 전투중 이동 속도 +0.1\n기본 공격 피해 감소 +5\n```스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격 시 피격된 대상의 치유 효과가 감소합니다.\n(근거리) 치유 효과가 45% 감소합니다.\n(원거리) 치유 효과가 35% 감소합니다.```", color=0x9c4998)
+        embed=discord.Embed(title="락커의 자켓", description="공격력 +22\n방어력 +10\n비 전투중 이동 속도 +0.1\n기본 공격 피해 감소 +5\n```스킬 공격 치유 방해-[고유 장착 효과]\n스킬 공격 시 피격된 대상의 치유 효과가 감소합니다.\n(근거리) 치유 효과가 45% 감소합니다.\n(원거리) 치유 효과가 35% 감소합니다.```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184645000245288/025._Rocker_s_Jacket__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="라이더 자켓 + 소란 발생기", inline=False)
         return embed
 
     if msg=="미스릴갑옷" or msg=="미갑":
-        embed=discord.Embed(title="미스릴 갑옷", description="방어력 +60\n이동 속도 +0.1\n스킬 피해 감소 +14\n", color=0x9c4998)
+        embed=discord.Embed(title="미스릴 갑옷", description="방어력 +55\n이동 속도 +0.1\n공격 속도 22%", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/920184645201563678/026._Mithril_Armor__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="미스릴 + 가죽 갑옷", inline=False)
@@ -3931,7 +3931,7 @@ def Weapon(msg):
         return embed
 
     if msg=="미스릴크롭":
-        embed=discord.Embed(title="미스릴 크롭", description="방어력 +65\n공격 속도 +18%\n이동 속도 +0.2\n\n`마이 제작가능`", color=0x9c4998)
+        embed=discord.Embed(title="미스릴 크롭", description="방어력 +65\n공격 속도 +28%\n이동 속도 +0.2\n\n`마이 제작가능`", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916320335131987998/928692926333206608/Mithril_Crop__.png")
         embed.add_field(name="등급", value="일반", inline=False)
         embed.add_field(name="획득 경로", value="비키니 + 미스릴", inline=False)
@@ -4294,7 +4294,7 @@ def Weapon(msg):
         return embed
 
     if msg=="풍화륜":
-        embed=discord.Embed(title="풍화륜", description="스태미너 재생 +0.5\n스태미너 재생 +50%\n이동 속도 +0.29\n스킬 공격 추가 피해 +10\n", color=0x9c4998)
+        embed=discord.Embed(title="풍화륜", description="스태미너 재생 +0.5\n스태미너 재생 +50%\n이동 속도 +0.29\n스킬 증폭 7%\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322212408238131/892443399007928360/017._Straitjacket_Sneakers_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="덧댄 슬리퍼 + 재", inline=False)
@@ -4383,7 +4383,7 @@ def Weapon(msg):
         embed=discord.Embed(title="깃털", description="(고유) 이동 속도 +0.04", color=0xffffff)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443490712178728/001._Feather_.png")
         embed.add_field(name="등급", value="일반", inline=False)
-        embed.add_field(name="획득경로", value="지역 묘지(14) 숲(14)\n사냥 멧돼지", inline=False)
+        embed.add_field(name="획득경로", value="지역 묘지(14) 숲(14) 절(9)\n사냥 멧돼지", inline=False)
         return embed
 
     if msg=="꽃":
@@ -4635,7 +4635,7 @@ def Weapon(msg):
 
 
     if msg=="요명월":
-        embed=discord.Embed(title="요명월", description="방어력 +20\n스태미너 재생 +100%\n시야 +2\n```블레싱 : 코스믹파워 - [고유 장착 스킬]\n사용 시 6초 간 공격력 상승 16%, 방어력 상승 16% 이 상승합니다.\n(쿨다운: 16초)```", color=0x9c4998)
+        embed=discord.Embed(title="요명월", description="공격력 +10\n방어력 +10\n스태미너 재생 +100%\n시야 +2\n```블레싱 : 코스믹파워 - [고유 장착 스킬]\n사용 시 6초 간 공격력 상승 16%, 방어력 상승 16% 이 상승합니다.\n(쿨다운: 16초)```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443711743598612/039._Lunar_Embrace_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="정화수 + 문스톤", inline=False)
@@ -4670,21 +4670,21 @@ def Weapon(msg):
         return embed
 
     if msg=="쿤달라MK2":
-        embed=discord.Embed(title="쿤달라 Mk2", description="최대 체력 +120\n이동 속도 +0.1\n시야 +1.5\n스킬 증폭 +17%\n```무효화 - [고유 장착 스킬]\n사용 시 자신에게 걸린 해로운 상태 이상이 해제 됩니다.\n(에어본, 넉백, 붙잡힘은 해제되지 않습니다.)\n쿨다운 45초```", color=0xf9d537)
+        embed=discord.Embed(title="쿤달라 Mk2", description="방어력 +10\n이동 속도 +0.1\n시야 +1.5\n스킬 증폭 +25%\n```무효화 - [고유 장착 스킬]\n사용 시 자신에게 걸린 해로운 상태 이상이 해제 됩니다.\n(에어본, 넉백, 붙잡힘은 해제되지 않습니다.)\n쿨다운 45초```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/892443729984622643/043._Kundala_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="미스릴 + 문스톤", inline=False)
         return embed
 
     if msg=="살라딘의화살통" or msg=="살라딘":
-        embed=discord.Embed(title="살라딘의 화살통", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```가속 - [고유 장착 스킬]\n사용 시 2.5초간 이동 속도 0.2(근거리)/0.1(원거리)가 증가하고 다른 대상과 충돌하지 않습니다.\n이동 외 다른 행동을 취할 시 종료됩니다.\n(쿨다운 : 30초)\n```", color=0xf9d537)
+        embed=discord.Embed(title="살라딘의 화살통", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```가속 - [고유 장착 스킬]\n사용 시 2.5초간 이동 속도 0.5(근거리)/0.3(원거리)가 증가하고 다른 대상과 충돌하지 않습니다.\n이동 외 다른 행동을 취할 시 종료됩니다.\n(쿨다운 : 30초)\n```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770149543149628/Saladines_Quiver__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="궁기병의 화살통 + 문스톤", inline=False)
         return embed
 
     if msg=="살라딘의화살통MK2" or msg=="살라딘mk2":
-        embed=discord.Embed(title="살라딘의 화살통 Mk2", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.04\n```무효화 - [고유 장착 스킬]\n사용 시 자신에게 걸린 해로운 상태 이상이 해제 됩니다.\n(에어본, 넉백, 붙잡힘은 해제되지 않습니다.)\n쿨다운 45초```", color=0xf9d537)
+        embed=discord.Embed(title="살라딘의 화살통 Mk2", description="공격력 +12\n공격 속도 +33%\n(고유) 이동 속도 +0.06\n```무효화 - [고유 장착 스킬]\n사용 시 자신에게 걸린 해로운 상태 이상이 해제 됩니다.\n(에어본, 넉백, 붙잡힘은 해제되지 않습니다.)\n쿨다운 45초```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322263075450882/938770149543149628/Saladines_Quiver__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="궁기병의 화살통 + 문스톤", inline=False)
