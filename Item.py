@@ -740,14 +740,14 @@ def Weapon(msg):
         return embed
 
     if msg=="산타무에르페":
-        embed=discord.Embed(title="산타 무에르페", description=" 공격력 +90\n 최대 체력 +200\n (고유)기본 공격 사거리 +0.75", color=0x9c4998)
+        embed=discord.Embed(title="산타 무에르페", description=" 공격력 +90\n 최대 체력 +200\n (고유)기본 공격 사거리 +0.5", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366117640122388/009._Santa_Muerte__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="사신의 낫 + 루비", inline=False)
         return embed
 
     if msg=="스퀴테":
-        embed=discord.Embed(title="스퀴테", description=" 공격력 +92\n 레벨 당 스킬 증폭 +2%\n (고유)기본 공격 사거리 +1", color=0x9c4998)
+        embed=discord.Embed(title="스퀴테", description=" 공격력 +92\n 레벨 당 스킬 증폭 +2%\n (고유)기본 공격 사거리 +0.75", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891365946600591410/891366122300006421/010._Scythe_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="사신의 낫 + 황금", inline=False)
@@ -918,7 +918,7 @@ def Weapon(msg):
         return embed
         
     if msg=="현자총통":
-        embed=discord.Embed(title="현자총통", description="장탄 수: 1발\n 공격력 +135\n기본 공격 사거리 -1\n```철환-[고유 장착 효과]\n다음에 가하는 기본 공격이 115의 추가 고유 피해를 주고 0.56초 동안 이동속도를 99% 만큼 감소시킵니다.\n(쿨다운 : 4초)```", color=0xf9d537)
+        embed=discord.Embed(title="현자총통", description="장탄 수: 1발\n 공격력 +120\n기본 공격 사거리 -0.5\n```철환-[고유 장착 효과]\n다음에 가하는 기본 공격이 115의 추가 고유 피해를 주고 0.56초 동안 이동속도를 99% 만큼 감소시킵니다.\n(쿨다운 : 4초)```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472376164892722/896472527197573170/011._Blackfire_Cannon_.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="스프링필드 + 삼매진화", inline=False)
@@ -2165,7 +2165,7 @@ def Weapon(msg):
 #####VF의수#####
 
     if msg=="바이퍼":
-        embed=discord.Embed(title="바이퍼", description="공격력 +25", color=0x329632)
+        embed=discord.Embed(title="바이퍼", description="공격력 +5", color=0x329632)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/923207804980981800/923450484017233930/003._Viper_.png")
         embed.add_field(name="등급", value="고급", inline=False)
         embed.add_field(name="획득경로", value="기본 지급", inline=False)
