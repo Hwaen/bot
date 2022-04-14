@@ -3639,7 +3639,27 @@ def Weapon(msg):
         embed.add_field(name="등급", value="희귀", inline=False)
         embed.add_field(name="획득 경로", value="왕관 + 십자가", inline=False)
         return embed
+
+    if msg=="피어나는봉오리":
+        embed=discord.Embed(title="피어나는 봉오리", description="방어력 10\n최대 스태미너 150\n스킬 증폭 5%\n `프리야 전용 아이템`", color=0x329632)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/964196363212554250/Crown_of_Buds__.png")
+        embed.add_field(name="등급", value="고급", inline=False)
+        embed.add_field(name="획득 경로", value="프리야 패시브 1레벨", inline=False)
+        return embed
     
+    if msg=="싱그러운꽃잎":
+        embed=discord.Embed(title="싱그러운 꽃잎", description="방어력 20\n최대 스태미너 200\n스킬 증폭 10%\n `프리야 전용 아이템`", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/964196362793156639/Harmony_in_Full_Bloom__.png")
+        embed.add_field(name="등급", value="희귀", inline=False)
+        embed.add_field(name="획득 경로", value="프리야 패시브 2레벨", inline=False)
+        return embed
+    
+    if msg=="만개하는선율":
+        embed=discord.Embed(title="만개하는 선율", description="방어력 30\n최대 스태미너 300\n쿨다운 감소 10%\n스킬 증폭 10%\n레벨당 스킬 증폭 1%\n `프리야 전용 아이템`", color=0x1e82cd)
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322199078744074/964196362793156639/Harmony_in_Full_Bloom__.png")
+        embed.add_field(name="등급", value="영웅", inline=False)
+        embed.add_field(name="획득 경로", value="프리야 패시브 3레벨", inline=False)
+        return embed
     
 
 #####옷#####
