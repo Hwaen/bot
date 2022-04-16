@@ -50,6 +50,7 @@ name = {'재키' : 'Jackie',
         '띠아' : 'Tia',
         '펠릭스' : 'Felix',
         '엘레나' : 'Elena',
+        '프리야' : 'Priya',
         }
 
 def skill(msg,skill):
