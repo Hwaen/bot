@@ -15,6 +15,7 @@ key = {#파괴
        '복수자':'Vengeance',
        '수확':'Spirit_Culling',
        '갈증':'Quench',
+       '영혼흡수장치' : 'Anima_Reaper',
        
        #저항
        '금강':'Diamond_Shard',
@@ -34,7 +35,8 @@ key = {#파괴
        '집결':'Assembly',
        '후방보급':'Logistics',
        '테이아':'Theia',
-       '시가전':'Urban_Warfare'}
+       '시가전':'Urban_Warfare',
+       '스프린터':'Head_Starter' }
 
 
 
