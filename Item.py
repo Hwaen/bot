@@ -221,7 +221,7 @@ def Weapon(msg):
         return embed
 
     if msg=="이천일류":
-        embed=discord.Embed(title="이천일류", description="공격력 +39\n공격 속도(%) +20%\n생명력 흡수+12%\n```기본 공격 치유 방해-[고유 장착 효과]\n기본 공격에 피격된 대상의 치유 효과가 4초 동안 40% 감소합니다.```", color=0x9c4998)
+        embed=discord.Embed(title="이천일류", description="공격력 +35\n공격 속도(%) +20%\n생명력 흡수+12%\n```기본 공격 치유 방해-[고유 장착 효과]\n기본 공격에 피격된 대상의 치유 효과가 4초 동안 40% 감소합니다.```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891316976876650549/891321979968294912/004._Divine_Dual_Swords_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="피렌체식 쌍검 + 가시 발판", inline=False)
@@ -975,7 +975,7 @@ def Weapon(msg):
         return embed
 
     if msg=="XCR":
-        embed=discord.Embed(title="XCR", description="장탄 수: 30발\n 공격력 +59\n 최대 체력 +200\n기본 공격 추가 피해 +8\n", color=0x9c4998)
+        embed=discord.Embed(title="XCR", description="장탄 수: 30발\n 공격력 +61\n 최대 체력 +200\n기본 공격 추가 피해 +6\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472444225847376/008._XCR.png")
         embed.add_field(name="등급 ", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="M16A1 + 탄창", inline=False)
@@ -989,7 +989,7 @@ def Weapon(msg):
         return embed
 
     if msg=="아그니":
-        embed=discord.Embed(title="아그니", description="장탄 수: 30발\n공격력 +49\n공격 속도 +25%\n기본 공격 추가 피해 +14\n", color=0xf9d537)
+        embed=discord.Embed(title="아그니", description="장탄 수: 30발\n공격력 +52\n공격 속도 +25%\n기본 공격 추가 피해 +11\n", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472452379607080/010._Agni_.png")
         embed.add_field(name="등급 ", value="전설", inline=False)
         embed.add_field(name="휙득 경로", value="개틀링 건 + 뜨거운 오일", inline=False)
@@ -1704,7 +1704,7 @@ def Weapon(msg):
         return embed
 
     if msg=="디바인피스트":
-        embed=discord.Embed(title="디바인 피스트", description="공격력 +45\n기본 공격 추가 피해 +32\n", color=0x9C4998)
+        embed=discord.Embed(title="디바인 피스트", description="공격력 +45\n기본 공격 추가 피해 +29\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756361793982484/012._Divine_Fist__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="벽력귀투 + 십자가", inline=False)
