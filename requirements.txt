@@ -1,4 +1,4 @@
-nextcord
+py-cord==2.0.0b7
 asyncio 
 python-dotenv 
 requests
