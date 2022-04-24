@@ -52,14 +52,14 @@ def aug(msg):
         embed=discord.Embed(title="저항")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261271630925854/916340033722675250/Havoc_2.png")
         embed.add_field(name="주특성", value="취약 광분 흡혈마 벽력", inline=False)
-        embed.add_field(name="부특성", value="철갑탄 열세극복 복수자 수확 갈증", inline=False)
+        embed.add_field(name="부특성", value="철갑탄 열세극복 복수자 수확 갈증 영혼흡수장치", inline=False)
         return embed
 
     if msg == "지원":
         embed=discord.Embed(title="저항")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/916261234951741450/916340062726258688/Support_2.png")
         embed.add_field(name="주특성", value="초재생 치유드론 증폭드론", inline=False)
-        embed.add_field(name="부특성", value="가시덤불 집결 후방보급 테이아 시가전", inline=False)
+        embed.add_field(name="부특성", value="가시덤불 집결 후방보급 테이아 시가전 스프린터", inline=False)
         return embed
 
 

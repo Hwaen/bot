@@ -116,7 +116,7 @@ async def 특성(ctx, 특성: str):
     msg_out = ""
     for i in range(0,len(특성)):
         if 특성[i]!=' ':
-            msg_out+=msg[i]
+            msg_out+=특성[i]
     Aug.aug(msg_out)
     await ctx.respond(embed=Aug.aug(msg_out))
     
