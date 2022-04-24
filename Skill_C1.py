@@ -1,4 +1,4 @@
-import nextcord
+import discord
 import asyncio
 import requests
 from bs4 import BeautifulSoup
@@ -56,7 +56,7 @@ name = {'재키' : 'Jackie',
 def skill(msg,skill):
         global url
         url = 'https://er.inven.co.kr/db/character/'+name[msg]
- 
+         
         response = requests.get(url)
         if response.status_code == 200:
                 html = response.text
@@ -150,7 +150,7 @@ def skill(msg,skill):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=nextcord.Embed(description=("```"+des+"```"))
+                embed=discord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
@@ -162,7 +162,7 @@ def skill_1(key):
         response = requests.get(url)
         if response.status_code == 200:
                 html = response.text
-                soup = BeautifulSoup(html, 'html.parser')
+                soup = BeautifulSoup(html, 'lxml')
 
                 #### T ####
                 if key == "T" or key == "t":
@@ -252,7 +252,7 @@ def skill_1(key):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=nextcord.Embed(description=("```"+des+"```"))
+                embed=discord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
@@ -265,10 +265,12 @@ def skill_2(key):
         response = requests.get(url)
         if response.status_code == 200:
                 html = response.text
-                soup = BeautifulSoup(html, 'html.parser')
+                soup = BeautifulSoup(html, 'lxml')
+
+                global des
                 
                 #### T ####
-                if key == "T" or key == "t":
+                if key == "T":
                         title= soup.select_one("#erDb > div:nth-child(4) > div:nth-child(2) > div.skillTitle > span.skillName").get_text()
                         img = soup.select_one("#erDb > div:nth-child(4) > div:nth-child(2) > div.skillTitle > span.skillIcon > img").get("src")
                 
@@ -285,8 +287,7 @@ def skill_2(key):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                 #### Q ####
-                if key == "Q" or key == "q":
-                        
+                if key == "Q":                        
                         title= soup.select_one("#erDb > div:nth-child(4) > div:nth-child(3) > div.skillTitle > span.skillName").get_text()
                         img = soup.select_one("#erDb > div:nth-child(4) > div:nth-child(3) > div.skillTitle > span.skillIcon > img").get("src")
 
@@ -303,7 +304,7 @@ def skill_2(key):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                         
                 #### W ####
-                if key == "W" or key == "w":
+                if key == "W":
 
                         title= soup.select_one("#erDb > div:nth-child(4) > div:nth-child(4) > div.skillTitle > span.skillName").get_text()
                         img = soup.select_one("#erDb > div:nth-child(4) > div:nth-child(4) > div.skillTitle > span.skillIcon > img").get("src")
@@ -321,7 +322,7 @@ def skill_2(key):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                 #### E ####
-                if key == "E" or key == "e":
+                if key == "E":
 
                         title= soup.select_one("#erDb > div:nth-child(4) > div:nth-child(5) > div.skillTitle > span.skillName").get_text()
                         img = soup.select_one("#erDb > div:nth-child(4) > div:nth-child(5) > div.skillTitle > span.skillIcon > img").get("src")
@@ -339,7 +340,7 @@ def skill_2(key):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
                 #### R ####
-                if key == "R" or key == "r":
+                if key == "R":
                         title= soup.select_one("#erDb > div:nth-child(4) > div:nth-child(6) > div.skillTitle > span.skillName").get_text()
                         img = soup.select_one("#erDb > div:nth-child(4) > div:nth-child(6) > div.skillTitle > span.skillIcon > img").get("src")
 
@@ -354,8 +355,8 @@ def skill_2(key):
                         dis = skill[3].get_text()
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
-                           
-                embed=nextcord.Embed(description=("```"+des+"```"))
+     
+                embed=discord.Embed(description=("```"+ des +"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
@@ -367,10 +368,10 @@ def skill_3(key):
         response = requests.get(url)
         if response.status_code == 200:
                 html = response.text
-                soup = BeautifulSoup(html, 'html.parser')
+                soup = BeautifulSoup(html, 'lxml')
                 
                 #### T ####
-                if key == "T" or key == "t":
+                if key == "T":
                         title= soup.select_one("#erDb > div:nth-child(4) > div:nth-child(2) > div.skillTitle > span.skillName").get_text()
                         img = soup.select_one("#erDb > div:nth-child(4) > div:nth-child(2) > div.skillTitle > span.skillIcon > img").get("src")
                 
@@ -458,7 +459,7 @@ def skill_3(key):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=nextcord.Embed(description=("```"+des+"```"))
+                embed=discord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
@@ -472,7 +473,7 @@ def skill_4(key):
         response = requests.get(url)
         if response.status_code == 200:
                 html = response.text
-                soup = BeautifulSoup(html, 'html.parser')
+                soup = BeautifulSoup(html, 'lxml')
                 
                 #### T ####
                 if key == "T" or key == "t":
@@ -562,7 +563,7 @@ def skill_4(key):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=nextcord.Embed(description=("```"+des+"```"))
+                embed=discord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)
@@ -575,7 +576,7 @@ def skill_5(key):
         response = requests.get(url)
         if response.status_code == 200:
                 html = response.text
-                soup = BeautifulSoup(html, 'html.parser')
+                soup = BeautifulSoup(html, 'lxml')
                 
                 #### T ####
                 if key == "T" or key == "t":
@@ -665,7 +666,7 @@ def skill_5(key):
                         text = skill[4]
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
                            
-                embed=nextcord.Embed(description=("```"+des+"```"))
+                embed=discord.Embed(description=("```"+des+"```"))
                 embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
                 embed.add_field(name="쿨타임:", value=time, inline=True)
                 embed.add_field(name="SP소모:", value=sp , inline=True)

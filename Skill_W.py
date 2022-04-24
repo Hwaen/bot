@@ -1,4 +1,4 @@
-import nextcord
+import discord
 import asyncio
 import pandas as pd
 
@@ -41,7 +41,7 @@ def skill_w(msg):
     img_url = data.iloc[num]["사진"]
        
 
-    embed=nextcord.Embed(description="**1레벨**`쿨다운:"+time1+"`\n ```"+des1+"```\n**2레벨**`쿨다운:"+time2+"`\n```"+des2+"``` \n")
+    embed=discord.Embed(description="**1레벨**`쿨다운:"+time1+"`\n ```"+des1+"```\n**2레벨**`쿨다운:"+time2+"`\n```"+des2+"``` \n")
     embed.set_author(name=name, icon_url=img_url)
     embed.set_footer(text="사용 가능 캐릭터:\t " + cha)
     return embed

@@ -1,4 +1,4 @@
-import nextcord
+import discord
 import asyncio
 import requests
 from bs4 import BeautifulSoup
