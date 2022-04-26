@@ -28,7 +28,6 @@ token = os.getenv('token')
 intents = discord.Intents().all()
 intents.members = True
 bot = discord.Bot()
-client = discord.Client()
 command = commands.Bot(command_prefix='?', intents = intents)
 
 #####로딩#####
@@ -53,7 +52,7 @@ async def on_ready():
 
 ######################################슬래시 커맨드########################################
 #####도움말#####
-@bot.slash_command(guild_ids=[675004242356076559],description="사용 가능한 명령어를 보여드립니다")
+@bot.slash_command(description="사용 가능한 명령어를 보여드립니다")
 async def 도움(ctx):
     embed=discord.Embed(title="도움말", description="사용 가능한 명령어를 보여드립니다")
     embed.add_field(name="?도움", value="사용 가능한 명령어를 가져옵니다.", inline=False)
@@ -67,7 +66,7 @@ async def 도움(ctx):
     embed.set_footer(text="문의: 화엔#9112")
     await ctx.send(embed=embed)
 
-@bot.slash_command(guild_ids = [675004242356076559], description="핑 체크합니다.")
+@bot.slash_command(description="핑 체크합니다.")
 async def 핑(ctx):
     embed = discord.Embed(title="퐁!", description=f"Delay: {bot.latency} seconds", color=0xFFFFFF)
     await ctx.respond(embed=embed)
@@ -99,7 +98,7 @@ async def 곰(ctx):
 
 
 #####아이템#####
-@bot.slash_command(guild_ids=[675004242356076559],description="아이템의 정보를 가져옵니다.")
+@bot.slash_command(description="아이템의 정보를 가져옵니다.")
 async def 템(ctx, 아이템: str):
 
     msg_out = ""
@@ -133,7 +132,7 @@ async def 무스(ctx, 무기: str):
 
   
 #####스킬#####
-@bot.slash_command(guild_ids=[675004242356076559],description="캐릭터의 스킬의정보를 가져옵니다.")
+@bot.slash_command(description="캐릭터의 스킬의정보를 가져옵니다.")
 async def 스킬(ctx: discord.ApplicationContext,
              캐릭터: Option(str, "캐릭터 이름을 적어주세요."),
              스킬키: Option(str,"스킬키를 선택하세요", choices=["Q", "W", "E", "R", "T"])):
