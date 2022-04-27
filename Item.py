@@ -4158,7 +4158,7 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="만년빙 + 진홍 팔찌", inline=False)
         return embed
 
-    if msg=="텔루리안타임피스" or msg = "텔루리":
+    if msg=="텔루리안타임피스" or msg == "텔루리":
         embed=discord.Embed(title="텔루리안 타임피스", description="방어력 +25\n쿨다운 감소 +15%\n공격 속도 +30%\n 굴절-[고유 장착 효과]\n굴절의 망토를 두릅니다. 굴절의 망토는 적이 나에게 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 사라지고, 25초 후 재생성 됩니다.", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322279160602634/892443942681976862/025._Tellurian_Timepiece__.png")
         embed.add_field(name="등급", value="전설", inline=False)
