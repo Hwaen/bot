@@ -39,7 +39,7 @@ async def on_ready():
     print("디스코드봇 ID:" + str(bot.user.id))
     print("디스코드봇 버전:" + str(discord.__version__))
     print('------')
-    await bot.change_presence(status=discord.Status.online, activity=discord.Game("'?도움' 을 쳐보세요"))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game("'/도움' 을 쳐보세요"))
 
     guild_list = bot.guilds
     for i in guild_list:
@@ -52,7 +52,7 @@ async def on_ready():
 
 ######################################슬래시 커맨드########################################
 #####도움말#####
-@bot.slash_command(description="사용 가능한 명령어를 보여드립니다")
+@bot.slash_command(guild_ids=[675004242356076559], description="사용 가능한 명령어를 보여드립니다")
 async def 도움(ctx):
     embed=discord.Embed(title="도움말", description="사용 가능한 명령어를 보여드립니다")
     embed.add_field(name="?도움", value="사용 가능한 명령어를 가져옵니다.", inline=False)
@@ -64,7 +64,7 @@ async def 도움(ctx):
     embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)
     embed.add_field(name="?곰", value="곰이 당신에게 선물을 줍니다.", inline=False)
     embed.set_footer(text="문의: 화엔#9112")
-    await ctx.send(embed=embed)
+    await ctx.respond(embed=embed, ephemeral=True)
 
 @bot.slash_command(description="핑 체크합니다.")
 async def 핑(ctx):

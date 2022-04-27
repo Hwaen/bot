@@ -833,7 +833,7 @@ def Weapon(msg):
         return embed
 
     if msg=="윈드러너":
-        embed=discord.Embed(title="윈드러너", description=" 공격력 +58\n 방어력 +8\n 이동 속도 +0.1\n ```신속-산들바람-[고유 장착 효과]\n 4초 이내에 3회의 개별 피해를 가하면, 2.5초간 이동 속도가 8% 증가하고, 공격 속도가 30% 증가하며 225의 보호막을 얻습니다.\n(쿨다운 6초)```", color=0x9c4998)
+        embed=discord.Embed(title="윈드러너", description=" 공격력 +58\n 방어력 +8\n 이동 속도 +0.1\n ```신속-산들바람-[고유 장착 효과]\n 4초 이내에 3회의 개별 피해를 가하면, 2.5초간 이동 속도가 8% 증가하고, 공격 속도가 30% 증가하며 200의 보호막을 얻습니다.\n(쿨다운 7초)```", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/892289488863236177/892289554332135444/008._Windrunner_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="톤파 + 미스릴 실", inline=False)
@@ -954,7 +954,7 @@ def Weapon(msg):
         return embed
 
     if msg=="개틀링건":
-        embed=discord.Embed(title="개틀링 건", description="장탄 수: 30발\n 공격력 +18\n 공격 속도(%) +10%\n기본 공격 추가 피해 +9\n", color=0x9c4998)
+        embed=discord.Embed(title="개틀링 건", description="장탄 수: 30발\n 공격력 +18\n 공격 속도(%) +10%\n기본 공격 추가 피해 +6\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472430569201704/005._Gatling_Gun_.png")
         embed.add_field(name="등급 ", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="STG-44 + 모터", inline=False)
@@ -975,7 +975,7 @@ def Weapon(msg):
         return embed
 
     if msg=="XCR":
-        embed=discord.Embed(title="XCR", description="장탄 수: 30발\n 공격력 +61\n 최대 체력 +200\n기본 공격 추가 피해 +6\n", color=0x9c4998)
+        embed=discord.Embed(title="XCR", description="장탄 수: 30발\n 공격력 +61\n 최대 체력 +200\n기본 공격 추가 피해 +5\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472444225847376/008._XCR.png")
         embed.add_field(name="등급 ", value="영웅", inline=False)
         embed.add_field(name="휙득 경로", value="M16A1 + 탄창", inline=False)
@@ -989,7 +989,7 @@ def Weapon(msg):
         return embed
 
     if msg=="아그니":
-        embed=discord.Embed(title="아그니", description="장탄 수: 30발\n공격력 +52\n공격 속도 +25%\n기본 공격 추가 피해 +11\n", color=0xf9d537)
+        embed=discord.Embed(title="아그니", description="장탄 수: 30발\n공격력 +52\n공격 속도 +25%\n기본 공격 추가 피해 +9\n", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472357156290571/896472452379607080/010._Agni_.png")
         embed.add_field(name="등급 ", value="전설", inline=False)
         embed.add_field(name="휙득 경로", value="개틀링 건 + 뜨거운 오일", inline=False)
@@ -1457,14 +1457,14 @@ def Weapon(msg):
         return embed
 
     if msg=="장팔사모":
-        embed=discord.Embed(title="장팔사모", description="공격력 +90\n공격 속도(%) +40%\n이동 속도 +0.06", color=0x9C4998)
+        embed=discord.Embed(title="장팔사모", description="공격력 +87\n공격 속도(%) +40%\n이동 속도 +0.04", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472738548580372/008._Eighteen_Foor_Spear_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="강창 + 이온 전지", inline=False)
         return embed
 
     if msg=="코스믹바이던트":
-        embed=discord.Embed(title="코스믹 바이던트", description="공격력 +115\n레벨 당 공격속도 +1%\n", color=0x9C4998)
+        embed=discord.Embed(title="코스믹 바이던트", description="공격력 +108\n레벨 당 공격속도 +2%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472744097620018/009._Cosmic_Bident__.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="바이던트 + 문스톤", inline=False)
@@ -1499,7 +1499,7 @@ def Weapon(msg):
         return embed
 
     if msg=="룽기누스의창":
-        embed=discord.Embed(title="롱기누스의 창", description="공격력 +90\n생명력 흡수 +15%\n```세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (150 + 캐릭터 레벨*10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 70초)```", color=0xf9d537)
+        embed=discord.Embed(title="롱기누스의 창", description="공격력 +100\n생명력 흡수 +15%\n```세컨드 윈드-핏빛 계약-[고유 장착 효과]\n착용자가 적 실험체에게 피해를 받아 체력이 40% 이하가 될 때, 모든 해로운 상태이상이 해제되며, 2.5초간 (150 + 캐릭터 레벨*10)의 보호막과 50% 방해효과 저항을 얻습니다.\n또한, 8초 동안 공격력이 15 증가하고 받는 회복이 15% 증가합니다.\n(쿨다운 : 70초)```", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/896472580054192138/896472767132758016/014._Spear_of_Longinus__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득경로", value="VF 혈액 샘플 + 파이크", inline=False)
@@ -1739,7 +1739,7 @@ def Weapon(msg):
         return embed
 
     if msg=="소수":
-        embed=discord.Embed(title="소수", description="공격력 +48\n치명타 확률 +33%\n치명타 피해량 +7%\n", color=0x9C4998)
+        embed=discord.Embed(title="소수", description="공격력 +48\n치명타 확률 +29%\n치명타 피해량 +5%\n", color=0x9C4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/914756021208104982/914756362771243038/017._White_Claw_Punch_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득경로", value="유리 너클 + 백색 가루", inline=False)
@@ -4158,8 +4158,8 @@ def Weapon(msg):
         embed.add_field(name="획득 경로", value="만년빙 + 진홍 팔찌", inline=False)
         return embed
 
-    if msg=="텔루리안타임피스":
-        embed=discord.Embed(title="텔루리안 타임피스", description="방어력 +33\n쿨다운 감소 +15%\n공격 속도 +20%\n 굴절-[고유 장착 효과]\n굴절의 망토를 두릅니다. 굴절의 망토는 적이 나에게 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 사라지고, 25초 후 재생성 됩니다.", color=0xf9d537)
+    if msg=="텔루리안타임피스" or msg = "텔루리":
+        embed=discord.Embed(title="텔루리안 타임피스", description="방어력 +25\n쿨다운 감소 +15%\n공격 속도 +30%\n 굴절-[고유 장착 효과]\n굴절의 망토를 두릅니다. 굴절의 망토는 적이 나에게 가하는 다음 스킬 및 트랩의 피해와 효과를 한번 보호해 준 뒤 사라지고, 25초 후 재생성 됩니다.", color=0xf9d537)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/891322279160602634/892443942681976862/025._Tellurian_Timepiece__.png")
         embed.add_field(name="등급", value="전설", inline=False)
         embed.add_field(name="획득 경로", value="고장난 시계 + 포스 코어", inline=False)
