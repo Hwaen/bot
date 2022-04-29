@@ -52,15 +52,15 @@ async def on_ready():
 
 ######################################슬래시 커맨드########################################
 #####도움말#####
-@bot.slash_command(guild_ids=[675004242356076559], description="사용 가능한 명령어를 보여드립니다")
+@bot.slash_command(description="사용 가능한 명령어를 보여드립니다")
 async def 도움(ctx):
     embed=discord.Embed(title="도움말", description="사용 가능한 명령어를 보여드립니다")
     embed.add_field(name="?도움", value="사용 가능한 명령어를 가져옵니다.", inline=False)
-    embed.add_field(name="?템 <템이름>", value="아이템의 정보를 가져옵니다. `EX)?템 낭아봉`", inline=False)
-    embed.add_field(name="?스킬 <캐릭터> <스킬키>", value="캐릭터의 스킬의정보를 가져옵니다. `EX)?스킬 수아 Q`", inline=False)
-    embed.add_field(name="?무스 <무기종류>", value="무기스킬의 정보를 가져옵니다. `EX)?무스 망치`", inline=False)
-    embed.add_field(name="?특", value="특성의 종류와 설명을 가져옵니다. `EX)?특 저항`", inline=False)
-    embed.add_field(name="?랭크", value="현재 시즌의 랭크를 알려줍니다. `EX)?랭크 <닉네임>`", inline=False)
+    embed.add_field(name="?템 <템이름>", value="아이템의 정보를 가져옵니다.", inline=False)
+    embed.add_field(name="?스킬 <캐릭터> <스킬키>", value="캐릭터의 스킬의정보를 가져옵니다.", inline=False)
+    embed.add_field(name="?무스 <무기종류>", value="무기스킬의 정보를 가져옵니다.", inline=False)
+    embed.add_field(name="?특", value="특성의 종류와 설명을 가져옵니다.", inline=False)
+    embed.add_field(name="?랭크", value="현재 시즌의 랭크를 알려줍니다.", inline=False)
     embed.add_field(name="?시즌", value="시즌이 며칠 남았는지 알려줍니다.", inline=False)
     embed.add_field(name="?곰", value="곰이 당신에게 선물을 줍니다.", inline=False)
     embed.set_footer(text="문의: 화엔#9112")
@@ -132,7 +132,7 @@ async def 무스(ctx, 무기: str):
 
   
 #####스킬#####
-@bot.slash_command(description="캐릭터의 스킬의정보를 가져옵니다.")
+@bot.slash_command(description="캐릭터의 스킬 정보를 가져옵니다.")
 async def 스킬(ctx: discord.ApplicationContext,
              캐릭터: Option(str, "캐릭터 이름을 적어주세요."),
              스킬키: Option(str,"스킬키를 선택하세요", choices=["Q", "W", "E", "R", "T"])):
