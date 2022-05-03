@@ -1188,7 +1188,7 @@ def Weapon(msg):
         return embed
 
     if msg =="영광금귀신기노":
-        embed=discord.Embed(title="영광금귀신기노", description=" 공격력 +61\n기본 공격 추가 피해 +22\n레벨 당 기본 공격 추가 피해 +2\n", color=0x9c4998)
+        embed=discord.Embed(title="영광금귀신기노", description=" 공격력 +61\n기본 공격 추가 피해 +18\n레벨 당 기본 공격 추가 피해 +2\n", color=0x9c4998)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/894251184217534524/894251275854704680/011._The_Golden_Ghost_.png")
         embed.add_field(name="등급", value="영웅", inline=False)
         embed.add_field(name="획득 경로", value="노 + RDX", inline=False)
