@@ -77,14 +77,14 @@ async def 핑(ctx):
 async def 시즌(ctx):
     tz = pytz.timezone('Asia/Seoul')
     now = datetime.now(tz)
-    send = datetime(2022, 5, 12, 11, 0, 0, 0, tz) #시즌마다 바꿔줄 것
+    send = datetime(2022, 8, 4, 11, 0, 0, 0, tz) #시즌마다 바꿔줄 것
 
     time = send - now
     day = time.days
     hour = time.seconds/3600
     
-    embed=discord.Embed(title="[시즌 5] - 사냥", description="{0}일 {1:.0f}시간 남았습니다.".format(day,hour))
-    embed.set_footer(text="시즌 종료: 2022년 5월 12일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
+    embed=discord.Embed(title="[시즌 6] - 썸머", description="{0}일 {1:.0f}시간 남았습니다.".format(day,hour))
+    embed.set_footer(text="시즌 종료: 2022년 8월 4일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
     await ctx.respond(embed=embed)
     
 
@@ -99,23 +99,23 @@ async def 곰(ctx):
 
 #####아이템#####
 @bot.slash_command(description="아이템의 정보를 가져옵니다.")
-async def 템(ctx, 아이템: str):
+async def 템(ctx, 이름: str):
 
     msg_out = ""
-    for i in range(0,len(아이템)):
-        if 아이템[i]!=' ':
-            msg_out+=아이템[i]
-            
+
+    for i in range(0,len(이름)):
+        if 이름[i]!=' ':
+            msg_out+=이름[i]
     Item.Weapon(msg_out)
     await ctx.respond(embed=Item.Weapon(msg_out))
-
+    
 #####특성#####
 @bot.slash_command(description="특성의 종류와 설명을 가져옵니다.")
-async def 특성(ctx, 특성: str):
+async def 특성(ctx, 이름: str):
     msg_out = ""
-    for i in range(0,len(특성)):
-        if 특성[i]!=' ':
-            msg_out+=특성[i]
+    for i in range(0,len(이름)):
+        if 이름[i]!=' ':
+            msg_out+=이름[i]
     Aug.aug(msg_out)
     await ctx.respond(embed=Aug.aug(msg_out))
     
@@ -146,11 +146,11 @@ async def 스킬(ctx: discord.ApplicationContext,
                 Skill_C2.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C2.skill_1(key))
                     
-            if name == "에이든":
+            elif name == "에이든":
                 Skill_C3.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C3.skill_1(key))
                     
-            if name == "에키온":
+            elif name == "에키온":
                 Skill_C4.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C4.skill_1(key))                   
                 
@@ -165,11 +165,11 @@ async def 스킬(ctx: discord.ApplicationContext,
                 Skill_C2.skill_2(key)
                 await edit.edit_original_message(embed=Skill_C2.skill_2(key))            
 
-            if name == "에이든":
+            elif name == "에이든":
                 Skill_C3.skill_2(key)
                 await edit.edit_original_message(embed=Skill_C3.skill_2(key))
             
-            if name == "에키온":
+            elif name == "에키온":
                 Skill_C4.skill_2(key)
                 await edit.edit_original_message(embed=Skill_C4.skill_2(key))                  
                 
@@ -184,11 +184,11 @@ async def 스킬(ctx: discord.ApplicationContext,
                 Skill_C2.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C2.skill_3(key))
                     
-            if name == "에이든":
+            elif name == "에이든":
                 Skill_C3.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C3.skill_3(key))
                     
-            if name == "에키온":
+            elif name == "에키온":
                 Skill_C4.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C4.skill_3(key))                   
                 
@@ -203,11 +203,11 @@ async def 스킬(ctx: discord.ApplicationContext,
                 Skill_C2.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C2.skill_4(key))
                     
-            if name == "에이든":
+            elif name == "에이든":
                 Skill_C3.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C3.skill_4(key))
                     
-            if name == "에키온":
+            elif name == "에키온":
                 Skill_C4.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C4.skill_4(key))                   
                 
@@ -221,39 +221,35 @@ async def 스킬(ctx: discord.ApplicationContext,
                 Skill_C2.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C2.skill_5(key))
                     
-            if name == "에이든":
+            elif name == "에이든":
                 Skill_C3.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C3.skill_5(key))
                     
-            if name == "에키온":
+            elif name == "에키온":
                 Skill_C4.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C4.skill_5(key))                   
                 
             else:    
                 Skill_C1.skill_1(key)
                 await edit.edit_original_message(embed=Skill_C1.skill_5(key))         
-                        
-    try:
-        if name == '알렉스' or name == '실비아':
-            Skill_C2.skill(name,key)
-            edit = await ctx.respond(embed=Skill_C2.skill(name,key), view=Button())
 
-        elif name == '에이든':
-            Skill_C3.skill(name,key)
-            edit = await ctx.respond(embed=Skill_C3.skill(name,key), view=Button())
+                    
+    if name == '알렉스' or name == '실비아':
+        Skill_C2.skill(name,key)
+        edit = await ctx.respond(embed=Skill_C2.skill(name,key), view=Button())
 
-        elif name == '에키온':
-            Skill_C4.skill(name,key)
-            edit = await ctx.respond(embed=Skill_C4.skill(name,key), view=Button())
+    elif name == '에이든':
+        Skill_C3.skill(name,key)
+        edit = await ctx.respond(embed=Skill_C3.skill(name,key), view=Button())
 
-        else:            
-            Skill_C1.skill(name,key)
-            edit = await ctx.respond(embed=Skill_C1.skill(name,key), view=Button())
-            
-    except :
-        embed=discord.Embed(title="오류!", color=0xffbb00)
-        embed.add_field(name="<캐릭터> <스킬키> 를 제대로 입력해주세요!", value="/스킬 캐릭터: 수아 스킬키:T", inline=True)
-        await ctx.respond(embed=embed, ephemeral=True)
+    elif name == '에키온':
+        Skill_C4.skill(name,key)
+        edit = await ctx.respond(embed=Skill_C4.skill(name,key), view=Button())
+
+    else:            
+        Skill_C1.skill(name,key)
+        edit = await ctx.respond(embed=Skill_C1.skill(name,key), view=Button())
+
 
 
          

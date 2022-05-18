@@ -36,7 +36,7 @@ def skill(msg,skill):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
-                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
+                        embed.set_author(name=(str(title)+"\t"+level+"레벨"),)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)
@@ -168,7 +168,7 @@ def skill(msg,skill):
                         
 
                         embed=discord.Embed(description=("```"+des+"```"))
-                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
+                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), )
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
@@ -177,7 +177,7 @@ def skill(msg,skill):
 
                         
                 embed=discord.Embed(description=("```"+des_1+"```\n```"+des_2+"```"))
-                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
+                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), )
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2 , inline=True)
@@ -207,7 +207,7 @@ def skill_1(key):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
-                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
+                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), )
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True) 
@@ -338,7 +338,7 @@ def skill_1(key):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
-                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
+                        embed.set_author(name=(str(title)+"\t"+level+"레벨"),)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
@@ -346,7 +346,7 @@ def skill_1(key):
                         return embed 
                         
                 embed=discord.Embed(description=("```"+des_1+"```\n```"+des_2+"```"))
-                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
+                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), )
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
@@ -510,7 +510,7 @@ def skill_2(key):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
-                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
+                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), )
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
@@ -518,7 +518,7 @@ def skill_2(key):
                         return embed
                 
                 embed=discord.Embed(description=("```"+des_1+"```\n```"+des_2+"```"))
-                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
+                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), )
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2 , inline=True)  
@@ -681,7 +681,7 @@ def skill_3(key):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
-                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
+                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), )
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
@@ -689,7 +689,7 @@ def skill_3(key):
                         return embed
                         
                 embed=discord.Embed(description=("```"+des_1+"```\n```"+des_2+"```"))
-                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
+                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), )
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
@@ -720,7 +720,7 @@ def skill_4(key):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
-                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
+                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), )
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
@@ -834,7 +834,7 @@ def skill_4(key):
 
                         
                 embed=discord.Embed(description=("```"+des_1+"```\n```"+des_2+"```"))
-                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
+                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"),)
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
@@ -864,7 +864,7 @@ def skill_5(key):
                         des = str(text).replace("<td>","").replace("</td>","").replace("<br/>","\n")
 
                         embed=discord.Embed(description=("```"+des+"```"))
-                        embed.set_author(name=(str(title)+"\t"+level+"레벨"), icon_url=img)
+                        embed.set_author(name=(str(title)+"\t"+level+"레벨"),)
                         embed.add_field(name="쿨타임:", value=time, inline=True)
                         embed.add_field(name="SP소모:", value=sp , inline=True)
                         embed.add_field(name="사거리:", value=dis , inline=True)  
@@ -979,7 +979,7 @@ def skill_5(key):
 
                         
                 embed=discord.Embed(description=("```"+des_1+"```\n```"+des_2+"```"))
-                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), icon_url=img_1)
+                embed.set_author(name=(str(title_1)+"\t|\t"+str(title_2)+"\t"+level_1+"레벨"), )
                 embed.add_field(name="쿨타임:", value=time_1+"\t|\t"+time_2, inline=True)
                 embed.add_field(name="SP소모:", value=sp_1+"\t|\t"+sp_2 , inline=True)
                 embed.add_field(name="사거리:", value=dis_1+"\t|\t"+dis_2  , inline=True)  
