@@ -52,7 +52,7 @@ def tier(msg):
                         num = img(tier_img1[-5],tier_img2[-5],tier_img3[-5])
 
                 embed=discord.Embed(title = user.get_text())
-                embed.set_author(name="[시즌 5]")
+                embed.set_author(name="[시즌 6]")
                 embed.set_thumbnail(url = "https://static-cdn.dak.gg/er/images/rank/round/"+num+".png")
                 embed.add_field(name = "솔로",  value = tier1, inline=False)
                 embed.add_field(name = "듀오",  value = tier2, inline=False)
