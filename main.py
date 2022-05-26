@@ -77,14 +77,14 @@ async def 핑(ctx):
 async def 시즌(ctx):
     tz = pytz.timezone('Asia/Seoul')
     now = datetime.now(tz)
-    send = datetime(2022, 8, 4, 11, 0, 0, 0, tz) #시즌마다 바꿔줄 것
+    send = datetime(2022, 8, 17, 11, 0, 0, 0, tz) #시즌마다 바꿔줄 것
 
     time = send - now
     day = time.days
     hour = time.seconds/3600
     
     embed=discord.Embed(title="[시즌 6] - 썸머", description="{0}일 {1:.0f}시간 남았습니다.".format(day,hour))
-    embed.set_footer(text="시즌 종료: 2022년 8월 4일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
+    embed.set_footer(text="시즌 종료: 2022년 8월 17일",icon_url="https://aya.gg/media/images/ranks/GOLD_BALL.png")
     await ctx.respond(embed=embed)
     
 
